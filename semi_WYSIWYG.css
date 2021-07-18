@@ -395,6 +395,12 @@ span.cm-formatting-escape.cm-hmd-escape-backslash {
     opacity  : 1 !important;
 }
 
+span.cm-comment.lt-underline.lt-minor,
+span.cm-comment.lt-underline.lt-major,
+span.cm-comment {
+    font-size: inherit !important;
+}
+
 /* ============================== LINK ============================== */
 
 .cm-s-obsidian span.cm-url,
