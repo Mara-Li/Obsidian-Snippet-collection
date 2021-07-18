@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+#But not these
+!.gitignore
+!WYSIWYG.css
+!README.md
+!semi_WYSIWYG.css

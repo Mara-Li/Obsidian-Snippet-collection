@@ -1,0 +1,638 @@
+/* @settings
+name: "Semi-WYSIWYG"
+id: Semiwysiwyg
+settings:
+    -
+        id: task-pc
+        title: Task (PC vers)
+        type: variable-number-slider
+        format: "%"
+        default: 5
+        min: 0
+        max: 10
+        step: 1
+    -
+        id: Header-options
+        title: Header Options
+        collapsed: true
+        type: heading
+        level: 1
+    -
+        id: header-clutter
+        title: Header Clutter
+        description: Display the header as other markdown clutter.
+        type: class-toggle
+    -
+        id: header-size
+        title: Header Size
+        description: Replace the header clutter with them size (as H1, H2...)
+        type: class-toggle
+    -
+        id: header-font-size
+        title: Header font size
+        description: When displayed (header size and header clutter option), change the size of the clutter. 
+        type: variable-number-slider
+        default: 5
+        min: 5
+        max: 30
+        step: 1
+        format: px
+    -
+        id: Opacity-Options
+        type: heading
+        level: 1
+        collapsed: true
+        title: Opacity's Options
+        description: Change the opacity of the markdown.
+    -
+        id: opawys
+        type: variable-number-slider
+        default: 0.1
+        min: 0
+        max: 1
+        step: 0.1
+        title: Markdown clutter opacity
+    -
+        id: opawys-active
+        type: variable-number-slider
+        default: 0.3
+        min: 0
+        max: 1
+        step: 0.1
+        title: Markdown active line opacity
+    -
+        id: clutter
+        type: variable-number
+        default: 15
+        format: px
+        title: Clutter Size
+    -
+        id: links
+        type: heading
+        level: 1
+        title: Link's Options
+        description: And it's not Zelda (change the color / use arrow). 
+        collapsed: true
+    -
+        id: text-link
+        title: Wiki links
+        type: variable-themed-color
+        opacity: false 
+        format: hex
+        default-light: "#4d77bb"
+        default-dark: "#d7e9f0"
+    - 
+        id: link-hover
+        title: Link Hover
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: "#029eff"
+        default-dark: "#54b6c0"
+    -
+        id: external-link
+        title: External Link Color
+        opacity: false
+        format: hex
+        default-light: "#4d77bb"
+		default-dark: "#d7e9f0"
+        type: variable-themed-color
+    -
+        id: arrow
+        title: Arrow links
+        description: Only display an arrow instead of a link.
+        type: class-toggle
+    -
+        id : header-Blockquote
+        title: Blockquote
+        type: heading
+        description: Active and change the color for the blockquote.
+        level: 1
+        collapsed: true 
+    -
+        id: blockquote
+        title: Blockquote 
+        description: Add nice blockquote. 
+        type: class-toggle
+    - 
+        id: color-blockquote
+        title: Blockquote border color
+        description: change the blockquote color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: "#54b6c0"
+        default-dark: "#54b6c0"
+    - 
+        id: bg-blockquote
+        title: Blockquote background color
+        description: change the background color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: "#F7F7F7"
+        default-dark: "#F7F7F7"
+    - 
+        id: header-tags
+        title: Tags
+        description: Change the color for the tags pills.
+        type: heading
+        level: 1
+        collapsed: true
+    - 
+        id: tag-background-color
+        title: Tag Background Color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#80cbee67'
+        default-dark: '#80cbee67'
+    - 
+        id: tag
+        title: Tag color (font)
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#1d588f'
+        default-dark: '#1d588f'
+    - 
+        id: tag-border-color
+        title: Tag border color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: "#0493ec"
+        default-dark: "#0493ec"
+    -
+        id: padding-tag
+        title: Padding tag
+        description: Adjust the task padding (in case of the border glitch on the text)
+        type: variable-number
+        format: px
+        default: 5
+    -
+        id: task-title
+        title: Task 
+        description: Quick Adjust your checkbox to feat your theme
+        type: heading
+        level: 1
+        collapsed: true
+	-
+        id: color-task
+        title: Task Color
+        description: Adjust the color
+        type: variable-themed-color
+        default-light: '#1d588f'
+		default-dark: '#1d588f'
+    -
+        id: task-pc
+        title: Task (PC vers)
+        type: variable-number-slider
+        format: "%"
+        default: 2
+        min: 0
+        max: 10
+        step: 1
+    -
+        id: task-mobile
+        title: Task Margin (Mobile Ver)
+        format: px
+        default: 10
+        type: variable-number-slider
+        min: 0
+        max: 30
+        step: 1
+    - 
+        id: task-size
+        default: 35
+        format: px
+        type: variable-number
+        title: Task Symbole Size
+
+*/
+
+.theme-dark {
+    --border              : rgba(255, 255, 255, 0.548);
+    --link-hover          : #54b6c0;
+    --external-link       : var(--text-link);
+    --color-task          : #1d588f;
+    --tag                 : #1d588f;
+    --tag-background-color: #80cbee67;
+    --tag-border-color    : #0493ec;
+}
+
+.theme-light {
+    --border              : var(--text-normal);
+    --link-hover          : #029eff;
+    --color-task          : #1d588f;
+    --external-link       : var(--text-link);
+    --tag                 : #1d588f;
+    --tag-background-color: #80cbee67;
+    --tag-border-color    : #0493ec;
+}
+
+:root {
+    --color-blockquote    : #54b6c0;
+    --bg-blockquote       : #F7F7F7;
+    --tag                 : #1d588f;
+    --tag-background-color: #80cbee67;
+    --tag-border-color    : #0493ec;
+    --text-link           : #4d77bb;
+    --opawys              : 0.1;
+    --header-font-size    : 5px;
+    --clutter             : var(--editor-font-size); 
+    --task-pc: 5%;
+    --task-size: 35px;
+    --padding-tag: 5px;
+}
+
+/* ======================== HEADER ======================== */
+
+span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header,
+span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header,
+span.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header,
+span.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header,
+span.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header,
+span.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header {
+    opacity  : 0;
+    font-size: 1px !important;
+}
+
+.header-clutter span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3,
+.header-clutter span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1,
+.header-clutter span.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2,
+.header-clutter span.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4,
+.header-clutter span.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5,
+.header-clutter span.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6 {
+    display  : inline !important;
+    color    : inherit !important;
+    opacity  : var(--opawys) !important;
+    font-size: var(--header-font-size) !important;
+}
+
+.header-clutter .CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3,
+.header-clutter .CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1,
+.header-clutter .CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2,
+.header-clutter .CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4,
+.header-clutter .CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5,
+.header-clutter .CodeMirror-activeline span.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6 {
+    display  : inline;
+    opacity  : var(--opawys-active) !important;
+    color    : inherit;
+    font-size: var(--header-font-size) !important;
+}
+
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header,
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header,
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header,
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header,
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header,
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header {
+    font-size: 0 !important;
+    opacity  : var(--opawys);
+}
+
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1::after {
+    font-size: var(--header-font-size) !important;
+    content  : "H1 " !important;
+    display  : inline !important;
+}
+
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2::after {
+    font-size: var(--header-font-size) !important;
+    content  : "H2 " !important;
+    display  : inline !important
+}
+
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3::after {
+    font-size: var(--header-font-size) !important;
+    content  : "H3 " !important;
+    display  : inline !important
+}
+
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4::after {
+    font-size: var(--header-font-size) !important;
+    content  : "H4 " !important;
+    display  : inline !important
+}
+
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5::after {
+    font-size: var(--header-font-size) !important;
+    content  : "H5 " !important;
+    display  : inline !important
+}
+
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6::before {
+    font-size: var(--header-font-size) !important;
+    content  : "H6 " !important;
+    display  : inline !important;
+}
+
+/* H1 Underline */
+
+.CodeMirror .CodeMirror-line.HyperMD-header-1 {
+    border-bottom: 1px solid var(--border) !important;
+}
+
+/* =========================== CLUTTER MARKDOWN ============= */
+
+span.cm-formatting-escape:not(span.cm-formatting-escape.cm-hmd-escape-backslash),
+span.cm-comment,
+span.cm-formatting.cm-formatting-strong.cm-strong,
+span.cm-formatting.cm-formatting-em.cm-em,
+span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta.cm-tag-Draft,
+span.cm-formatting.cm-formatting-highlight.cm-highlight,
+.cm-hmd-barelink,
+.cm-formatting-link:not(.cm-link),
+.cm-formatting.cm-formatting-link.cm-link,
+span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
+    opacity  : var(--opawys) !important;
+    font-size: var(--clutter);
+}
+
+.CodeMirror-activeline>.CodeMirror-line span.cm-formatting-escape:not(span.cm-formatting-escape.cm-hmd-escape-backslash),
+.CodeMirror-activeline>.CodeMirror-line span.cm-comment,
+.CodeMirror-activeline>.CodeMirror-line span.cm-formatting.cm-formatting-strong.cm-strong,
+.CodeMirror-activeline>.CodeMirror-line span.cm-formatting.cm-formatting-em.cm-em,
+.CodeMirror-activeline>.CodeMirror-line span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta.cm-tag-Draft,
+.CodeMirror-activeline>.CodeMirror-line span.cm-formatting.cm-formatting-highlight.cm-highlight,
+.CodeMirror-activeline>.CodeMirror-line span.cm-hmd-barelink,
+.CodeMirror-activeline>.CodeMirror-line span.cm-formatting-link:not(.cm-link),
+.CodeMirror-activeline>.CodeMirror-line span.cm-formatting.cm-formatting-link.cm-link,
+.CodeMirror-activeline > .CodeMirror-line span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
+    opacity: var(--opawys-active) !important;
+}
+
+.CodeMirror-activeline>.CodeMirror-line span.cm-image.cm-image-alt-text.cm-link:not(span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker),
+.CodeMirror-activeline>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
+    opacity: var(--opawys-active) !important;
+}
+
+span.cm-image.cm-image-alt-text.cm-link:not(span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker),
+span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
+    opacity: var(--opawys) !important;
+}
+
+span.cm-formatting-link {
+    font-size  : inherit !important;
+    color      : var(--text-link) !important;
+    font-weight: bolder;
+}
+
+/* Yin Yang WYS compatibility */
+
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape:not(.cm-s-obsidian span.cm-hmd-escape-backslash),
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr {
+    color: transparent !important;
+}
+
+span.cm-string.cm-hmd-codeblock,
+span.cm-hmd-escape-backslash,
+span.cm-formatting-escape.cm-hmd-escape-backslash {
+    display  : inline !important;
+    font-size: inherit !important;
+    opacity  : 1 !important;
+}
+
+/* ============================== LINK ============================== */
+
+.cm-s-obsidian span.cm-url,
+.cm-s-obsidian span.cm-link {
+    font-weight: bolder;
+    opacity    : 1 !important;
+}
+
+.cm-hmd-internal-link,
+span.cm-link.cm-hmd-barelink,
+span.cm-formatting.cm-formatting-link.cm-link.cm-hmd-barelink {
+    color    : var(--text-link);
+    display  : inline !important;
+    opacity  : 1 !important;
+    font-size: inherit !important;
+}
+
+.cm-s-obsidian span.cm-url:hover,
+.cm-s-obsidian span.cm-link:hover {
+    text-decoration: underline;
+    color          : var(--link-hover) !important;
+}
+
+.cm-s-obsidian span.cm-hmd-internal-link,
+.cm-s-obsidian span.cm-link {
+    color      : var(--text-link) !important;
+    font-weight: bolder;
+}
+
+span.cm-hmd-internal-link:hover {
+    text-decoration: underline !important;
+    color          : var(--link-hover) !important;
+}
+
+.cm-formatting.cm-formatting-link.cm-link {
+    font-size: inherit !important;
+    display  : inline !important;
+}
+
+.cm-s-obsidian span.cm-link {
+    color: var(--external-link) !important;
+}
+
+span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
+    font-size: inherit;
+}
+
+.arrow .CodeMirror-line .cm-string.cm-url:not(.cm-formatting):after,
+.arrow .wys-enhanced .CodeMirror-line span.cm-string.cm-url:not(.cm-formatting):after {
+    content: url('https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20');
+    display: inline !important;
+}
+
+.arrow .CodeMirror-line .cm-image.cm-image-alt-text.cm-link+*+.cm-string.cm-url:after,
+.arrow .wys-enhanced .CodeMirror-line .cm-image.cm-image-alt-text.cm-link+*+.cm-string.cm-url:after {
+    content: "";
+}
+
+.arrow .CodeMirror-line .cm-string.cm-url:not(.cm-formatting),
+.arrow .wys-enhanced .CodeMirror-line span.cm-string.cm-url:not(.cm-formatting),
+.arrow .CodeMirror-line span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
+    font-size     : 0 !important;
+    letter-spacing: 0.03em !important;
+    display       : inline !important;
+}
+
+span.cm-formatting.cm-formatting-task.cm-meta {
+    margin-right: var(--task-pc);
+}
+
+.arrow .CodeMirror-line span.cm-formatting {
+    display: inline !important
+}
+
+/* ============================== TAGS =========================== */
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:before {
+    content: '';
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
+    opacity: calc(var(--opawys) + 0.3);
+}
+
+.tag:not(.kanban-plugin .tag),
+.cm-s-obsidian span.cm-hashtag-end {
+    background-color: var(--tag-background-color);
+    border          : 1px solid var(--tag-border-color);
+    color           : var(--tag) !important;
+    font-size       : 1rem;
+    padding-bottom  : 1px;
+    text-decoration : none;
+    border-radius   : 10px;
+    line-height     : 30px !important;
+    height          : 30px !important;
+    padding: var(--padding-tag);
+    z-index: 100 !important;
+}
+/* push */
+span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end{
+    padding: 0 !important;
+    font-size: calc(var(--editor-font-size) + 1em) !important;
+}
+
+span.cm-header.cm-header-2.cm-hashtag.cm-meta.cm-hashtag-end {
+    font-size: calc(var(--editor-font-size) + 0.75em) !important;
+    padding: 0 !important;
+}
+
+span.cm-header.cm-header-3.cm-hashtag.cm-meta.cm-hashtag-end {
+    font-size: calc(var(--editor-font-size) + 0.50em) !important;
+    padding: 0 !important;
+}
+
+span.cm-header.cm-header-4.cm-hashtag.cm-meta.cm-hashtag-end {
+    font-size: calc(var(--editor-font-size) + 0.25em) !important;    
+    padding: 3 !important;
+}
+
+span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
+    font-size: calc(var(--editor-font-size) + 0.10em) !important;
+    padding: 3 !important;
+}
+
+span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
+    font-size: calc(var(--editor-font-size) + 0.05em) !important;
+    padding: 3 !important;
+}
+
+span.cm-header.cm-header-1.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta:not(span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end),
+span.cm-header.cm-header-2.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta:not(span.cm-header.cm-header-2.cm-hashtag.cm-meta.cm-hashtag-end),
+span.cm-header.cm-header-3.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta:not(span.cm-header.cm-header-3.cm-hashtag.cm-meta.cm-hashtag-end),
+span.cm-header.cm-header-4.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta:not(span.cm-header.cm-header-4.cm-hashtag.cm-meta.cm-hashtag-end),
+span.cm-header.cm-header-5.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta:not(span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end),
+span.cm-header.cm-header-6.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta:not(span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end) {
+    font-size: var(--header-font-size) !important;
+    
+}
+
+.tag {
+    padding: 0.15em !important;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:hover,
+.cm-s-obsidian span.cm-hashtag-end:hover,
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:hover,
+a.tag:hover,
+.markdown-preview-view a.tag:hover:not(.kanban-plugin .tag) {
+    background-color: var(--tag) !important;
+    color           : #ffffff !important;
+}
+
+.markdown-preview-view a.tag:not(.kanban-plugin .tag) {
+    color           : var(--tag) !important;
+    background-color: var(--tag-background-color) !important;
+}
+
+/* =================================== TASK =================================== */
+
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta,
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta {
+    color       : transparent !important;
+    position    : relative;
+    display     : inline !important;
+    margin-right: var(--task-pc) !important;
+}
+
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after {
+    content   : "☐" !important;
+    position  : absolute;
+    top       : 3px;
+    left      : 0px;
+    color     : var(--color-task) !important;
+    font-size : var(--task-size);
+    display   : inline !important;
+    visibility: visible !important;
+    opacity   : 1;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after,
+.wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
+    content   : "☒" !important;
+    position  : absolute;
+    top       : 3px;
+    left      : 0px;
+    color     : var(--color-task) !important;
+    font-size : var(--task-size);
+    display   : inline !important;
+    visibility: visible !important;
+}
+
+span.cm-formatting-task.cm-property~span {
+    color: var(--text-faint) !important;
+}
+
+/* =================================== BLOCKQUOTE =================================== */
+
+.blockquote span.cm-hmd-indent-in-quote {
+    display: inline !important;
+    color  : transparent !important;
+}
+
+.blockquote .HyperMD-quote {
+    border-left : 3px solid var(--color-blockquote) !important;
+    border-right: 3px solid var(--color-blockquote) !important;
+    color       : var(--color-blockquote) !important;
+}
+
+span.cm-quote.cm-quote-1 {
+    color: var(--color-blockquote) !important;
+}
+
+/* ============================== LINE ============================== */
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
+    content   : "";
+    position  : absolute;
+    height    : 1px;
+    width     : 100%;
+    background: var(--background-modifier-border);
+    left      : 0;
+    top       : 50%;
+}
+
+/* ============================== TEMPLATER ============================= */
+
+.cm-s-obsidian .cm-templater-command.cm-property,
+.cm-s-obsidian .cm-templater-command.cm-variable,
+span.cm-templater-command.cm-undefined {
+    font-size: 0.85em !important;
+    opacity  : 1 !important;
+}
+
+span.cm-templater-command.cm-string {
+    display  : inline !important;
+    opacity  : 1 !important;
+    font-size: 0.85em !important;
+}
