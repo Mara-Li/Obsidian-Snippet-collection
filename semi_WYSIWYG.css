@@ -3,15 +3,6 @@ name: "Semi-WYSIWYG"
 id: Semiwysiwyg
 settings:
     -
-        id: task-pc
-        title: Task (PC vers)
-        type: variable-number-slider
-        format: "%"
-        default: 5
-        min: 0
-        max: 10
-        step: 1
-    -
         id: Header-options
         title: Header Options
         collapsed: true
@@ -177,7 +168,7 @@ settings:
         type: heading
         level: 1
         collapsed: true
-	-
+    -
         id: color-task
         title: Task Color
         description: Adjust the color
@@ -240,10 +231,10 @@ settings:
     --text-link           : #4d77bb;
     --opawys              : 0.1;
     --header-font-size    : 5px;
-    --clutter             : var(--editor-font-size); 
-    --task-pc: 5%;
-    --task-size: 35px;
-    --padding-tag: 5px;
+    --clutter             : var(--editor-font-size);
+    --task-pc             : 5%;
+    --task-size           : 35px;
+    --padding-tag         : 5px;
 }
 
 /* ======================== HEADER ======================== */
@@ -359,7 +350,7 @@ span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
 .CodeMirror-activeline>.CodeMirror-line span.cm-hmd-barelink,
 .CodeMirror-activeline>.CodeMirror-line span.cm-formatting-link:not(.cm-link),
 .CodeMirror-activeline>.CodeMirror-line span.cm-formatting.cm-formatting-link.cm-link,
-.CodeMirror-activeline > .CodeMirror-line span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
+.CodeMirror-activeline>.CodeMirror-line span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
     opacity: var(--opawys-active) !important;
 }
 
@@ -399,6 +390,10 @@ span.cm-comment.lt-underline.lt-minor,
 span.cm-comment.lt-underline.lt-major,
 span.cm-comment {
     font-size: inherit !important;
+}
+
+span.cm-formatting.cm-formatting-code.cm-inline-code {
+    background-color: transparent !important;
 }
 
 /* ============================== LINK ============================== */
@@ -496,38 +491,40 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
     border-radius   : 10px;
     line-height     : 30px !important;
     height          : 30px !important;
-    padding: var(--padding-tag);
-    z-index: 100 !important;
+    padding         : var(--padding-tag);
+    z-index         : 100 !important;
 }
+
 /* push */
-span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end{
-    padding: 0 !important;
+
+span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end {
+    padding  : 0 !important;
     font-size: calc(var(--editor-font-size) + 1em) !important;
 }
 
 span.cm-header.cm-header-2.cm-hashtag.cm-meta.cm-hashtag-end {
     font-size: calc(var(--editor-font-size) + 0.75em) !important;
-    padding: 0 !important;
+    padding  : 0 !important;
 }
 
 span.cm-header.cm-header-3.cm-hashtag.cm-meta.cm-hashtag-end {
     font-size: calc(var(--editor-font-size) + 0.50em) !important;
-    padding: 0 !important;
+    padding  : 0 !important;
 }
 
 span.cm-header.cm-header-4.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: calc(var(--editor-font-size) + 0.25em) !important;    
-    padding: 3 !important;
+    font-size: calc(var(--editor-font-size) + 0.25em) !important;
+    padding  : 3 !important;
 }
 
 span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
     font-size: calc(var(--editor-font-size) + 0.10em) !important;
-    padding: 3 !important;
+    padding  : 3 !important;
 }
 
 span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
     font-size: calc(var(--editor-font-size) + 0.05em) !important;
-    padding: 3 !important;
+    padding  : 3 !important;
 }
 
 span.cm-header.cm-header-1.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta:not(span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end),
@@ -537,7 +534,6 @@ span.cm-header.cm-header-4.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.
 span.cm-header.cm-header-5.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta:not(span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end),
 span.cm-header.cm-header-6.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta:not(span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end) {
     font-size: var(--header-font-size) !important;
-    
 }
 
 .tag {

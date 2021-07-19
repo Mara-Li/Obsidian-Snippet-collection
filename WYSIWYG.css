@@ -206,15 +206,14 @@ settings:
 
 :root {
     --color-blockquote: #54b6c0;
-    --bg-blockquote   : #F7F7F7;
-
+    --bg-blockquote   : #f7f7f7;
     --text-link       : #4d77bb;
     --size_clutter    : 0.1em;
     --markdown-opacity: 0.1;
     --task-pc         : 5%;
     --task-mobile     : -15px;
     --task-size       : 35px;
-    --padding-tag: 5px;
+    --padding-tag     : 5px;
 }
 
 .cm-s-obsidian .CodeMirror-line *,
@@ -223,6 +222,7 @@ settings:
 }
 
 /* Markdown Clutter */
+
 .CodeMirror-activeline>.CodeMirror-line span.cm-formatting:not(span.cm-formatting-list, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url, span.cm-formatting.cm-formatting-task.cm-property, span.cm-formatting.cm-formatting-task.cm-meta) {
     font-size: var(--size_clutter);
     opacity  : 1;
@@ -243,7 +243,6 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header,
     opacity: 1;
 }
 
-
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape {
@@ -256,7 +255,6 @@ span.cm-formatting.cm-formatting-em.cm-em {
     font-size: 50%;
 }
 
-
 /* Codeblocks */
 .CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock,
@@ -266,7 +264,9 @@ span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock {
     display  : inline !important;
 }
 
-
+span.cm-formatting.cm-formatting-code.cm-inline-code {
+    background-color: transparent !important;
+}
 
 /* Comment */
 div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-s-obsidian span.cm-comment {
@@ -274,6 +274,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-s-obsidian span.cm-comment 
 }
 
 /* HTML */
+
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag.cm-bracket.cm-hmd-html-begin,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag.cm-bracket,
@@ -291,10 +292,10 @@ div .CodeMirror-activeline>.CodeMirror-line span.cm-attribute,
 div .CodeMirror-activeline>.CodeMirror-line span.cm-string {
     font-size: small;
     opacity  : 0.5;
-
 }
 
 /* UNLESS IN CODE BLOCKS */
+
 span.cm-string.cm-hmd-codeblock,
 span.cm-hmd-escape-backslash,
 span.cm-formatting-escape.cm-hmd-escape-backslash {
@@ -303,8 +304,8 @@ span.cm-formatting-escape.cm-hmd-escape-backslash {
     opacity  : 1 !important;
 }
 
-
 /* except list markers */
+
 span.cm-formatting-list,
 span.cm-formatting-code-block.cm-hmd-codeblock,
 span.cm-formatting-task,
@@ -314,10 +315,11 @@ span.cm-formatting-task,
     font-family: var(--font-monospace);
     visibility : visible !important;
     opacity    : 1;
-    color      : var(--text-faint)
+    color      : var(--text-faint);
 }
 
 /* Blockquote: in edit mode with left border rendered instead of > */
+
 .blockquote div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-quote,
 .blockquote div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-indent-in-quote,
 .mobile .blockquote span.cm-formatting.cm-formatting-quote,
@@ -339,6 +341,7 @@ span.cm-quote.cm-quote-1 {
 }
 
 /* Yin Yang WYS compatibility */
+
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape:not(.cm-s-obsidian span.cm-hmd-escape-backslash),
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr {
@@ -442,14 +445,13 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formattin
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-string.cm-url:not(.cm-formatting):after,
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url:not(.cm-formatting):after {
-    content: url('https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20');
+    content: url("https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20");
     display: inline !important;
 }
 
 div:not(.codeMirror-activeline)>.CodeMirror-line .cm-image.cm-image-alt-text.cm-link+*+.cm-string.cm-url:after,
 .wys-enhanced div:not(.codeMirror-activeline)>.CodeMirror-line .cm-image.cm-image-alt-text.cm-link+*+.cm-string.cm-url:after {
     content: "";
-
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-string.cm-url:not(.cm-formatting),
@@ -460,7 +462,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-string.cm-url:not(.cm-forma
 }
 
 .CodeMirror-line span.cm-formatting {
-    display: inline !important
+    display: inline !important;
 }
 
 /* List - Outliner support */
@@ -507,10 +509,8 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
     padding-top: 0 !important;
 }
 
-
-
-
 /* H1 Underline */
+
 .CodeMirror .CodeMirror-line.HyperMD-header-1,
 .mobile pre.HyperMD-header.HyperMD-header-1,
 .mobile .HyperMD-header.HyperMD-header-1,
@@ -519,8 +519,9 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
 }
 
 /* Tags*/
+
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:before {
-    content: '';
+    content: "";
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
@@ -540,7 +541,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
     border-radius   : 10px;
     line-height     : 30px !important;
     height          : 30px !important;
-    padding: var(--padding-tag);
+    padding         : var(--padding-tag);
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:hover,
@@ -557,8 +558,8 @@ a.tag:hover,
     background-color: var(--tag-background-color) !important;
 }
 
-
 /* Templater Update compatibility */
+
 .cm-s-obsidian .cm-templater-command.cm-property,
 .cm-s-obsidian .cm-templater-command.cm-variable,
 span.cm-templater-command.cm-undefined {
@@ -573,35 +574,34 @@ span.cm-templater-command.cm-string {
 }
 
 span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end {
-    padding: 0 !important;
+    padding  : 0 !important;
     font-size: 90%;
 }
 
 span.cm-header.cm-header-2.cm-hashtag.cm-meta.cm-hashtag-end {
     font-size: 80%;
-    padding: 0 !important;
+    padding  : 0 !important;
 }
 
 span.cm-header.cm-header-3.cm-hashtag.cm-meta.cm-hashtag-end {
     font-size: 70%;
-    padding: 0 !important;
+    padding  : 0 !important;
 }
 
 span.cm-header.cm-header-4.cm-hashtag.cm-meta.cm-hashtag-end {
     font-size: 60%;
-    padding: 0 !important;
+    padding  : 0 !important;
 }
 
 span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
     font-size: 50%;
-    padding: 0 !important;
+    padding  : 0 !important;
 }
 
 span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
     font-size: 40%;
-    padding: 0 !important;
+    padding  : 0 !important;
 }
-
 
 /* ============= Style settings Mobile specific ================================= */
 
@@ -672,7 +672,7 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 .mobile .cm-hr,
 .mobile span.cm-hr {
     color  : transparent !important;
-    content: '' !important;
+    content: "" !important;
 }
 
 .mobile .cm-hr:after,
@@ -756,7 +756,7 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 }
 
 .mobile span.cm-url.cm-string:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url):before {
-    content: url('https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20');
+    content: url("https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20");
     opacity: 1 !important;
     display: inline !important;
 }
@@ -778,4 +778,3 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 .mobile .cm-hmd-codeblock {
     font-size: inherit !important;
 }
-
