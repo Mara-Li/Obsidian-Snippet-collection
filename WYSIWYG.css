@@ -44,6 +44,14 @@ settings:
 		description: The size of the markdown clutter.
 		format: px
     -
+        id: text-mark
+		title: Hightlight Background
+		type: variable-themed-color
+		opacity: true
+		format: hex
+		default-light: '#dbaa205e'
+		default-dark: '#dbaa205e'
+    -
         id: Link's option
         description: And it's not Zelda!
         type: Heading
@@ -603,6 +611,12 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
     padding  : 0 !important;
 }
 
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
+    background-color: var(--text-mark) !important;
+    color: var(--text-normal) !important;
+}
+
+
 /* ============= Style settings Mobile specific ================================= */
 
 .mobile .tag,
@@ -778,3 +792,4 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 .mobile .cm-hmd-codeblock {
     font-size: inherit !important;
 }
+

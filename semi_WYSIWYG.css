@@ -3,6 +3,14 @@ name: "Semi-WYSIWYG"
 id: Semiwysiwyg
 settings:
     -
+        id: text-mark
+		title: Hightlight Background
+		type: variable-themed-color
+		opacity: true
+		format: hex
+		default-light: '#dbaa205e'
+		default-dark: '#dbaa205e'
+    -
         id: Header-options
         title: Header Options
         collapsed: true
@@ -637,4 +645,10 @@ span.cm-templater-command.cm-string {
     display  : inline !important;
     opacity  : 1 !important;
     font-size: 0.85em !important;
+}
+
+/* ================ HIGHTLIGHT ==================================== */
+.cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
+    background-color: var(--text-mark) !important;
+    color: var(--text-normal) !important;
 }
