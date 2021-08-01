@@ -342,11 +342,10 @@ span.cm-formatting.cm-formatting-em.cm-em,
 span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta.cm-tag-Draft,
 span.cm-formatting.cm-formatting-highlight.cm-highlight,
 .cm-hmd-barelink,
-.cm-formatting-link:not(.cm-link),
 .cm-formatting.cm-formatting-link.cm-link,
 span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
     opacity  : var(--opawys) !important;
-    font-size: var(--clutter);
+    font-size: var(--clutter) !important;
 }
 
 .CodeMirror-activeline>.CodeMirror-line span.cm-formatting-escape:not(span.cm-formatting-escape.cm-hmd-escape-backslash),
@@ -376,7 +375,12 @@ span.cm-formatting-link {
     font-size  : inherit !important;
     color      : var(--text-link) !important;
     font-weight: bolder;
+	opacity  : var(--opawys) !important;
 }
+.CodeMirror-activeline>.CodeMirror-line span.cm-formatting-link {
+	opacity: var(--opawys-active) !important;
+}
+
 
 /* Yin Yang WYS compatibility */
 
@@ -497,11 +501,15 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
     padding-bottom  : 1px;
     text-decoration : none;
     border-radius   : 10px;
-    line-height     : 30px !important;
     height          : 30px !important;
     padding         : var(--padding-tag);
     z-index         : 100 !important;
 }
+.cm-s-obsidian span.cm-hashtag-end {
+    line-height: 30px !important;
+    padding: 1px !important;
+}
+
 
 /* push */
 
