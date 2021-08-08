@@ -33,6 +33,7 @@ settings:
 		title: Other option
 		description: Other option
 		type: heading
+        collapsed: true
 	-
 		id: size_clutter
 		type: variable-number-slider
@@ -56,7 +57,7 @@ settings:
         description: And it's not Zelda!
         type: Heading
         level: 2
-        collapsed: true
+        collapsed: true        collapsed: true
 	-
 		id: text-link
 		title: Markdown Link Color 
