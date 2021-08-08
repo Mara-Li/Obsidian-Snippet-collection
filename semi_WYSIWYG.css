@@ -13,9 +13,9 @@ settings:
     -
         id: Header-options
         title: Header Options
-        collapsed: true
         type: heading
         level: 1
+        collapsed: true
     -
         id: header-clutter
         title: Header Clutter
@@ -502,12 +502,12 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
     text-decoration : none;
     border-radius   : 10px;
     height          : 30px !important;
-    padding         : var(--padding-tag);
+    padding         : var(--padding-tag) !important;
     z-index         : 100 !important;
 }
 .cm-s-obsidian span.cm-hashtag-end {
     line-height: 30px !important;
-    padding: 1px !important;
+    padding: var(--padding-tag) !important;
 }
 
 
