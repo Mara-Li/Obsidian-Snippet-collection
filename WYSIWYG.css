@@ -565,7 +565,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
 
 .tag:not(.kanban-plugin .tag),
 .cm-s-obsidian span.cm-hashtag-end {
-	background-color: var(--tag-background-color);
+	background-color: var(--tag-background-color) !important;
 	border          : 1px solid var(--tag-border-color);
 	color           : var(--tag) !important;
 	font-size       : 1em;
