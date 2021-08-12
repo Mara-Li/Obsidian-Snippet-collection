@@ -679,10 +679,14 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 
 .mobile .cm-hmd-barelink,
 .mobile .cm-formatting-link:not(.cm-link) {
-	font-size: var(--size_clutter);
+	font-size: inherit !important;
 	color    : var(--text-accent) !important;
 	display  : inline !important;
 	opacity  : var(--markdown-opacity) !important;
+}
+
+.mobile .cm-s-obsidian span.cm-formatting-link {
+	font-size: inherit !important;
 }
 
 .mobile .cm-hmd-internal-link,
