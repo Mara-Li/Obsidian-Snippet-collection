@@ -53,6 +53,11 @@ settings:
 		default-light: '#dbaa205e'
 		default-dark: '#dbaa205e'
 	-
+		id: h-line
+		title: H1 Underline 
+		description: Active an underline for H1
+		type: class-toggle
+	-
 		id: Link's option
 		description: And it's not Zelda!
 		type: Heading
@@ -184,13 +189,26 @@ settings:
 		default-light: "#0493ec"
 		default-dark: "#0493ec"
 	-
-		id: padding-tag
+		id: tag-up
 		title: Tag Padding
-		description: Adjust the border and the text
-		default: 5
+		description: Adjust the border and the text (up)
+		default: 0
 		format: px
 		type: variable-number
-
+	-
+		id: tag-left
+		title: Tag Padding
+		description: Adjust the border and the text (left-right)
+		default: 4
+		format: px
+		type: variable-number
+	-
+		id: tag-bottom
+		title: Tag Padding
+		description: Adjust the border and the text (bottom)
+		default: 4
+		format: px
+		type: variable-number
 */
 
 .theme-dark {
@@ -222,7 +240,9 @@ settings:
 	--task-pc         : 5%;
 	--task-mobile     : -15px;
 	--task-size       : 35px;
-	--padding-tag     : 5px;
+	--tag-up : 0px;
+	--tag-left : 4px;
+	--tag-bottom: 4px;
 }
 
 .cm-s-obsidian .CodeMirror-line *,
@@ -524,10 +544,10 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
 
 /* H1 Underline */
 
-.CodeMirror .CodeMirror-line.HyperMD-header-1,
-.mobile pre.HyperMD-header.HyperMD-header-1,
-.mobile .HyperMD-header.HyperMD-header-1,
-.mobile .HyperMD-header-1 {
+.h-line .CodeMirror .CodeMirror-line.HyperMD-header-1,
+.h-line pre.HyperMD-header.HyperMD-header-1,
+.h-line .HyperMD-header.HyperMD-header-1,
+.h-line .HyperMD-header-1 {
 	border-bottom: 1px solid var(--text-normal) !important;
 }
 
@@ -554,7 +574,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
 	border-radius   : 10px;
 	line-height     : 30px !important;
 	height          : 30px !important;
-	padding         : var(--padding-tag);
+	padding         : var(--tag-up) var(--tag-left) var(--tag-bottom);
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:hover,
