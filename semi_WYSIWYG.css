@@ -357,7 +357,8 @@ span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
 .CodeMirror-activeline>.CodeMirror-line span.cm-hmd-barelink,
 .CodeMirror-activeline>.CodeMirror-line span.cm-formatting-link:not(.cm-link),
 .CodeMirror-activeline>.CodeMirror-line span.cm-formatting.cm-formatting-link.cm-link,
-.CodeMirror-activeline>.CodeMirror-line span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
+.CodeMirror-activeline>.CodeMirror-line span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta,
+{
     opacity: var(--opawys-active) !important;
 }
 
@@ -367,7 +368,8 @@ span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
 }
 
 span.cm-image.cm-image-alt-text.cm-link:not(span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker),
-span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
+span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker,
+{
     opacity: var(--opawys) !important;
 }
 
@@ -407,6 +409,12 @@ span.cm-comment {
 span.cm-formatting.cm-formatting-code.cm-inline-code {
     background-color: transparent !important;
 }
+
+/* Outliner compatibility */
+.outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul {
+	color: transparent;
+}
+
 
 /* ============================== LINK ============================== */
 
@@ -627,6 +635,14 @@ span.cm-formatting-task.cm-property~span {
 span.cm-quote.cm-quote-1 {
     color: var(--color-blockquote) !important;
 }
+.blockquote span.cm-formatting.cm-formatting-quote.cm-formatting-quote-1.cm-quote.cm-quote-1 {
+	opacity: var(--opawys);
+}
+
+.blockquote .CodeMirror-activeline>.CodeMirror-line span.cm-formatting.cm-formatting-quote.cm-formatting-quote-1.cm-quote.cm-quote-1 {
+	opacity: var(--opawys-active) !important;
+}
+
 
 /* ============================== LINE ============================== */
 

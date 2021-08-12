@@ -33,7 +33,7 @@ settings:
 		title: Other option
 		description: Other option
 		type: heading
-        collapsed: true
+		collapsed: true
 	-
 		id: size_clutter
 		type: variable-number-slider
@@ -44,20 +44,20 @@ settings:
 		title: Markdown clutter font size
 		description: The size of the markdown clutter.
 		format: px
-    -
-        id: text-mark
+	-
+		id: text-mark
 		title: Hightlight Background
 		type: variable-themed-color
 		opacity: true
 		format: hex
 		default-light: '#dbaa205e'
 		default-dark: '#dbaa205e'
-    -
-        id: Link's option
-        description: And it's not Zelda!
-        type: Heading
-        level: 2
-        collapsed: true        collapsed: true
+	-
+		id: Link's option
+		description: And it's not Zelda!
+		type: Heading
+		level: 2
+		collapsed: true
 	-
 		id: text-link
 		title: Markdown Link Color 
@@ -66,63 +66,63 @@ settings:
 		format: hex
 		default-light: "#4d77bb"
 		default-dark: "#d7e9f0"
-    -
-        id: link-hover
-        type: variable-themed-color
-        title: Link Hover
-        opacity: true
-        format: hex
-        default-light: "#029eff"
-        default-dark: "#54b6c0"
-    -
-        id: external-link
-        title: External Link Color
-        opacity: false
-        format: hex
-        default-light: "#4d77bb"
-		default-dark: "#d7e9f0"
-        type: variable-themed-color
-
-    -
-        id: task-title
-        title: Task 
-        Description: Quick Adjust your checkbox to feat your theme
-        type: heading
-        level: 2
-        collapsed: true
 	-
-        id: color-task
-        title: Task Color
-        Description: Adjust the color
-        type: variable-themed-color
-        default-light: '#1d588f'
+		id: link-hover
+		type: variable-themed-color
+		title: Link Hover
+		opacity: true
+		format: hex
+		default-light: "#029eff"
+		default-dark: "#54b6c0"
+	-
+		id: external-link
+		title: External Link Color
+		opacity: false
+		format: hex
+		default-light: "#4d77bb"
+		default-dark: "#d7e9f0"
+		type: variable-themed-color
+
+	-
+		id: task-title
+		title: Task 
+		Description: Quick Adjust your checkbox to feat your theme
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: color-task
+		title: Task Color
+		Description: Adjust the color
+		type: variable-themed-color
+		default-light: '#1d588f'
 		default-dark: '#1d588f'
-    -
-        id: task-pc
-        title: Task (PC vers)
-        type: variable-number-slider
-        format: "%"
-        default: 2
-        min: 0
-        max: 10
-        step: 1
-    -
-        id: task-mobile
-        title: Task Margin (Mobile Ver)
-        format: px
-        default: 10
-        type: variable-number-slider
-        min: 0
-        max: 30
-        step: 1
-    -
-        id: task-size
-        format: px
-        default: 35
-        type: variable-number
-        title: Task Symbole size
-    
-    -
+	-
+		id: task-pc
+		title: Task (PC vers)
+		type: variable-number-slider
+		format: "%"
+		default: 2
+		min: 0
+		max: 10
+		step: 1
+	-
+		id: task-mobile
+		title: Task Margin (Mobile Ver)
+		format: px
+		default: 10
+		type: variable-number-slider
+		min: 0
+		max: 30
+		step: 1
+	-
+		id: task-size
+		format: px
+		default: 35
+		type: variable-number
+		title: Task Symbole size
+	
+	-
 		id : header-Blockquote
 		title: Blockquote
 		type: heading
@@ -183,58 +183,58 @@ settings:
 		format: hex
 		default-light: "#0493ec"
 		default-dark: "#0493ec"
-    -
-        id: padding-tag
-        title: Tag Padding
-        description: Adjust the border and the text
-        default: 5
-        format: px
-        type: variable-number
+	-
+		id: padding-tag
+		title: Tag Padding
+		description: Adjust the border and the text
+		default: 5
+		format: px
+		type: variable-number
 
 */
 
 .theme-dark {
-    --border              : rgba(255, 255, 255, 0.548);
-    --link-hover          : #54b6c0;
-    --external-link       : var(--text-link);
-    --color-task          : #1d588f;
-    --tag                 : #1d588f;
-    --tag-background-color: #80cbee67;
-    --tag-border-color    : #0493ec;
+	--border              : rgba(255, 255, 255, 0.548);
+	--link-hover          : #54b6c0;
+	--external-link       : var(--text-link);
+	--color-task          : #1d588f;
+	--tag                 : #1d588f;
+	--tag-background-color: #80cbee67;
+	--tag-border-color    : #0493ec;
 }
 
 .theme-light {
-    --border              : var(--text-normal);
-    --link-hover          : #029eff;
-    --color-task          : #1d588f;
-    --external-link       : var(--text-link);
-    --tag                 : #1d588f;
-    --tag-background-color: #80cbee67;
-    --tag-border-color    : #0493ec;
+	--border              : var(--text-normal);
+	--link-hover          : #029eff;
+	--color-task          : #1d588f;
+	--external-link       : var(--text-link);
+	--tag                 : #1d588f;
+	--tag-background-color: #80cbee67;
+	--tag-border-color    : #0493ec;
 }
 
 :root {
-    --color-blockquote: #54b6c0;
-    --bg-blockquote   : #f7f7f7;
-    --text-link       : #4d77bb;
-    --size_clutter    : 0.1em;
-    --markdown-opacity: 0.1;
-    --task-pc         : 5%;
-    --task-mobile     : -15px;
-    --task-size       : 35px;
-    --padding-tag     : 5px;
+	--color-blockquote: #54b6c0;
+	--bg-blockquote   : #f7f7f7;
+	--text-link       : #4d77bb;
+	--size_clutter    : 0.1em;
+	--markdown-opacity: 0.1;
+	--task-pc         : 5%;
+	--task-mobile     : -15px;
+	--task-size       : 35px;
+	--padding-tag     : 5px;
 }
 
 .cm-s-obsidian .CodeMirror-line *,
 .mobile .cm-s-obsidian * {
-    -webkit-font-smoothing: auto;
+	-webkit-font-smoothing: auto;
 }
 
 /* Markdown Clutter */
 
 .CodeMirror-activeline>.CodeMirror-line span.cm-formatting:not(span.cm-formatting-list, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url, span.cm-formatting.cm-formatting-task.cm-property, span.cm-formatting.cm-formatting-task.cm-meta) {
-    font-size: var(--size_clutter);
-    opacity  : 1;
+	font-size: var(--size_clutter);
+	opacity  : 1;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting:not(span.cm-formatting-list, span.cm-formatting-task),
@@ -248,20 +248,20 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header,
 .mobile .cm-hmd-barelink,
 .mobile .cm-hmd-internal-link,
 .mobile .cm-attribute {
-    display: none !important;
-    opacity: 1;
+	display: none !important;
+	opacity: 1;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape {
-    display: inline !important;
-    opacity: 0 !important;
+	display: inline !important;
+	opacity: 0 !important;
 }
 
 span.cm-formatting.cm-formatting-strong.cm-strong,
 span.cm-formatting.cm-formatting-em.cm-em {
-    font-size: 50%;
+	font-size: 50%;
 }
 
 /* Codeblocks */
@@ -269,17 +269,17 @@ span.cm-formatting.cm-formatting-em.cm-em {
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock,
 .cm-s-obsidian pre.HyperMD-codeblock span.cm-formatting-code-block,
 span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock {
-    font-size: var(--editor-font-size) !important;
-    display  : inline !important;
+	font-size: var(--editor-font-size) !important;
+	display  : inline !important;
 }
 
 span.cm-formatting.cm-formatting-code.cm-inline-code {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 /* Comment */
 div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-s-obsidian span.cm-comment {
-    opacity: 0.1;
+	opacity: 0.1;
 }
 
 /* HTML */
@@ -290,7 +290,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag.cm-bracket,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag.cm-bracket.cm-hmd-html-end,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-attribute,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string {
-    display: none;
+	display: none;
 }
 
 div .CodeMirror-activeline>.CodeMirror-line span.cm-tag.cm-bracket.cm-hmd-html-begin,
@@ -299,8 +299,8 @@ div .CodeMirror-activeline>.CodeMirror-line span.cm-tag.cm-bracket,
 div .CodeMirror-activeline>.CodeMirror-line span.cm-tag.cm-bracket.cm-hmd-html-end,
 div .CodeMirror-activeline>.CodeMirror-line span.cm-attribute,
 div .CodeMirror-activeline>.CodeMirror-line span.cm-string {
-    font-size: small;
-    opacity  : 0.5;
+	font-size: small;
+	opacity  : 0.5;
 }
 
 /* UNLESS IN CODE BLOCKS */
@@ -308,9 +308,9 @@ div .CodeMirror-activeline>.CodeMirror-line span.cm-string {
 span.cm-string.cm-hmd-codeblock,
 span.cm-hmd-escape-backslash,
 span.cm-formatting-escape.cm-hmd-escape-backslash {
-    display  : inline !important;
-    font-size: inherit !important;
-    opacity  : 1 !important;
+	display  : inline !important;
+	font-size: inherit !important;
+	opacity  : 1 !important;
 }
 
 /* except list markers */
@@ -320,11 +320,11 @@ span.cm-formatting-code-block.cm-hmd-codeblock,
 span.cm-formatting-task,
 .mobile span.cm-formatting-list,
 .mobile span.cm-formatting-code-block.cm-hmd-codeblock {
-    display    : inline !important;
-    font-family: var(--font-monospace);
-    visibility : visible !important;
-    opacity    : 1;
-    color      : var(--text-faint);
+	display    : inline !important;
+	font-family: var(--font-monospace);
+	visibility : visible !important;
+	opacity    : 1;
+	color      : var(--text-faint);
 }
 
 /* Blockquote: in edit mode with left border rendered instead of > */
@@ -333,20 +333,20 @@ span.cm-formatting-task,
 .blockquote div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hmd-indent-in-quote,
 .mobile .blockquote span.cm-formatting.cm-formatting-quote,
 .mobile .blockquote span.cm-hmd-indent-in-quote {
-    display: inline !important;
-    color  : transparent !important;
+	display: inline !important;
+	color  : transparent !important;
 }
 
 .blockquote div:not(.CodeMirror-activeline)>.HyperMD-quote,
 .blockquote .mobile .HyperMD-quote {
-    background-color: var(--bg-blockquote);
-    border-left     : 3px solid var(--color-blockquote);
-    border-right    : 3px solid var(--color-blockquote);
-    color           : var(--color-blockquote) !important;
+	background-color: var(--bg-blockquote);
+	border-left     : 3px solid var(--color-blockquote);
+	border-right    : 3px solid var(--color-blockquote);
+	color           : var(--color-blockquote) !important;
 }
 
 span.cm-quote.cm-quote-1 {
-    color: var(--color-blockquote) !important;
+	color: var(--color-blockquote) !important;
 }
 
 /* Yin Yang WYS compatibility */
@@ -354,19 +354,19 @@ span.cm-quote.cm-quote-1 {
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape:not(.cm-s-obsidian span.cm-hmd-escape-backslash),
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr {
-    color: transparent !important;
+	color: transparent !important;
 }
 
 /* Line instead of --- */
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
-    content   : "";
-    position  : absolute;
-    height    : 1px;
-    width     : 100%;
-    background: var(--background-modifier-border);
-    left      : 0;
-    top       : 50%;
+	content   : "";
+	position  : absolute;
+	height    : 1px;
+	width     : 100%;
+	background: var(--background-modifier-border);
+	left      : 0;
+	top       : 50%;
 }
 
 /* Checkboxes instead of brackets in edit mode */
@@ -375,147 +375,151 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta {
-    color       : transparent;
-    position    : relative;
-    display     : inline !important;
-    margin-right: var(--task-pc) !important;
+	color       : transparent;
+	position    : relative;
+	display     : inline !important;
+	margin-right: var(--task-pc) !important;
 }
 
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after {
-    content   : "☐" !important;
-    position  : absolute;
-    top       : 3px;
-    left      : 0px;
-    color     : var(--color-task) !important;
-    font-size : var(--task-size);
-    display   : inline !important;
-    visibility: visible !important;
-    opacity   : 1;
+	content   : "☐" !important;
+	position  : absolute;
+	top       : 3px;
+	left      : 0px;
+	color     : var(--color-task) !important;
+	font-size : var(--task-size);
+	display   : inline !important;
+	visibility: visible !important;
+	opacity   : 1;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after,
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
-    content   : "☒" !important;
-    position  : absolute;
-    top       : 3px;
-    left      : 0px;
-    color     : var(--color-task) !important;
-    font-size : var(--task-size);
-    display   : inline !important;
-    visibility: visible !important;
+	content   : "☒" !important;
+	position  : absolute;
+	top       : 3px;
+	left      : 0px;
+	color     : var(--color-task) !important;
+	font-size : var(--task-size);
+	display   : inline !important;
+	visibility: visible !important;
 }
 
 span.cm-formatting-task.cm-property~span {
-    color: var(--text-faint) !important;
+	color: var(--text-faint) !important;
 }
 
 /* Links */
 
 .cm-formatting.cm-formatting-link.cm-link {
-    font-size: inherit !important;
-    display  : inline !important;
+	font-size: inherit !important;
+	display  : inline !important;
 }
 
 .cm-s-obsidian span.cm-url,
 .cm-s-obsidian span.cm-link {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .cm-s-obsidian span.cm-url:hover,
 .cm-s-obsidian span.cm-link:hover {
-    text-decoration: underline;
-    color          : var(--link-hover) !important;
+	text-decoration: underline;
+	color          : var(--link-hover) !important;
 }
 
 .cm-s-obsidian span.cm-link {
-    color: var(--external-link) !important;
+	color: var(--external-link) !important;
 }
 
 .cm-s-obsidian span.cm-hmd-internal-link,
 .mobile span.cm-hmd-internal-link {
-    color      : var(--text-link) !important;
-    font-weight: bolder !important;
+	color      : var(--text-link) !important;
+	font-weight: bolder !important;
 }
 
 span.cm-hmd-internal-link:hover,
 .mobile span.cm-hmd-internal-link:hover {
-    text-decoration: underline !important;
-    color          : var(--link-hover) !important;
+	text-decoration: underline !important;
+	color          : var(--link-hover) !important;
 }
 
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
-    font-size: inherit;
+	font-size: inherit;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
-    display: none !important;
+	display: none !important;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-string.cm-url:not(.cm-formatting):after,
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url:not(.cm-formatting):after {
-    content: url("https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20");
-    display: inline !important;
+	content: url("https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20");
+	display: inline !important;
 }
 
 div:not(.codeMirror-activeline)>.CodeMirror-line .cm-image.cm-image-alt-text.cm-link+*+.cm-string.cm-url:after,
 .wys-enhanced div:not(.codeMirror-activeline)>.CodeMirror-line .cm-image.cm-image-alt-text.cm-link+*+.cm-string.cm-url:after {
-    content: "";
+	content: "";
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-string.cm-url:not(.cm-formatting),
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url:not(.cm-formatting) {
-    font-size     : 0;
-    letter-spacing: 0.03em !important;
-    display       : inline !important;
+	font-size     : 0;
+	letter-spacing: 0.03em !important;
+	display       : inline !important;
 }
 
 .CodeMirror-line span.cm-formatting {
-    display: inline !important;
+	display: inline !important;
 }
 
 /* List - Outliner support */
 
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list {
-    letter-spacing: 0 !important;
+	letter-spacing: 0 !important;
 }
 
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
-    letter-spacing: 0 !important;
-    margin-top    : 0 !important;
+	letter-spacing: 0 !important;
+	margin-top    : 0 !important;
 }
 
 span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1+span.cm-formatting.cm-formatting-task.cm-property,
 span.cm-formatting.cm-formatting-task.cm-meta {
-    margin-right: 0 !important;
-}
-
-.outliner-plugin-bls .cm-hmd-list-indent .cm-tab::before {
-    border-left: 0 !important;
-}
-
-span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
-    visibility: visible;
-}
-
-.cc-pretty-editor .cm-s-obsidian pre.HyperMD-list-line {
-    padding: 0;
-}
-
-.cm-s-obsidian span.cm-formatting-list {
-    color: var(--text-muted) !important;
+	margin-right: 0 !important;
 }
 
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul {
-    color: transparent !important;
+	color: transparent !important;
+}
+
+.outliner-plugin-bls .cm-hmd-list-indent .cm-tab::before {
+	border-left: 0 !important;
+}
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
+	visibility: visible;
+}
+
+.cc-pretty-editor .cm-s-obsidian pre.HyperMD-list-line {
+	padding: 0;
+}
+
+.cm-s-obsidian span.cm-formatting-list {
+	color: var(--text-muted) !important;
+}
+
+.outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul {
+	color: transparent !important;
 }
 
 .cm-s-obsidian .HyperMD-table-row {
-    white-space: normal;
+	white-space: normal;
 }
 
 .outliner-plugin-bls .cm-s-obsidian .HyperMD-list-line {
-    padding-top: 0 !important;
+	padding-top: 0 !important;
 }
 
 /* H1 Underline */
@@ -524,33 +528,33 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
 .mobile pre.HyperMD-header.HyperMD-header-1,
 .mobile .HyperMD-header.HyperMD-header-1,
 .mobile .HyperMD-header-1 {
-    border-bottom: 1px solid var(--text-normal) !important;
+	border-bottom: 1px solid var(--text-normal) !important;
 }
 
 /* Tags*/
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:before {
-    content: "";
+	content: "";
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
-    opacity: 0.5;
+	opacity: 0.5;
 }
 
 /* push */
 
 .tag:not(.kanban-plugin .tag),
 .cm-s-obsidian span.cm-hashtag-end {
-    background-color: var(--tag-background-color);
-    border          : 1px solid var(--tag-border-color);
-    color           : var(--tag) !important;
-    font-size       : 1em;
-    padding-bottom  : 1px;
-    text-decoration : none;
-    border-radius   : 10px;
-    line-height     : 30px !important;
-    height          : 30px !important;
-    padding         : var(--padding-tag);
+	background-color: var(--tag-background-color);
+	border          : 1px solid var(--tag-border-color);
+	color           : var(--tag) !important;
+	font-size       : 1em;
+	padding-bottom  : 1px;
+	text-decoration : none;
+	border-radius   : 10px;
+	line-height     : 30px !important;
+	height          : 30px !important;
+	padding         : var(--padding-tag);
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:hover,
@@ -558,13 +562,13 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:hover,
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:hover,
 a.tag:hover,
 .markdown-preview-view a.tag:hover:not(.kanban-plugin .tag) {
-    background-color: var(--tag) !important;
-    color           : #ffffff !important;
+	background-color: var(--tag) !important;
+	color           : #ffffff !important;
 }
 
 .markdown-preview-view a.tag:not(.kanban-plugin .tag) {
-    color           : var(--tag) !important;
-    background-color: var(--tag-background-color) !important;
+	color           : var(--tag) !important;
+	background-color: var(--tag-background-color) !important;
 }
 
 /* Templater Update compatibility */
@@ -572,49 +576,49 @@ a.tag:hover,
 .cm-s-obsidian .cm-templater-command.cm-property,
 .cm-s-obsidian .cm-templater-command.cm-variable,
 span.cm-templater-command.cm-undefined {
-    font-size: 0.85em !important;
-    opacity  : 1 !important;
+	font-size: 0.85em !important;
+	opacity  : 1 !important;
 }
 
 span.cm-templater-command.cm-string {
-    display  : inline !important;
-    opacity  : 1 !important;
-    font-size: 0.85em !important;
+	display  : inline !important;
+	opacity  : 1 !important;
+	font-size: 0.85em !important;
 }
 
 span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end {
-    padding  : 0 !important;
-    font-size: 90%;
+	padding  : 0 !important;
+	font-size: 90%;
 }
 
 span.cm-header.cm-header-2.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: 80%;
-    padding  : 0 !important;
+	font-size: 80%;
+	padding  : 0 !important;
 }
 
 span.cm-header.cm-header-3.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: 70%;
-    padding  : 0 !important;
+	font-size: 70%;
+	padding  : 0 !important;
 }
 
 span.cm-header.cm-header-4.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: 60%;
-    padding  : 0 !important;
+	font-size: 60%;
+	padding  : 0 !important;
 }
 
 span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: 50%;
-    padding  : 0 !important;
+	font-size: 50%;
+	padding  : 0 !important;
 }
 
 span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: 40%;
-    padding  : 0 !important;
+	font-size: 40%;
+	padding  : 0 !important;
 }
 
 .cm-s-obsidian span.cm-formatting-highlight, .cm-s-obsidian span.cm-highlight {
-    background-color: var(--text-mark) !important;
-    color: var(--text-normal) !important;
+	background-color: var(--text-mark) !important;
+	color: var(--text-normal) !important;
 }
 
 
@@ -622,17 +626,17 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 
 .mobile .tag,
 .mobile .kanban-plugin .tag {
-    font-size      : 1em;
-    text-decoration: none;
-    border-radius  : 15px;
-    line-height    : 40px !important;
-    height         : 40px !important;
-    padding        : 0 3% !important;
+	font-size      : 1em;
+	text-decoration: none;
+	border-radius  : 15px;
+	line-height    : 40px !important;
+	height         : 40px !important;
+	padding        : 0 3% !important;
 }
 
 .mobile .cm-formatting:not(.cm-formatting-list, .cm-formatting-task, span.cm-formatting-code-block) {
-    opacity  : var(--markdown-opacity);
-    font-size: var(--size_clutter);
+	opacity  : var(--markdown-opacity);
+	font-size: var(--size_clutter);
 }
 
 .header-mobile span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3,
@@ -641,143 +645,143 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 .header-mobile span.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4,
 .header-mobile span.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5,
 .header-mobile span.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6 {
-    display: none !important;
+	display: none !important;
 }
 
 .mobile span.cm-formatting-escape:not(span.cm-formatting-escape.cm-hmd-escape-backslash) {
-    opacity  : var(--markdown-opacity) !important;
-    font-size: var(--size_clutter) !important;
-    display  : inline !important;
+	opacity  : var(--markdown-opacity) !important;
+	font-size: var(--size_clutter) !important;
+	display  : inline !important;
 }
 
 .mobile .cm-s-obsidian span.cm-comment {
-    opacity: var(--markdown-opacity) !important;
+	opacity: var(--markdown-opacity) !important;
 }
 
 .mobile .cm-hmd-barelink,
 .mobile .cm-formatting-link:not(.cm-link) {
-    font-size: var(--size_clutter);
-    color    : var(--text-accent) !important;
-    display  : inline !important;
-    opacity  : var(--markdown-opacity) !important;
+	font-size: var(--size_clutter);
+	color    : var(--text-accent) !important;
+	display  : inline !important;
+	opacity  : var(--markdown-opacity) !important;
 }
 
 .mobile .cm-hmd-internal-link,
 .mobile span.cm-link.cm-hmd-barelink,
 .mobile span.cm-formatting.cm-formatting-link.cm-link.cm-hmd-barelink {
-    color    : var(--text-accent);
-    display  : inline !important;
-    opacity  : 1 !important;
-    font-size: inherit !important;
+	color    : var(--text-accent);
+	display  : inline !important;
+	opacity  : 1 !important;
+	font-size: inherit !important;
 }
 
 .mobile .cm-formatting.cm-formatting-link.cm-link {
-    font-size: var(--size_clutter) !important;
+	font-size: var(--size_clutter) !important;
 }
 
 .mobile .markdown-preview-section hr {
-    margin: 0 !important;
+	margin: 0 !important;
 }
 
 .mobile .markdown-preview-section hr:after {
-    background: lightgrey !important;
-    opacity   : 100%;
+	background: lightgrey !important;
+	opacity   : 100%;
 }
 
 .mobile .cm-hr,
 .mobile span.cm-hr {
-    color  : transparent !important;
-    content: "" !important;
+	color  : transparent !important;
+	content: "" !important;
 }
 
 .mobile .cm-hr:after,
 .mobile span.cm-hr:after {
-    content    : "" !important;
-    position   : absolute !important;
-    height     : 3px !important;
-    width      : 80% !important;
-    font-weight: bold !important;
-    background : var(--text-faint) !important;
-    left       : 10% !important;
-    margin-top : 1% !important;
+	content    : "" !important;
+	position   : absolute !important;
+	height     : 3px !important;
+	width      : 80% !important;
+	font-weight: bold !important;
+	background : var(--text-faint) !important;
+	left       : 10% !important;
+	margin-top : 1% !important;
 }
 
 .mobile .cm-formatting-task.cm-meta,
 .mobile .cm-formatting-task.cm-property {
-    color         : transparent !important;
-    position      : relative !important;
-    font-size     : inherit !important;
-    vertical-align: middle !important;
+	color         : transparent !important;
+	position      : relative !important;
+	font-size     : inherit !important;
+	vertical-align: middle !important;
 }
 
 .mobile .cm-formatting-task.cm-property:after,
 .mobile .cm-formatting-task.cm-meta:after {
-    content   : "☐" !important;
-    color     : var(--tag) !important;
-    position  : absolute;
-    top       : 0;
-    left      : -25px !important;
-    font-size : 35px !important;
-    display   : inline !important;
-    visibility: visible !important;
-    opacity   : 100% !important;
+	content   : "☐" !important;
+	color     : var(--tag) !important;
+	position  : absolute;
+	top       : 0;
+	left      : -25px !important;
+	font-size : 35px !important;
+	display   : inline !important;
+	visibility: visible !important;
+	opacity   : 100% !important;
 }
 
 .mobile span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1+span.cm-formatting.cm-formatting-task.cm-meta,
 .mobile span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1+span.cm-formatting.cm-formatting-task.cm-property {
-    margin-left : 1.2em !important;
-    margin-right: -10% !important;
+	margin-left : 1.2em !important;
+	margin-right: -10% !important;
 }
 
 .mobile span.cm-formatting-task.cm-property:after,
 .mobile .wys-enhanced span.cm-formatting-task.cm-property:after {
-    content   : "☑" !important;
-    color     : var(--tag) !important;
-    position  : absolute;
-    top       : 0;
-    left      : -25px !important;
-    font-size : 35px !important;
-    display   : inline !important;
-    visibility: visible !important;
-    opacity   : 100% !important;
+	content   : "☑" !important;
+	color     : var(--tag) !important;
+	position  : absolute;
+	top       : 0;
+	left      : -25px !important;
+	font-size : 35px !important;
+	display   : inline !important;
+	visibility: visible !important;
+	opacity   : 100% !important;
 }
 
 .mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link,
 .mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
-    display: inline !important;
+	display: inline !important;
 }
 
 .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url+span.cm-url.cm-string:not(span.cm-formatting, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url) {
-    color    : transparent !important;
-    display  : inline !important;
-    font-size: 1px;
+	color    : transparent !important;
+	display  : inline !important;
+	font-size: 1px;
 }
 
 .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url+*:not(span.cm-url.cm-string) {
-    color    : var(--text-faint);
-    font-size: var(--size_clutter) !important;
-    display  : inline !important;
-    opacity  : 1 !important;
+	color    : var(--text-faint);
+	font-size: var(--size_clutter) !important;
+	display  : inline !important;
+	opacity  : 1 !important;
 }
 
 .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
-    color    : transparent !important;
-    display  : inline !important;
-    font-size: 1px;
+	color    : transparent !important;
+	display  : inline !important;
+	font-size: 1px;
 }
 
 .mobile .cm-s-obsidian span.cm-link {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .mobile span.cm-url.cm-string:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url):before {
-    content: url("https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20");
-    opacity: 1 !important;
-    display: inline !important;
+	content: url("https://api.iconify.design/majesticons:external-link-line.svg?color=%230493ec&height=20");
+	opacity: 1 !important;
+	display: inline !important;
 }
 
 .mobile .HyperMD-header-1:after {
-    border-top: 1px solid var(--border) !important;
+	border-top: 1px solid var(--border) !important;
 }
 
 .mobile span.cm-tag.cm-bracket.cm-hmd-html-begin,
@@ -786,11 +790,11 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 .mobile span.cm-tag.cm-bracket.cm-hmd-html-end,
 .mobile span.cm-attribute,
 .mobile span.cm-string {
-    font-size: small;
-    opacity  : calc(var(--markdown-opacity) + 0.3);
+	font-size: small;
+	opacity  : calc(var(--markdown-opacity) + 0.3);
 }
 
 .mobile .cm-hmd-codeblock {
-    font-size: inherit !important;
+	font-size: inherit !important;
 }
 
