@@ -405,7 +405,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after {
 	content   : "☐" !important;
 	position  : absolute;
-	top       : 3px;
+	top       : 0px;
 	left      : 0px;
 	color     : var(--color-task) !important;
 	font-size : var(--task-size);
@@ -418,7 +418,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
 	content   : "☒" !important;
 	position  : absolute;
-	top       : 3px;
+	top       : 0px;
 	left      : 0px;
 	color     : var(--color-task) !important;
 	font-size : var(--task-size);
@@ -498,11 +498,6 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-string.cm-url:not(.cm-forma
 
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list {
 	letter-spacing: 0 !important;
-}
-
-.outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before {
-	letter-spacing: 0 !important;
-	margin-top    : 0 !important;
 }
 
 span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1+span.cm-formatting.cm-formatting-task.cm-property,
@@ -589,6 +584,10 @@ a.tag:hover,
 .markdown-preview-view a.tag:not(.kanban-plugin .tag) {
 	color           : var(--tag) !important;
 	background-color: var(--tag-background-color) !important;
+}
+
+.tag {
+    padding: 0.3em !important;
 }
 
 /* Templater Update compatibility */
