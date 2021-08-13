@@ -437,6 +437,7 @@ span.cm-formatting.cm-formatting-code.cm-inline-code {
 }
 
 
+
 /* ============================== LINK ============================== */
 
 .cm-s-obsidian span.cm-url,
@@ -504,7 +505,7 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
 }
 
 span.cm-formatting.cm-formatting-task.cm-meta {
-    margin-right: var(--task-pc);
+    margin-right: calc(var(--task-pc) + 5px) !important;
 }
 
 .arrow .CodeMirror-line span.cm-formatting {
@@ -545,23 +546,23 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
 /* push */
 
 span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end {
-    padding  : 0 !important;
-    font-size: calc(var(--editor-font-size) + 1em) !important;
+    padding  : 2px 8px !important;
+    font-size: calc(var(--editor-font-size) + 0.8em) !important;
 }
 
 span.cm-header.cm-header-2.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: calc(var(--editor-font-size) + 0.75em) !important;
-    padding  : 0 !important;
+    font-size: calc(var(--editor-font-size) + 0.5em) !important;
+    padding  : 3px 5px !important;
 }
 
 span.cm-header.cm-header-3.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: calc(var(--editor-font-size) + 0.50em) !important;
-    padding  : 0 !important;
+    font-size: calc(var(--editor-font-size) + 0.4em) !important;
+    padding  : 3px 5px !important;
 }
 
 span.cm-header.cm-header-4.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: calc(var(--editor-font-size) + 0.25em) !important;
-    padding  : 3 !important;
+    font-size: calc(var(--editor-font-size) + 0.3em) !important;
+    padding  : 0px 5px !important;
 }
 
 span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
