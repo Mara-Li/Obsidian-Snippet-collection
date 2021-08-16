@@ -134,8 +134,8 @@ settings:
         type: variable-themed-color
         opacity: true
         format: hex
-        default-light: "#F7F7F7"
-        default-dark: "#F7F7F7"
+        default-light: "#ffffff00"
+        default-dark: "#ffffff00"
     - 
         id: header-tags
         title: Tags
@@ -191,7 +191,7 @@ settings:
     -
         id: task-title
         title: Task 
-        description: Quick Adjust your checkbox to feat your theme
+        description: Quick Adjust your checkbox to fit your theme
         type: heading
         level: 1
         collapsed: true
@@ -204,7 +204,8 @@ settings:
 		default-dark: '#1d588f'
     -
         id: task-pc
-        title: Task (PC vers)
+        title: Task Margin
+        description: Adjust the space between the taskbox and your text.
         type: variable-number-slider
         format: "%"
         default: 2
@@ -212,21 +213,12 @@ settings:
         max: 10
         step: 1
     -
-        id: task-mobile
-        title: Task Margin (Mobile Ver)
-        format: px
-        default: 10
-        type: variable-number-slider
-        min: 0
-        max: 30
-        step: 1
-    - 
-        id: task-size
-        default: 35
-        format: px
+        id: top-task
+        title: Top
+        description: Adjust the top position to fit your need.
         type: variable-number
-        title: Task Symbole Size
-
+        format: px 
+        default: -8
 */
 
 .theme-dark {
@@ -237,6 +229,7 @@ settings:
     --tag                 : #1d588f;
     --tag-background-color: #80cbee67;
     --tag-border-color    : #0493ec;
+    --bg-blockquote : #ffffff00;
 }
 
 .theme-light {
@@ -247,11 +240,11 @@ settings:
     --tag                 : #1d588f;
     --tag-background-color: #80cbee67;
     --tag-border-color    : #0493ec;
+    --bg-blockquote : #ffffff00;
 }
 
 :root {
     --color-blockquote    : #54b6c0;
-    --bg-blockquote       : #F7F7F7;
     --tag                 : #1d588f;
     --tag-background-color: #80cbee67;
     --tag-border-color    : #0493ec;
@@ -264,6 +257,7 @@ settings:
     --tag-up : 0px;
 	--tag-left : 4px;
 	--tag-bottom: 4px;
+    --top-task: -8px;
 }
 
 /* ======================== HEADER ======================== */
@@ -504,9 +498,7 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
     display       : inline !important;
 }
 
-span.cm-formatting.cm-formatting-task.cm-meta {
-    margin-right: calc(var(--task-pc) + 5px) !important;
-}
+
 
 .arrow .CodeMirror-line span.cm-formatting {
     display: inline !important
@@ -618,10 +610,10 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after {
     content   : "☐" !important;
     position  : absolute;
-    top       : 0px;
+    top       : var(--top-task);
     left      : 0px;
     color     : var(--color-task) !important;
-    font-size : var(--task-size);
+    font-size : 150%;
     display   : inline !important;
     visibility: visible !important;
     opacity   : 1;
@@ -631,10 +623,10 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
     content   : "☒" !important;
     position  : absolute;
-    top       : 0px;
+    top       : var(--top-task);
     left      : 0px;
     color     : var(--color-task) !important;
-    font-size : var(--task-size);
+    font-size : 150%;
     display   : inline !important;
     visibility: visible !important;
 }
@@ -642,6 +634,11 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
 span.cm-formatting-task.cm-property~span {
     color: var(--text-faint) !important;
 }
+
+div:not(.CodeMirror-activeline)> span.cm-formatting.cm-formatting-task.cm-meta {
+    margin-right: calc(var(--task-pc) + 5px) !important;
+}
+
 
 /* =================================== BLOCKQUOTE =================================== */
 

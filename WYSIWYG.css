@@ -126,8 +126,15 @@ settings:
 		default: 35
 		type: variable-number
 		title: Task Symbole size
-	
 	-
+        id: top-task
+        title: Top
+        description: Adjust the top position to fit your need.
+        type: variable-number
+        format: px 
+        default: -8
+
+    -
 		id : header-Blockquote
 		title: Blockquote
 		type: heading
@@ -155,8 +162,8 @@ settings:
 		type: variable-themed-color
 		opacity: true
 		format: hex
-		default-light: "#F7F7F7"
-		default-dark: "#F7F7F7"
+		default-light: "#ffffff00"
+		default-dark: "#ffffff00"
 	- 
 		id: header-tags
 		title: Tags
@@ -219,6 +226,7 @@ settings:
 	--tag                 : #1d588f;
 	--tag-background-color: #80cbee67;
 	--tag-border-color    : #0493ec;
+    --bg-blockquote: #ffffff00;
 }
 
 .theme-light {
@@ -229,11 +237,11 @@ settings:
 	--tag                 : #1d588f;
 	--tag-background-color: #80cbee67;
 	--tag-border-color    : #0493ec;
+    --bg-blockquote: #ffffff00;
 }
 
 :root {
 	--color-blockquote: #54b6c0;
-	--bg-blockquote   : #f7f7f7;
 	--text-link       : #4d77bb;
 	--size_clutter    : 0.1em;
 	--markdown-opacity: 0.1;
@@ -243,6 +251,7 @@ settings:
 	--tag-up : 0px;
 	--tag-left : 4px;
 	--tag-bottom: 4px;
+    --top-task: -8px;
 }
 
 .cm-s-obsidian .CodeMirror-line *,
@@ -395,35 +404,35 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta {
-	color       : transparent;
-	position    : relative;
-	display     : inline !important;
-	margin-right: var(--task-pc) !important;
+    color       : transparent !important;
+    position    : relative;
+    display     : inline !important;
+    margin-right: var(--task-pc) !important;
 }
 
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after {
-	content   : "☐" !important;
-	position  : absolute;
-	top       : 0px;
-	left      : 0px;
-	color     : var(--color-task) !important;
-	font-size : var(--task-size);
-	display   : inline !important;
-	visibility: visible !important;
-	opacity   : 1;
+    content   : "☐" !important;
+    position  : absolute;
+    top       : var(--top-task);
+    left      : 0px;
+    color     : var(--color-task) !important;
+    font-size : 150%;
+    display   : inline !important;
+    visibility: visible !important;
+    opacity   : 1;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after,
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
-	content   : "☒" !important;
-	position  : absolute;
-	top       : 0px;
-	left      : 0px;
-	color     : var(--color-task) !important;
-	font-size : var(--task-size);
-	display   : inline !important;
-	visibility: visible !important;
+    content   : "☒" !important;
+    position  : absolute;
+    top       : var(--top-task);
+    left      : 0px;
+    color     : var(--color-task) !important;
+    font-size : 150%;
+    display   : inline !important;
+    visibility: visible !important;
 }
 
 span.cm-formatting-task.cm-property~span {
