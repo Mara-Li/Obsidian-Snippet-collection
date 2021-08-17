@@ -104,7 +104,7 @@ You can change the color with style settings.
 
 ---
 # Folder Icons
-⚠️ **You need to download TOO the icon-font.css to use this snippet
+⚠️ **You need to download TOO the icon-font.css to use this snippet**
 
 - You can change the icon and their font in Style Settings
 - You can change the color in style settings
