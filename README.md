@@ -1,3 +1,8 @@
+# Summary
+- [WYSIWYG](https://github.com/Mara-Li/Obsidian-Snippet-collection#wysiwyg-and-pseudo-wysiwyg)
+- [Colored Folder](https://github.com/Mara-Li/Obsidian-Snippet-collection#colored-folder)
+- [Folder Icons](https://github.com/Mara-Li/Obsidian-Snippet-collection#folder-icons)
+
 # WYSIWYG and Pseudo WYSIWYG
 Note : Some screenshoot are outdated, the code is always updated, I don't have the time to take screen and update it each day.
 
@@ -90,3 +95,20 @@ https://youtu.be/2U9TEmWFTTw
 - [Clutter Free](https://forum.obsidian.md/t/clutter-free-edit-mode/6791)
 - [Pseudo Like WYSIWYG](https://forum.obsidian.md/t/psuedo-live-markdown-with-css/6257/3)
 - [Base](https://github.com/Dmitriy-Shulha/obsidian-css-snippets/blob/develop/Snippets/WYSIWYG.md)
+
+---
+# Colored Folder
+You can change the color with style settings.
+
+![image](https://user-images.githubusercontent.com/30244939/129755273-16d8c8cb-957a-42f1-8c11-dd0cc832e147.png)
+
+---
+# Folder Icons
+⚠️ **You need to download TOO the icon-font.css to use this snippet
+
+- You can change the icon and their font in Style Settings
+- You can change the color in style settings
+- Adjusted for 10 → 100 folder and some nested folder 
+
+![image](https://user-images.githubusercontent.com/30244939/129755594-d5bb6171-6f77-483d-8957-0d2dd460511a.png)
+
