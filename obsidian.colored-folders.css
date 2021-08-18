@@ -66,6 +66,7 @@ settings:
         type: variable-themed-color
         title: 70. Folder
         default-light: "#ffffff00"
+        default-dark: "#ffffff00"
     -
         id: bg80
         format: hex
