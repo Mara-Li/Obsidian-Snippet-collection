@@ -438,7 +438,6 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
     left      : 0;
     color     : var(--color-task) !important;
     font-size : 150%;
-    display   : inline !important;
     visibility: visible !important;
     margin-left: var(--task-pc) !important;
 
@@ -507,6 +506,10 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formattin
     height         : 1em;
     text-decoration: none !important;
     left           : 5px;
+}
+
+.url-icon .CodeMirror-line .cm-image.cm-image-alt-text.cm-link + * + .cm-string.cm-url:after, .arrow .wys-enhanced .CodeMirror-line .cm-image.cm-image-alt-text.cm-link + * + .cm-string.cm-url:after {
+    content: "" !important;
 }
 
 div:not(.codeMirror-activeline)>.CodeMirror-line .cm-image.cm-image-alt-text.cm-link+*+.cm-string.cm-url:after,
@@ -595,12 +598,11 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
     border          : 1px solid var(--tag-border-color);
     color           : var(--tag) !important;
     font-size       : 1em;
-    padding-bottom  : 1px;
     text-decoration : none;
     border-radius   : 10px;
     line-height     : 30px !important;
     height          : 30px !important;
-    padding         : var(--tag-up) var(--tag-left) var(--tag-bottom);
+    padding         : var(--tag-up) var(--tag-left) var(--tag-bottom) !important;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:hover,
@@ -637,33 +639,33 @@ span.cm-templater-command.cm-string {
 }
 
 span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end {
-    padding  : 0 !important;
-    font-size: 90%;
+	padding: 2px 8px !important;
+	font-size: calc(var(--editor-font-size) + 0.8em) !important;
 }
 
 span.cm-header.cm-header-2.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: 80%;
-    padding  : 0 !important;
+	font-size: calc(var(--editor-font-size) + 0.5em) !important;
+	padding: 3px 5px !important;
 }
 
 span.cm-header.cm-header-3.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: 70%;
-    padding  : 0 !important;
+	font-size: calc(var(--editor-font-size) + 0.4em) !important;
+	padding: 3px 5px !important;
 }
 
 span.cm-header.cm-header-4.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: 60%;
-    padding  : 0 !important;
+	font-size: calc(var(--editor-font-size) + 0.3em) !important;
+	padding: 0px 5px !important;
 }
 
 span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: 50%;
-    padding  : 0 !important;
+	font-size: calc(var(--editor-font-size) + 0.1em) !important;
+	padding: 3px !important;
 }
 
 span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: 40%;
-    padding  : 0 !important;
+	font-size: calc(var(--editor-font-size) + 0.05em) !important;
+	padding: 5px !important;
 }
 
 .cm-s-obsidian span.cm-formatting-highlight,
