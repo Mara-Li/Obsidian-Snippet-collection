@@ -257,29 +257,38 @@ settings:
     .nav-file-title-content:before {
     vertical-align: -2px !important;
     }
-    .nav-folder-title[data-path^="20. Personnel"] .nav-folder-title-content::before {
-        vertical-align: -1px !important;
-        position: relative;
-        top: 2px !important;
-    }
-
-    .nav-folder-title[data-path^="60. Univers"] .nav-folder-title-content::before {
-        position: relative;
-        top: 2px !important;
-    }
-
-    .nav-folder-title[data-path*="B11"] .nav-folder-title-content::before {
+    .nav-folder-title[data-path^="20."] .nav-folder-title-content::before {
         vertical-align: -1px !important;
         position: relative;
         top: 2px !important;
     }
     
-    .nav-folder-title[data-path^="100. Ressource"] .nav-folder-title-content::before {
+    .nav-folder-title[data-path*="23."] .nav-folder-title-content::before {
+        top: 4px !important;
+      }
+
+    .nav-folder-title[data-path^="60."] .nav-folder-title-content::before {
+        position: relative;
+        top: 2px !important;
+    }
+    
+    .nav-folder-title[data-path^="100."] .nav-folder-title-content::before {
       position: relative;
       top: 1px !important;
     } 
     
-    .nav-folder-title[data-path^="40. Média"] .nav-folder-title-content::before {
+    .nav-folder-title[data-path^="30."] .nav-folder-title-content::before,
+    .nav-file-title[data-path^="30."] .nav-file-title-content::before  {
+      position: relative;
+      top: 2px !important;
+    } 
+    
+    .nav-file-title[data-path^="30."] .nav-file-title-content::before {
+      padding-right: 2px;
+      margin-left: 2px;
+    }
+    
+    .nav-folder-title[data-path^="40."] .nav-folder-title-content::before {
       position: relative;
       top: -1px !important;
     } 
