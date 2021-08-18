@@ -1,6 +1,6 @@
 /* @settings
-name: "Folder Icon"
-id: foldericon
+name: "Folder Icons - Color settings"
+id: icons color
 settings:
     - 
 		id: files
@@ -91,81 +91,6 @@ settings:
         default-light: "#B69D91"
         default-dark : "#617e8c"
 		opacity: false
-    -
-        id: font-icon-setting
-        type: heading
-        level: 1
-        collapsed: true
-        title: Icon and font settings
-    -
-        id: Folder10
-        type: heading
-        level: 2
-        collapsed: true
-        title: 10. Folder
-    -
-        id: I10
-        title: Icons
-        type: variable-text
-        default: "\e913"
-    -
-        id: font10
-        title: Font
-        type: variable-select
-        default: 'boxicons'
-        options:
-            - 'boxicons'
-            - 'Material icons'
-            - 'Font Awesome 5 Free'
-            - 'remixicon'
-            - 'IcoMoon-Free'
-    -
-        id: Folder11
-        type: heading
-        level: 2
-        collapsed: true
-        title: 11. Folder
-    -
-        id: I11
-        title: Icons
-        type: variable-text
-        default: "\e004"
-    -
-        id: font11
-        title: Font
-        type: variable-select
-        default: 'Material icons'
-        options:
-            - 'boxicons'
-            - 'Material icons'
-            - 'Font Awesome 5 Free'
-            - 'remixicon'
-            - 'IcoMoon-Free'
-    -
-        id: Folder12
-        type: heading
-        level: 2
-        collapsed: true
-        title: 12. Folder
-    -
-        id: I12
-        title: Icons
-        type: variable-text
-        default: "\e96b"
-    -
-        id: font11
-        title: Font
-        type: variable-select
-        default: 'Material icons'
-        options:
-            - 'boxicons'
-            - 'Material icons'
-            - 'Font Awesome 5 Free'
-            - 'remixicon'
-            - 'IcoMoon-Free'
-
-                
-
 */
 
 .theme-dark {
@@ -198,11 +123,13 @@ settings:
     --I12:"\e96b";
     --I30: "\f1fc";
     --I80: '\e80c';
+    --I90: '\e80c';
     --I40: "\eb1f";
     --I20: "\f2bd";
     --I22: "\e924";
     --I21: "\eeb5";
     --I50: "\f02e";
+    --I70: "\f02e";
     --I52: "\eae2";
     --I51: "\f10d";
     --I53: "\f233";
@@ -238,6 +165,7 @@ settings:
     --font62: 'Material Icons';
     --font61: 'boxicons';
     --font80: 'Material icons';
+    --font90: 'Material icons';
     --font100: 'IcoMoon-Free';
     --font101: 'boxicons';
     --font101-Files: 'Material icons';
@@ -245,62 +173,15 @@ settings:
     --font102-Files: 'IcoMoon-Free';
     --font103: 'Material icons';
     --font103-Files: 'Material icons';
-
 }
 
 /* ======== FILES =================== */
 
 
-
+/* You can add mobile adaptation here 
 @media screen and (max-width: 1080px) {
-    .nav-folder-title-content:before,
-    .nav-file-title-content:before {
-    vertical-align: -2px !important;
-    }
-    .nav-folder-title[data-path^="20."] .nav-folder-title-content::before {
-        vertical-align: -1px !important;
-        position: relative;
-        top: 2px !important;
-    }
-    
-    .nav-folder-title[data-path*="23."] .nav-folder-title-content::before {
-        top: 4px !important;
-      }
-
-    .nav-folder-title[data-path^="60."] .nav-folder-title-content::before {
-        position: relative;
-        top: 2px !important;
-    }
-    
-    .nav-folder-title[data-path^="100."] .nav-folder-title-content::before {
-      position: relative;
-      top: 1px !important;
-    } 
-    
-    .nav-folder-title[data-path^="30."] .nav-folder-title-content::before,
-    .nav-file-title[data-path^="30."] .nav-file-title-content::before  {
-      position: relative;
-      top: 2px !important;
-    } 
-    
-    .nav-file-title[data-path^="30."] .nav-file-title-content::before {
-      padding-right: 2px;
-      margin-left: 2px;
-    }
-    
-    .nav-folder-title[data-path^="40."] .nav-folder-title-content::before {
-      position: relative;
-      top: -1px !important;
-    } 
-    
-    .nav-folder-title[data-path="50. Personnages"] .nav-folder-title-content::before {
-        position: relative;
-        top: 2px !important;
-      }
-
-
 }
-
+*/
 
 .nav-file-title, .nav-folder-title {
     font-size: var(--augmente) !important;
@@ -470,15 +351,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     vertical-align: -0.15em !important;
 }
 
-.nav-file-title[data-path*="30."] .nav-file-title-content:only-child:before 
-{
-    margin-right: 12px !important;
-    left: 12px !important;
-}
 
-.nav-file-title[data-path*="30."] .nav-file-title-content {
-    line-height: 20px !important;
-}
 
 /* ===== Média ======== */
 
@@ -497,10 +370,9 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     content: var(--I40) !important;
     font-family: var(--font40);
     font-size: var(--size);
-    vertical-align: -0.15em !important;
 }
 
-.nav-folder-title[data-path^="40. Média"] {
+.nav-folder-title[data-path^="40. Média"]::before {
     top: 2px !important;
 }
 
@@ -572,6 +444,19 @@ div.nav-folder-title[data-path*="63."] div.nav-folder-title-content::before {
     font-size: var(--size);
     vertical-align: -1px !important;
 }
+/* ============ Folder 70 ==================== */
+.nav-folder-title[data-path^="70"],
+.nav-file-title[data-path*="70."]
+ {
+    color: var(--F70) !important;
+}
+
+div.nav-folder-title[data-path^="70."] div.nav-folder-title-content::before {
+    content: var(--I70);
+    font-family: var(--font70);
+    font-size: var(--size);
+    vertical-align: 0 !important;
+}
 
 
 /* ===============  MASTER 1 ===================== */
@@ -586,6 +471,18 @@ div.nav-folder-title[data-path^="80."] div.nav-folder-title-content::before {
     font-family: var(--font80);
     font-size: var(--size);
 	vertical-align: -0.15em !important;
+}
+/* ===============  FOLDER 90 ===================== */
+
+.nav-folder-title[data-path^="90."],
+.nav-file-title[data-path*="90."] {
+	color: var(--F90) !important;
+}
+
+div.nav-folder-title[data-path^="90."] div.nav-folder-title-content::before {
+    content: var(--I90);
+    font-family: var(--font90);
+    font-size: var(--size);
 }
 
 
@@ -662,8 +559,6 @@ font-size: var(--size);
 
 .nav-file-title[data-path$="js"] .nav-file-title-content:before{
     content: "\f3d3" !important;
-    vertical-align: -0.1em;
-    font-family: 'Font Awesome 5 Brands' !important;
 }
 
 
