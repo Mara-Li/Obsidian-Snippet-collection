@@ -1,6 +1,6 @@
 /* @settings
 name: "Pseudo-WYSIWYG"
-id: global
+id: wysiwyg
 settings:
     - 
         id: size_clutter
@@ -51,6 +51,12 @@ settings:
         description: Don't display the markdown header clutter at all. 
         title: Header display 
     -
+        id: url-icon-mobile
+        title: Icon url (on mobile)
+        description: Add icon for mobile
+        type: class-toggle
+    
+    -
         id: link-header
         title: Link's Options
         description: And it's not Zelda!
@@ -87,16 +93,15 @@ settings:
         title: External Link Icon
         description: Active an icon for external links.
     -
-        id: task-title
+        id: title-task
         title: Task 
-        Description: Quick Adjust your checkbox to feat your theme
+        description: Quick Adjust your checkbox to fit your theme
         type: heading
         level: 1
         collapsed: true
     -
         id: color-task
         title: Task Color
-        Description: Adjust the color
         type: variable-themed-color
         default-light: '#1d588f'
         default-dark: '#1d588f'
@@ -104,22 +109,25 @@ settings:
         opacity: false
     -
         id: task-mobile
-        title: Task Margin (Mobile Ver)
+        title: Task Margin
+        description: Mobile only
         format: px
         default: -50
-        type: variable-number-slider
-        min: -100
-        max: 100
-        step: 1
+        type: variable-number
+    -
+        id: task-pc
+        title: Task Margin
+        description: PC only
+        format: "%"
+        default: 0
+        type: variable-number
     -
         id: top-task
-        title: Top (PC)
-        description: Adjust the top position to fit your need.
+        title: Top
+        description: Adjust the top position to fit your need (PC only)
         default: 0
-        type: variable-number-slider
-        min: -100
-        max: 100
-        step: 1
+        type: variable-number
+        format: px
     -
         id : header-Blockquote
         title: Blockquote
@@ -256,9 +264,13 @@ settings:
 
 /* Markdown Clutter */
 
-.CodeMirror-activeline>.CodeMirror-line span.cm-formatting:not(span.cm-formatting-list, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url, span.cm-formatting.cm-formatting-task.cm-property, span.cm-formatting.cm-formatting-task.cm-meta) {
+.CodeMirror-activeline>.CodeMirror-line span.cm-formatting:not(span.cm-formatting-list, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url, span.cm-formatting.cm-formatting-task.cm-property, span.cm-formatting.cm-formatting-task.cm-meta, span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link) {
     font-size: var(--size_clutter);
     opacity  : 1;
+}
+
+.CodeMirror-activeline> span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link{
+    font-size: inherit !important;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting:not(span.cm-formatting-list, span.cm-formatting-task),
@@ -415,6 +427,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta
     display   : inline !important;
     visibility: visible !important;
     opacity   : 1;
+    margin-left: var(--task-pc) !important;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after,
@@ -427,6 +440,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
     font-size : 150%;
     display   : inline !important;
     visibility: visible !important;
+    margin-left: var(--task-pc) !important;
 
 }
 
@@ -817,16 +831,17 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
     text-decoration: underline;
 }
 
-.url-icon .mobile span.cm-url.cm-string:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url):before {
+.url-icon-mobile.mobile span.cm-url.cm-string:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url):before {
     content    : '\f35d';
     font-family: 'Font Awesome 5 Free Solid';
-    font-size  : 20px;
+    font-size  : 15px;
     color      : var(--text-link);
     opacity    : 1 !important;
     display    : inline !important;
-    top        : 3px !important;
+    top        : -3px !important;
     left       : -2px !important;
     position   : relative !important;
+    font-weight: normal !important;
 }
 
 .mobile .HyperMD-header-1:after {
