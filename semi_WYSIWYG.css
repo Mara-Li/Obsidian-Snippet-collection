@@ -172,6 +172,14 @@ settings:
         default-light: "#0493ec"
         default-dark: "#0493ec"
     -
+        id: tag-hover
+        title: Tag Hover
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: "#ffffff"
+        default-dark: "#000000"
+    -
         id: tag-up
         title: Tag Padding
         description: Adjust the border and the text (up)
@@ -247,6 +255,7 @@ settings:
 	--tag-background-color: #80cbee67;
 	--tag-border-color: #0493ec;
 	--bg-blockquote: #ffffff00;
+    --tag-hover: #000000 ;
 }
 
 .theme-light {
@@ -258,6 +267,7 @@ settings:
 	--tag-background-color: #80cbee67;
 	--tag-border-color: #0493ec;
 	--bg-blockquote: #ffffff00;
+    --tag-hover: #ffffff; 
 }
 
 :root {
@@ -576,7 +586,6 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
 }
 
 
-
 .arrow
 	.CodeMirror-line
 	.cm-image.cm-image-alt-text.cm-link
@@ -615,17 +624,27 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag {
 	opacity: calc(var(--opawys) + 0.3);
 }
 
-.tag:not(.kanban-plugin .tag),
 .cm-s-obsidian span.cm-hashtag-end {
 	background-color: var(--tag-background-color) !important;
 	border: 1px solid var(--tag-border-color) !important;
 	color: var(--tag) !important;
 	font-size: 1rem;
-	padding-bottom: 1px;
 	text-decoration: none;
 	border-radius: 10px;
 	height: 30px !important;
-	padding: var(--tag-up) var(--tag-left) var(--tag-bottom);
+	padding: var(--tag-up) var(--tag-left) var(--tag-bottom) !important;
+	z-index: 100 !important;
+	font-family: inherit;
+	font-weight: 600 !important;
+}
+.tag:not(.kanban-plugin .tag) {
+	background-color: var(--tag-background-color) !important;
+	border: 1px solid var(--tag-border-color) !important;
+	color: var(--tag) !important;
+	font-size: 1rem;
+	text-decoration: none;
+	border-radius: 10px;
+	height: 30px !important;
 	z-index: 100 !important;
 	font-family: inherit;
 	font-weight: 600 !important;
@@ -659,12 +678,12 @@ span.cm-header.cm-header-4.cm-hashtag.cm-meta.cm-hashtag-end {
 
 span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
 	font-size: calc(var(--editor-font-size) + 0.1em) !important;
-	padding: 3 !important;
+	padding: 3px !important;
 }
 
 span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 	font-size: calc(var(--editor-font-size) + 0.05em) !important;
-	padding: 3 !important;
+	padding: 3px !important;
 }
 
 span.cm-header.cm-header-1.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta:not(span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end),
@@ -689,7 +708,9 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover,
 a.tag:hover,
 .markdown-preview-view a.tag:hover:not(.kanban-plugin .tag) {
 	background-color: var(--tag) !important;
-	color: #ffffff !important;
+	color: var(--tag-hover) !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
 }
 
 .markdown-preview-view a.tag:not(.kanban-plugin .tag) {
