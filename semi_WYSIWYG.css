@@ -3,10 +3,6 @@ name: "Semi-WYSIWYG"
 id: Semiwysiwyg
 settings:
     -
-        id: not-img
-        title: Don't display image link
-        type: class-toggle
-    -
         id: text-mark
         title: Hightlight Background
         type: variable-themed-color
@@ -109,6 +105,10 @@ settings:
         id: arrow
         title: Arrow links
         description: Only display an arrow instead of a link.
+        type: class-toggle
+    -
+        id: not-img
+        title: Don't display image link
         type: class-toggle
     -
         id : header-Blockquote
@@ -447,12 +447,8 @@ span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
 	opacity: var(--opawys-active) !important;
 }
 
-.CodeMirror-activeline
-	> .CodeMirror-line
-	span.cm-image.cm-image-alt-text.cm-link:not(span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker),
-.CodeMirror-activeline
-	> .CodeMirror-line
-	span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
+div:not(.not-img) > .CodeMirror-activeline > .CodeMirror-line span.cm-image.cm-image-alt-text.cm-link:not(span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker),
+div:not(.not-img) > .CodeMirror-activeline > .CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker {
 	opacity: var(--opawys-active) !important;
 }
 
@@ -467,7 +463,8 @@ span.cm-formatting-link {
 	font-weight: bolder;
 	opacity: var(--opawys) !important;
 }
-.CodeMirror-activeline > .CodeMirror-line span.cm-formatting-link {
+
+.CodeMirror-line span.cm-formatting-link {
 	opacity: var(--opawys-active) !important;
 }
 
@@ -476,7 +473,9 @@ span.cm-formatting-link {
 .not-img span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker,
 .not-img span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link,
 .not-img span.cm-image.cm-image-alt-text.cm-link,
-.not-img span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link + .cm-string.cm-url {
+.not-img span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link + .cm-string.cm-url,
+.not-img span.cm-formatting.cm-formatting-image.cm-image.cm-image-marker
+{
     opacity: 0 !important;
 }
 
@@ -564,10 +563,8 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
 }
 
 .arrow .CodeMirror-line .cm-string.cm-url:not(.cm-formatting):after,
-.arrow
-	.wys-enhanced
-	.CodeMirror-line
-	span.cm-string.cm-url:not(.cm-formatting):after {
+.arrow .wys-enhanced .CodeMirror-line
+span.cm-string.cm-url:not(.cm-formatting):after {
 	content: "\f35d" !important;
 	font-family: "Font Awesome 5 Free Solid" !important;
 	color: var(--text-link);
@@ -603,11 +600,31 @@ span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
 .arrow .CodeMirror-line .cm-string.cm-url:not(.cm-formatting),
 .arrow .wys-enhanced .CodeMirror-line span.cm-string.cm-url:not(.cm-formatting),
 .arrow
-	.CodeMirror-line
+.CodeMirror-line
 	span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
 	font-size: 0 !important;
 	letter-spacing: 0.03em !important;
 	display: inline !important;
+}
+
+.arrow .CodeMirror-activeline span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link + * + span.cm-string.cm-url,
+.arrow .CodeMirror-activeline span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link + span.cm-formatting.cm-formatting-link-string.cm-string.cm-url,
+.arrow .CodeMirror-activeline span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link + * + * + span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
+    font-size: inherit !important;
+    opacity: var(--opawys-active) !important;
+    color: var(--link-col) !important;
+}
+
+.not-img .CodeMirror-activeline span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link + * + span.cm-string.cm-url,
+.not-img .CodeMirror-activeline span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link + span.cm-formatting.cm-formatting-link-string.cm-string.cm-url,
+.not-img .CodeMirror-activeline span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link + * + * + span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
+    font-size: inherit !important;
+    opacity: var(--opawys-active) !important;
+    color: var(--link-col) !important;
+}
+
+.not-img span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link + * + span.cm-string.cm-url {
+    opacity: var(--opawys) !important;
 }
 
 .arrow .CodeMirror-line span.cm-formatting {
