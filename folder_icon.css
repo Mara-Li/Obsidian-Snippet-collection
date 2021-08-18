@@ -230,8 +230,8 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 }
 
 .files .nav-file-title-content:before {
-    content: "\ea37";
-    font-family: boxicons;
+    content: "\ea37" !important;
+    font-family: boxicons !important;
     font-size: calc(var(--size) + 3%) !important;
     margin-right: 5px;
     margin-left: 0px;
@@ -552,13 +552,18 @@ position: relative !important;
 }
 
 .nav-file-title[data-path$="pdf"] .nav-file-title-content:before{
-content: "\f1c1";
+content: "\f1c1" !important;
 font-family: 'Font Awesome 5 Free' !important;
-font-size: var(--size);
+font-size: var(--size) !important;
+vertical-align: top !important;
 }
 
 .nav-file-title[data-path$="js"] .nav-file-title-content:before{
     content: "\f3d3" !important;
+    font-family: 'Font Awesome 5 Brands' !important;
+    font-size: var(--size) !important;
+    left: 2px !important;
+
 }
 
 
