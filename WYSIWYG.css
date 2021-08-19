@@ -833,7 +833,7 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
     text-decoration: underline;
 }
 
-.url-icon-mobile.mobile span.cm-url.cm-string:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url):before {
+.url-icon-mobile span.cm-url.cm-string:not(span.cm-formatting.cm-formatting-link-string.cm-string.cm-url):before {
     content    : '\f35d';
     font-family: 'Font Awesome 5 Free Solid';
     font-size  : 15px;
@@ -841,7 +841,7 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
     opacity    : 1 !important;
     display    : inline !important;
     top        : -3px !important;
-    left       : -2px !important;
+    left       : 2px !important;
     position   : relative !important;
     font-weight: normal !important;
 }
