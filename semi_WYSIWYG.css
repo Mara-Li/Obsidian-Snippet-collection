@@ -102,10 +102,20 @@ settings:
         default-dark: "#d7e9f0"
         type: variable-themed-color
     -
-        id: arrow
-        title: Arrow links
-        description: Only display an arrow instead of a link.
-        type: class-toggle
+        id: link-variant
+        type: class-select
+        title: Links Display
+        description: Adjust the display of the link
+        allowEmpty: true
+        default: none
+        options: 
+            -
+                label: Arrow
+                value: arrow
+            -
+                label: Transparent
+                value: transparent-links
+
     -
         id: not-img
         title: Don't display image link
@@ -556,10 +566,21 @@ span.cm-hmd-internal-link:hover {
 	color: var(--link-col) !important;
 }
 
-span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
-	color: transparent !important;
+.transparent-links div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting.cm-formatting-link-string.cm-string.cm-url,
+.transparent-links div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-string.cm-url {
 	display: inline !important;
 	font-size: inherit;
+    opacity: var(--opawys) !important;
+}
+
+.transparent-links span.cm-formatting.cm-formatting-link-string.cm-string.cm-url,
+.transparent-links span.cm-string.cm-url {
+    font-size: var(--clutter) !important;
+}
+
+.CodeMirror-activeline > .CodeMirror-line span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
+    opacity: var(--opawys-active) !important; 
+    
 }
 
 .arrow .CodeMirror-line .cm-string.cm-url:not(.cm-formatting):after,
@@ -598,13 +619,18 @@ span.cm-string.cm-url:not(.cm-formatting):after {
 }
 
 .arrow .CodeMirror-line .cm-string.cm-url:not(.cm-formatting),
-.arrow .wys-enhanced .CodeMirror-line span.cm-string.cm-url:not(.cm-formatting),
-.arrow
-.CodeMirror-line
-	span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
-	font-size: 0 !important;
-	letter-spacing: 0.03em !important;
-	display: inline !important;
+.arrow .wys-enhanced .CodeMirror-line span.cm-string.cm-url:not(.cm-formatting)
+{
+	font-size: 0;
+	letter-spacing: 0.03em;
+	display: inline;
+}
+
+.arrow span.cm-formatting.cm-formatting-link-string.cm-string.cm-url + span.cm-string.cm-url + span.cm-formatting.cm-formatting-link-string.cm-string.cm-url {
+	font-size: 0;
+	letter-spacing: 0.03em;
+	display: inline;
+	opacity: 0;
 }
 
 .arrow .CodeMirror-activeline span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link + * + span.cm-string.cm-url,
