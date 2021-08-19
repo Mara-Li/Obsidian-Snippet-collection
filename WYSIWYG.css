@@ -3,7 +3,7 @@ name: "Pseudo-WYSIWYG"
 id: wysiwyg
 settings:
     - 
-        id: size_clutter
+        id: clutter
         type: variable-number-slider
         default: 5
         min: 0
@@ -51,11 +51,19 @@ settings:
         description: Don't display the markdown header clutter at all. 
         title: Header display 
     -
-        id: url-icon-mobile
-        title: Icon url (on mobile)
-        description: Add icon for mobile
-        type: class-toggle
-    
+        id: Links-mobile-option
+        type: class-select
+        title: Links display
+        description: Add icon or make links a little transparent.
+        allowEmpty: true
+        default: none
+        options: 
+            - 
+                label: Arrow icons
+                value: url-icon-mobile
+            -
+                label: Transparent
+                value: mobile-transparent
     -
         id: link-header
         title: Link's Options
@@ -246,7 +254,7 @@ settings:
 :root {
     --color-blockquote: #54b6c0;
     --text-link       : #4d77bb;
-    --size_clutter    : 0.1em;
+    --clutter    : 0.1em;
     --markdown-opacity: 0.1;
     --task-pc         : 2%;
     --task-mobile     : -50px;
@@ -265,7 +273,7 @@ settings:
 /* Markdown Clutter */
 
 .CodeMirror-activeline>.CodeMirror-line span.cm-formatting:not(span.cm-formatting-list, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url, span.cm-formatting.cm-formatting-task.cm-property, span.cm-formatting.cm-formatting-task.cm-meta, span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link) {
-    font-size: var(--size_clutter);
+    font-size: var(--clutter);
     opacity  : 1;
 }
 
@@ -689,7 +697,7 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 
 .mobile .cm-formatting:not(.cm-formatting-list, .cm-formatting-task, span.cm-formatting-code-block) {
     opacity  : var(--markdown-opacity);
-    font-size: var(--size_clutter);
+    font-size: var(--clutter);
 }
 
 .header-mobile span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3,
@@ -703,7 +711,7 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 
 .mobile span.cm-formatting-escape:not(span.cm-formatting-escape.cm-hmd-escape-backslash) {
     opacity  : var(--markdown-opacity) !important;
-    font-size: var(--size_clutter) !important;
+    font-size: var(--clutter) !important;
     display  : inline !important;
 }
 
@@ -733,7 +741,7 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 }
 
 .mobile .cm-formatting.cm-formatting-link.cm-link {
-    font-size: var(--size_clutter) !important;
+    font-size: var(--clutter) !important;
 }
 
 .mobile .markdown-preview-section hr {
@@ -818,7 +826,7 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 
 .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url+*:not(span.cm-url.cm-string) {
     color    : var(--text-faint);
-    font-size: var(--size_clutter) !important;
+    font-size: var(--clutter) !important;
     display  : inline !important;
     opacity  : 1 !important;
 }
@@ -827,6 +835,12 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
     color    : transparent !important;
     display  : inline !important;
     font-size: 1px;
+}
+
+.mobile-transparent span.cm-formatting.cm-formatting-link-string.cm-string.cm-url,
+.mobile-transparent span.cm-string.cm-url {
+    font-size: var(--clutter) !important;
+    opacity: var(--markdown-opacity) !important;
 }
 
 .mobile .cm-s-obsidian span.cm-link {
@@ -845,6 +859,7 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
     position   : relative !important;
     font-weight: normal !important;
 }
+
 
 .mobile .HyperMD-header-1:after {
     border-top: 1px solid var(--border) !important;
