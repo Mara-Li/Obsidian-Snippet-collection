@@ -287,11 +287,11 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm-link),
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header,
-.mobile .cm-string.cm-url,
-.mobile .cm-formatting-link:not(.cm-link),
-.mobile .cm-hmd-barelink,
-.mobile .cm-hmd-internal-link,
-.mobile .cm-attribute {
+div:not(.mobile-transparent)> .mobile .cm-string.cm-url,
+div:not(.mobile-transparent)> .mobile .cm-formatting-link:not(.cm-link),
+div:not(.mobile-transparent)> .mobile .cm-hmd-barelink,
+div:not(.mobile-transparent)> .mobile .cm-hmd-internal-link,
+div:not(.mobile-transparent)> .mobile .cm-attribute {
     display: none !important;
     opacity: 1;
 }
@@ -764,10 +764,10 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
     content    : "" !important;
     position   : absolute !important;
     height     : 1px !important;
-    width      : 100% !important;
+    width      : 90% !important;
     background : var(--text-faint) !important;
-    left       : 0 !important;
-    margin-top : 1% !important;
+    left       : 5% !important;
+    right: 10% !important;
 }
 
 .mobile .cm-formatting-task.cm-meta,
