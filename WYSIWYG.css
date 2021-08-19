@@ -763,11 +763,10 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 .mobile span.cm-hr:after {
     content    : "" !important;
     position   : absolute !important;
-    height     : 3px !important;
-    width      : 30px !important;
-    font-weight: bold !important;
+    height     : 1px !important;
+    width      : 100% !important;
     background : var(--text-faint) !important;
-    left       : 10% !important;
+    left       : 0 !important;
     margin-top : 1% !important;
 }
 
@@ -818,7 +817,7 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
     display: inline !important;
 }
 
-.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url+span.cm-url.cm-string:not(span.cm-formatting, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url) {
+div:not(.mobile-transparent) > .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url+span.cm-url.cm-string:not(span.cm-formatting, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url) {
     color    : transparent !important;
     display  : inline !important;
     font-size: 1px;
@@ -841,6 +840,7 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 .mobile-transparent span.cm-string.cm-url {
     font-size: var(--clutter) !important;
     opacity: var(--markdown-opacity) !important;
+    color: var(--link-col) !important;
 }
 
 .mobile .cm-s-obsidian span.cm-link {
