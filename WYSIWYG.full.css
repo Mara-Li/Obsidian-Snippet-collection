@@ -638,21 +638,6 @@ a.tag:hover,
     padding: 0.3em !important;
 }
 
-/* Templater Update compatibility */
-
-.cm-s-obsidian .cm-templater-command.cm-property,
-.cm-s-obsidian .cm-templater-command.cm-variable,
-span.cm-templater-command.cm-undefined {
-    font-size: 0.85em !important;
-    opacity  : 1 !important;
-}
-
-span.cm-templater-command.cm-string {
-    display  : inline !important;
-    opacity  : 1 !important;
-    font-size: 0.85em !important;
-}
-
 span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end {
 	padding: 2px 8px !important;
 	font-size: calc(var(--editor-font-size) + 0.8em) !important;
@@ -681,6 +666,21 @@ span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
 span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 	font-size: calc(var(--editor-font-size) + 0.05em) !important;
 	padding: 5px !important;
+}
+
+/* Templater Update compatibility */
+
+.cm-s-obsidian .cm-templater-command.cm-property,
+.cm-s-obsidian .cm-templater-command.cm-variable,
+span.cm-templater-command.cm-undefined {
+    font-size: 0.85em !important;
+    opacity  : 1 !important;
+}
+
+span.cm-templater-command.cm-string {
+    display  : inline !important;
+    opacity  : 1 !important;
+    font-size: 0.85em !important;
 }
 
 .cm-s-obsidian span.cm-formatting-highlight,
@@ -884,4 +884,48 @@ div:not(.mobile-transparent) > .mobile span.cm-formatting.cm-formatting-link-str
 
 .mobile .cm-hmd-codeblock {
     font-size: inherit !important;
+}
+
+.mobile span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end {
+	padding-bottom: 1em !important;
+	padding-top: 0 !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+	font-size: calc(var(--editor-font-size) + 0.8em) !important;
+}
+
+.mobile span.cm-header.cm-header-2.cm-hashtag.cm-meta.cm-hashtag-end {
+	font-size: calc(var(--editor-font-size) + 0.5em) !important;
+	padding-bottom: 1.2em !important;
+	padding-top: 0 !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+.mobile span.cm-header.cm-header-3.cm-hashtag.cm-meta.cm-hashtag-end {
+	font-size: calc(var(--editor-font-size) + 0.4em) !important;
+	padding-bottom: 1.2em !important;
+	padding-top: 0 !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+.mobile span.cm-header.cm-header-4.cm-hashtag.cm-meta.cm-hashtag-end {
+	font-size: calc(var(--editor-font-size) + 0.3em) !important;
+	padding-bottom: 1.5em !important;
+	padding-top: 0 !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
+	font-size: calc(var(--editor-font-size) + 0.1em) !important;
+	line-height: 1em !important;
+	padding: 5px;
+}
+
+.mobile span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
+	font-size: calc(var(--editor-font-size) + 0.05em) !important;
+	padding: 5px;
+	line-height: 1em !important;
 }
