@@ -12,46 +12,54 @@ name: Nested Folder
 id: nested
 settings:
     - 
+        id: bg00
+        format: hex
+        opacity: true
+        type: variable-themed-color
+        title: 00. Folder
+        default-light: "#3131312c"
+        default-dark: "#6e6e6e2c"
+    -
         id: bg10
         format: hex
         opacity: true
         type: variable-themed-color
         title: 10. Folder
-        default-light: "#3131312c"
-        default-dark: "#6e6e6e2c"
-    -
+        default-light: "#6867ad2c"
+        default-dark: "#bb77622c"
+    - 
         id: bg20
         format: hex
         opacity: true
         type: variable-themed-color
         title: 20. Folder
-        default-light: "#6867ad2c"
-        default-dark: "#bb77622c"
-    - 
+        default-light: "#85adad2c"
+        default-dark: "#77664e2c"
+    -
         id: bg30
         format: hex
         opacity: true
         type: variable-themed-color
         title: 30. Folder
-        default-light: "#85adad2c"
-        default-dark: "#77664e2c"
-    -
+        default-light: "#50A6862c"
+        default-dark: "#798c642c"
+    - 
         id: bg40
         format: hex
         opacity: true
         type: variable-themed-color
         title: 40. Folder
-        default-light: "#50A6862c"
-        default-dark: "#798c642c"
-    - 
+        default-light: "#4765AB2C"
+        default-dark: "#4765AB2c"
+    -
         id: bg50
         format: hex
         opacity: true
         type: variable-themed-color
         title: 50. Folder
-        default-light: "#4765AB2C"
-        default-dark: "#4765AB2c"
-    -
+        default-light: "#8FA1CC2c"
+        default-dark: "#8FA1CC2c"    
+	-
         id: bg60
         format: hex
         opacity: true
@@ -89,6 +97,14 @@ settings:
         opacity: true
         type: variable-themed-color
         title: 100. Folder
+        default-light: "#ffffff00"
+        default-dark: "#ffffff00"
+    -
+        id: bgZZ
+        format: hex
+        opacity: true
+        type: variable-themed-color
+        title: ZZ. Folder
         default-light: "#B69D912c"
         default-dark: "#617e8c2c"
 */
@@ -120,34 +136,36 @@ settings:
     --nestlinecolor3: rgba(255, 255, 255, 0.267);
     --nestlinecolor3: rgba(255, 255, 255, 0.267);
     ;
-    --bg10: #6e6e6e2c;
-    --bg30: #77664e2c ;
-    --food-bg: var(--bg30);
-    --bg80: #ad8c332c;
-    --bg40: #798c642c;
-    --bg20: #bb77622c;
-    --bg50: #4765AB2c;
-    --archive-bg: #d9d8a82c;
-    --bg60: #8FA1CC2c;
-    --bg100: #617e8c2c;
+    --bg00: #6e6e6e2c;
+    --bg10: #bb77622c;
+    --bg20: #77664e2c ;
+    --bg30: #798c642c;
+    --bg40: #4765AB2c;
+    --bg50: #8FA1CC2c;
+    --bg60: #ffffff00;
     --bg70: #ffffff00;
+    --bg80: #ad8c332c;
     --bg90: #ffffff00;
+    --bg100: #ffffff00;
+    --bgZZ: #617e8c2c;
 }
 .theme-light {
     --root-file-color: var(--text-normal);
     --FoldText: rgba(0, 0, 0, 0.171);
     --nestlinecolor1: rgba(0, 0, 0, 0.144);
     --nestlinecolor3: rgba(0, 0, 0, 0.144);
-    --bg10: #3131312c;
-    --bg30: #85adad2c ;
-    --bg80: #ad8c332c;
-    --bg40: #50A6862c;
-    --bg50: #4765AB2C;
-    --bg20: #6867ad2c;
-    --bg100: #B69D912c;
-    --bg60: #8FA1CC2c;
+    --bg00: #3131312c;
+    --bg10: #bb77622c;
+    --bg20: #85adad2c ;
+    --bg30: #50A6862c;
+    --bg40: #4765AB2C;
+    --bg50: #8FA1CC2c;
+    --bg60: #ffffff00;
     --bg70: #ffffff00;
+    --bg80: #ad8c332c;
     --bg90: #ffffff00;
+    --bg100: #B69D912c;
+    --bgZZ: #B69D912c;
 }
 .nav-file-title,
 .nav-folder-title {
@@ -162,7 +180,7 @@ div:not(.is-mobile) > .workspace-leaf-content > .view-content .nav-folder-title 
 div:not(.is-mobile) > .workspace-leaf-content > .view-content > .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title{
 	color: var(--text-normal) !important;
 }
-div:not(.is-mobile) > .workspace-leaf-content  > > .view-content .nav-file-title-content {
+div:not(.is-mobile) > .workspace-leaf-content > .view-content .nav-file-title-content {
 	color: var(--text-normal) !important;
 }
 
@@ -258,14 +276,25 @@ You can change these to match your use case.
 .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
+    > .nav-folder-title[data-path^="00."],
+.nav-folder.mod-root
+    > .nav-folder-children
+    > .nav-folder
+    > .nav-folder-title[data-path^="00."]
+    + .nav-folder-children {
+    background-color: var(--bg00) !important ;
+}
+
+.nav-folder.mod-root
+    > .nav-folder-children
+    > .nav-folder
     > .nav-folder-title[data-path^="10."],
 .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
     > .nav-folder-title[data-path^="10."]
     + .nav-folder-children {
-    background-color: var(--bg10) !important ;
-    
+    background-color: var(--bg10);
 }
 .nav-folder.mod-root
     > .nav-folder-children
@@ -314,17 +343,6 @@ You can change these to match your use case.
 .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
-    > .nav-folder-title[data-path^="60."],
-.nav-folder.mod-root
-    > .nav-folder-children
-    > .nav-folder
-    > .nav-folder-title[data-path^="60."]
-    + .nav-folder-children {
-    background-color: var(--bg60);
-}
-.nav-folder.mod-root
-    > .nav-folder-children
-    > .nav-folder
     > .nav-folder-title[data-path^="80."],
 .nav-folder.mod-root
     > .nav-folder-children
@@ -366,6 +384,17 @@ You can change these to match your use case.
     > .nav-folder-title[data-path^="100."]
     + .nav-folder-children {
     background-color: var(--bg100);
+}
+.nav-folder.mod-root
+    > .nav-folder-children
+    > .nav-folder
+    > .nav-folder-title[data-path^="ZZ."],
+.nav-folder.mod-root
+    > .nav-folder-children
+    > .nav-folder
+    > .nav-folder-title[data-path^="ZZ."]
+    + .nav-folder-children {
+    background-color: var(--bgZZ);
 }
 
 

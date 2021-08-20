@@ -16,15 +16,81 @@ settings:
         collapsed: true
         title: 10. Folder
     -
-        id: I10
+        id: I00
         title: Icons
         type: variable-text
         default: "'\e913'"
     -
-        id: font10
+        id: font00
         title: Font
         type: variable-select
         default: 'boxicons'
+        options:
+            - 'boxicons'
+            - 'Material icons'
+            - 'Font Awesome 5 Free'
+            - 'remixicon'
+            - 'IcoMoon-Free'
+    -
+        id: Folder01
+        type: heading
+        level: 2
+        collapsed: true
+        title: 01. Folder
+    -
+        id: I01
+        title: Icons
+        type: variable-text
+        default: "'\e004'"
+    -
+        id: font01
+        title: Font
+        type: variable-select
+        default: 'Material icons'
+        options:
+            - 'boxicons'
+            - 'Material icons'
+            - 'Font Awesome 5 Free'
+            - 'remixicon'
+            - 'IcoMoon-Free'
+    -
+        id: Folder02
+        type: heading
+        level: 2
+        collapsed: true
+        title: 02. Folder
+    -
+        id: I02
+        title: Icons
+        type: variable-text
+        default: "'\e96b'"
+    -
+        id: font02
+        title: Font
+        type: variable-select
+        default: 'Material icons'
+        options:
+            - 'boxicons'
+            - 'Material icons'
+            - 'Font Awesome 5 Free'
+            - 'remixicon'
+            - 'IcoMoon-Free'
+    -
+        id: Folder10
+        type: heading
+        level: 1
+        collapsed: true
+        title: 10. Folder
+    -
+        id: I10
+        title: Icons
+        type: variable-text
+        default: "'\f2bd'"
+    -
+        id: font10
+        title: Font
+        type: variable-select
+        default: 'Font Awesome 5 Free'
         options:
             - 'boxicons'
             - 'Material icons'
@@ -41,12 +107,12 @@ settings:
         id: I11
         title: Icons
         type: variable-text
-        default: "'\e004'"
+        default: "'\eeb5'"
     -
         id: font11
         title: Font
         type: variable-select
-        default: 'Material icons'
+        default: 'boxicons'
         options:
             - 'boxicons'
             - 'Material icons'
@@ -63,9 +129,31 @@ settings:
         id: I12
         title: Icons
         type: variable-text
-        default: "'\e96b'"
+        default: "'\e924'"
     -
-        id: font11
+        id: font12
+        title: Font
+        type: variable-select
+        default: 'boxicons'
+        options:
+            - 'boxicons'
+            - 'Material icons'
+            - 'Font Awesome 5 Free'
+            - 'remixicon'
+            - 'IcoMoon-Free'
+    -
+        id: Folder13
+        type: heading
+        level: 2
+        collapsed: true
+        title: 13. Folder
+    -
+        id: I13
+        title: Icons
+        type: variable-text
+        default: "'\ea5e'"
+    -
+        id: font13
         title: Font
         type: variable-select
         default: 'Material icons'
@@ -80,80 +168,14 @@ settings:
         type: heading
         level: 1
         collapsed: true
-        title: 10. Folder
+        title: 20. Folder
     -
         id: I20
         title: Icons
         type: variable-text
-        default: "'\f2bd'"
+        default: "'\f1fc'"
     -
         id: font20
-        title: Font
-        type: variable-select
-        default: 'Font Awesome 5 Free'
-        options:
-            - 'boxicons'
-            - 'Material icons'
-            - 'Font Awesome 5 Free'
-            - 'remixicon'
-            - 'IcoMoon-Free'
-    -
-        id: Folder21
-        type: heading
-        level: 2
-        collapsed: true
-        title: 11. Folder
-    -
-        id: I21
-        title: Icons
-        type: variable-text
-        default: "'\eeb5'"
-    -
-        id: font21
-        title: Font
-        type: variable-select
-        default: 'boxicons'
-        options:
-            - 'boxicons'
-            - 'Material icons'
-            - 'Font Awesome 5 Free'
-            - 'remixicon'
-            - 'IcoMoon-Free'
-    -
-        id: Folder22
-        type: heading
-        level: 2
-        collapsed: true
-        title: 12. Folder
-    -
-        id: I22
-        title: Icons
-        type: variable-text
-        default: "'\e924'"
-    -
-        id: font22
-        title: Font
-        type: variable-select
-        default: 'boxicons'
-        options:
-            - 'boxicons'
-            - 'Material icons'
-            - 'Font Awesome 5 Free'
-            - 'remixicon'
-            - 'IcoMoon-Free'
-    -
-        id: Folder23
-        type: heading
-        level: 2
-        collapsed: true
-        title: 12. Folder
-    -
-        id: I23
-        title: Icons
-        type: variable-text
-        default: "'\ea5e'"
-    -
-        id: font23
         title: Font
         type: variable-select
         default: 'Material icons'
@@ -168,17 +190,17 @@ settings:
         type: heading
         level: 1
         collapsed: true
-        title: 20. Folder
+        title: 30. Folder
     -
         id: I30
         title: Icons
         type: variable-text
-        default: "'\f1fc'"
+        default: "'\eb1f'"
     -
         id: font30
         title: Font
         type: variable-select
-        default: 'Material icons'
+        default: 'boxicons'
         options:
             - 'boxicons'
             - 'Material icons'
@@ -190,17 +212,83 @@ settings:
         type: heading
         level: 1
         collapsed: true
-        title: 30. Folder
+        title: 40. Folder
     -
         id: I40
         title: Icons
         type: variable-text
-        default: "'\eb1f'"
+        default: "'\f02e'"
     -
         id: font40
         title: Font
         type: variable-select
-        default: 'boxicons'
+        default: 'Material icons'
+        options:
+            - 'boxicons'
+            - 'Material icons'
+            - 'Font Awesome 5 Free'
+            - 'remixicon'
+            - 'IcoMoon-Free'
+    -
+        id: Folder41
+        type: heading
+        level: 2
+        collapsed: true
+        title: 41. Folder
+    -
+        id: I41
+        title: Icons
+        type: variable-text
+        default: "'\f10d'"
+    -
+        id: font41
+        title: Font
+        type: variable-select
+        default: 'Material icons'
+        options:
+            - 'boxicons'
+            - 'Material icons'
+            - 'Font Awesome 5 Free'
+            - 'remixicon'
+            - 'IcoMoon-Free'
+    -
+        id: Folder42
+        type: heading
+        level: 2
+        collapsed: true
+        title: 42. Folder
+    -
+        id: I42
+        title: Icons
+        type: variable-text
+        default: "'\eae2'"
+    -
+        id: font42
+        title: Font
+        type: variable-select
+        default: 'Material icons'
+        options:
+            - 'boxicons'
+            - 'Material icons'
+            - 'Font Awesome 5 Free'
+            - 'remixicon'
+            - 'IcoMoon-Free'
+    -
+        id: Folder43
+        type: heading
+        level: 2
+        collapsed: true
+        title: 43. Folder
+    -
+        id: I43
+        title: Icons
+        type: variable-text
+        default: "'\f233'"
+    -
+        id: font43
+        title: Font
+        type: variable-select
+        default: 'Material icons'
         options:
             - 'boxicons'
             - 'Material icons'
@@ -217,12 +305,12 @@ settings:
         id: I50
         title: Icons
         type: variable-text
-        default: "'\f02e'"
+        default: "'\eb1d'"
     -
         id: font50
         title: Font
         type: variable-select
-        default: 'Material icons'
+        default: 'boxicons'
         options:
             - 'boxicons'
             - 'Material icons'
@@ -239,12 +327,12 @@ settings:
         id: I51
         title: Icons
         type: variable-text
-        default: "'\f10d'"
+        default: "'\ed9a'"
     -
         id: font51
         title: Font
         type: variable-select
-        default: 'Material icons'
+        default: 'boxicons'
         options:
             - 'boxicons'
             - 'Material icons'
@@ -261,12 +349,12 @@ settings:
         id: I52
         title: Icons
         type: variable-text
-        default: "'\eae2'"
+        default: "'\e666'"
     -
         id: font52
         title: Font
         type: variable-select
-        default: 'Material icons'
+        default: 'Material Icons'
         options:
             - 'boxicons'
             - 'Material icons'
@@ -283,12 +371,12 @@ settings:
         id: I53
         title: Icons
         type: variable-text
-        default: "'\f233'"
+        default: "'\eb1d'"
     -
         id: font53
         title: Font
         type: variable-select
-        default: 'Material icons'
+        default: 'boxicons'
         options:
             - 'boxicons'
             - 'Material icons'
@@ -305,78 +393,12 @@ settings:
         id: I60
         title: Icons
         type: variable-text
-        default: "'\eb1d'"
+        default: "'\f02e'"
     -
         id: font60
         title: Font
         type: variable-select
-        default: 'boxicons'
-        options:
-            - 'boxicons'
-            - 'Material icons'
-            - 'Font Awesome 5 Free'
-            - 'remixicon'
-            - 'IcoMoon-Free'
-    -
-        id: Folder61
-        type: heading
-        level: 2
-        collapsed: true
-        title: 61. Folder
-    -
-        id: I61
-        title: Icons
-        type: variable-text
-        default: "'\ed9a'"
-    -
-        id: font61
-        title: Font
-        type: variable-select
-        default: 'boxicons'
-        options:
-            - 'boxicons'
-            - 'Material icons'
-            - 'Font Awesome 5 Free'
-            - 'remixicon'
-            - 'IcoMoon-Free'
-    -
-        id: Folder62
-        type: heading
-        level: 2
-        collapsed: true
-        title: 62. Folder
-    -
-        id: I62
-        title: Icons
-        type: variable-text
-        default: "'\e666'"
-    -
-        id: font62
-        title: Font
-        type: variable-select
-        default: 'Material Icons'
-        options:
-            - 'boxicons'
-            - 'Material icons'
-            - 'Font Awesome 5 Free'
-            - 'remixicon'
-            - 'IcoMoon-Free'
-    -
-        id: Folder63
-        type: heading
-        level: 2
-        collapsed: true
-        title: 63. Folder
-    -
-        id: I63
-        title: Icons
-        type: variable-text
-        default: "'\eb1d'"
-    -
-        id: font63
-        title: Font
-        type: variable-select
-        default: 'boxicons'
+        default: 'Material icons'
         options:
             - 'boxicons'
             - 'Material icons'
@@ -459,11 +481,33 @@ settings:
         id: I100
         title: Icons
         type: variable-text
-        default: "'\ea72'"
+        default: "'\e80c'"
     -
         id: font100
         title: Font
         type: variable-select
+        default: 'Material icons'
+        options:
+            - 'boxicons'
+            - 'Material icons'
+            - 'Font Awesome 5 Free'
+            - 'remixicon'
+            - 'IcoMoon-Free'
+    -
+        id: FolderZZ
+        type: heading
+        level: 1
+        collapsed: true
+        title: ZZ. Folder
+    -
+        id: IZZ
+        title: Icons
+        type: variable-text
+        default: "'\ea72'"
+    -
+        id: fontZZ
+        title: Font
+        type: variable-select
         default: 'IcoMoon-Free'
         options:
             - 'boxicons'
@@ -472,18 +516,18 @@ settings:
             - 'remixicon'
             - 'IcoMoon-Free'
     -
-        id: Folder101
+        id: FolderZZA
         type: heading
         level: 2
         collapsed: true
-        title: 101. Folder
+        title: ZZ.A. Folder
     -
-        id: I101
+        id: IZZA
         title: Icons
         type: variable-text
         default: "'\e95d'"
     -
-        id: font101
+        id: fontZZA
         title: Font
         type: variable-select
         default: 'boxicons'
@@ -494,18 +538,18 @@ settings:
             - 'remixicon'
             - 'IcoMoon-Free'
     -
-        id: Files101
+        id: FilesZZA
         type: heading
         level: 3
         collapsed: true
-        title: 101. Files
+        title: ZZA. Files
     -
-        id: I101-files
+        id: IZZA-files
         title: Icons
         type: variable-text
         default: "'\e9bd'"
     -
-        id: font101-Files
+        id: fontZZA-Files
         title: Font
         type: variable-select
         default: 'Material icons'
@@ -516,18 +560,18 @@ settings:
             - 'remixicon'
             - 'IcoMoon-Free'
     -
-        id: Folder102
+        id: FolderZZB
         type: heading
         level: 2
         collapsed: true
-        title: 102. Folder
+        title: ZZB. Folder
     -
-        id: I102
+        id: IZZB
         title: Icons
         type: variable-text
         default: "'\eb9e'"
     -
-        id: font102
+        id: fontZZB
         title: Font
         type: variable-select
         default: 'boxicons'
@@ -538,18 +582,18 @@ settings:
             - 'remixicon'
             - 'IcoMoon-Free'
     -
-        id: files102
+        id: filesZZB
         type: heading
         level: 3
         collapsed: true
-        title: 102. Files
+        title: ZZB. Files
     -
-        id: I102-files
+        id: IZZB-files
         title: Icons
         type: variable-text
         default: "'\ea42'"
     -
-        id: font102-Files
+        id: fontZZB-Files
         title: Font
         type: variable-select
         default: 'IcoMoon-Free'
@@ -560,18 +604,18 @@ settings:
             - 'remixicon'
             - 'IcoMoon-Free'
     -
-        id: folder103
+        id: folderZZC
         type: heading
         level: 2
         collapsed: true
-        title: 103. Folder
+        title: ZZ.C. Folder
     -
-        id: I103
+        id: IZZC
         title: Icons
         type: variable-text
         default: "'\f1bf'"
     -
-        id: font103
+        id: fontZZC
         title: Font
         type: variable-select
         default: 'Material icons'
@@ -582,18 +626,18 @@ settings:
             - 'remixicon'
             - 'IcoMoon-Free'
     -
-        id: files103
+        id: filesZZC
         type: heading
         level: 3
         collapsed: true
-        title: 103. Files
+        title: ZZC. Files
     -
-        id: I103-files
+        id: IZZC-files
         title: Icons
         type: variable-text
         default: "'\eff3'"
     -
-        id: font103-Files
+        id: fontZZC-Files
         title: Font
         type: variable-select
         default: 'Material icons'

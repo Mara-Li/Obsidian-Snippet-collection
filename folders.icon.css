@@ -28,7 +28,7 @@ settings:
         level: 2
         collapsed: false
     -
-        id: F10
+        id: F00
         title: 10. Folder
         type: variable-themed-color
         default-light: "#001219"
@@ -36,38 +36,46 @@ settings:
         format: hex
 		opacity: false
     -
-        id: F20
-        title: 20. Folder
+        id: F10
+        title: 10. Folder
         type: variable-themed-color
 		opacity: false
         default-light: "#4765AB"
         default-dark: "#bb7762"
         format: hex
     -
-        id: F30
-        title: 30. Folder
+        id: F20
+        title: 20. Folder
         type: variable-themed-color
 		opacity: false
         default-light: "#3E9C9D"
         default-dark: "#b7822f"
         format: hex
     -
-        id: F40
-        title: 40. Folder
+        id: F30
+        title: 30. Folder
         type: variable-themed-color
         default-light: "#50A686"
         default-dark: "#798c64"
         format: hex
 		opacity: false
     -
-        id: F50
-        title: 50. Folder
+        id: F40
+        title: 40. Folder
         type: variable-themed-color
         format: hex
         default-light: "#4765AB"
         default-dark: "#4765AB"
 		opacity: false
     -
+        id: F50
+        title: 50. Folder
+        type: variable-themed-color
+        format: hex
+        default-dark: "#8FA1CC"
+        default-light: "#8FA1CC"
+        opacity: false
+    - 
         id: F60
         title: 60. Folder
         type: variable-themed-color
@@ -80,8 +88,8 @@ settings:
         title: 70. Folder
         type: variable-themed-color
         format: hex
-        default-dark: "#8FA1CC"
-        default-light: "#8FA1CC"
+        default-dark: "#ffffff00"
+        default-light: "#ffffff00"
         opacity: false
 	-
         id: F80
@@ -104,96 +112,109 @@ settings:
         title: 100. Folder
         type: variable-themed-color
         format: hex
+        default-light: "#ffffff00"
+        default-dark: "#ffffff00"
+        opacity: false
+	-
+        id: FZZ
+        title: ZZ. Folder
+        type: variable-themed-color
+        format: hex
         default-light: "#B69D91"
         default-dark : "#617e8c"
 		opacity: false
 */
 
 .theme-dark {
-    --F10: #8d8d8d;
-    --F30: #b7822f ;
-    --F80: #ad8c33;
-		--F90: #ad8c33;
-    --F40: #798c64;
-    --F20: #bb7762;
-    --F50: #4765AB;
+    --F00: #8d8d8d;
+    --F10: #bb7762;
+    --F20: #b7822f ;
+    --F30: #798c64;
+    --F40: #4765AB;
+    --F50: #8FA1CC;
     --F60: #8FA1CC;
-    --F70: #8FA1CC;
-    --F100: #617e8c;
+    --F70: #ffffff00 ;
+    --F80: #ad8c33;
+    --F90: #ad8c33;
+    --F100:#ffffff00 ;
+    --FZZ: #617e8c;
 }
 
 .theme-light {
-    --F10: #00121a;
-    --F30: #3E9C9D ;
+    --F00: #00121a;
+    --F10: #bb7762;
+    --F20: #3E9C9D ;
+    --F30: #50A686;
+    --F40: #4765AB;
+    --F50: #8FA1CC;
+    --F60: #8FA1CC;
+    --F70: #ffffff00;
     --F80: #ad8c33;
     --F90: #ad8c33;
-    --F40: #50A686;
-    --F50: #4765AB;
-    --F20: #6867ad;
-    --F100:#B69D91;
-    --F60: #8FA1CC;
-		--F70: #8FA1CC;
+    --F100:#ffffff00;
+    --FZZ:#B69D91;
+    
 
 }
 
 :root {
     --size: 18px;
-    --I10: "\e913";
-    --I11:"\e004";
-    --I12:"\e96b";
-    --I30: "\f1fc";
+    --I00: "\e913";
+    --I01:"\e004";
+    --I02:"\e96b";
+    --I20: "\f1fc";
     --I80: '\e80c';
     --I90: '\e80c';
-    --I40: "\eb1f";
-    --I20: "\f2bd";
-    --I22: "\e924";
-    --I21: "\eeb5";
-    --I50: "\f02e";
-    --I70: "\ea3e";
-    --I52: "\eae2";
-    --I51: "\f10d";
-    --I53: "\f233";
-    --I60: '\eb1d';
-    --I63: '\eb1d';
-    --I62: '\e666';
-    --I61:'\ed9a';
-    --I100: '\ea72';
-    --I101: '\e95d';
-    --I101-files: '\e9bd';
-    --I23: '\ea5e';
-    --I102: '\eb9e';
-    --I102-files: '\ea42';
-    --I103: '\f1bf';
-    --I103-files:"\eff3";
+    --I30: "\eb1f";
+    --I10: "\f2bd";
+    --I12: "\e924";
+    --I11: "\eeb5";
+    --I40: "\f02e";
+    --I60: "\ea3e";
+    --I42: "\eae2";
+    --I41: "\F10d";
+    --I43: "\f233";
+    --I50: '\eb1d';
+    --I53: '\eb1d';
+    --I52: '\e666';
+    --I51:'\ed9a';
+    --IZZ: '\ea72';
+    --IZZA: '\e95d';
+    --IZZA-files: '\e9bd';
+    --I13: '\ea5e';
+    --IZZB: '\eb9e';
+    --IZZB-files: '\ea42';
+    --IZZC: '\f1bf';
+    --IZZC-files:"\eff3";
     --augmente: 14px;
 /* Font parameters */
-    --font10: 'boxicons';
-    --font11: 'Material icons';
+    --font00: 'boxicons';
+    --font01: 'Material icons';
+    --font02: 'boxicons';
+    --font20: 'Material icons';
+    --font10: 'Font Awesome 5 Free';
     --font12: 'boxicons';
-    --font30: 'Material icons';
-    --font20: 'Font Awesome 5 Free';
-    --font22: 'boxicons';
-    --font23: 'Material icons';
-    --font21: 'boxicons';
-    --font40: 'boxicons';
-    --font50: 'Material icons';
-    --font52: 'remixicon';
-    --font51: 'Material icons';
-    --font53: 'Material icons';
-    --font60: 'boxicons';
-    --font63: 'boxicons';
-    --font62: 'Material Icons';
-    --font61: 'boxicons';
-	--font70: 'Material Icons';
+    --font13: 'Material icons';
+    --font11: 'boxicons';
+    --font30: 'boxicons';
+    --font40: 'Material icons';
+    --font42: 'remixicon';
+    --font41: 'Material icons';
+    --font43: 'Material icons';
+    --font50: 'boxicons';
+    --font53: 'boxicons';
+    --font52: 'Material Icons';
+    --font51: 'boxicons';
+	--font60: 'Material Icons';
     --font80: 'Material icons';
     --font90: 'Material icons';
-    --font100: 'IcoMoon-Free';
-    --font101: 'boxicons';
-    --font101-Files: 'Material icons';
-    --font102: 'boxicons';
-    --font102-Files: 'IcoMoon-Free';
-    --font103: 'Material icons';
-    --font103-Files: 'Material icons';
+    --fontZZ: 'IcoMoon-Free';
+    --fontZZA: 'boxicons';
+    --fontZZA-Files: 'Material icons';
+    --fontZZB: 'boxicons';
+    --fontZZB-Files: 'IcoMoon-Free';
+    --fontZZC: 'Material icons';
+    --fontZZC-Files: 'Material icons';
 }
 
 /* ======== FILES =================== */
@@ -265,12 +286,12 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 }
 
 
-/* ====== I10 ======= */
+/* ====== I00 ======= */
 
-.nav-folder-title[data-path^="10."],
-.nav-file-title[data-path*="10."]
+.nav-folder-title[data-path^="00."],
+.nav-file-title[data-path*="00."]
 {
-    color: var(--F10) !important;
+    color: var(--F00) !important;
 }
 
 .nav-folder-title-content::before {
@@ -279,160 +300,186 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     right: 3px;
 }
 
-.nav-folder-title[data-path^="10."] .nav-folder-title-content::before {
-    content: var(--I10);
-    font-family: var(--font10);
+.nav-folder-title[data-path^="00."] .nav-folder-title-content::before {
+    content: var(--I00);
+    font-family: var(--font00);
     font-size: var(--size);
     position: relative !important;
 }
 
-.nav-folder-title[data-path*="11."] .nav-folder-title-content::before
+.nav-folder-title[data-path*="01."] .nav-folder-title-content::before
 {
-    content: var(--I11) !important;
-    font-family: var(--font11);
+    content: var(--I01) !important;
+    font-family: var(--font01);
     font-size: var(--size) ;    
 }
 
-.nav-folder-title[data-path*="12. "] .nav-folder-title-content::before {
-    content: var(--I12) !important;
-    font-family: var(--font12);
+.nav-folder-title[data-path*="02. "] .nav-folder-title-content::before {
+    content: var(--I02) !important;
+    font-family: var(--font02);
 }
 
 
 
 /* ============ Personnel ===================== */
 
-.nav-folder-title[data-path^="20."],
-.nav-file-title[data-path*="20."]
+.nav-folder-title[data-path^="10."],
+.nav-file-title[data-path*="10."]
 {
-    color: var(--F20) !important;
+    color: var(--F10) !important;
 }
 
-.nav-folder-title[data-path^="20."] .nav-folder-title-content::before {
-    content: var(--I20);
-    font-family: var(--font20);
+.nav-folder-title[data-path^="10."] .nav-folder-title-content::before {
+    content: var(--I10);
+    font-family: var(--font10);
     font-size: var(--size);
     vertical-align: 0.05em !important;
 }
 
-.nav-folder-title[data-path*="22."] .nav-folder-title-content::before,
-.nav-file-title[data-path*="22."] .nav-file-title-content:only-child:before,
+.nav-folder-title[data-path*="12."] .nav-folder-title-content::before,
+.nav-file-title[data-path*="12."] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
-    content: var(--I22) !important;
-    font-family: var(--font22) !important;
+    content: var(--I12) !important;
+    font-family: var(--font12) !important;
     font-size: calc(var(--size) + 4px) !important;
     vertical-align: -0.15em !important;
     left: -5px !important;
 }
 
-.nav-file-title[data-path*="22."] .nav-file-title-content {
+.nav-file-title[data-path*="12."] .nav-file-title-content {
     line-height: 20px;
 }
 
-.nav-folder-title[data-path*="23."] .nav-folder-title-content::before {
-    content: var(--I23) !important;
-    font-family: var(--font23) !important;
+.nav-folder-title[data-path*="13."] .nav-folder-title-content::before {
+    content: var(--I13) !important;
+    font-family: var(--font13) !important;
     font-size: var(--size) !important;
     vertical-align: -0.15em !important;
 }
 
-.nav-folder-title[data-path*="21."] .nav-folder-title-content::before,
-.nav-file-title[data-path*="21."] .nav-file-title-content:only-child:before,
+.nav-folder-title[data-path*="11."] .nav-folder-title-content::before,
+.nav-file-title[data-path*="11."] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before  {
-    content: var(--I21) !important;
-    font-family: var(--font21) !important;
+    content: var(--I11) !important;
+    font-family: var(--font11) !important;
     font-size: var(--size) !important;
     vertical-align: -0.1em !important;
 }
 
-.nav-file-title[data-path*="21."] .nav-file-title-content:only-child:before{
+.nav-file-title[data-path*="11."] .nav-file-title-content:only-child:before{
 	position: relative;
 	right: 2px !important;
 }
 
 
-/* =================== I30 ================== */
+/* =================== I20 ================== */
 
-.nav-folder-title[data-path^="30."],
-.nav-file-title[data-path*="30."]
+.nav-folder-title[data-path^="20."],
+.nav-file-title[data-path*="20."]
  {
-    color: var(--F30) !important;
+    color: var(--F20) !important;
 }
 
 
-.nav-folder-title[data-path^="30."] .nav-folder-title-content::before,
-.nav-file-title[data-path*="30."] .nav-file-title-content:only-child:before,
+.nav-folder-title[data-path^="20."] .nav-folder-title-content::before,
+.nav-file-title[data-path*="20."] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
-    content: var(--I30) !important;
-    font-family: var(--font30) !important;
+    content: var(--I20) !important;
+    font-family: var(--font20) !important;
     font-size: var(--size);
     vertical-align: -0.15em !important;
 }
 
+/* ===== FOLDER 30 ======== */
 
-
-/* ===== Média ======== */
-
-.nav-folder-title[data-path^="40. Média"],
-.nav-file-title[data-path*="40. Média"]
+.nav-folder-title[data-path^="30."],
+.nav-file-title[data-path*="30."]
 {
-    color: var(--F40) !important;
+    color: var(--F30) !important;
 }
 
-.nav-folder-title[data-path^="40. Média/"]>.nav-folder-title-content {
-    position: relative;
-}
-
-
-.nav-folder-title[data-path^="40. Média"] .nav-folder-title-content::before {
-    content: var(--I40) !important;
-    font-family: var(--font40);
+.nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
+    content: var(--I30) !important;
+    font-family: var(--font30);
     font-size: var(--size);
 }
 
-.nav-folder-title[data-path^="40. Média"]::before {
+.nav-folder-title[data-path^="30."]::before {
     top: 2px !important;
 }
 
 /* ======== Personnages ===== */
 
-.nav-folder-title[data-path^="50."],
-.nav-file-title[data-path*="50."]
+.nav-folder-title[data-path^="40."],
+.nav-file-title[data-path*="40."]
  {
-    color: var(--F50) !important;
+    color: var(--F40) !important;
 }
 
-.nav-folder-title[data-path^="50."] .nav-folder-title-content::before {
-    content: var(--I50);
-    font-family: var(--font50);
+.nav-folder-title[data-path^="40."] .nav-folder-title-content::before {
+    content: var(--I40);
+    font-family: var(--font40);
     font-size: calc(var(--size) + 2px) !important;
 }
 
 /* Fiches */
-.nav-folder-title[data-path*="52."] .nav-folder-title-content::before {
-    content: var(--I52);
-    font-family: var(--font52);
+.nav-folder-title[data-path*="42."] .nav-folder-title-content::before {
+    content: var(--I42);
+    font-family: var(--font42);
     font-size: var(--size) !important;
 }
 
-.nav-folder-title[data-path*="51."] .nav-folder-title-content::before {
-    content: var(--I51);
-    font-family: var(--font51);
+.nav-folder-title[data-path*="41."] .nav-folder-title-content::before {
+    content: var(--I41);
+    font-family: var(--font41);
     font-size: var(--size);
     vertical-align: -5px;
 }
 
-.nav-folder-title[data-path*="53."] .nav-folder-title-content::before {
-    content: var(--I53);
-    font-family: var(--font53);
+.nav-folder-title[data-path*="43."] .nav-folder-title-content::before {
+    content: var(--I43);
+    font-family: var(--font43);
     font-size: var(--size);
     vertical-align: -0.2em !important;
 }
 
 /* ============ Univers ==================== */
+.nav-folder-title[data-path^="50"],
+.nav-file-title[data-path*="50."]
+ {
+    color: var(--F50) !important;
+}
+
+div.nav-folder-title[data-path^="50."] div.nav-folder-title-content::before {
+    content: var(--I50);
+    font-family: var(--font50);
+    font-size: var(--size);
+    vertical-align: 0 !important;
+}
+
+div.nav-folder-title[data-path*="52."] div.nav-folder-title-content::before {
+    content: var(--I52);
+    font-family: var(--font52);
+    font-size: var(--size) !important;
+    vertical-align: -0.15em !important;
+}
+
+div.nav-folder-title[data-path*="51."] div.nav-folder-title-content::before {
+    content: var(--I51);
+    font-family: var(--font51);
+    font-size: var(--size);
+}
+
+div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
+    content: var(--I53);
+    font-family: var(--font53);
+    font-size: var(--size);
+    vertical-align: -1px !important;
+}
+/* ============ Folder 70 ==================== */
 .nav-folder-title[data-path^="60"],
 .nav-file-title[data-path*="60."]
  {
@@ -442,28 +489,8 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 div.nav-folder-title[data-path^="60."] div.nav-folder-title-content::before {
     content: var(--I60);
     font-family: var(--font60);
-    font-size: var(--size);
-    vertical-align: 0 !important;
-}
-
-div.nav-folder-title[data-path*="62."] div.nav-folder-title-content::before {
-    content: var(--I62);
-    font-family: var(--font62);
-    font-size: var(--size) !important;
-    vertical-align: -0.15em !important;
-}
-
-div.nav-folder-title[data-path*="61."] div.nav-folder-title-content::before {
-    content: var(--I61);
-    font-family: var(--font61);
-    font-size: var(--size);
-}
-
-div.nav-folder-title[data-path*="63."] div.nav-folder-title-content::before {
-    content: var(--I63);
-    font-family: var(--font63);
-    font-size: var(--size);
-    vertical-align: -1px !important;
+    font-size: calc(var(--size) + 3px);
+    vertical-align: middle;
 }
 /* ============ Folder 70 ==================== */
 .nav-folder-title[data-path^="70"],
@@ -480,7 +507,7 @@ div.nav-folder-title[data-path^="70."] div.nav-folder-title-content::before {
 }
 
 
-/* ===============  MASTER 1 ===================== */
+/* =============== FOLDER 80 ===================== */
 
 .nav-folder-title[data-path^="80."],
 .nav-file-title[data-path*="80."] {
@@ -505,57 +532,69 @@ div.nav-folder-title[data-path^="90."] div.nav-folder-title-content::before {
     font-family: var(--font90);
     font-size: var(--size);
 }
+/* ===============  FOLDER 100 ===================== */
+
+.nav-folder-title[data-path^="100."],
+.nav-file-title[data-path*="100."] {
+	color: var(--F100) !important;
+}
+
+div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
+    content: var(--I100);
+    font-family: var(--font100);
+    font-size: var(--size);
+}
 
 
 /* ======= RESSOURCES =================== */
-.nav-folder-title[data-path^="100."],
-.nav-file-title[data-path*="100."]{
-    color: var(--F100) !important;
+.nav-folder-title[data-path^="ZZ."],
+.nav-file-title[data-path*="ZZ."]{
+    color: var(--FZZ) !important;
 }
 
-.nav-folder-title[data-path^="100."] .nav-folder-title-content::before {
-    content: var(--I100);
-    font-family: var(--font100);
+.nav-folder-title[data-path^="ZZ."] .nav-folder-title-content::before {
+    content: var(--IZZ);
+    font-family: var(--fontZZ);
     font-size: calc(var(--size));
     vertical-align:  0 !important;
 }
 
-.nav-folder-title[data-path*="101"] .nav-folder-title-content::before {
-    content: var(--I101) !important;
-    font-family: var(--font101) !important;
+.nav-folder-title[data-path*="ZZ1."] .nav-folder-title-content::before {
+    content: var(--IZZA) !important;
+    font-family: var(--fontZZA) !important;
     font-size: calc(var(--size) + 2px) !important;
 }
 
-    .nav-file-title[data-path*="101. "]>.nav-file-title-content::before {
-        content: var(--I101-files);
-        font-family: var(--font101-Files) !important;
+    .nav-file-title[data-path*="ZZ2. "]>.nav-file-title-content::before {
+        content: var(--IZZA-files);
+        font-family: var(--fontZZA-Files) !important;
         font-size: var(--size) !important;
         vertical-align: -0.15em !important;
     }
 
-.nav-folder-title[data-path*="102."] .nav-folder-title-content::before {
-    content: var(--I102) !important;
-    font-family: var(--font102) !important;
+.nav-folder-title[data-path*="ZZ2."] .nav-folder-title-content::before {
+    content: var(--IZZB) !important;
+    font-family: var(--fontZZB) !important;
     font-size: var(--size) !important;
     vertical-align: -0.1em !important;
 }
 
-    .nav-file-title[data-path*="102. "]>.nav-file-title-content::before {
-		content: var(--I102-files) !important;
+    .nav-file-title[data-path*="ZZ2. "]>.nav-file-title-content::before {
+		content: var(--IZZB-files) !important;
 		vertical-align: -0.1em;
-		font-family: var(--font102-Files) !important;
+		font-family: var(--fontZZB-Files) !important;
 		font-size: var(--size) !important;
     }
 
-.nav-folder-title[data-path*="103. "] .nav-folder-title-content::before {
-    content: var(--I103) !important;
-    font-family: var(--font103) !important;
+.nav-folder-title[data-path*="ZZ3. "] .nav-folder-title-content::before {
+    content: var(--IZZC) !important;
+    font-family: var(--fontZZC) !important;
     font-size: var(--size);
     vertical-align: -0.15em !important;
 }
-    .nav-file-title[data-path*="103. "]>.nav-file-title-content::before {
-        content: var(--I103-files) !important;
-        font-family: var(--font103-Files) !important;
+    .nav-file-title[data-path*="ZZ3. "]>.nav-file-title-content::before {
+        content: var(--IZZC-files) !important;
+        font-family: var(--fontZZC-Files) !important;
         font-size: calc(var(--size) + 2px);
         vertical-align: -0.15em !important;
     }
