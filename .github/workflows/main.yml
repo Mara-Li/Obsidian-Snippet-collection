@@ -25,8 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: marvinpinto/action-automatic-releases@v1.2.1
         with: 
-          repo_token: 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
-          automatic_release_tag: true
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "Latest"
           
 
       # Runs a single command using the runners shell
