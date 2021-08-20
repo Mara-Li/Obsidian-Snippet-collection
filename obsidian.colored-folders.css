@@ -166,12 +166,12 @@ settings:
 	color: var(--text-normal) !important;
 }
 
-.workspace-leaf-content .nav-file-title-content:hover,
+.workspace-leaf-content .view-content .nav-file-title-content:hover,
 .workspace-leaf-content > .view-content > .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title:hover {
 	color: var(--text-accent) !important;
 }
 
-.workspace-leaf-content .nav-folder-children .nav-file-title-content:first-child::before {
+.workspace-leaf-content .view-content .nav-folder-children .nav-file-title-content:first-child::before {
     top: -1px !important;
 }
 
