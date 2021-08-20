@@ -425,9 +425,13 @@ span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta.cm-
 span.cm-formatting.cm-formatting-highlight.cm-highlight,
 .cm-hmd-barelink,
 .cm-formatting.cm-formatting-link.cm-link,
-span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
+span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta{
 	opacity: var(--opawys) !important;
 	font-size: var(--clutter) !important;
+}
+
+span.cm-formatting.cm-formatting-code.cm-inline-code {
+	opacity: var(--opawys) !important;
 }
 
 .CodeMirror-activeline
@@ -453,7 +457,8 @@ span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
 	span.cm-formatting.cm-formatting-link.cm-link,
 .CodeMirror-activeline
 	> .CodeMirror-line
-	span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
+	span.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta,
+.CodeMirror-activeline > .CodeMirror-line span.cm-formatting.cm-formatting-code.cm-inline-code	{
 	opacity: var(--opawys-active) !important;
 }
 
@@ -499,6 +504,7 @@ span.cm-formatting-link {
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr {
 	color: transparent !important;
 }
+
 
 span.cm-string.cm-hmd-codeblock,
 span.cm-hmd-escape-backslash,
@@ -694,10 +700,17 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag {
 }
 .cm-s-obsidian span.cm-hashtag-end {
 	line-height: 30px !important;
-	padding: var(--tag-up) var(--tag-left) var(--tag-bottom);
+	padding: var(--tag-up) var(--tag-left) var(--tag-bottom) !important;
 }
 
-/* push */
+span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end.cm-tag-Review.lt-underline.lt-major {
+    padding-top: calc(var(--tag-up) + 3px) !important;
+    padding-bottom: var(--tag-bottom) !important;
+    padding-left: calc(var(--tag-left) + 2px) !important;
+    padding-right: calc(var(--tag-left) + 2px) !important;
+}
+
+/* Header tags */
 
 span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end {
 	padding: 2px 8px !important;
