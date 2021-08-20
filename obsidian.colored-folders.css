@@ -154,6 +154,27 @@ settings:
     color: unset;
 }
 
+/* SR Plugins adjust */
+.workspace-leaf-content .nav-folder-title {
+	color: var(--text-accent) !important;
+}
+
+.workspace-leaf-content > .view-content > .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title{
+	color: var(--text-normal) !important;
+}
+.workspace-leaf-content .nav-file-title-content {
+	color: var(--text-normal) !important;
+}
+
+.workspace-leaf-content .nav-file-title-content:hover,
+.workspace-leaf-content > .view-content > .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-children > .nav-folder > .nav-folder-title:hover {
+	color: var(--text-accent) !important;
+}
+
+.workspace-leaf-content .nav-folder-children .nav-file-title-content:first-child::before {
+    top: -1px !important;
+}
+
 /* Minimal Theme overrides */
 .nav-file {
     margin-left: 0;
