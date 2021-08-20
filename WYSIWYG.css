@@ -613,6 +613,13 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
     padding         : var(--tag-up) var(--tag-left) var(--tag-bottom) !important;
 }
 
+span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end.cm-tag-Review.lt-underline.lt-major {
+    padding-top: calc(var(--tag-up) + 3px) !important;
+    padding-bottom: var(--tag-bottom) !important;
+    padding-left: calc(var(--tag-left) + 2px) !important;
+    padding-right: calc(var(--tag-left) + 2px) !important;
+}
+
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:hover,
 .cm-s-obsidian span.cm-hashtag-end:hover,
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:hover,
