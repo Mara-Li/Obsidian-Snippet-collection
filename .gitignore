@@ -1,12 +1,14 @@
 # Ignore everything
 *
+folders.icon.adjust.css
+folders.hide.css
 
 #But not these
 !.gitignore
-!WYSIWYG.css
 !README.md
-!semi_WYSIWYG.css
-!obsidian.colored-folders.css
-!icon-font.css
-!folder_icon.css
-!folder_icons.font-settings.css
+!folders.colored.css
+!folders.icon.css
+!folders.icon.font.css
+!folders.icon.font.css
+!folders.icon.font-settings.css
+!wysiwyg.*

@@ -704,7 +704,7 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 
 .mobile .cm-formatting:not(.cm-formatting-list, .cm-formatting-task, span.cm-formatting-code-block) {
     opacity  : var(--markdown-opacity);
-    font-size: var(--clutter);
+    font-size: var(--clutter) !important;
 }
 
 .header-mobile span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3,
