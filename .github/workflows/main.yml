@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Release
 
 # Controls when the workflow will run
 on:
@@ -26,6 +26,7 @@ jobs:
       - uses: marvinpinto/action-automatic-releases@v1.2.1
         with: 
           repo_token: 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
+          automatic_release_tag: true
           
 
       # Runs a single command using the runners shell
