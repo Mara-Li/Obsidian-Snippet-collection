@@ -229,6 +229,11 @@ div:not(.is-mobile) > .workspace-leaf-content .view-content .nav-folder-children
   width: 100% !important;
 }
 
+/* Uncomment this for adjusting line with icon 
+
+.nav-folder:not(.mod-root) > .nav-folder-children .nav-file-title {
+    padding-left: 5px !important;
+}
 
 /* Top Level Folder Titles */
 .nav-folder.mod-root > .nav-folder-children > .nav-folder > .nav-folder-title {
