@@ -334,6 +334,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     font-family: var(--font10);
     font-size: var(--size);
     vertical-align: 0.05em !important;
+		padding-right: 5px !important;
 }
 
 .nav-folder-title[data-path*="12."] .nav-folder-title-content::before,
@@ -342,9 +343,8 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 .nav-file-icon:before {
     content: var(--I12) !important;
     font-family: var(--font12) !important;
-    font-size: calc(var(--size) + 4px) !important;
-    vertical-align: -0.15em !important;
-    left: -5px !important;
+    font-size: var(--size) !important;
+		vertical-align: -0.1em !important;
 }
 
 .nav-file-title[data-path*="12."] .nav-file-title-content {
@@ -391,6 +391,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     font-family: var(--font20) !important;
     font-size: var(--size);
     vertical-align: -0.15em !important;
+		padding-right: 5px !important;
 }
 
 /* ===== FOLDER 30 ======== */
@@ -405,6 +406,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     content: var(--I30) !important;
     font-family: var(--font30);
     font-size: var(--size);
+		padding-right: 5px !important;
 }
 
 .nav-folder-title[data-path^="30."]::before {
@@ -422,7 +424,8 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 .nav-folder-title[data-path^="40."] .nav-folder-title-content::before {
     content: var(--I40);
     font-family: var(--font40);
-    font-size: calc(var(--size) + 2px) !important;
+    font-size: calc(var(--size) + 3%) !important;
+		
 }
 
 /* Fiches */
@@ -430,6 +433,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     content: var(--I42);
     font-family: var(--font42);
     font-size: var(--size) !important;
+		padding-right: 5px !important;
 }
 
 .nav-folder-title[data-path*="41."] .nav-folder-title-content::before {
@@ -437,6 +441,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     font-family: var(--font41);
     font-size: var(--size);
     vertical-align: -5px;
+		padding-right: 5px !important;
 }
 
 .nav-folder-title[data-path*="43."] .nav-folder-title-content::before {
@@ -444,6 +449,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     font-family: var(--font43);
     font-size: var(--size);
     vertical-align: -0.2em !important;
+		padding-right: 5px !important;
 }
 
 /* ============ Univers ==================== */
@@ -465,6 +471,7 @@ div.nav-folder-title[data-path*="52."] div.nav-folder-title-content::before {
     font-family: var(--font52);
     font-size: var(--size) !important;
     vertical-align: -0.15em !important;
+		padding-right: 3px !important;
 }
 
 div.nav-folder-title[data-path*="51."] div.nav-folder-title-content::before {
@@ -519,6 +526,7 @@ div.nav-folder-title[data-path^="80."] div.nav-folder-title-content::before {
     font-family: var(--font80);
     font-size: var(--size);
 	vertical-align: -0.15em !important;
+			padding-right: 5px !important;
 }
 /* ===============  FOLDER 90 ===================== */
 
@@ -557,26 +565,28 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
     font-family: var(--fontZZ);
     font-size: calc(var(--size));
     vertical-align:  0 !important;
+				padding-right: 5px !important;
 }
 
 .nav-folder-title[data-path*="ZZ1."] .nav-folder-title-content::before {
     content: var(--IZZA) !important;
     font-family: var(--fontZZA) !important;
     font-size: calc(var(--size) + 2px) !important;
+		vertical-align: -0.1em	!important;
 }
 
-    .nav-file-title[data-path*="ZZ2. "]>.nav-file-title-content::before {
+    .nav-file-title[data-path*="ZZ1. "]>.nav-file-title-content::before {
         content: var(--IZZA-files);
         font-family: var(--fontZZA-Files) !important;
         font-size: var(--size) !important;
-        vertical-align: -0.15em !important;
+        vertical-align: middle !important;
     }
 
 .nav-folder-title[data-path*="ZZ2."] .nav-folder-title-content::before {
     content: var(--IZZB) !important;
     font-family: var(--fontZZB) !important;
-    font-size: var(--size) !important;
-    vertical-align: -0.1em !important;
+    font-size: var(--size);
+		vertical-align: -0.1em !important;
 }
 
     .nav-file-title[data-path*="ZZ2. "]>.nav-file-title-content::before {
