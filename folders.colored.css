@@ -340,6 +340,19 @@ You can change these to match your use case.
     + .nav-folder-children {
     background-color: var(--bg50);
 }
+
+.nav-folder.mod-root
+    > .nav-folder-children
+    > .nav-folder
+    > .nav-folder-title[data-path^="60."],
+.nav-folder.mod-root
+    > .nav-folder-children
+    > .nav-folder
+    > .nav-folder-title[data-path^="60."]
+    + .nav-folder-children {
+    background-color: var(--bg60);
+  }
+
 .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
