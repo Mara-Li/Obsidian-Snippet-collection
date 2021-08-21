@@ -5,6 +5,9 @@
     .nav-file-title-content:before {
         vertical-align: -2px !important;
     }
+    div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
+	vertical-align: 3px !important;
+}
 
     .nav-folder-title[data-path^="10."] .nav-folder-title-content::before {
         vertical-align: -1px !important;
@@ -76,6 +79,16 @@
         vertical-align: -0.2em !important;
 
     }
+            .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before,
+        .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
+            position    : relative;
+            padding-left: 5px !important;
+            line-height : 15px !important;
+          }
+                      
+       .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before {
+         top: 5px !important;
+       }
 }
 
 
@@ -90,24 +103,31 @@
     }
     div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
         font-size: calc(var(--size) - 4px) !important;
-        vertical-align: top !important;
         left: -2px;
     }
-        div.nav-folder-title[data-path*="Hayleen May"] div.nav-folder-title-content::before,
+        .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before,
         .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
         	content: "\ea37" !important;
             font-family: boxicons !important;
             font-size: var(--size) !important;
-            position    : relative;
-            padding-left: 8px !important;
-            line-height : 15px !important;
     }
 
 
     @media screen and (min-width: 1080px) {
+              .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before,
+        .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
+            position    : relative;
+            padding-left: 8px !important;
+            line-height : 15px !important;
+          }
+    
         .nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
             vertical-align: -1px !important;
         }
+        
+            div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
+        vertical-align: top !important;
+      }
 
         .nav-folder-title[data-path^="60."] .nav-folder-title-content::before {
             padding-right: 2px !important;
