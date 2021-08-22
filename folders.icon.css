@@ -176,6 +176,7 @@ settings:
 	--I11: "\eeb5";
 	--I40: "\f02e";
 	--I60: "\ea3e";
+    --I61: "\f7ba";
 	--I42: "\eae2";
 	--I41: "\F10d";
 	--I43: "\f233";
@@ -211,6 +212,7 @@ settings:
 	--font52: "Material Icons";
 	--font51: "boxicons";
 	--font60: "Material Icons";
+	--font61: "Font Awesome 5 Free Solid";
 	--font80: "Material icons";
 	--font90: "Material icons";
 	--fontZZ: "IcoMoon-Free";
@@ -490,11 +492,20 @@ div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
 div.nav-folder-title[data-path^="60."] div.nav-folder-title-content::before {
 	content: var(--I60) !important;
 	font-family: var(--font60) !important;
-	font-size: calc(var(--size) + 3px);
+	font-size: var(--size);
 	vertical-align: middle;
 	padding-right: 5px;
 	left: -3px;
 }
+div.nav-folder-title[data-path*="61."] div.nav-folder-title-content::before {
+	content: var(--I61) !important;
+	font-family: var(--font61) !important;
+	font-size: var(--size);
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+
 /* ============ Folder 70 ==================== */
 .nav-folder-title[data-path^="70"],
 .nav-file-title[data-path*="70."] {
