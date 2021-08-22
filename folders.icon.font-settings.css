@@ -29,6 +29,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -51,6 +52,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -73,6 +75,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -95,6 +98,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -117,6 +121,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -139,6 +144,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -161,6 +167,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -183,6 +190,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -205,6 +213,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -227,6 +236,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -248,6 +258,7 @@ settings:
         options:
             - 'boxicons'
             - 'Material icons'
+            - 'Font Awesome 5 Free Solid'
             - 'Font Awesome 5 Free'
             - 'remixicon'
             - 'IcoMoon-Free'
@@ -271,6 +282,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -293,6 +305,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -315,6 +328,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -337,6 +351,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -359,6 +374,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -381,6 +397,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -403,6 +420,30 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
+            - 'remixicon'
+            - 'IcoMoon-Free'
+    -
+        id: Folder61
+        type: heading
+        level: 2
+        collapsed: true
+        title: 61. Folder
+    -
+        id: I61
+        title: Icons
+        type: variable-text
+        default: "'\f013'"
+    -
+        id: font61
+        title: Font
+        type: variable-select
+        default: "Font Awesome 5 Free Solid"
+        options:
+            - 'boxicons'
+            - 'Material icons'
+            - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -425,6 +466,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -447,6 +489,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -469,6 +512,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -491,6 +535,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -513,6 +558,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -535,6 +581,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -557,6 +604,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -579,6 +627,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -601,6 +650,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -623,6 +673,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
     -
@@ -645,6 +696,7 @@ settings:
             - 'boxicons'
             - 'Material icons'
             - 'Font Awesome 5 Free'
+            - 'Font Awesome 5 Free Solid'
             - 'remixicon'
             - 'IcoMoon-Free'
 */
