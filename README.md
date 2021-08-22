@@ -107,21 +107,22 @@ You can change the color with style settings.
 
 ---
 # Folder Icons
-⚠️ **You need to download TOO the icon-font.css to use this snippet**
+⚠️ **You need to download TOO the [icon-font.css](https://raw.githubusercontent.com/Mara-Li/Obsidian-Snippet-collection/main/folders.icon.font.css) to use this snippet**
 
 For font settings, you need to download 
-- You can change the icon and their font in Style Settings : Note, you need to download [this snippet](https://github.com/Mara-Li/Obsidian-Snippet-collection/blob/main/folder_icons.font-settings.css) (there are too much option to have it on one snippet)
+- You can change the icon and their font in Style Settings : Note, you need to download [this snippet](https://github.com/Mara-Li/Obsidian-Snippet-collection/blob/main/folders.icon.font-settings.css) (there are too much option to have it on one snippet)
 - You can change the color in style settings
-- Adjusted for 10 → 100 folder and some nested folder 
+- Adjusted for 00 → 100 → ZZ (ten to ten) folder and some nested folder 
 
 ![image](https://user-images.githubusercontent.com/30244939/129755594-d5bb6171-6f77-483d-8957-0d2dd460511a.png)
 
 Some folder are adjusted for **my** icons and **my** folder, so you maybe need :
 - Delete some part of the codes because of my settings
 - Change `top` and `vertical-align` value. I don't add it to Style Settings because it because I need to create **for each folder and icons** a variable and it will kill Style Settings and my obsidian. Don't worry, it takes like ~2s to edit that with search.
+- There is a snippet example to how to edit the snippet for mobile/PC : [Adjusting Snippet](https://github.com/Mara-Li/Obsidian-Snippet-collection/blob/main/folders.icon.adjust.css)
 - Add your folder. You can just copy paste and add your icons, font and name. 
 
 There is some adaptation too for mobile where you can add your settings. 
 
-⚠️ For IOS : If you don't have Textastic (can open `.obsidian` folder) you need to use shortcuts and toolbox pro to open hided folder. 
+⚠️ For IOS : If you don't have Textastic (can open `.obsidian` folder) you need to use shortcuts and toolbox pro to open hidden folder. 
 
