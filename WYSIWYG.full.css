@@ -579,6 +579,15 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-string.cm-url:not(.cm-forma
     display: inline !important;
 }
 
+/* Footnote */
+span.cm-link.cm-list-1.cm-hmd-barelink.cm-footref.lt-underline.lt-major {
+    font-size: 50% !important;
+    position: relative;
+    top: -8px;
+    color: var(--link-col) !important;
+    font-style: oblique;
+}
+
 /* List - Outliner support */
 
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list {

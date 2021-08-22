@@ -703,6 +703,15 @@ span.cm-string.cm-url:not(.cm-formatting):after {
 	display: inline !important;
 }
 
+/* Footnote */
+span.cm-link.cm-list-1.cm-hmd-barelink.cm-footref.lt-underline.lt-major {
+    font-size: 50% !important;
+    position: relative;
+    top: -8px;
+    color: var(--link-col) !important;
+    font-style: oblique;
+}
+
 /* ============================== TAGS =========================== */
 
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:before {
