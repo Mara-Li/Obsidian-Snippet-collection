@@ -132,6 +132,11 @@
         .nav-folder-title[data-path^="60."] .nav-folder-title-content::before {
             padding-right: 2px !important;
         }
+        div.nav-folder-title[data-path*="61."] div.nav-folder-title-content::before {
+            left: -3px !important;
+            position: relative !important;
+            vertical-align: -1px !important;
+        }
         .nav-folder-title[data-path*="41."] .nav-folder-title-content::before {
             padding-left: 0px !important;
         }
