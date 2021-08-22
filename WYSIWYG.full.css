@@ -290,7 +290,7 @@ settings:
 :root {
     --color-blockquote: #54b6c0;
     --text-link       : #4d77bb;
-    --clutter    : 0.1em;
+    --clutter         : 0.1em;
     --markdown-opacity: 0.1;
     --task-pc         : 2%;
     --task-mobile     : -50px;
@@ -299,10 +299,10 @@ settings:
     --tag-left        : 4px;
     --tag-bottom      : 4px;
     --top-task        : 0px;
-    --check-icon : "\f14a";
-    --uncheck-icon: "\f0c8";
-    --check-font: "Font Awesome 5 Free Solid";
-    --uncheck-font: "Font Awesome 5 Free Solid";
+    --check-icon      : "\f14a";
+    --uncheck-icon    : "\f0c8";
+    --check-font      : "Font Awesome 5 Free Solid";
+    --uncheck-font    : "Font Awesome 5 Free Solid";
 }
 
 .cm-s-obsidian .CodeMirror-line *,
@@ -317,7 +317,7 @@ settings:
     opacity  : 1;
 }
 
-.CodeMirror-activeline> span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link{
+.CodeMirror-activeline>span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link {
     font-size: inherit !important;
 }
 
@@ -325,11 +325,11 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting:not(span.cm-
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-image.cm-image-alt-text.cm-link,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header,
-div:not(.mobile-transparent)> .mobile .cm-string.cm-url,
-div:not(.mobile-transparent)> .mobile .cm-formatting-link:not(.cm-link),
-div:not(.mobile-transparent)> .mobile .cm-hmd-barelink,
-div:not(.mobile-transparent)> .mobile .cm-hmd-internal-link,
-div:not(.mobile-transparent)> .mobile .cm-attribute {
+div:not(.mobile-transparent)>.mobile .cm-string.cm-url,
+div:not(.mobile-transparent)>.mobile .cm-formatting-link:not(.cm-link),
+div:not(.mobile-transparent)>.mobile .cm-hmd-barelink,
+div:not(.mobile-transparent)>.mobile .cm-hmd-internal-link,
+div:not(.mobile-transparent)>.mobile .cm-attribute {
     display: none !important;
     opacity: 1;
 }
@@ -464,29 +464,29 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta
 
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after {
-    content   : var(--uncheck-icon) !important;
+    content    : var(--uncheck-icon) !important;
     font-family: var(--uncheck-font) !important;
-    position  : absolute;
-    top       : var(--top-task) !important;
-    left      : 3px;
-    color     : var(--color-task) !important;
-    font-size : 120%;
-    display   : inline !important;
-    visibility: visible !important;
-    opacity   : 1;
+    position   : absolute;
+    top        : var(--top-task) !important;
+    left       : 3px;
+    color      : var(--color-task) !important;
+    font-size  : 120%;
+    display    : inline !important;
+    visibility : visible !important;
+    opacity    : 1;
     margin-left: var(--task-pc) !important;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after,
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
-    content   : var(--check-icon) !important;
+    content    : var(--check-icon) !important;
     font-family: var(--check-font) !important;
-    position  : absolute;
-    top       : var(--top-task) !important;
-    left      : 3px;
-    color     : var(--color-task) !important;
-    font-size : 120%;
-    visibility: visible !important;
+    position   : absolute;
+    top        : var(--top-task) !important;
+    left       : 3px;
+    color      : var(--color-task) !important;
+    font-size  : 120%;
+    visibility : visible !important;
     margin-left: var(--task-pc) !important;
 
 }
@@ -557,7 +557,8 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formattin
     left           : 5px;
 }
 
-.url-icon .CodeMirror-line .cm-image.cm-image-alt-text.cm-link + * + .cm-string.cm-url:after, .arrow .wys-enhanced .CodeMirror-line .cm-image.cm-image-alt-text.cm-link + * + .cm-string.cm-url:after {
+.url-icon .CodeMirror-line .cm-image.cm-image-alt-text.cm-link+*+.cm-string.cm-url:after,
+.arrow .wys-enhanced .CodeMirror-line .cm-image.cm-image-alt-text.cm-link+*+.cm-string.cm-url:after {
     content: "" !important;
 }
 
@@ -639,27 +640,55 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
     opacity: 0.5;
 }
 
-/* push */
-
-.tag:not(.kanban-plugin .tag),
 .cm-s-obsidian span.cm-hashtag-end {
     background-color: var(--tag-background-color) !important;
-    border          : 1px solid var(--tag-border-color);
+    border          : 1px solid var(--tag-border-color) !important;
     color           : var(--tag) !important;
-    font-size       : 1em;
+    font-size       : 1rem;
     text-decoration : none;
     border-radius   : 10px;
-    line-height     : 30px !important;
     height          : 30px !important;
     padding         : var(--tag-up) var(--tag-left) var(--tag-bottom) !important;
+    z-index         : 100 !important;
+    font-family     : inherit;
+}
+
+.tag:not(.kanban-plugin .tag) {
+    background-color: var(--tag-background-color) !important;
+    border          : 1px solid var(--tag-border-color) !important;
+    color           : var(--tag) !important;
+    font-size       : 1rem;
+    text-decoration : none;
+    border-radius   : 10px;
+    height          : 30px !important;
+    z-index         : 100 !important;
+    font-family     : inherit;
+}
+
+.cm-s-obsidian span.cm-hashtag-end {
+    line-height: 30px !important;
+    padding    : var(--tag-up) var(--tag-left) var(--tag-bottom) !important;
+}
+
+.cm-s-obsidian span.cm-hashtag,
+.frontmatter-container .tag,
+.tag,
+span.cm-header.cm-header-1.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag,
+span.cm-header.cm-header-2.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin,
+span.cm-header.cm-header-3.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag,
+span.cm-header.cm-header-4.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag,
+span.cm-header.cm-header-5.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag,
+span.cm-header.cm-header-6.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag {
+    color: var(--text-accent);
 }
 
 span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end.cm-tag-Review.lt-underline.lt-major {
-    padding-top: calc(var(--tag-up) + 3px) !important;
+    padding-top   : calc(var(--tag-up) + 3px) !important;
     padding-bottom: var(--tag-bottom) !important;
-    padding-left: calc(var(--tag-left) + 2px) !important;
-    padding-right: calc(var(--tag-left) + 2px) !important;
+    padding-left  : calc(var(--tag-left) + 2px) !important;
+    padding-right : calc(var(--tag-left) + 2px) !important;
 }
+
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hashtag-end:hover,
 .cm-s-obsidian span.cm-hashtag-end:hover,
@@ -679,35 +708,51 @@ a.tag:hover,
     padding: 0.3em !important;
 }
 
+/* Header tags */
 span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end {
-	padding: 2px 8px !important;
-	font-size: calc(var(--editor-font-size) + 0.8em) !important;
+    padding  : 0 5px !important;
+    font-size: var(--h1) !important;
+    position : relative;
+    top      : -1px !important;
 }
 
 span.cm-header.cm-header-2.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.5em) !important;
-	padding: 3px 5px !important;
+    font-size: var(--h2) !important;
+    padding  : 0 5px !important;
+    position : relative;
+    top      : -1px !important;
 }
 
 span.cm-header.cm-header-3.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.4em) !important;
-	padding: 3px 5px !important;
+    font-size: var(--h3) !important;
+    padding  : 3px 4px !important;
+    position : relative;
+    top      : -1px !important;
 }
 
 span.cm-header.cm-header-4.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.3em) !important;
-	padding: 0px 5px !important;
+    font-size: var(--h4) !important;
+    padding  : 0px 5px !important;
+    position : relative;
+    top      : -1px !important;
 }
 
 span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.1em) !important;
-	padding: 3px !important;
+    font-size: var(--h5) !important;
+    padding  : 3px !important;
+    position : relative;
+    top      : -1px !important;
 }
 
 span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.05em) !important;
-	padding: 5px !important;
+    font-size: var(--h6) !important;
+    padding-top  : 3px !important;
+    padding-right: 8px !important;
+    position : relative;
+    top      : -1px !important;
+    margin-left: 3px !important;
 }
+
 
 /* Templater Update compatibility */
 
@@ -809,13 +854,13 @@ span.cm-templater-command.cm-string {
 
 .mobile .cm-hr:after,
 .mobile span.cm-hr:after {
-    content    : "" !important;
-    position   : absolute !important;
-    height     : 1px !important;
-    width      : 90% !important;
-    background : var(--text-faint) !important;
-    left       : 5% !important;
-    right: 10% !important;
+    content   : "" !important;
+    position  : absolute !important;
+    height    : 1px !important;
+    width     : 90% !important;
+    background: var(--text-faint) !important;
+    left      : 5% !important;
+    right     : 10% !important;
 }
 
 .mobile .cm-formatting-task.cm-meta,
@@ -827,8 +872,8 @@ span.cm-templater-command.cm-string {
 
 .mobile .cm-formatting-task.cm-property:after,
 .mobile .cm-formatting-task.cm-meta:after {
-    content   : var(--uncheck-icon) !important;
-    font-family: var(--uncheck-font) !important;
+    content     : var(--uncheck-icon) !important;
+    font-family : var(--uncheck-font) !important;
     color       : var(--color-task) !important;
     position    : relative !important;
     top         : var(--top-task) !important;
@@ -848,8 +893,8 @@ span.cm-templater-command.cm-string {
 
 .mobile span.cm-formatting-task.cm-property:after,
 .mobile .wys-enhanced span.cm-formatting-task.cm-property:after {
-    content   : var(--check-icon) !important;
-    font-family: var(--check-font) !important;
+    content     : var(--check-icon) !important;
+    font-family : var(--check-font) !important;
     color       : var(--color-task) !important;
     position    : relative !important;
     top         : var(--top-task) !important;
@@ -867,7 +912,7 @@ span.cm-templater-command.cm-string {
     display: inline !important;
 }
 
-div:not(.mobile-transparent) > .mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url+span.cm-url.cm-string:not(span.cm-formatting, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url) {
+div:not(.mobile-transparent)>.mobile span.cm-formatting.cm-formatting-link-string.cm-string.cm-url+span.cm-url.cm-string:not(span.cm-formatting, span.cm-formatting.cm-formatting-link-string.cm-string.cm-url) {
     color    : transparent !important;
     display  : inline !important;
     font-size: 1px;
@@ -889,8 +934,8 @@ div:not(.mobile-transparent) > .mobile span.cm-formatting.cm-formatting-link-str
 .mobile-transparent span.cm-formatting.cm-formatting-link-string.cm-string.cm-url,
 .mobile-transparent span.cm-string.cm-url {
     font-size: var(--clutter) !important;
-    opacity: var(--markdown-opacity) !important;
-    color: var(--link-col) !important;
+    opacity  : var(--markdown-opacity) !important;
+    color    : var(--link-col) !important;
 }
 
 .mobile .cm-s-obsidian span.cm-link {
@@ -930,45 +975,45 @@ div:not(.mobile-transparent) > .mobile span.cm-formatting.cm-formatting-link-str
 }
 
 .mobile span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end {
-	padding-bottom: 1em !important;
-	padding-top: 0 !important;
-	padding-left: 5px !important;
-	padding-right: 5px !important;
-	font-size: calc(var(--editor-font-size) + 0.8em) !important;
+    padding-bottom: 1em !important;
+    padding-top   : 0 !important;
+    padding-left  : 5px !important;
+    padding-right : 5px !important;
+    font-size     : calc(var(--editor-font-size) + 0.8em) !important;
 }
 
 .mobile span.cm-header.cm-header-2.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.5em) !important;
-	padding-bottom: 1.2em !important;
-	padding-top: 0 !important;
-	padding-left: 5px !important;
-	padding-right: 5px !important;
+    font-size     : calc(var(--editor-font-size) + 0.5em) !important;
+    padding-bottom: 1.2em !important;
+    padding-top   : 0 !important;
+    padding-left  : 5px !important;
+    padding-right : 5px !important;
 }
 
 .mobile span.cm-header.cm-header-3.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.4em) !important;
-	padding-bottom: 1.2em !important;
-	padding-top: 0 !important;
-	padding-left: 5px !important;
-	padding-right: 5px !important;
+    font-size     : calc(var(--editor-font-size) + 0.4em) !important;
+    padding-bottom: 1.2em !important;
+    padding-top   : 0 !important;
+    padding-left  : 5px !important;
+    padding-right : 5px !important;
 }
 
 .mobile span.cm-header.cm-header-4.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.3em) !important;
-	padding-bottom: 1.5em !important;
-	padding-top: 0 !important;
-	padding-left: 5px !important;
-	padding-right: 5px !important;
+    font-size     : calc(var(--editor-font-size) + 0.3em) !important;
+    padding-bottom: 1.5em !important;
+    padding-top   : 0 !important;
+    padding-left  : 5px !important;
+    padding-right : 5px !important;
 }
 
 span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.1em) !important;
-	line-height: 1em !important;
-	padding: 5px;
+    font-size  : calc(var(--editor-font-size) + 0.1em) !important;
+    line-height: 1em !important;
+    padding    : 5px;
 }
 
 .mobile span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.05em) !important;
-	padding: 5px;
-	line-height: 1em !important;
+    font-size  : calc(var(--editor-font-size) + 0.05em) !important;
+    padding    : 5px;
+    line-height: 1em !important;
 }
