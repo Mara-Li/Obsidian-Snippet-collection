@@ -360,8 +360,9 @@ span.cm-formatting.cm-formatting-code.cm-inline-code {
 }
 
 /* Comment */
-div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-s-obsidian span.cm-comment {
-    opacity: 0.1;
+div:not(.CodeMirror-activeline)> .CodeMirror-line span.cm-comment,
+div:not(.CodeMirror-activeline)> .CodeMirror-line span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end.cm-tag-Review.lt-underline.lt-major {
+    opacity: 0.1 !important;
 }
 
 /* HTML */
