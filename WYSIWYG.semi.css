@@ -243,6 +243,42 @@ settings:
         type: variable-number
         format: px 
         default: -8
+    -
+        id: uncheck-icon-title
+        level: 3
+        collapsed: true
+        title: Uncheck parameters
+        type: heading
+    -
+        id: uncheck-icon
+        title: Task icon
+        description: You can change the aspect of the uncheck task here
+        type: variable-text
+        default: "\f0c8"
+    -
+        id: uncheck-font
+        title: Font Uncheck Task
+        description: Font for uncheck task. For icon, use the snippet on the repo.
+        default: "Font Awesome 5 Free Solid"
+        type: variable-text
+    -
+        id: check-icon-title
+        level: 3
+        collapsed: true
+        title: Check parameters
+        type: heading
+    -
+        id: check-icon
+        title: Task icon
+        description: You can change the aspect of the check task here
+        type: variable-text
+        default: "\f14a"
+    -
+        id: check-font
+        title: Font check Task
+        description: Font for uncheck task. For icon, use the snippet on the repo.
+        default: "Font Awesome 5 Free Solid"
+        type: variable-text
 */
 
 @font-face {
@@ -295,6 +331,10 @@ settings:
 	--tag-left: 4px;
 	--tag-bottom: 4px;
 	--top-task: -8px;
+    --check-icon : "\f14a";
+    --uncheck-icon: "\f0c8";
+    --check-font: "Font Awesome 5 Free Solid";
+    --uncheck-font: "Font Awesome 5 Free Solid";
 }
 
 /* ======================== HEADER ======================== */
@@ -803,7 +843,8 @@ div:not(.CodeMirror-activeline)
 div:not(.CodeMirror-activeline)
 	> .CodeMirror-line
 	span.cm-formatting-task.cm-meta:after {
-	content: "☐" !important;
+	content   : var(--uncheck-icon) !important;
+    font-family: var(--uncheck-font) !important;
 	position: absolute;
 	top: var(--top-task);
 	left: 0px;
@@ -821,7 +862,8 @@ div:not(.CodeMirror-activeline)
 	div:not(.CodeMirror-activeline)
 	> .CodeMirror-line
 	span.cm-formatting-task.cm-property:after {
-	content: "☒" !important;
+	content   : var(--check-icon) !important;
+    font-family: var(--check-font) !important;
 	position: absolute;
 	top: var(--top-task);
 	left: 0px;

@@ -132,10 +132,46 @@ settings:
     -
         id: top-task
         title: Top
-        description: Adjust the top position to fit your need (PC only)
+        description: Adjust the top position to fit your need
         default: 0
         type: variable-number
         format: px
+    -
+        id: uncheck-icon-title
+        level: 3
+        collapsed: true
+        title: Uncheck parameters
+        type: heading
+    -
+        id: uncheck-icon
+        title: Task icon
+        description: You can change the aspect of the uncheck task here
+        type: variable-text
+        default: "\f0c8"
+    -
+        id: uncheck-font
+        title: Font Uncheck Task
+        description: Font for uncheck task. For icon, use the snippet on the repo.
+        default: "Font Awesome 5 Free Solid"
+        type: variable-text
+    -
+        id: check-icon-title
+        level: 3
+        collapsed: true
+        title: Check parameters
+        type: heading
+    -
+        id: check-icon
+        title: Task icon
+        description: You can change the aspect of the check task here
+        type: variable-text
+        default: "\f14a"
+    -
+        id: check-font
+        title: Font check Task
+        description: Font for uncheck task. For icon, use the snippet on the repo.
+        default: "Font Awesome 5 Free Solid"
+        type: variable-text
     -
         id : header-Blockquote
         title: Blockquote
@@ -263,6 +299,10 @@ settings:
     --tag-left        : 4px;
     --tag-bottom      : 4px;
     --top-task        : 0px;
+    --check-icon : "\f14a";
+    --uncheck-icon: "\f0c8";
+    --check-font: "Font Awesome 5 Free Solid";
+    --uncheck-font: "Font Awesome 5 Free Solid";
 }
 
 .cm-s-obsidian .CodeMirror-line *,
@@ -284,8 +324,6 @@ settings:
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting:not(span.cm-formatting-list, span.cm-formatting-task),
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-image.cm-image-alt-text.cm-link,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link,
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-link:not(.cm-link),
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header,
 div:not(.mobile-transparent)> .mobile .cm-string.cm-url,
 div:not(.mobile-transparent)> .mobile .cm-formatting-link:not(.cm-link),
@@ -426,12 +464,13 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta
 
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta:after {
-    content   : "☐" !important;
+    content   : var(--uncheck-icon) !important;
+    font-family: var(--uncheck-font) !important;
     position  : absolute;
     top       : var(--top-task) !important;
-    left      : 0px;
+    left      : 3px;
     color     : var(--color-task) !important;
-    font-size : 150%;
+    font-size : 120%;
     display   : inline !important;
     visibility: visible !important;
     opacity   : 1;
@@ -440,12 +479,13 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after,
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-property:after {
-    content   : "☒" !important;
+    content   : var(--check-icon) !important;
+    font-family: var(--check-font) !important;
     position  : absolute;
     top       : var(--top-task) !important;
-    left      : 0;
+    left      : 3px;
     color     : var(--color-task) !important;
-    font-size : 150%;
+    font-size : 120%;
     visibility: visible !important;
     margin-left: var(--task-pc) !important;
 
@@ -473,7 +513,8 @@ span.cm-formatting-task.cm-property~span {
     color          : var(--link-hover) !important;
 }
 
-.cm-s-obsidian span.cm-link {
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-formatting-link {
     color: var(--link-col) !important;
 }
 
@@ -527,7 +568,7 @@ div:not(.codeMirror-activeline)>.CodeMirror-line .cm-image.cm-image-alt-text.cm-
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-string.cm-url:not(.cm-formatting),
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url:not(.cm-formatting) {
-    font-size     : 0;
+    font-size     : 0 !important;
     letter-spacing: 0.03em !important;
     display       : inline !important;
 }
@@ -786,10 +827,11 @@ span.cm-templater-command.cm-string {
 
 .mobile .cm-formatting-task.cm-property:after,
 .mobile .cm-formatting-task.cm-meta:after {
-    content     : "☐" !important;
+    content   : var(--uncheck-icon) !important;
+    font-family: var(--uncheck-font) !important;
     color       : var(--color-task) !important;
     position    : relative !important;
-    top         : 0 !important;
+    top         : var(--top-task) !important;
     left        : -50px !important;
     font-size   : 30px !important;
     display     : inline !important;
@@ -806,10 +848,11 @@ span.cm-templater-command.cm-string {
 
 .mobile span.cm-formatting-task.cm-property:after,
 .mobile .wys-enhanced span.cm-formatting-task.cm-property:after {
-    content     : "☑" !important;
+    content   : var(--check-icon) !important;
+    font-family: var(--check-font) !important;
     color       : var(--color-task) !important;
     position    : relative !important;
-    top         : 0 !important;
+    top         : var(--top-task) !important;
     left        : -50px !important;
     font-size   : 30px !important;
     display     : inline !important;
