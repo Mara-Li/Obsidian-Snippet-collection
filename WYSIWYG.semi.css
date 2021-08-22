@@ -724,8 +724,8 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag {
 	padding: var(--tag-up) var(--tag-left) var(--tag-bottom) !important;
 	z-index: 100 !important;
 	font-family: inherit;
-	font-weight: 600 !important;
 }
+
 .tag:not(.kanban-plugin .tag) {
 	background-color: var(--tag-background-color) !important;
 	border: 1px solid var(--tag-border-color) !important;
@@ -736,7 +736,6 @@ div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag {
 	height: 30px !important;
 	z-index: 100 !important;
 	font-family: inherit;
-	font-weight: 600 !important;
 }
 .cm-s-obsidian span.cm-hashtag-end {
 	line-height: 30px !important;
@@ -750,36 +749,58 @@ span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end.cm-tag-Review.lt-underline.lt-
     padding-right: calc(var(--tag-left) + 2px) !important;
 }
 
-/* Header tags */
-
 span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end {
-	padding: 2px 8px !important;
-	font-size: calc(var(--editor-font-size) + 0.8em) !important;
+	padding: 0 5px !important;
+	font-size: var(--h1) !important;
+    position: relative;
+    top: -1px !important;
 }
 
 span.cm-header.cm-header-2.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.5em) !important;
-	padding: 3px 5px !important;
+	font-size: var(--h2) !important;
+	padding: 0 5px !important;
+    position: relative;
+    top: -1px !important;
 }
 
 span.cm-header.cm-header-3.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.4em) !important;
-	padding: 3px 5px !important;
+	font-size: var(--h3) !important;
+	padding: 3px 4px !important;
+    position: relative;
+    top: -1px !important;
 }
 
 span.cm-header.cm-header-4.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.3em) !important;
+	font-size: var(--h4) !important;
 	padding: 0px 5px !important;
+    position: relative;
+    top: -1px !important;
 }
 
 span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.1em) !important;
+	font-size: var(--h5) !important;
 	padding: 3px !important;
+    position: relative;
+    top: -1px !important;
 }
 
 span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
-	font-size: calc(var(--editor-font-size) + 0.05em) !important;
-	padding: 3px !important;
+	font-size: var(--h6) !important;
+	padding: 3px 4px 3px !important;
+    position: relative;
+    top: -1px !important;
+}
+
+.cm-s-obsidian span.cm-hashtag,
+.frontmatter-container .tag,
+.tag,
+span.cm-header.cm-header-1.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag,
+span.cm-header.cm-header-2.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin,
+span.cm-header.cm-header-3.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag,
+span.cm-header.cm-header-4.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag,
+span.cm-header.cm-header-5.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag,
+span.cm-header.cm-header-6.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag {
+    color: var(--text-accent);
 }
 
 span.cm-header.cm-header-1.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta:not(span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end),
