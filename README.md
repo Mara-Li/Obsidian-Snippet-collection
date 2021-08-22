@@ -84,14 +84,6 @@ Note : With this setup, you **will not be able** to edit the file, because each 
 ![image](https://user-images.githubusercontent.com/30244939/129887585-21c178bd-f9d8-4bf1-a8be-c5336b483435.png)
 ![image](https://user-images.githubusercontent.com/30244939/129887665-02d8b446-243d-4b41-a5e3-64fdf113c713.png)
 
-### Mobile
-⚠️ Outdated
-
-![IMG_0329](https://user-images.githubusercontent.com/30244939/122211028-9256ff00-cea6-11eb-8d6f-dccb13dc3766.PNG)
-![IMG_0330](https://user-images.githubusercontent.com/30244939/122211037-95ea8600-cea6-11eb-87ad-f652599d56b7.PNG)
-![IMG_0332](https://user-images.githubusercontent.com/30244939/122211049-997e0d00-cea6-11eb-8202-4cf5f7db0053.PNG)
-![IMG_0333](https://user-images.githubusercontent.com/30244939/122211063-9d119400-cea6-11eb-9893-0c60c63d0456.PNG)
-![IMG_0336](https://user-images.githubusercontent.com/30244939/122211085-a13db180-cea6-11eb-80c0-ca29643faaf8.PNG)
 
 
 #### Source
