@@ -160,5 +160,8 @@ div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
     .nav-folder-title[data-path*="ZZ2. "] .nav-folder-title-content::before {
         vertical-align: -0.1em !important;
     }
+    .nav-file-title[data-path*="ZZ1. "] .nav-file-title-content::before {
+        font-size: calc(var(--size) - 3px) !important;
+    }
 
 }
