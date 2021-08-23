@@ -204,11 +204,11 @@ div:not(.is-mobile) > .workspace-leaf-content .view-content .nav-folder-children
 }
 
 .nav-folder-children {
-    padding-left: 18px;
+    padding-left: 15px;
 }
 
 .nav-folder:not(.mod-root) > .nav-folder-children .nav-file-title {
-    padding-left: 12px;
+    padding-left: -12px;
 }
 
 .nav-file-title {
@@ -229,10 +229,10 @@ div:not(.is-mobile) > .workspace-leaf-content .view-content .nav-folder-children
   width: 100% !important;
 }
 
-/* Uncomment this for adjusting line with icon 
+/* Uncomment this for adjusting line with icon */
 
 .nav-folder:not(.mod-root) > .nav-folder-children .nav-file-title {
-    padding-left: 5px !important;
+margin-left: -3px !important;
 }
 
 /* Top Level Folder Titles */
@@ -424,6 +424,9 @@ You can change these to match your use case.
 }
 
 /* Relationship lines for 2nd, 3rd, and 4th level folders */
+
+
+
 .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
@@ -497,7 +500,7 @@ You can change these to match your use case.
     > .nav-folder {
     border-left: var(--nestlinestyle3) var(--nestlinesize3)
         var(--nestlinecolor3);
-}
+			}
 
 /* == File Explorer - animation for active file as per Obuntu === */
 

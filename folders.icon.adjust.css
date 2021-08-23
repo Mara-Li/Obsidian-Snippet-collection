@@ -1,175 +1,164 @@
 /* This file is a example to how you can improve the snippet without edit it, and using another snippet to adjust as you like. */
 
-@media screen and (max-width: 1080px) {
-    .nav-folder-title-content:before,
-    .nav-file-title-content:before {
+@media only screen and (max-device-width: 1024px) {
+    .nav-folder-title-content:before, .nav-file-title-content:before {
         vertical-align: -2px !important;
     }
     div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
-	vertical-align: 3px !important;
-}
-
+        vertical-align: 3px !important;
+    }
     .nav-folder-title[data-path^="10."] .nav-folder-title-content::before {
         vertical-align: -1px !important;
-        position      : relative;
-        top           : 2px !important;
+        position: relative;
+        top: 2px !important;
     }
-
     .nav-folder-title[data-path^="00."] .nav-folder-title-content::before {
         padding-right: 6% !important;
     }
-
     .nav-folder-title[data-path*="13."] .nav-folder-title-content::before {
         top: 4px !important;
     }
-
     .nav-folder-title[data-path^="50."] .nav-folder-title-content::before {
         position: relative;
-        top     : 2px !important;
+        top: 2px !important;
     }
-
     .nav-folder-title[data-path^="ZZ."] .nav-folder-title-content::before {
         position: relative;
-        top     : 1px !important;
+        top: 1px !important;
     }
-
-    .nav-folder-title[data-path^="20."] .nav-folder-title-content::before,
-    .nav-file-title[data-path^="20."] .nav-file-title-content::before {
+    .nav-folder-title[data-path^="20."] .nav-folder-title-content::before, .nav-file-title[data-path^="20."] .nav-file-title-content::before {
         position: relative;
-        top     : 2px !important;
+        top: 2px !important;
     }
-
     .nav-file-title[data-path^="20."] .nav-file-title-content::before {
         padding-right: 2px;
-        margin-left  : 2px;
+        margin-left: 10px;
     }
-
     .nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
         position: relative !important;
-        top     : 0px !important;
+        top: 0px !important;
     }
-
     .nav-folder-title[data-path^="40."] .nav-folder-title-content::before {
-        position     : relative;
-        top          : 1px !important;
-        left         : -3px !important;
+        position: relative;
+        top: 1px !important;
+        left: -3px !important;
         padding-right: 2% !important;
     }
-
     .nav-folder-title[data-path^="50."] .nav-folder-title-content::before {
         padding-right: 4% !important;
-    }
-
-    .nav-folder-title[data-path^="60."] .nav-folder-title-content::before {
-        padding-right: 2% !important;
     }
 
     .nav-file-title[data-path*="ZZ2. "]>.nav-file-title-content::before {
         vertical-align: middle !important;
     }
-
     .nav-file-title[data-path*="ZZ3. "]>.nav-file-title-content::before {
         vertical-align: middle !important;
     }
-
     .nav-folder-title[data-path*="ZZ2."] .nav-folder-title-content::before {
         font-size: calc(var(--size) + 3px) !important;
     }
     .nav-folder-title[data-path*="80."] .nav-folder-title-content::before {
         vertical-align: -0.2em !important;
+    }
+    .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
+        position: relative;
+        line-height: 15px !important;
+        margin-left: -8px !important;
+    }
+    .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before {
+        top: 5px !important;
+    }
+    .nav-folder-title[data-path^="60."] .nav-folder-title-content::before {
+        vertical-align: sub !important;
+    }
+    div.nav-folder-title[data-path^="60."] div.nav-folder-title-content::before {
+        font-size: calc(var(--size) + 3px) !important;
+        padding-right: 2% !important;
 
     }
-            .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before,
-        .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
-            position    : relative;
-            padding-left: 5px !important;
-            line-height : 15px !important;
-          }
-                      
-       .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before {
-         top: 5px !important;
-       }
+    div.nav-folder-title[data-path*="61."] div.nav-folder-title-content::before {
+        left: -2px !important;
+        position: relative !important;
+        vertical-align: -1px !important;
+        font-size: calc(var(--size) - 2px) !important;
+    }
 }
 
+.nav-file-title[data-path*="20."] .nav-file-title-content {
+    line-height: 20px !important;
+}
 
+div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
+    font-size: calc(var(--size) - 4px) !important;
+    left: -2px;
+}
 
-    .nav-file-title[data-path*="20."] .nav-file-title-content {
-        line-height: 20px !important;
+.nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
+    content: "\ea37" !important;
+    font-family: boxicons !important;
+    font-size: var(--size) !important;
+}
+
+@media only screen and (min-device-width: 1024px) {
+    .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
+        position: relative;
+        padding-left: 8px !important;
+        line-height: 15px !important;
     }
-
-    div.nav-folder-title[data-path^="60."] div.nav-folder-title-content::before {
-        vertical-align: -0.2em !important;
-        left          : -5px !important;
+    .nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
+        vertical-align: -1px !important;
+    }
+    div.nav-folder-title[data-path^="30. Média/JV"] div.nav-folder-title-content::before,
+    div.nav-folder-title[data-path^="30. Média/Livre"] div.nav-folder-title-content::before,
+    div.nav-folder-title[data-path^="30. Média/Série"] div.nav-folder-title-content::before {
+        margin-left: -8px !important;
     }
     div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
-        font-size: calc(var(--size) - 4px) !important;
-        left: -2px;
-    }
-        .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before,
-        .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
-        	content: "\ea37" !important;
-            font-family: boxicons !important;
-            font-size: var(--size) !important;
-    }
-
-
-    @media screen and (min-width: 1080px) {
-              .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before,
-        .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
-            position    : relative;
-            padding-left: 8px !important;
-            line-height : 15px !important;
-          }
-    
-        .nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
-            vertical-align: -1px !important;
-        }
-        
-            div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
         vertical-align: top !important;
-      }
-
-        .nav-folder-title[data-path^="60."] .nav-folder-title-content::before {
-            padding-right: 2px !important;
-        }
-        div.nav-folder-title[data-path*="61."] div.nav-folder-title-content::before {
-            left: -3px !important;
-            position: relative !important;
-            vertical-align: -1px !important;
-        }
-        .nav-folder-title[data-path*="41."] .nav-folder-title-content::before {
-            padding-left: 0px !important;
-        }
-
-        .nav-folder-title[data-path^="30. Média/"]>.nav-folder-title-content {
-            position    : relative;
-            padding-left: 1em !important;
-            line-height : 15px !important;
-        }
-
-        .nav-file-title[data-path^="20"]>.nav-file-title-content {
-            position    : relative;
-            padding-left: 10px !important;
-            line-height : 20px !important;
-        }
-        .nav-file-title[data-path^="20"]>.nav-file-title-content::before {
-            margin-right: 0 !important;
-        }
-        .nav-file-title[data-path*="12."] .nav-file-title-content {
-            line-height: 10px;
-        }
-
-        .nav-file-title[data-path*="11."] .nav-file-title-content:only-child:before {
-            left: -2px !important;
-        }
-        .nav-file-title[data-path*="11."] .nav-file-title-content::before {
-            padding-left: 5px !important;
-        }
-        .nav-folder-title[data-path*="ZZ3. "] .nav-folder-title-content::before {
-            vertical-align: sub !important;
-        }
-                .nav-folder-title[data-path*="ZZ2. "] .nav-folder-title-content::before {
-            vertical-align: -0.1em !important;
-        }
-
     }
+    div.nav-folder-title[data-path^="60."] div.nav-folder-title-content::before {
+        vertical-align: -0.2em !important;
+        left: -5px !important;
+        padding-right: 2px !important;
+        font-size: calc(var(--size) + 2px) !important;
+    }
+
+    div.nav-folder-title[data-path*="61."] div.nav-folder-title-content::before {
+        left: -3px !important;
+        position: relative !important;
+        vertical-align: -1px !important;
+        font-size: var(--size) !important;
+    }
+    .nav-folder-title[data-path*="41."] .nav-folder-title-content::before {
+        padding-left: 0px !important;
+    }
+    .nav-folder-title[data-path^="30. Média/"]>.nav-folder-title-content {
+        position: relative;
+        padding-left: 1em !important;
+        line-height: 15px !important;
+    }
+    .nav-file-title[data-path^="20"]>.nav-file-title-content {
+        position: relative;
+        padding-left: 10px !important;
+        line-height: 20px !important;
+    }
+    .nav-file-title[data-path^="20"]>.nav-file-title-content::before {
+        margin-right: 0 !important;
+    }
+    .nav-file-title[data-path*="12."] .nav-file-title-content {
+        line-height: 10px;
+    }
+    .nav-file-title[data-path*="11."] .nav-file-title-content:only-child:before {
+        left: -2px !important;
+    }
+    .nav-file-title[data-path*="11."] .nav-file-title-content::before {
+        padding-left: 5px !important;
+    }
+    .nav-folder-title[data-path*="ZZ3. "] .nav-folder-title-content::before {
+        vertical-align: sub !important;
+    }
+    .nav-folder-title[data-path*="ZZ2. "] .nav-folder-title-content::before {
+        vertical-align: -0.1em !important;
+    }
+
+}

@@ -176,7 +176,7 @@ settings:
 	--I11: "\eeb5";
 	--I40: "\f02e";
 	--I60: "\ea3e";
-    --I61: "\f7ba";
+	--I61: "\f7ba";
 	--I42: "\eae2";
 	--I41: "\F10d";
 	--I43: "\f233";
@@ -293,6 +293,8 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 	font-size: var(--size) !important;
     padding-left: 3px !important;
 }
+
+
 
 /* ====== I00 ======= */
 
@@ -502,7 +504,6 @@ div.nav-folder-title[data-path*="61."] div.nav-folder-title-content::before {
 	font-family: var(--font61) !important;
 	font-size: var(--size);
 	vertical-align: middle;
-	padding-right: 5px;
 }
 
 
@@ -634,6 +635,8 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
 .nav-file-title[data-path$="pdf"] .nav-file-title-content:before {
 	content: "\f1c1" !important;
 	font-family: "Font Awesome 5 Free" !important;
+margin-left: 2px !important;
+padding-left: 5px !important;
 	font-size: var(--size);
 	vertical-align: 0;
 
