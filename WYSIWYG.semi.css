@@ -703,14 +703,21 @@ span.cm-string.cm-url:not(.cm-formatting):after {
 	display: inline !important;
 }
 
-/* Footnote */
-span.cm-link.cm-list-1.cm-hmd-barelink.cm-footref.lt-underline.lt-major {
+div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-link.cm-hmd-barelink.cm-footref {
     font-size: 50% !important;
     position: relative;
     top: -8px;
     color: var(--link-col) !important;
     font-style: oblique;
 }
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-s-obsidian pre.HyperMD-footnote span.cm-link.cm-hmd-footnote,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-link.cm-link.cm-hmd-footnote.lt-underline.lt-minor,
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-link.cm-link.cm-hmd-footnote {
+    display: inline-block !important;
+    opacity: 1 !important;
+}
+
 
 /* ============================== TAGS =========================== */
 
