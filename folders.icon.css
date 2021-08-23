@@ -280,14 +280,27 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 	font-size: 18px !important;
 }
 
-.files .nav-file-title-content:before {
-	content: "\ea37" !important;
-	font-family: boxicons !important;
-	font-size: calc(var(--size) + 3%) !important;
+.files .nav-file-title:not(.nav-file-title.is-unsupported) .nav-file-title-content:before {
+	content: "\ea37" ;
+	font-family: boxicons;
+	font-size: calc(var(--size) + 3%);
 	margin-right: 5px;
 	margin-left: 0px;
 	vertical-align: -2px;
 }
+
+.nav-file-title.is-unsupported .nav-file-title-content::before,
+.nav-file > .nav-file-title > .nav-file-tag +.nav-file-title-content::before {
+    content: "\ea38";
+    font-family: boxicons;
+    font-size: var(--size);
+	position: relative;
+	margin-right: 5px;
+	margin-left: 0px;
+	vertical-align: -2px;
+	padding-left: 3px !important;
+}
+
 
 .nav-folder-children .nav-file-title-content:first-child::before {
 	font-size: var(--size) !important;

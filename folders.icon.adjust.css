@@ -1,6 +1,9 @@
 /* This file is a example to how you can improve the snippet without edit it, and using another snippet to adjust as you like. */
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 1024px) { /* Ipad / Tablette / Iphone... */
+	.nav-folder:not(.mod-root) > .nav-folder-children .nav-file-title {
+		margin-left: -3px !important;
+	}
     .nav-folder-title-content:before, .nav-file-title-content:before {
         vertical-align: -2px !important;
     }
@@ -99,11 +102,11 @@ div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
     font-size: var(--size) !important;
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-device-width: 1024px) { /* PC FORME */
     .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
         position: relative;
-        padding-left: 8px !important;
         line-height: 15px !important;
+        left: -1px !important
     }
     .nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
         vertical-align: -1px !important;
@@ -162,6 +165,7 @@ div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
     }
     .nav-file-title[data-path*="ZZ1. "] .nav-file-title-content::before {
         font-size: calc(var(--size) - 3px) !important;
+        left: 3px !important;
     }
 
 }

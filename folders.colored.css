@@ -229,7 +229,7 @@ div:not(.is-mobile) > .workspace-leaf-content .view-content .nav-folder-children
   width: 100% !important;
 }
 
-/* Uncomment this for adjusting line with icon */
+/* Uncomment this for adjusting line with icon 
 
 .nav-folder:not(.mod-root) > .nav-folder-children .nav-file-title {
 margin-left: -3px !important;
