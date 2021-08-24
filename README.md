@@ -117,4 +117,4 @@ Some folder are adjusted for **my** icons and **my** folder, so you maybe need :
 There is some adaptation too for mobile where you can add your settings. 
 
 ⚠️ For IOS : If you don't have Textastic (can open `.obsidian` folder) you need to use shortcuts and toolbox pro to open hidden folder. 
-
+You can also use [ashell](https://holzschu.github.io/a-Shell_iOS/) (Free) to open `.obsidian` and file !
