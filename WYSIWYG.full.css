@@ -116,26 +116,50 @@ settings:
         format: hex
         opacity: false
     -
-        id: task-mobile
-        title: Task Margin
-        description: Mobile only
-        format: px
-        default: -50
-        type: variable-number
-    -
-        id: task-pc
-        title: Task Margin
-        description: PC only
-        format: "%"
-        default: 0
-        type: variable-number
-    -
         id: top-task
         title: Top
         description: Adjust the top position to fit your need
         default: 0
         type: variable-number
         format: px
+    -
+        id: task-margin-title
+        title: Margin Options
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: task-mobile
+        title: Mobile
+        format: px
+        default: -50
+        type: variable-number
+    -
+        id: task-pc
+        title: PC
+        format: "%"
+        default: 0
+        type: variable-number
+    -
+        id: size-title
+        type: heading
+        level: 3
+        collapsed: true
+        title: Font size options
+    -
+        id: size-mobile
+        title: Mobile
+        description: In px
+        format: px
+        default: 15
+        type: variable-number
+    -
+        id: size-pc
+        title: PC
+        description: In %
+        format: "%"
+        default: 120
+        type: variable-number
     -
         id: uncheck-icon-title
         level: 3
@@ -303,6 +327,8 @@ settings:
     --uncheck-icon    : "\f0c8";
     --check-font      : "Font Awesome 5 Free Solid";
     --uncheck-font    : "Font Awesome 5 Free Solid";
+		--size-pc : 120%;
+		--size-mobile: 15px;
 }
 
 .cm-s-obsidian .CodeMirror-line *,
@@ -471,7 +497,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-meta
     top        : var(--top-task) !important;
     left       : 3px;
     color      : var(--color-task) !important;
-    font-size  : 120%;
+    font-size  : var(--size-pc);
     display    : inline !important;
     visibility : visible !important;
     opacity    : 1;
@@ -486,7 +512,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-task.cm-prop
     top        : var(--top-task) !important;
     left       : 3px;
     color      : var(--color-task) !important;
-    font-size  : 120%;
+    font-size  : var(--size-pc);
     visibility : visible !important;
     margin-left: var(--task-pc) !important;
 
@@ -895,7 +921,7 @@ span.cm-templater-command.cm-string {
     position    : relative !important;
     top         : var(--top-task) !important;
     left        : -50px !important;
-    font-size   : 30px !important;
+    font-size   : var(--size-mobile) !important;
     display     : inline !important;
     visibility  : visible !important;
     opacity     : 1 !important;
@@ -916,7 +942,7 @@ span.cm-templater-command.cm-string {
     position    : relative !important;
     top         : var(--top-task) !important;
     left        : -50px !important;
-    font-size   : 30px !important;
+    font-size   : var(--size-mobile) !important;
     display     : inline !important;
     visibility  : visible !important;
     opacity     : 1 !important;

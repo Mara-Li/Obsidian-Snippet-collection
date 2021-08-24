@@ -226,7 +226,7 @@ settings:
         default-dark: '#1d588f'
         format: hex
         opacity: false
-    -
+		-
         id: task-pc
         title: Task Margin
         description: Adjust the space between the taskbox and your text.
@@ -244,6 +244,12 @@ settings:
         format: px 
         default: -8
     -
+				id: task-size
+				title: Size (in %)
+				type: variable-number
+				format: "%"
+				default: 120
+		-
         id: uncheck-icon-title
         level: 3
         collapsed: true
