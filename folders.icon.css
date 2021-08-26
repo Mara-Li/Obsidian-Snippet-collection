@@ -298,7 +298,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 	margin-right: 5px;
 	margin-left: 0px;
 	vertical-align: -2px;
-	padding-left: 3px !important;
+
 }
 
 
@@ -358,8 +358,8 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 	left: -3px;
 }
 
-.nav-folder-title[data-path*="12."] .nav-folder-title-content::before,
-.nav-file-title[data-path*="12."] .nav-file-title-content:only-child:before,
+.nav-folder-title[data-path^="10."][data-path*="12."] .nav-folder-title-content::before,
+.nav-file-title[data-path^="10."][data-path*="12."] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator + span:before,
 .nav-file-icon:before {
 	content: var(--I12) !important;
@@ -368,15 +368,15 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 	vertical-align: -0.1em;
 }
 
-.nav-folder-title[data-path*="13."] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="10."][data-path*="13."] .nav-folder-title-content::before {
 	content: var(--I13) !important;
 	font-family: var(--font13) !important;
 	font-size: var(--size);
 	vertical-align: -0.15em;
 }
 
-.nav-folder-title[data-path*="11."] .nav-folder-title-content::before,
-.nav-file-title[data-path*="11."] .nav-file-title-content:only-child:before,
+.nav-folder-title[data-path^="10."][data-path*="11. "] .nav-folder-title-content::before,
+.nav-file-title[data-path^="10."][data-path*="11. "] .nav-file-title-content:only-child:before,
 .search-result-collapse-indicator + span:before,
 .nav-file-icon:before {
 	content: var(--I11) !important;
@@ -651,7 +651,7 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
     margin-left: 2px !important;
     padding-left: 5px !important;
 	font-size: calc(var(--size) - 2px) !important;
-	vertical-align: middle !important;
+	vertical-align: top !important;
 
 }
 

@@ -11,7 +11,14 @@ The colours are rainbow coloured and 16 in number by default. They are shades su
 name: Nested Folder
 id: nested
 settings:
-    - 
+    -
+        id: adjust
+        format: em
+        title: Line 
+        description: Adjust line with icon (in em)
+        default: 1.2
+        type: variable-number
+    -
         id: bg00
         format: hex
         opacity: true
@@ -126,6 +133,7 @@ settings:
     --FoldText: white;
     --FoldTextMaster: var(--FoldText);
     --inbox-font: 0, 18, 25;
+    --adjust: 1.2em;
 }
 
 .theme-dark {
@@ -148,6 +156,7 @@ settings:
     --bg90: #ffffff00;
     --bg100: #ffffff00;
     --bgZZ: #617e8c2c;
+	--normal-folder: white;
 }
 .theme-light {
     --root-file-color: var(--text-normal);
@@ -166,10 +175,12 @@ settings:
     --bg90: #ffffff00;
     --bg100: #B69D912c;
     --bgZZ: #B69D912c;
+	--normal-folder: black;
 }
+
 .nav-file-title,
 .nav-folder-title {
-    color: unset;
+    color: var(--normal-folder);
 }
 
 /* SR Plugins adjust */
@@ -199,17 +210,7 @@ div:not(.is-mobile) > .workspace-leaf-content .view-content .nav-folder-children
     padding: 0;
 }
 
-.nav-folder-collapse-indicator {
-    margin-left: inherit !important;
-}
 
-.nav-folder-children {
-    padding-left: 15px;
-}
-
-.nav-folder:not(.mod-root) > .nav-folder-children .nav-file-title {
-    padding-left: -12px;
-}
 
 .nav-file-title {
     margin: 0;
@@ -229,10 +230,10 @@ div:not(.is-mobile) > .workspace-leaf-content .view-content .nav-folder-children
   width: 100% !important;
 }
 
-/* Uncomment this for adjusting line with icon 
+/* Uncomment this for adjusting line with icon */
 
 .nav-folder:not(.mod-root) > .nav-folder-children .nav-file-title {
-margin-left: -3px !important;
+    margin-left: -5px !important;
 }
 
 /* Top Level Folder Titles */
@@ -240,7 +241,7 @@ margin-left: -3px !important;
     font-family: var(--default-font);
     font-size: calc(var(--augmente) + 3px) !important;
     color: var(--FoldText);
-    padding-left: 3px;
+    padding-left: 5px;
     margin-top: 7px; /* space between top level sections */
     border-radius: var(--FolderRadius) var(--FolderRadius) 0px 0px;
 }
@@ -436,6 +437,7 @@ You can change these to match your use case.
     > .nav-file {
     border-left: var(--nestlinestyle1) var(--nestlinesize1)
         var(--nestlinecolor1);
+    margin-left: var(--adjust);
 }
 .nav-folder.mod-root
     > .nav-folder-children
@@ -446,6 +448,8 @@ You can change these to match your use case.
     > .nav-folder {
     border-left: var(--nestlinestyle1) var(--nestlinesize1)
         var(--nestlinecolor1);
+    margin-left: var(--adjust);
+
 }
 
 .nav-folder.mod-root
@@ -459,6 +463,8 @@ You can change these to match your use case.
     > .nav-file {
     border-left: var(--nestlinestyle2) var(--nestlinesize2)
         var(--nestlinecolor2);
+    margin-left: var(--adjust);
+
 }
 .nav-folder.mod-root
     > .nav-folder-children
@@ -471,6 +477,8 @@ You can change these to match your use case.
     > .nav-folder {
     border-left: var(--nestlinestyle2) var(--nestlinesize2)
         var(--nestlinecolor2);
+    margin-left: var(--adjust);
+
 }
 
 .nav-folder.mod-root
@@ -486,6 +494,8 @@ You can change these to match your use case.
     > .nav-file {
     border-left: var(--nestlinestyle3) var(--nestlinesize3)
         var(--nestlinecolor3);
+    margin-left: var(--adjust);
+
 }
 .nav-folder.mod-root
     > .nav-folder-children
@@ -500,7 +510,9 @@ You can change these to match your use case.
     > .nav-folder {
     border-left: var(--nestlinestyle3) var(--nestlinesize3)
         var(--nestlinecolor3);
-			}
+    margin-left: var(--adjust);
+
+	}
 
 /* == File Explorer - animation for active file as per Obuntu === */
 
