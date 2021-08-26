@@ -89,11 +89,18 @@
     .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, 
     .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
         vertical-align: -3px !important;
-        margin-left: -1px !important;
+        margin-left: 0 !important;
         margin-right: -5px !important;
         left: -5px !important;
 
     }
+    .nav-folder-title[data-path*="Ashling May"]>.collapse-icon {
+      margin-left: -10px !important;
+  }
+          .nav-folder-title[data-path*="Hayleen May"]>.collapse-icon {
+      margin-left: -10px !important;
+  }
+
 }
 
 
@@ -143,7 +150,7 @@
     }
     .nav-folder-title[data-path^="30. Média/"]>.nav-folder-title-content {
         position: relative;
-        padding-left: 1em !important;
+        padding-left: 1.5em !important;
         line-height: 15px !important;
     }
     .nav-file-title[data-path^="20"]>.nav-file-title-content {
@@ -152,6 +159,8 @@
     }
     .nav-file-title[data-path^="20"]>.nav-file-title-content::before {
         margin-right: 0 !important;
+        padding-left: 0.5em !important;
+
     }
     .nav-file-title[data-path*="12."] .nav-file-title-content {
         line-height: 20px;
