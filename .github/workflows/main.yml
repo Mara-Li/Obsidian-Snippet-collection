@@ -29,10 +29,10 @@ jobs:
           automatic_release_tag: "latest"
           prerelease: false
           files: |
-            *.css
-            WYSIWYG.full.css
-            WYSIWYG.semi.css
-            folders.colored.css
-            folders.icon.css 
-            folders.icon.font-settings.css 
-            folders.icon.font.css 
+            ./*.css
+            ./WYSIWYG.full.css
+            ./WYSIWYG.semi.css
+            ./folders.colored.css
+            ./folders.icon.css 
+            ./folders.icon.font-settings.css 
+            ./folders.icon.font.css 
