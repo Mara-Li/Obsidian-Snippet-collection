@@ -17,15 +17,19 @@ settings:
         level: 1
         collapsed: true
     -
-        id: header-clutter
+        id: header-clutter-opt
         title: Header Clutter
-        description: Display the header as other markdown clutter.
-        type: class-toggle
-    -
-        id: header-size
-        title: Header Size
-        description: Replace the header clutter with them size (as H1, H2...)
-        type: class-toggle
+        description: Replace the header clutter
+        type: class-select
+        allowEmpty: true
+        default: none
+        options:
+            -
+                label: Header Clutter (Always display the #)
+                value: header-clutter
+            -
+                label: Header size (replace # with H<size>)
+                value: header-size
     -
         id: header-font-size
         title: Header font size
