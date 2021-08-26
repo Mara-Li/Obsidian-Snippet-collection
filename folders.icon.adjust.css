@@ -78,28 +78,7 @@
         vertical-align: -1px !important;
         font-size: calc(var(--size) - 2px) !important;
     }
-    
-    .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before,
-    .nav-folder-title[data-path*="41."][data-path*="Ashling May"][data-path*="Illustration"] .nav-folder-title-content::before {
-        vertical-align: -4px !important;
-        margin-right: -5px !important;
-        margin-left: -3px !important;
-    }
 
-    .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, 
-    .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
-        vertical-align: -3px !important;
-        margin-left: 0 !important;
-        margin-right: -5px !important;
-        left: -5px !important;
-
-    }
-    .nav-folder-title[data-path*="Ashling May"]>.collapse-icon {
-      margin-left: -5px !important;
-  }
-          .nav-folder-title[data-path*="Hayleen May"]>.collapse-icon {
-      margin-left: -5px !important;
-  }
   .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before,
     .nav-folder-title[data-path*="41."][data-path*="Ashling May"][data-path*="Illustration"] .nav-folder-title-content::before {
         vertical-align: -4px !important;
@@ -113,7 +92,6 @@
         margin-left: -1px !important;
         margin-right: -5px !important;
         left: -5px !important;
-
     }
     .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content, 
     .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content {
@@ -131,7 +109,7 @@
     .nav-folder .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] + .nav-folder-children .nav-folder, 
     .nav-folder .nav-folder-title[data-path*="41"][data-path*="Ashling May"] + .nav-folder-children .nav-file,
     .nav-folder .nav-folder-title[data-path*="41"][data-path*="Ashling May"] + .nav-folder-children .nav-folder {
-        margin-left: -1em !important;
+        margin-left: -1.1em !important;
     }
 
 }
