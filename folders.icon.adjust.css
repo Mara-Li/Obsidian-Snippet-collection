@@ -63,14 +63,7 @@
     .nav-folder-title[data-path*="80."] .nav-folder-title-content::before {
         vertical-align: -0.2em !important;
     }
-    .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
-        position: relative;
-        line-height: 15px !important;
-        margin-left: -8px !important;
-    }
-    .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before {
-        top: 5px !important;
-    }
+    
     .nav-folder-title[data-path^="60."] .nav-folder-title-content::before {
         vertical-align: sub !important;
     }
@@ -85,29 +78,42 @@
         vertical-align: -1px !important;
         font-size: calc(var(--size) - 2px) !important;
     }
-}
-
-.nav-file-title[data-path*="20."] .nav-file-title-content {
-    line-height: 20px !important;
-}
-
-div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
-    font-size: calc(var(--size) - 4px) !important;
-    left: -2px;
-}
-
-.nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
-    content: "\ea37" !important;
-    font-family: boxicons !important;
-    font-size: var(--size) !important;
-}
-
-@media only screen and (min-device-width: 1024px) { /* PC FORME */
-    .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
-        position: relative;
-        line-height: 15px !important;
-        left: -1px !important
+    
+    .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before,
+    .nav-folder-title[data-path*="41."][data-path*="Ashling May"][data-path*="Illustration"] .nav-folder-title-content::before {
+        vertical-align: -4px !important;
+        margin-right: -3px !important;
+        margin-left: -5px !important;
     }
+
+    .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, 
+    .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
+        vertical-align: -3px !important;
+        margin-left: -1px !important;
+        margin-right: -5px !important;
+        left: -5px !important;
+
+    }
+}
+
+
+@media only screen and (min-device-width: 1024px) { /* PC FORME */   
+    .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before,
+    .nav-folder-title[data-path*="41."][data-path*="Ashling May"][data-path*="Illustration"] .nav-folder-title-content::before {
+        vertical-align: -4px !important;
+        margin-right: -3px !important;
+        margin-left: 0 !important;
+    }
+
+    .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, 
+    .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
+        vertical-align: -3px !important;
+        margin-left: -1px !important;
+        margin-right: -5px !important;
+        left: -5px !important;
+
+    }
+
     .nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
         vertical-align: -1px !important;
     }
@@ -151,7 +157,9 @@ div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
         line-height: 20px;
     }
     .nav-file-title[data-path*="11."] .nav-file-title-content:only-child:before {
-        left: -2px !important;
+        left: -3px !important;
+        position: relative !important;
+        margin-right: 0 !important ; 
     }
     .nav-file-title[data-path*="11."] .nav-file-title-content::before {
         padding-left: 5px !important;
@@ -159,12 +167,39 @@ div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
     .nav-folder-title[data-path*="ZZ3. "] .nav-folder-title-content::before {
         vertical-align: sub !important;
     }
-    .nav-folder-title[data-path*="ZZ2. "] .nav-folder-title-content::before {
+    .nav-file-title[data-path*="ZZ2. "] .nav-file-title-content::before {
         vertical-align: -0.1em !important;
+        position: relative !important;
+        margin-left: 2px !important;
     }
     .nav-file-title[data-path*="ZZ1. "] .nav-file-title-content::before {
         font-size: calc(var(--size) - 3px) !important;
-        left: 3px !important;
+        position: relative !important;
+        margin-left: 5px !important;
     }
 
+}
+
+.nav-file-title[data-path*="20."] .nav-file-title-content {
+    line-height: 20px !important;
+}
+
+div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
+    font-size: calc(var(--size) - 4px) !important;
+    left: -2px;
+}
+
+.nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, 
+.nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
+    content: '\ed74' !important;
+	font-family: "boxicons2" !important;
+    font-size: var(--size) !important;
+
+}
+
+.nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before,
+.nav-folder-title[data-path*="41."][data-path*="Ashling May"][data-path*="Illustration"] .nav-folder-title-content::before {
+	content: "\e416" !important;
+	font-family: "Material Icons" !important;
+	font-size: calc(var(--size) + 1px) !important;
 }
