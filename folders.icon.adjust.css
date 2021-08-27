@@ -10,11 +10,24 @@
     div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
         vertical-align: 3px !important;
     }
-    .nav-folder-title[data-path^="10."] .nav-folder-title-content::before {
-        vertical-align: -1px !important;
+        .nav-folder-title[data-path^="10."] .nav-folder-title-content::before {
+        vertical-align: 2px !important;
         position: relative;
         top: 2px !important;
-    }
+      }
+      
+          div.nav-folder-title[data-path*="11."] div.nav-folder-title-content::before,
+          div.nav-folder-title[data-path*="12."] div.nav-folder-title-content::before,
+          div.nav-folder-title[data-path*="13."] div.nav-folder-title-content::before {
+            margin-right:-5px;
+            vertical-align: -1px !important;
+      }
+      
+      .nav-file-title[data-path*="12."] .nav-file-title-content
+      {
+        line-height: 20px !important;
+      }
+      
     .nav-folder-title[data-path^="00."] .nav-folder-title-content::before {
         padding-right: 6% !important;
     }
@@ -34,13 +47,19 @@
         top: 2px !important;
     }
     .nav-file-title[data-path^="20."] .nav-file-title-content::before {
-        padding-right: 2px;
-        margin-left: 10px;
+        padding-right: 2px !important;
+        margin-left: 10px !important ;
     }
     .nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
         position: relative !important;
         top: 0px !important;
     }
+    
+        .nav-folder-title[data-path^="30."] .nav-folder-title-content {
+          line-height: 20px !important;
+      }
+    
+    
     .nav-folder-title[data-path^="40."] .nav-folder-title-content::before {
         position: relative;
         top: 1px !important;
@@ -81,10 +100,14 @@
 
   .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before,
     .nav-folder-title[data-path*="41."][data-path*="Ashling May"][data-path*="Illustration"] .nav-folder-title-content::before {
-        vertical-align: -4px !important;
+        vertical-align: -4px;
         margin-right: -5px !important;
         margin-left: 8px !important;
     }
+    
+      .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before {
+        vertical-align: -8px;
+      }
 
     .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, 
     .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
