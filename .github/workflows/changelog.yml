@@ -19,7 +19,7 @@ jobs:
 
       - name: Commit files
         env:
-          CI_USER: ${{ secrets.GITHUB_USER }}
+          CI_USER: ${{ secrets.USER }}
           CI_EMAIL: ${{ secrets.EMAIL }}
         run: |
           git config --local user.email "$CI_EMAIL"
