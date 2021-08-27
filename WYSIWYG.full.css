@@ -44,13 +44,9 @@ settings:
         title: Header Hsize
         description: Replace the \# by other things
         type: class-select
-        allowEmpty: false
-        default: default-header 
+        allowEmpty: true
+        default: none
         options:
-            -
-                label: default display
-                value: default-header 
-
             -
                 label: H<size>
                 value: header-size
@@ -707,17 +703,6 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
 
 /* =========== HEADER ============================ */
 
-.default-header .CodeMirror-activeline > .CodeMirror-line span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header,
-.default-header .CodeMirror-activeline > .CodeMirror-line  span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header,
-.default-header .CodeMirror-activeline > .CodeMirror-line  span.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header,
-.default-header .CodeMirror-activeline > .CodeMirror-line  span.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header,
-.default-header .CodeMirror-activeline > .CodeMirror-line  span.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header,
-.default-header .CodeMirror-activeline > .CodeMirror-line  span.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header {
-	opacity: var(--markdown-clutter) !important;
-	font-size: var(--header-font-size) !important;
-    display: inline-block !important;
-}
-
 
 /* Clutter */
 .header-clutter div:not(.CodeMirror-activeline)>.CodeMirror-line
@@ -766,11 +751,11 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
 /* Hsize */
 
 .header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6,
-span.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5,
-span.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4,
-span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3,
-span.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2,
-span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1{
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5,
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4,
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3,
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2,
+.header-size span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1{
     font-size: 0 !important;
 }
 
@@ -1006,6 +991,7 @@ span.cm-templater-command.cm-string {
 
 .mobile .cm-s-obsidian span.cm-comment {
     opacity: var(--markdown-opacity) !important;
+    font-family: var(--tab-font) !important;
 }
 
 .mobile .cm-hmd-barelink,
