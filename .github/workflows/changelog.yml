@@ -29,7 +29,7 @@ jobs:
       - name: Push changes
         if: env.push == 'true'
         env:
-          CI_USER: ${{ secrets.GITHUB_USER }}
+          CI_USER: ${{ secrets.USER }}
           CI_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git push "https://$CI_USER:$CI_TOKEN@github.com/$GITHUB_REPOSITORY.git" HEAD:master
