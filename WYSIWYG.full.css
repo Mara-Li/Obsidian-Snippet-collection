@@ -457,6 +457,11 @@ span.cm-formatting-escape.cm-hmd-escape-backslash {
     opacity  : 1 !important;
 }
 
+span.cm-string.cm-hmd-frontmatter {
+    display: inline !important;
+    opacity: 1 !important;
+}
+
 /* except list markers */
 
 span.cm-formatting-list,
