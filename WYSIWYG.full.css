@@ -829,7 +829,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag {
     text-decoration : none;
     border-radius   : 10px;
     height          : 30px !important;
-    padding         : var(--tag-up) var(--tag-left) var(--tag-bottom) !important;
+    padding         : 0 !important;
     z-index         : 100 !important;
     font-family     : inherit;
 }
@@ -958,17 +958,6 @@ span.cm-templater-command.cm-string {
 
 
 /* ============= Style settings Mobile specific ================================= */
-
-.mobile .tag,
-.mobile .kanban-plugin .tag {
-    font-size      : 1em;
-    text-decoration: none;
-    border-radius  : 15px;
-    line-height    : 40px !important;
-    height         : 40px !important;
-    padding        : 0 3% !important;
-}
-
 .mobile .cm-formatting:not(.cm-formatting-list, .cm-formatting-task, span.cm-formatting-code-block) {
     opacity  : var(--markdown-opacity);
     font-size: var(--clutter) !important;
