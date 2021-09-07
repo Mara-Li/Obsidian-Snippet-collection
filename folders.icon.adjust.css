@@ -154,14 +154,15 @@
     .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content::before, 
     .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content::before {
         vertical-align: -3px !important;
-        margin-left: -1px !important;
-        margin-right: -5px !important;
-        left: -5px !important;
+        margin-left: -5px !important;
+        margin-right: 0 !important;
+        left: 0 !important;
+        position: relative !important;
 
     }
     .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .nav-folder-title-content, 
     .nav-folder-title[data-path*="41"][data-path*="Ashling May"] div.nav-folder-title-content {
-        left: -13px !important;
+        left: -1.2em !important;
         position: relative !important;
     }
     .nav-folder-title[data-path*="53.20"][data-path*="Hayleen May"] .collapse-icon, 
@@ -178,13 +179,22 @@
         margin-left: 0.35em !important;
     }
 
+    .nav-folder-title[data-path^="20."] .nav-folder-title-content::before {
+        font-size: calc(var(--size) + 2px) !important;
+        vertical-align: -0.2em !important;
+    }
+    .nav-folder-title[data-path="30. Média"] .nav-folder-title-content::before {
+        font-size: calc(var(--size) + 2px) !important;
+        vertical-align: -0.15em !important;
+    }
+
     .nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
         vertical-align: -1px !important;
     }
     div.nav-folder-title[data-path^="30. Média/JV"] div.nav-folder-title-content::before,
     div.nav-folder-title[data-path^="30. Média/Livre"] div.nav-folder-title-content::before,
     div.nav-folder-title[data-path^="30. Média/Série"] div.nav-folder-title-content::before {
-        margin-left: -12px !important;
+        margin-left: -1.2em !important;
     }
     div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
         vertical-align: top !important;
