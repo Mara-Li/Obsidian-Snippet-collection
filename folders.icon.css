@@ -261,6 +261,12 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 	filter: saturate(150%);
 	color: currentColor !important;
 }
+.nav-folder-title.is-being-dragged-over {
+	background-color: transparent !important;
+	color: currentColor !important;
+	filter: saturate(500%) !important;
+}
+
 
 .CodeMirror-foldgutter-folded,
 .is-collapsed .nav-folder-collapse-indicator {
@@ -649,6 +655,7 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
 	content: "\f1c1" !important;
 	font-family: "Font Awesome 5 Free" !important;
     margin-left: 2px !important;
+	margin-right: 8px !important;
     padding-left: 5px !important;
 	font-size: calc(var(--size) - 2px) !important;
 	vertical-align: top !important;
@@ -659,8 +666,8 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
 	content: "\f3d3" !important;
 	font-family: "Font Awesome 5 Brands" !important;
 	font-size: var(--size);
-	left: 2px;
-    margin-left: 5px !important;
+	left: 0;
+    margin-left: -1px !important;
     padding-left: 8px !important;
 }
 
