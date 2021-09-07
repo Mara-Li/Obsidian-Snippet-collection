@@ -1055,6 +1055,7 @@ span.cm-templater-command.cm-string {
     opacity     : 1 !important;
     line-height : 15px !important;
     margin-right: var(--task-mobile) !important;
+    margin-left: 5px;
 }
 
 .mobile span.cm-formatting.cm-formatting-list.cm-formatting-list-ul.cm-list-1+span.cm-formatting.cm-formatting-task.cm-meta,
@@ -1075,7 +1076,9 @@ span.cm-templater-command.cm-string {
     visibility  : visible !important;
     opacity     : 1 !important;
     line-height : 15px !important;
-    margin-right: var(--task-mobile) !important;
+    margin-right: var(--task-mobile);
+    margin-left: 5px;
+    padding-left: 0;
 }
 
 .mobile .cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link,
