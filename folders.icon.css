@@ -133,98 +133,100 @@ settings:
 */
 
 .theme-dark {
-	--F00: #8d8d8d;
-	--F10: #bb7762;
-	--F20: #b7822f;
-	--F30: #798c64;
-	--F40: #4765ab;
-	--F50: #8fa1cc;
-	--F60: #8fa1cc;
-	--F70: #ffffff00;
-	--F80: #ad8c33;
-	--F90: #ad8c33;
-	--F100: #ffffff00;
-	--FZZ: #617e8c;
+    --F00: #8d8d8d;
+    --F10: #bb7762;
+    --F20: #b7822f;
+    --F30: #798c64;
+    --F40: #4765ab;
+    --F50: #8fa1cc;
+    --F60: #8fa1cc;
+    --F70: #ffffff00;
+    --F80: #ad8c33;
+    --F90: #ad8c33;
+    --F100: #ffffff00;
+    --FZZ: #617e8c;
 }
 
 .theme-light {
-	--F00: #00121a;
-	--F10: #bb7762;
-	--F20: #3e9c9d;
-	--F30: #50a686;
-	--F40: #4765ab;
-	--F50: #8fa1cc;
-	--F60: #8fa1cc;
-	--F70: #ffffff00;
-	--F80: #ad8c33;
-	--F90: #ad8c33;
-	--F100: #ffffff00;
-	--FZZ: #b69d91;
+    --F00: #00121a;
+    --F10: #bb7762;
+    --F20: #3e9c9d;
+    --F30: #50a686;
+    --F50: #4765ab;
+    --F40: #8fa1cc;
+    --F60: #8fa1cc;
+    --F70: #ffffff00;
+    --F80: #ad8c33;
+    --F90: #ad8c33;
+    --F100: #ffffff00;
+    --FZZ: #b69d91;
 }
 
 :root {
-	--size: 18px;
-	--I00: "\e913";
-	--I01: "\e004";
-	--I02: "\e96b";
-	--I20: "\f1fc";
-	--I80: "\e80c";
-	--I90: "\e80c";
-	--I30: "\eb1f";
-	--I10: "\f2bd";
-	--I12: "\e924";
-	--I11: "\eeb5";
-	--I40: "\f02e";
-	--I60: "\ea3e";
-	--I61: "\f7ba";
-	--I42: "\eae2";
-	--I41: "\F10d";
-	--I43: "\f233";
-	--I50: "\eb1d";
-	--I53: "\f549";
-	--I52: "\e666";
-	--I51: "\ed9a";
-	--IZZ: "\ea72";
-	--IZZA: "\e95d";
-	--IZZA-files: "\f24d";
-	--I13: "\ea5e";
-	--IZZB: "\eb9e";
-	--IZZB-files: "\ea42";
-	--IZZC: "\f1bf";
-	--IZZC-files: "\eff3";
-	--augmente: 14px;
-	/* Font parameters */
-	--font00: "boxicons";
-	--font01: "Material icons";
-	--font02: "boxicons";
-	--font20: "Material icons";
-	--font10: "Font Awesome 5 Free";
-	--font12: "boxicons";
-	--font13: "Material icons";
-	--font11: "boxicons";
-	--font30: "boxicons";
-	--font40: "Material icons";
-	--font42: "remixicon";
-	--font41: "Material icons";
-	--font43: "Material icons";
-	--font50: "boxicons";
-	--font53: "Font Awesome 5 Free Solid";
-	--font52: "Material Icons";
-	--font51: "boxicons";
-	--font60: "Material Icons";
-	--font61: "Font Awesome 5 Free Solid";
-	--font80: "Material icons";
-	--font90: "Material icons";
-	--fontZZ: "IcoMoon-Free";
-	--fontZZA: "boxicons";
-	--fontZZA-Files: "Font Awesome 5 Free";
-	--fontZZB: "boxicons";
-	--fontZZB-Files: "IcoMoon-Free";
-	--fontZZC: "Material icons";
-	--fontZZC-Files: "Material icons";
+    --size: 18px;
+    --I00: "\e913";
+    --I01: "\e004";
+    --I02: "\e96b";
+    --I20: "\f1fc";
+    --I80: "\e80c";
+    --I90: "\e80c";
+    --I30: "\eb1f";
+    --I10: "\f2bd";
+    --I12: "\e924";
+    --I11: "\eeb5";
+    --I50: "\f558";
+    --I60: "\ea3e";
+    --I61: "\f7ba";
+    --I52: "\eae2";
+    --I51: "\F10d";
+    --I53: "\f5fd";
+    --I40: "\ee61";
+    --I43: "\f549";
+    --I42: "\e666";
+    --I41: "\ed9a";
+    --IZZ: "\ea72";
+    --IZZA: "\e95d";
+    --IZZA-files: "\f24d";
+    --I13: "\ea5e";
+    --IZZB: "\eb9e";
+    --IZZB-files: "\ea42";
+    --IZZC: "\f1bf";
+    --IZZC-files: "\eff3";
+    --augmente: 14px;
+    /* Font parameters */
+    --font00: "boxicons";
+    --font01: "Material icons";
+    --font02: "boxicons";
+    --font20: "Material icons";
+    --font10: "Font Awesome 5 Free";
+    --font12: "boxicons";
+    --font13: "Material icons";
+    --font11: "boxicons";
+    --font30: "boxicons";
+    --font50: "Font Awesome 5 Free Solid";
+    --font52: "remixicon";
+    --font51: "Material icons";
+    --font53: "Font Awesome 5 Free Solid";
+    --font40: "boxicons2";
+    --font43: "Font Awesome 5 Free Solid";
+    --font42: "Material Icons";
+    --font41: "boxicons";
+    --font60: "Material Icons";
+    --font61: "Font Awesome 5 Free Solid";
+    --font80: "Material icons";
+    --font90: "Material icons";
+    --fontZZ: "IcoMoon-Free";
+    --fontZZA: "boxicons";
+    --fontZZA-Files: "Font Awesome 5 Free";
+    --fontZZB: "boxicons";
+    --fontZZB-Files: "IcoMoon-Free";
+    --fontZZC: "Material icons";
+    --fontZZC-Files: "Material icons";
 }
 
+
 /* ======== FILES =================== */
+
 
 /* You can add mobile adaptation here 
 @media screen and (max-width: 1080px) {
@@ -233,441 +235,455 @@ settings:
 
 .nav-file-title,
 .nav-folder-title {
-	font-size: var(--augmente) !important;
+    font-size: var(--augmente) !important;
 }
 
 .nav-file-title.is-being-dragged,
 .nav-folder-title.is-being-dragged {
-	background-color: #8e939349 !important;
+    background-color: #8e939349 !important;
 }
 
 body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
 body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
-	background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 .nav-folder-title[data-path^="/"] {
-	display: none;
+    display: none;
 }
 
 .fx-icons .nav-folder:not(.nav-folder.mod-root) {
-	margin-left: 0;
+    margin-left: 0;
 }
 
 .nav-file-title-content:hover,
 .nav-folder-title-content:hover,
 .collapse-icon:hover {
-	background-color: transparent !important;
-	filter: saturate(150%);
-	color: currentColor !important;
-}
-.nav-folder-title.is-being-dragged-over {
-	background-color: transparent !important;
-	color: currentColor !important;
-	filter: saturate(500%) !important;
+    background-color: transparent !important;
+    filter: saturate(150%);
+    color: currentColor !important;
 }
 
+.nav-folder-title.is-being-dragged-over {
+    background-color: transparent !important;
+    color: currentColor !important;
+    filter: saturate(500%) !important;
+}
 
 .CodeMirror-foldgutter-folded,
 .is-collapsed .nav-folder-collapse-indicator {
-	color: currentColor !important;
+    color: currentColor !important;
 }
 
 .nav-file-tag {
-	display: none;
+    display: none;
 }
 
 .nav-file-title.is-active:not(.nav-file-title.is-active:hover) {
-	background-color: rgba(255, 255, 255, 0.075) !important;
-	filter: saturate(150%);
+    background-color: rgba(255, 255, 255, 0.075) !important;
+    filter: saturate(150%);
 }
 
 .nav-folder-children .nav-file-title-content:first-child::before {
-	font-size: 18px !important;
+    font-size: 18px !important;
 }
 
 .files .nav-file-title:not(.nav-file-title.is-unsupported) .nav-file-title-content:before {
-	content: "\ea37" ;
-	font-family: boxicons;
-	font-size: calc(var(--size) + 3%);
-	margin-right: 5px;
-	margin-left: 0px;
-	vertical-align: -2px;
+    content: "\ea37";
+    font-family: boxicons;
+    font-size: calc(var(--size) + 3%);
+    margin-right: 5px;
+    margin-left: 0px;
+    vertical-align: -2px;
 }
 
 .nav-file-title.is-unsupported .nav-file-title-content::before,
-.nav-file > .nav-file-title > .nav-file-tag +.nav-file-title-content::before {
+.nav-file>.nav-file-title>.nav-file-tag+.nav-file-title-content::before {
     content: "\ea38";
     font-family: boxicons;
     font-size: var(--size);
-	position: relative;
-	margin-right: 5px;
-	margin-left: 0px;
-	vertical-align: -2px;
-
+    position: relative;
+    margin-right: 5px;
+    margin-left: 0px;
+    vertical-align: -2px;
 }
-
 
 .nav-folder-children .nav-file-title-content:first-child::before {
-	font-size: var(--size) !important;
+    font-size: var(--size) !important;
     padding-left: 3px !important;
 }
-
 
 
 /* ====== I00 ======= */
 
 .nav-folder-title[data-path^="00."],
 .nav-file-title[data-path*="00."] {
-	color: var(--F00) !important;
+    color: var(--F00) !important;
 }
 
 .nav-folder-title-content::before {
-	vertical-align: -0.1em;
-	position: relative;
-	right: 3px;
+    vertical-align: -0.1em;
+    position: relative;
+    right: 3px;
 }
 
 .nav-folder-title[data-path^="00."] .nav-folder-title-content::before {
-	content: var(--I00) !important;
-	font-family: var(--font00) !important;
-	font-size: var(--size);
-	position: relative !important;
-	padding-right: 5px;
-	left: -3px;
+    content: var(--I00) !important;
+    font-family: var(--font00) !important;
+    font-size: var(--size);
+    position: relative !important;
+    padding-right: 5px;
+    left: -3px;
 }
 
 .nav-folder-title[data-path*="01."] .nav-folder-title-content::before {
-	content: var(--I01) !important;
-	font-family: var(--font01) !important;
-	font-size: var(--size);
+    content: var(--I01) !important;
+    font-family: var(--font01) !important;
+    font-size: var(--size);
 }
 
 .nav-folder-title[data-path*="02. "] .nav-folder-title-content::before {
-	content: var(--I02) !important;
-	font-family: var(--font02) !important;
+    content: var(--I02) !important;
+    font-family: var(--font02) !important;
 }
+
 
 /* ============ Personnel ===================== */
 
 .nav-folder-title[data-path^="10."],
 .nav-file-title[data-path*="10."] {
-	color: var(--F10) !important;
+    color: var(--F10) !important;
 }
 
 .nav-folder-title[data-path^="10."] .nav-folder-title-content::before {
-	content: var(--I10) !important;
-	font-family: var(--font10) !important;
-	font-size: var(--size);
-	vertical-align: 0.05em;
-	padding-right: 5px;
-	left: -3px;
+    content: var(--I10) !important;
+    font-family: var(--font10) !important;
+    font-size: var(--size);
+    vertical-align: 0.05em;
+    padding-right: 5px;
+    left: -3px;
 }
 
 .nav-folder-title[data-path^="10."][data-path*="12."] .nav-folder-title-content::before,
 .nav-file-title[data-path^="10."][data-path*="12."] .nav-file-title-content:only-child:before,
-.search-result-collapse-indicator + span:before,
+.search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
-	content: var(--I12) !important;
-	font-family: var(--font12) !important;
-	font-size: var(--size);
-	vertical-align: -0.1em;
+    content: var(--I12) !important;
+    font-family: var(--font12) !important;
+    font-size: var(--size);
+    vertical-align: -0.1em;
 }
 
 .nav-folder-title[data-path^="10."][data-path*="13."] .nav-folder-title-content::before {
-	content: var(--I13) !important;
-	font-family: var(--font13) !important;
-	font-size: var(--size);
-	vertical-align: -0.15em;
+    content: var(--I13) !important;
+    font-family: var(--font13) !important;
+    font-size: var(--size);
+    vertical-align: -0.15em;
 }
 
 .nav-folder-title[data-path^="10."][data-path*="11. "] .nav-folder-title-content::before,
 .nav-file-title[data-path^="10."][data-path*="11. "] .nav-file-title-content:only-child:before,
-.search-result-collapse-indicator + span:before,
+.search-result-collapse-indicator+span:before,
 .nav-file-icon:before {
-	content: var(--I11) !important;
-	font-family: var(--font11) !important;
-	font-size: var(--size);
-	vertical-align: -0.1em;
+    content: var(--I11) !important;
+    font-family: var(--font11) !important;
+    font-size: var(--size);
+    vertical-align: -0.1em;
 }
-
 
 
 /* =================== I20 ================== */
 
 .nav-folder-title[data-path^="20."],
 .nav-file-title[data-path*="20."] {
-	color: var(--F20) !important;
+    color: var(--F20) !important;
 }
 
 .nav-folder-title[data-path^="20."] .nav-folder-title-content::before,
-.nav-file-title[data-path^="20."] .nav-file-title-content::before
-{
-	content: var(--I20) !important;
-	font-family: var(--font20) !important;
-	font-size: var(--size);
-	vertical-align: -0.15em;
-	padding-right: 5px;
-	left: -3px;
+.nav-file-title[data-path^="20."] .nav-file-title-content::before {
+    content: var(--I20) !important;
+    font-family: var(--font20) !important;
+    font-size: var(--size);
+    vertical-align: -0.15em;
+    padding-right: 5px;
+    left: -3px;
 }
+
 
 /* ===== FOLDER 30 ======== */
 
 .nav-folder-title[data-path^="30."],
 .nav-file-title[data-path*="30."] {
-	color: var(--F30) !important;
+    color: var(--F30) !important;
 }
 
 .nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
-	content: var(--I30) !important;
-	font-family: var(--font30) !important;
-	font-size: var(--size);
-	padding-right: 5px;
-	left: -3px !important;
+    content: var(--I30) !important;
+    font-family: var(--font30) !important;
+    font-size: var(--size);
+    padding-right: 5px;
+    left: -3px !important;
 }
 
 .nav-folder-title[data-path^="30."]::before {
-	top: 2px !important;
+    top: 2px !important;
 }
+
 
 /* ======== Personnages ===== */
 
 .nav-folder-title[data-path^="40."],
 .nav-file-title[data-path*="40."] {
-	color: var(--F40) !important;
+    color: var(--F40) !important;
 }
 
 .nav-folder-title[data-path^="40."] .nav-folder-title-content::before {
-	content: var(--I40) !important;
-	font-family: var(--font40) !important;
-	font-size: calc(var(--size) + 3%);
-	padding-right: calc(5px - 1%);
-	left: -3px;
+    content: var(--I40) !important;
+    font-family: var(--font40) !important;
+    font-size: calc(var(--size) + 3%);
+    padding-right: calc(5px - 1%);
+    left: -3px;
 }
 
+
 /* Fiches */
+
 .nav-folder-title[data-path*="42."] .nav-folder-title-content::before {
-	content: var(--I42) !important;
-	font-family: var(--font42) !important;
-	font-size: var(--size);
-	padding-right: 5px;
+    content: var(--I42) !important;
+    font-family: var(--font42) !important;
+    font-size: var(--size);
+    padding-right: 5px;
 }
 
 .nav-folder-title[data-path*="41."] .nav-folder-title-content::before {
-	content: var(--I41) !important;
-	font-family: var(--font41) !important;
-	font-size: var(--size);
-	vertical-align: -5px;
-	padding-right: 5px;
+    content: var(--I41) !important;
+    font-family: var(--font41) !important;
+    font-size: var(--size);
+    vertical-align: -5px;
+    padding-right: 5px;
 }
 
 .nav-folder-title[data-path*="43."] .nav-folder-title-content::before {
-	content: var(--I43) !important;
-	font-family: var(--font43) !important;
-	font-size: var(--size);
-	vertical-align: -0.2em;
-	padding-right: 5px;
+    content: var(--I43) !important;
+    font-family: var(--font43) !important;
+    font-size: var(--size);
+    vertical-align: -0.2em;
+    padding-right: 5px;
 }
 
+
 /* ============ Univers ==================== */
+
 .nav-folder-title[data-path^="50"],
 .nav-file-title[data-path*="50."] {
-	color: var(--F50) !important;
+    color: var(--F50) !important;
 }
 
 div.nav-folder-title[data-path^="50."] div.nav-folder-title-content::before {
-	content: var(--I50) !important;
-	font-family: var(--font50) !important;
-	font-size: var(--size);
-	vertical-align: 0;
-	padding-right: 5px;
-	left: -3px;
+    content: var(--I50) !important;
+    font-family: var(--font50) !important;
+    font-size: var(--size);
+    vertical-align: 0;
+    padding-right: 5px;
+    left: -3px;
 }
 
 div.nav-folder-title[data-path*="52."] div.nav-folder-title-content::before {
-	content: var(--I52) !important;
-	font-family: var(--font52) !important;
-	font-size: var(--size);
-	vertical-align: -0.15em;
-	padding-right: 3px;
+    content: var(--I52) !important;
+    font-family: var(--font52) !important;
+    font-size: var(--size);
+    vertical-align: -0.15em;
+    padding-right: 3px;
 }
 
 div.nav-folder-title[data-path*="51."] div.nav-folder-title-content::before {
-	content: var(--I51) !important;
-	font-family: var(--font51) !important;
-	font-size: var(--size);
+    content: var(--I51) !important;
+    font-family: var(--font51) !important;
+    font-size: var(--size);
 }
 
 div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
-	content: var(--I53) !important;
-	font-family: var(--font53) !important;
-	font-size: var(--size);
-	vertical-align: -1px;
+    content: var(--I53) !important;
+    font-family: var(--font53) !important;
+    font-size: var(--size);
+    vertical-align: -1px;
 }
+
+
 /* ============ Folder 70 ==================== */
+
 .nav-folder-title[data-path^="60"],
 .nav-file-title[data-path*="60."] {
-	color: var(--F60) !important;
+    color: var(--F60) !important;
 }
 
 div.nav-folder-title[data-path^="60."] div.nav-folder-title-content::before {
-	content: var(--I60) !important;
-	font-family: var(--font60) !important;
-	font-size: var(--size);
-	vertical-align: middle;
-	padding-right: 5px;
-	left: -3px;
+    content: var(--I60) !important;
+    font-family: var(--font60) !important;
+    font-size: var(--size);
+    vertical-align: middle;
+    padding-right: 5px;
+    left: -3px;
 }
+
 div.nav-folder-title[data-path*="61."] div.nav-folder-title-content::before {
-	content: var(--I61) !important;
-	font-family: var(--font61) !important;
-	font-size: var(--size);
-	vertical-align: middle;
+    content: var(--I61) !important;
+    font-family: var(--font61) !important;
+    font-size: var(--size);
+    vertical-align: middle;
 }
 
 
 /* ============ Folder 70 ==================== */
+
 .nav-folder-title[data-path^="70"],
 .nav-file-title[data-path*="70."] {
-	color: var(--F70) !important;
+    color: var(--F70) !important;
 }
 
 div.nav-folder-title[data-path^="70."] div.nav-folder-title-content::before {
-	content: var(--I70) !important;
-	font-family: var(--font70) !important;
-	font-size: calc(var(--size) + 3px);
-	vertical-align: middle;
+    content: var(--I70) !important;
+    font-family: var(--font70) !important;
+    font-size: calc(var(--size) + 3px);
+    vertical-align: middle;
 }
+
 
 /* =============== FOLDER 80 ===================== */
 
 .nav-folder-title[data-path^="80."],
 .nav-file-title[data-path*="80."] {
-	color: var(--F80) !important;
+    color: var(--F80) !important;
 }
 
 div.nav-folder-title[data-path^="80."] div.nav-folder-title-content::before {
-	content: var(--I80) !important;
-	font-family: var(--font80) !important;
-	font-size: var(--size);
-	vertical-align: -0.1em;
-	padding-right: 5px;
-	left: -3px;
+    content: var(--I80) !important;
+    font-family: var(--font80) !important;
+    font-size: var(--size);
+    vertical-align: -0.1em;
+    padding-right: 5px;
+    left: -3px;
 }
+
+
 /* ===============  FOLDER 90 ===================== */
 
 .nav-folder-title[data-path^="90."],
 .nav-file-title[data-path*="90."] {
-	color: var(--F90) !important;
+    color: var(--F90) !important;
 }
 
 div.nav-folder-title[data-path^="90."] div.nav-folder-title-content::before {
-	content: var(--I90) !important;
-	font-family: var(--font90) !important;
-	font-size: var(--size);
-	padding-right: 5px;
-	left: -3px;
+    content: var(--I90) !important;
+    font-family: var(--font90) !important;
+    font-size: var(--size);
+    padding-right: 5px;
+    left: -3px;
 }
+
+
 /* ===============  FOLDER 100 ===================== */
 
 .nav-folder-title[data-path^="100."],
 .nav-file-title[data-path*="100."] {
-	color: var(--F100) !important;
+    color: var(--F100) !important;
 }
 
 div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
-	content: var(--I100) !important;
-	font-family: var(--font100) !important;
-	font-size: var(--size);
-	padding-right: 5px;
-	left: -3px;
+    content: var(--I100) !important;
+    font-family: var(--font100) !important;
+    font-size: var(--size);
+    padding-right: 5px;
+    left: -3px;
 }
 
+
 /* ======= RESSOURCES =================== */
+
 .nav-folder-title[data-path^="ZZ."],
 .nav-file-title[data-path*="ZZ."] {
-	color: var(--FZZ) !important;
+    color: var(--FZZ) !important;
 }
 
 .nav-folder-title[data-path^="ZZ."] .nav-folder-title-content::before {
-	content: var(--IZZ) !important;
-	font-family: var(--fontZZ) !important;
-	font-size: calc(var(--size));
-	vertical-align: 0 !important;
-	padding-right: 5px;
-	left: -3px;
+    content: var(--IZZ) !important;
+    font-family: var(--fontZZ) !important;
+    font-size: calc(var(--size));
+    vertical-align: 0 !important;
+    padding-right: 5px;
+    left: -3px;
 }
 
 .nav-folder-title[data-path*="ZZ1."] .nav-folder-title-content::before {
-	content: var(--IZZA) !important;
-	font-family: var(--fontZZA) !important;
-	font-size: calc(var(--size) + 2px);
-	vertical-align: -0.1em;
+    content: var(--IZZA) !important;
+    font-family: var(--fontZZA) !important;
+    font-size: calc(var(--size) + 2px);
+    vertical-align: -0.1em;
 }
 
-.nav-file-title[data-path*="ZZ1. "] > .nav-file-title-content::before {
-	content: var(--IZZA-files) !important;
-	font-family: var(--fontZZA-Files) !important;
-	font-size: var(--size);
-	vertical-align: middle;
+.nav-file-title[data-path*="ZZ1. "]>.nav-file-title-content::before {
+    content: var(--IZZA-files) !important;
+    font-family: var(--fontZZA-Files) !important;
+    font-size: var(--size);
+    vertical-align: middle;
 }
 
 .nav-folder-title[data-path*="ZZ2."] .nav-folder-title-content::before {
-	content: var(--IZZB) !important;
-	font-family: var(--fontZZB) !important;
-	font-size: var(--size);
-	vertical-align: -0.1em;
+    content: var(--IZZB) !important;
+    font-family: var(--fontZZB) !important;
+    font-size: var(--size);
+    vertical-align: -0.1em;
 }
 
-.nav-file-title[data-path*="ZZ2. "] > .nav-file-title-content::before {
-	content: var(--IZZB-files) !important;
-	vertical-align: -0.1em;
-	font-family: var(--fontZZB-Files) !important;
-	font-size: var(--size);
+.nav-file-title[data-path*="ZZ2. "]>.nav-file-title-content::before {
+    content: var(--IZZB-files) !important;
+    vertical-align: -0.1em;
+    font-family: var(--fontZZB-Files) !important;
+    font-size: var(--size);
 }
 
 .nav-folder-title[data-path*="ZZ3. "] .nav-folder-title-content::before {
-	content: var(--IZZC) !important;
-	font-family: var(--fontZZC) !important;
-	font-size: var(--size);
-	vertical-align: -0.15em;
+    content: var(--IZZC) !important;
+    font-family: var(--fontZZC) !important;
+    font-size: var(--size);
+    vertical-align: -0.15em;
 }
-.nav-file-title[data-path*="ZZ3. "] > .nav-file-title-content::before {
-	content: var(--IZZC-files) !important;
-	font-family: var(--fontZZC-Files) !important;
-	font-size: calc(var(--size) + 2px);
-	vertical-align: -0.15em;
+
+.nav-file-title[data-path*="ZZ3. "]>.nav-file-title-content::before {
+    content: var(--IZZC-files) !important;
+    font-family: var(--fontZZC-Files) !important;
+    font-size: calc(var(--size) + 2px);
+    vertical-align: -0.15em;
 }
+
 
 /* =============== NO MD FILES ======================= */
 
 .nav-file-title[data-path$="jpeg"] .nav-file-title-content:before,
 .nav-file-title[data-path$="png"] .nav-file-title-content:before {
-	content: "\e416" !important;
-	font-family: "Material Icons" !important;
-	font-size: calc(var(--size) + 3px);
-	vertical-align: -4px !important;
-	left: 3px !important;
-	position: relative !important;
+    content: "\e416" !important;
+    font-family: "Material Icons" !important;
+    font-size: calc(var(--size) + 3px);
+    vertical-align: -4px !important;
+    left: 3px !important;
+    position: relative !important;
 }
 
 .nav-file-title[data-path$="pdf"] .nav-file-title-content:before {
-	content: "\f1c1" !important;
-	font-family: "Font Awesome 5 Free" !important;
+    content: "\f1c1" !important;
+    font-family: "Font Awesome 5 Free" !important;
     margin-left: 2px !important;
-	margin-right: 8px !important;
+    margin-right: 8px !important;
     padding-left: 5px !important;
-	font-size: calc(var(--size) - 2px) !important;
-	vertical-align: top !important;
-
+    font-size: calc(var(--size) - 2px) !important;
+    vertical-align: top !important;
 }
 
 .nav-file-title[data-path$="js"] .nav-file-title-content:before {
-	content: "\f3d3" !important;
-	font-family: "Font Awesome 5 Brands" !important;
-	font-size: var(--size);
-	left: 0;
+    content: "\f3d3" !important;
+    font-family: "Font Awesome 5 Brands" !important;
+    font-size: var(--size);
+    left: 0;
     margin-left: -1px !important;
     padding-left: 8px !important;
 }
-
