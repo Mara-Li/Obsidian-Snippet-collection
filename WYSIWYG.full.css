@@ -1191,3 +1191,19 @@ span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
     padding    : 5px;
     line-height: 1em !important;
 }
+
+/* footnote */
+
+.mobile span.cm-link.cm-hmd-barelink {
+    position: relative !important;
+    top: -8px !important;
+    color: var(--link-col) !important;
+    font-style: oblique;
+}
+
+.mobile span.cm-s-obsidian pre.HyperMD-footnote span.cm-link.cm-hmd-footnote,
+.mobile span.cm-formatting.cm-formatting-link.cm-link.cm-hmd-footnote.lt-underline.lt-minor,
+.mobile span.cm-formatting.cm-formatting-link.cm-link.cm-hmd-footnote {
+    display: inline-block !important;
+    opacity: 1 !important;
+  }
