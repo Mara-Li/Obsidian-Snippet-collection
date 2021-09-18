@@ -614,42 +614,42 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
     left: -3px;
 }
 
-.nav-folder-title[data-path*="ZZ1."] .nav-folder-title-content::before {
+.nav-folder-title[data-path*="Modèle"] .nav-folder-title-content::before {
     content: var(--IZZA) !important;
     font-family: var(--fontZZA) !important;
     font-size: calc(var(--size) + 2px);
     vertical-align: -0.1em;
 }
 
-.nav-file-title[data-path*="ZZ1. "]>.nav-file-title-content::before {
+.nav-file-title[data-path*="Modèle"]>.nav-file-title-content::before {
     content: var(--IZZA-files) !important;
     font-family: var(--fontZZA-Files) !important;
     font-size: var(--size);
     vertical-align: middle;
 }
 
-.nav-folder-title[data-path*="ZZ2."] .nav-folder-title-content::before {
+.nav-folder-title[data-path*="Script"] .nav-folder-title-content::before {
     content: var(--IZZB) !important;
     font-family: var(--fontZZB) !important;
     font-size: var(--size);
     vertical-align: -0.1em;
 }
 
-.nav-file-title[data-path*="ZZ2. "]>.nav-file-title-content::before {
+.nav-file-title[data-path*="Script"]>.nav-file-title-content::before {
     content: var(--IZZB-files) !important;
     vertical-align: -0.1em;
     font-family: var(--fontZZB-Files) !important;
     font-size: var(--size);
 }
 
-.nav-folder-title[data-path*="ZZ3. "] .nav-folder-title-content::before {
+.nav-folder-title[data-path*="Superlinks "] .nav-folder-title-content::before {
     content: var(--IZZC) !important;
     font-family: var(--fontZZC) !important;
     font-size: var(--size);
     vertical-align: -0.15em;
 }
 
-.nav-file-title[data-path*="ZZ3. "]>.nav-file-title-content::before {
+.nav-file-title[data-path*="Superlinks"]>.nav-file-title-content::before {
     content: var(--IZZC-files) !important;
     font-family: var(--fontZZC-Files) !important;
     font-size: calc(var(--size) + 2px);

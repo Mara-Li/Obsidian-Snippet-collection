@@ -28,16 +28,12 @@
     .nav-file-title[data-path*="12."] .nav-file-title-content {
         line-height: 20px !important;
     }
-    .nav-folder-title[data-path^="00."] .nav-folder-title-content::before {
-        padding-right: 6% !important;
-    }
     .nav-folder-title[data-path*="13."] .nav-folder-title-content::before {
         top: 4px !important;
     }
     .nav-folder-title[data-path^="40."] .nav-folder-title-content::before {
         position: relative;
         top: 0;
-        padding-right: 4% !important;
         font-size: calc(var(--size) + 1px) !important;
         vertical-align: middle !important;
     }
@@ -60,14 +56,13 @@
     }
     .nav-folder-title[data-path^="50."] .nav-folder-title-content::before {
         position: relative;
-        top: 1px !important;
         margin-left: 3px !important;
+        vertical-align: top !important;
+    }
+    .nav-file-title[data-path*="Script"]>.nav-file-title-content::before {
         vertical-align: middle !important;
     }
-    .nav-file-title[data-path*="ZZ2. "]>.nav-file-title-content::before {
-        vertical-align: middle !important;
-    }
-    .nav-file-title[data-path*="ZZ3. "]>.nav-file-title-content::before {
+    .nav-file-title[data-path*="Superlinks"]>.nav-file-title-content::before {
         vertical-align: middle !important;
     }
     .nav-folder-title[data-path*="ZZ2."] .nav-folder-title-content::before {
@@ -238,15 +233,15 @@
         margin-left: 2px !important;
         margin-right: 0 !important;
     }
-    .nav-folder-title[data-path*="ZZ3. "] .nav-folder-title-content::before {
+    .nav-folder-title[data-path*="Superlinks"] .nav-folder-title-content::before {
         vertical-align: sub !important;
     }
-    .nav-file-title[data-path*="ZZ2. "] .nav-file-title-content::before {
+    .nav-file-title[data-path*="Script"] .nav-file-title-content::before {
         vertical-align: -0.1em !important;
         position: relative !important;
         margin-left: 2px !important;
     }
-    .nav-file-title[data-path*="ZZ1. "] .nav-file-title-content::before {
+    .nav-file-title[data-path*="Modèle"] .nav-file-title-content::before {
         font-size: calc(var(--size) - 3px) !important;
         position: relative !important;
         margin-left: 5px !important;
