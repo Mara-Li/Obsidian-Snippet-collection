@@ -614,14 +614,14 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
     left: -3px;
 }
 
-.nav-folder-title[data-path*="Modèle"] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="ZZ."][data-path*="Modèle"] .nav-folder-title-content::before {
     content: var(--IZZA) !important;
     font-family: var(--fontZZA) !important;
     font-size: calc(var(--size) + 2px);
     vertical-align: -0.1em;
 }
 
-.nav-file-title[data-path*="Modèle"]>.nav-file-title-content::before {
+.nav-file-title[data-path^="ZZ."][data-path*="Modèle"]>.nav-file-title-content::before {
     content: var(--IZZA-files) !important;
     font-family: var(--fontZZA-Files) !important;
     font-size: var(--size);
