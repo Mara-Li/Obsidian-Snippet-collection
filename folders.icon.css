@@ -609,7 +609,7 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
     content: var(--IZZ) !important;
     font-family: var(--fontZZ) !important;
     font-size: calc(var(--size));
-    vertical-align: 0 !important;
+    vertical-align: 0;
     padding-right: 5px;
     left: -3px;
 }
@@ -642,7 +642,7 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
     font-size: var(--size);
 }
 
-.nav-folder-title[data-path*="Superlinks "] .nav-folder-title-content::before {
+.nav-folder-title[data-path*="Superlinks"] .nav-folder-title-content::before {
     content: var(--IZZC) !important;
     font-family: var(--fontZZC) !important;
     font-size: var(--size);
