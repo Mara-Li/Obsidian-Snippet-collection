@@ -1,10 +1,10 @@
 /* This file is a example to how you can improve the snippet without edit it, and using another snippet to adjust as you like. */
 
 @media only screen and (max-device-width: 1024px) {
-    /* Ipad / Tablette / Iphone... */
-    .nav-folder-collapse-indicator {
-        margin-left: -5px;
+    .nav-folder:not(.mod-root)>.nav-folder-children .nav-file-title {
+        margin-left: 1px !important;
     }
+    /* Ipad / Tablette / Iphone... */
     .nav-folder-title-content:before,
     .nav-file-title-content:before {
         vertical-align: -2px !important;
@@ -13,6 +13,18 @@
     div.nav-folder-title[data-path*="43."] div.nav-folder-title-content::before {
         vertical-align: 3px !important;
         top: 2px !important;
+    }
+    div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
+        vertical-align: 1px !important;
+        top: 2px !important;
+    }
+    div.nav-folder-title[data-path*="Aide"] div.nav-folder-title-content::before {
+        vertical-align: -5px !important;
+        top: 0 !important;
+    }
+    div.nav-folder-title[data-path*="52."] div.nav-folder-title-content::before {
+        vertical-align: middle !important;
+        top: 0 !important;
     }
     .nav-folder-title[data-path^="10."] .nav-folder-title-content::before {
         vertical-align: 2px !important;
@@ -28,22 +40,18 @@
     .nav-file-title[data-path*="12."] .nav-file-title-content {
         line-height: 20px !important;
     }
-    .nav-folder-title[data-path^="00."] .nav-folder-title-content::before {
-        padding-right: 6% !important;
-    }
     .nav-folder-title[data-path*="13."] .nav-folder-title-content::before {
         top: 4px !important;
     }
     .nav-folder-title[data-path^="40."] .nav-folder-title-content::before {
         position: relative;
         top: 0;
-        padding-right: 4% !important;
         font-size: calc(var(--size) + 1px) !important;
         vertical-align: middle !important;
     }
     .nav-folder-title[data-path^="ZZ."] .nav-folder-title-content::before {
         position: relative;
-        top: 1px !important;
+        top: 1px;
     }
     .nav-folder-title[data-path^="20."] .nav-folder-title-content::before,
     .nav-file-title[data-path^="20."] .nav-file-title-content::before {
@@ -60,18 +68,27 @@
     }
     .nav-folder-title[data-path^="50."] .nav-folder-title-content::before {
         position: relative;
-        top: 1px !important;
         margin-left: 3px !important;
-        vertical-align: middle !important;
+        vertical-align: top !important;
     }
-    .nav-file-title[data-path*="ZZ2. "]>.nav-file-title-content::before {
+    .nav-file-title[data-path*="Script"]>.nav-file-title-content::before,
+    .nav-file-title[data-path*="Modèle"]>.nav-file-title-content::before,
+    .nav-file-title[data-path*="Superlinks"]>.nav-file-title-content::before {
         vertical-align: middle !important;
+        top: 3px !important;
     }
-    .nav-file-title[data-path*="ZZ3. "]>.nav-file-title-content::before {
-        vertical-align: middle !important;
-    }
-    .nav-folder-title[data-path*="ZZ2."] .nav-folder-title-content::before {
+    .nav-folder-title[data-path*="Script"] .nav-folder-title-content::before {
         font-size: calc(var(--size) + 3px) !important;
+        top: 3px;
+    }
+    .nav-folder-title[data-path*="Superlinks"] .nav-folder-title-content::before {
+        position: relative;
+        top: 4px !important;
+    }
+    .nav-folder-title[data-path*="Superlinks"] .nav-folder-title-content {
+        position: relative !important;
+        vertical-align: middle !important;
+        top: -3px !important;
     }
     .nav-folder-title[data-path*="80."] .nav-folder-title-content::before {
         vertical-align: -0.2em !important;
@@ -92,40 +109,38 @@
     .nav-folder-title[data-path*="20."][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before,
     .nav-folder-title[data-path*="51."][data-path*="Ashling May"][data-path*="Illustration"] .nav-folder-title-content::before {
         vertical-align: -4px;
-        margin-right: -5px !important;
-        margin-left: 8px !important;
+        margin-left: 1em !important;
     }
     .nav-folder-title[data-path*="20."][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before {
         vertical-align: -8px;
     }
-    .nav-folder-title[data-path*="20."][data-path*="Hayleen May"] .nav-folder-title-content::before,
-    .nav-folder-title[data-path*="51"][data-path*="Ashling May"] div.nav-folder-title-content::before {
+    .nav-folder-title[data-path*="20."][data-path*="Hayleen May"] .nav-folder-title-content::before {
         vertical-align: -3px !important;
-        margin-left: -1px !important;
-        margin-right: -5px !important;
-        left: -5px !important;
+        margin-right: 0.5 !important;
+        position: relative;
+        left: 0 !important;
+        top: 0 !important;
     }
-    .nav-folder-title[data-path*="20."][data-path*="Hayleen May"] .nav-folder-title-content,
-    .nav-folder-title[data-path*="51"][data-path*="Ashling May"] div.nav-folder-title-content {
-        left: -15px !important;
+    .nav-folder-title[data-path*="20"][data-path*="Hayleen May"] div.nav-folder-title-content {
+        right: 1.3em !important;
         position: relative !important;
     }
-    .nav-folder[data-path*="20."][data-path*="Hayleen May"]>.nav-folder {
-        left: -10px !important;
+    .nav-folder-title[data-path*="51"][data-path*="Ashling May"] div.nav-folder-title-content::before {
+        vertical-align: -3px !important;
+        margin-right: O.5em !important;
+        position: relative;
+        left: 0 !important;
+    }
+    .nav-folder-title[data-path*="51"][data-path*="Ashling May"] div.nav-folder-title-content {
+        right: 1.5em;
         position: relative !important;
     }
     .nav-folder-title[data-path*="20."][data-path*="Hayleen May"] .collapse-icon,
     .nav-folder-title[data-path*="51"][data-path*="Ashling May"] .collapse-icon {
-        right: 30px !important;
+        right: 1.5em !important;
         position: relative !important;
         font-size: calc(var(--size) - 1px) !important;
         padding-left: 3px !important;
-    }
-    .nav-folder .nav-folder-title[data-path*="20."][data-path*="Hayleen May"]+.nav-folder-children .nav-file,
-    .nav-folder .nav-folder-title[data-path*="20."][data-path*="Hayleen May"]+.nav-folder-children .nav-folder,
-    .nav-folder .nav-folder-title[data-path*="51"][data-path*="Ashling May"]+.nav-folder-children .nav-file,
-    .nav-folder .nav-folder-title[data-path*="51"][data-path*="Ashling May"]+.nav-folder-children .nav-folder {
-        margin-left: -1.1em !important;
     }
 }
 
@@ -238,15 +253,16 @@
         margin-left: 2px !important;
         margin-right: 0 !important;
     }
-    .nav-folder-title[data-path*="ZZ3. "] .nav-folder-title-content::before {
-        vertical-align: sub !important;
+    .nav-folder-title[data-path*="Superlinks"] .nav-folder-title-content::before {
+        position: relative !important;
+        vertical-align: -3px !important;
     }
-    .nav-file-title[data-path*="ZZ2. "] .nav-file-title-content::before {
+    .nav-file-title[data-path*="Script"] .nav-file-title-content::before {
         vertical-align: -0.1em !important;
         position: relative !important;
         margin-left: 2px !important;
     }
-    .nav-file-title[data-path*="ZZ1. "] .nav-file-title-content::before {
+    .nav-file-title[data-path*="Modèle"] .nav-file-title-content::before {
         font-size: calc(var(--size) - 3px) !important;
         position: relative !important;
         margin-left: 5px !important;

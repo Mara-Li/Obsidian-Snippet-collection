@@ -239,7 +239,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 /* Uncomment this for adjusting line with icon */
 
 .nav-folder:not(.mod-root)>.nav-folder-children .nav-file-title {
-    margin-left: -5px !important;
+    margin-left: -5px;
 }
 
 
