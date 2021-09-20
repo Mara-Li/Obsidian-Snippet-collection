@@ -394,13 +394,13 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 
 /* =================== I20 ================== */
 
-.nav-folder-title[data-path^="20."],
-.nav-file-title[data-path*="20."] {
-    color: var(--F20) !important;
+.nav-folder-title[data-path^="80."],
+.nav-file-title[data-path*="80."] {
+    color: var(--F80) !important;
 }
 
-.nav-folder-title[data-path^="20."] .nav-folder-title-content::before,
-.nav-file-title[data-path^="20."] .nav-file-title-content::before {
+.nav-folder-title[data-path^="80."] .nav-folder-title-content::before,
+.nav-file-title[data-path^="80."] .nav-file-title-content::before {
     content: var(--I20) !important;
     font-family: var(--font20) !important;
     font-size: var(--size);
@@ -412,12 +412,12 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 
 /* ===== FOLDER 30 ======== */
 
-.nav-folder-title[data-path^="30."],
-.nav-file-title[data-path*="30."] {
-    color: var(--F30) !important;
+.nav-folder-title[data-path^="60."],
+.nav-file-title[data-path*="60."] {
+    color: var(--F60) !important;
 }
 
-.nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="60."] .nav-folder-title-content::before {
     content: var(--I30) !important;
     font-family: var(--font30) !important;
     font-size: var(--size);
@@ -425,19 +425,19 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     left: -3px !important;
 }
 
-.nav-folder-title[data-path^="30."]::before {
+.nav-folder-title[data-path^="60."]::before {
     top: 2px !important;
 }
 
 
 /* ======== Personnages ===== */
 
-.nav-folder-title[data-path^="40."],
-.nav-file-title[data-path*="40."] {
-    color: var(--F40) !important;
+.nav-folder-title[data-path^="30."],
+.nav-file-title[data-path*="30."] {
+    color: var(--F30) !important;
 }
 
-.nav-folder-title[data-path^="40."] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
     content: var(--I40) !important;
     font-family: var(--font40) !important;
     font-size: calc(var(--size) + 3%);
@@ -448,14 +448,14 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 
 /* Fiches */
 
-.nav-folder-title[data-path*="42."] .nav-folder-title-content::before {
+.nav-folder-title[data-path*="32."] .nav-folder-title-content::before {
     content: var(--I42) !important;
     font-family: var(--font42) !important;
     font-size: var(--size);
     padding-right: 5px;
 }
 
-.nav-folder-title[data-path*="41."] .nav-folder-title-content::before {
+.nav-folder-title[data-path*="31."] .nav-folder-title-content::before {
     content: var(--I41) !important;
     font-family: var(--font41) !important;
     font-size: var(--size);
@@ -463,7 +463,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     padding-right: 5px;
 }
 
-.nav-folder-title[data-path*="43."] .nav-folder-title-content::before {
+.nav-folder-title[data-path*="33."] .nav-folder-title-content::before {
     content: var(--I43) !important;
     font-family: var(--font43) !important;
     font-size: var(--size);
@@ -474,12 +474,12 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 
 /* ============ Univers ==================== */
 
-.nav-folder-title[data-path^="50"],
-.nav-file-title[data-path*="50."] {
-    color: var(--F50) !important;
+.nav-folder-title[data-path^="40"],
+.nav-file-title[data-path*="40."] {
+    color: var(--F40) !important;
 }
 
-div.nav-folder-title[data-path^="50."] div.nav-folder-title-content::before {
+div.nav-folder-title[data-path^="40."] div.nav-folder-title-content::before {
     content: var(--I50) !important;
     font-family: var(--font50) !important;
     font-size: var(--size);
@@ -488,7 +488,7 @@ div.nav-folder-title[data-path^="50."] div.nav-folder-title-content::before {
     left: -3px;
 }
 
-div.nav-folder-title[data-path*="52."] div.nav-folder-title-content::before {
+div.nav-folder-title[data-path*="42."] div.nav-folder-title-content::before {
     content: var(--I52) !important;
     font-family: var(--font52) !important;
     font-size: var(--size);
@@ -496,13 +496,13 @@ div.nav-folder-title[data-path*="52."] div.nav-folder-title-content::before {
     padding-right: 3px;
 }
 
-div.nav-folder-title[data-path*="51."] div.nav-folder-title-content::before {
+div.nav-folder-title[data-path*="41."] div.nav-folder-title-content::before {
     content: var(--I51) !important;
     font-family: var(--font51) !important;
     font-size: var(--size);
 }
 
-div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
+div.nav-folder-title[data-path*="43."] div.nav-folder-title-content::before {
     content: var(--I53) !important;
     font-family: var(--font53) !important;
     font-size: var(--size);
@@ -512,12 +512,12 @@ div.nav-folder-title[data-path*="53."] div.nav-folder-title-content::before {
 
 /* ============ Folder 70 ==================== */
 
-.nav-folder-title[data-path^="60"],
-.nav-file-title[data-path*="60."] {
-    color: var(--F60) !important;
+.nav-folder-title[data-path^="50"],
+.nav-file-title[data-path*="50."] {
+    color: var(--F50) !important;
 }
 
-div.nav-folder-title[data-path^="60."] div.nav-folder-title-content::before {
+div.nav-folder-title[data-path^="50."] div.nav-folder-title-content::before {
     content: var(--I60) !important;
     font-family: var(--font60) !important;
     font-size: var(--size);
@@ -526,7 +526,7 @@ div.nav-folder-title[data-path^="60."] div.nav-folder-title-content::before {
     left: -3px;
 }
 
-div.nav-folder-title[data-path*="61."] div.nav-folder-title-content::before {
+div.nav-folder-title[data-path*="51."] div.nav-folder-title-content::before {
     content: var(--I61) !important;
     font-family: var(--font61) !important;
     font-size: var(--size);
@@ -551,12 +551,12 @@ div.nav-folder-title[data-path^="70."] div.nav-folder-title-content::before {
 
 /* =============== FOLDER 80 ===================== */
 
-.nav-folder-title[data-path^="80."],
-.nav-file-title[data-path*="80."] {
-    color: var(--F80) !important;
+.nav-folder-title[data-path^="20."],
+.nav-file-title[data-path^="20."] {
+    color: var(--F20) !important;
 }
 
-div.nav-folder-title[data-path^="80."] div.nav-folder-title-content::before {
+div.nav-folder-title[data-path^="20."] div.nav-folder-title-content::before {
     content: var(--I80) !important;
     font-family: var(--font80) !important;
     font-size: var(--size);
