@@ -13,7 +13,9 @@ settings:
         description: The size of the markdown clutter.
         format: px
     -
-        id: code-display
+        id: code-select
+        title: Code display
+        description: Add option to display (or not) the code backtick in codeblocks
         type: class-select
         allowEmpty: false
         default: no-display
