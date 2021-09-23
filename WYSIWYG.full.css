@@ -906,14 +906,10 @@ a.tag:hover,
 .markdown-preview-view a.tag:not(.kanban-plugin .tag) {
     color: var(--tag) !important;
     background-color: var(--tag-background-color) !important;
-    padding-top: 4px !important;
-    padding-bottom: 2px !important;
-    padding-left: calc(var(--tag-left) + 2px) !important;
-    padding-right: calc(var(--tag-left) + 2px) !important;
 }
 
 .tag {
-    padding: 0 !important;
+    padding: 0.3em !important;
 }
 
 
