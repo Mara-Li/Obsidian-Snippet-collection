@@ -1,5 +1,5 @@
 /* @settings
-name: "Pseudo-WYSIWYG"
+name: "Pseudo-WYSIWYG-double"
 id: wysiwyg
 settings:
     - 
@@ -303,19 +303,22 @@ settings:
         default-dark: "#0493ec"
     -
         id: tag-up
-        title: Tag Padding Up
+        title: Tag Padding
+        description: Adjust the border and the text (up)
         default: 0
         format: px
         type: variable-number
     -
         id: tag-left
-        title: Tag Padding Left
+        title: Tag Padding
+        description: Adjust the border and the text (left-right)
         default: 4
         format: px
         type: variable-number
     -
         id: tag-bottom
-        title: Tag Padding Bottom
+        title: Tag Padding
+        description: Adjust the border and the text (bottom)
         default: 4
         format: px
         type: variable-number
@@ -903,8 +906,8 @@ a.tag:hover,
 .markdown-preview-view a.tag:not(.kanban-plugin .tag) {
     color: var(--tag) !important;
     background-color: var(--tag-background-color) !important;
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
     padding-left: calc(var(--tag-left) + 2px) !important;
     padding-right: calc(var(--tag-left) + 2px) !important;
 }
@@ -978,8 +981,8 @@ span.cm-templater-command.cm-string {
 
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight {
-    background-color: var(--text-mark);
-    color: var(--text-normal);
+    background-color: var(--text-mark) !important;
+    color: var(--text-normal) !important;
 }
 
 

@@ -10,7 +10,7 @@
         vertical-align: -2px !important;
         left: -3px !important;
     }
-    div.nav-folder-title[data-path*="23."] div.nav-folder-title-content::before {
+    div.nav-folder-title[data-path*='20.'][data-path*="23."] div.nav-folder-title-content::before {
         vertical-align: 3px !important;
         top: 2px !important;
     }
@@ -28,7 +28,8 @@
     }
     div.nav-folder-title[data-path*="03."] div.nav-folder-title-content::before {
         margin-right: -5px;
-        vertical-align: -1px !important;
+        top: 0 !important;
+        vertical-align: middle !important;
     }
     .nav-folder-title[data-path*="03."] .nav-folder-title-content::before {
         top: 4px !important;
@@ -100,15 +101,12 @@
     }
     .nav-folder-title[data-path*="20."][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before,
     .nav-folder-title[data-path*="31."][data-path*="Ashling May"][data-path*="Illustration"] .nav-folder-title-content::before {
-        vertical-align: -4px;
-        margin-left: 1em !important;
+        vertical-align: sub !important;
+        margin-left: 0.9em !important;
     }
-    .nav-folder-title[data-path*="20."][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before {
-        vertical-align: -8px;
-    }
-    .nav-folder-title[data-path*="20."][data-path*="Hayleen May"] .nav-folder-title-content::before,
-    .nav-folder-title[data-path*="20."][data-path*="Mnémosyne"] .nav-folder-title-content::before {
-        vertical-align: -3px !important;
+    .nav-folder-title[data-path^='20.'][data-path*="20."][data-path*="Hayleen May"] .nav-folder-title-content::before,
+    .nav-folder-title[data-path^='20.'][data-path*="20."][data-path*="Mnémosyne"] .nav-folder-title-content::before {
+        vertical-align: middle !important;
         margin-right: 0.5 !important;
         position: relative;
         left: 0 !important;
@@ -212,7 +210,7 @@
     div.nav-folder-title[data-path*="Média/Série"] div.nav-folder-title-content::before {
         margin-left: -1.2em !important;
     }
-    div.nav-folder-title[data-path*="23."] div.nav-folder-title-content::before {
+    div.nav-folder-title[data-path^='20.'][data-path*="23."] div.nav-folder-title-content::before {
         vertical-align: top !important;
     }
     div.nav-folder-title[data-path^="10."] div.nav-folder-title-content::before {
@@ -283,20 +281,23 @@
     line-height: 20px !important;
 }
 
-div.nav-folder-title[data-path*="23."] div.nav-folder-title-content::before {
-    font-size: calc(var(--size) - 4px) !important;
-    left: -2px;
-}
-
-.nav-folder-title[data-path*="20."][data-path*="Hayleen May"] .nav-folder-title-content::before,
-.nav-folder-title[data-path*="20."][data-path*="Mnémosyne"] .nav-folder-title-content::before,
+.nav-folder-title[data-path^="20."][data-path*="20."][data-path*="Hayleen May"] .nav-folder-title-content::before,
+.nav-folder-title[data-path^="20."][data-path*="20."][data-path*="Mnémosyne"] .nav-folder-title-content::before,
 .nav-folder-title[data-path*="31"][data-path*="Ashling May"] div.nav-folder-title-content::before {
     content: "\ea37" !important;
     font-family: boxicons !important;
     font-size: var(--size) !important;
     margin-left: 0px;
-    vertical-align: -2px
+    vertical-align: -2px;
+    
+  }
+
+.nav-folder-title[data-path^='20.'][data-path*="23."] .nav-folder-title-content::before {
+    font-size: calc(var(--size) - 4px) !important;
+    left: -2px;
 }
+
+
 
 .nav-folder-title[data-path*="20."][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before,
 .nav-folder-title[data-path*="31."][data-path*="Ashling May"][data-path*="Illustration"] .nav-folder-title-content::before {
