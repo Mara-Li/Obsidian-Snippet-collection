@@ -433,10 +433,10 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 /* ======== Personnages ===== */
 
 .nav-folder-title[data-path^="20."],
-.nav-file-title[data-path*="20."],
-.nav-file-title[data-path*="20."][data-path*="30."],
-.nav-file-title[data-path*="20."][data-path*="10."],
-.nav-file-title[data-path*="20."][data-path*="20."] {
+.nav-file-title[data-path^="20."],
+.nav-file-title[data-path^="20."][data-path*="30."],
+.nav-file-title[data-path^="20."][data-path*="10."],
+.nav-file-title[data-path^="20."][data-path*="20."] {
     color: var(--F20) !important;
 }
 
@@ -631,14 +631,14 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
     vertical-align: middle;
 }
 
-.nav-folder-title[data-path*="Script"] .nav-folder-title-content::before {
+.nav-folder-title[data-path*="Templater"] .nav-folder-title-content::before {
     content: var(--IZZB) !important;
     font-family: var(--fontZZB) !important;
     font-size: var(--size);
     vertical-align: -0.1em;
 }
 
-.nav-file-title[data-path*="Script"]>.nav-file-title-content::before {
+.nav-file-title[data-path*="Templater"]>.nav-file-title-content::before {
     content: var(--IZZB-files) !important;
     vertical-align: -0.1em;
     font-family: var(--fontZZB-Files) !important;
@@ -657,6 +657,14 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
     font-family: var(--fontZZC-Files) !important;
     font-size: calc(var(--size) + 2px);
     vertical-align: -0.15em;
+}
+
+.nav-folder-title[data-path*="JS"] .nav-folder-title-content::before {
+    content: "\f3d3" !important;
+    font-family: "Font Awesome 5 Brands" !important;
+    font-size: var(--size);
+    left: 0;
+    vertical-align: 0 !important;
 }
 
 
@@ -682,7 +690,8 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
     vertical-align: top !important;
 }
 
-.nav-file-title[data-path$="js"] .nav-file-title-content:before {
+.nav-file-title[data-path$="js"] .nav-file-title-content:before,
+.nav-file-title[data-path*="Javascript"]>.nav-file-title-content::before {
     content: "\f3d3" !important;
     font-family: "Font Awesome 5 Brands" !important;
     font-size: var(--size);
