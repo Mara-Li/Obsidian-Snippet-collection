@@ -303,22 +303,19 @@ settings:
         default-dark: "#0493ec"
     -
         id: tag-up
-        title: Tag Padding
-        description: Adjust the border and the text (up)
+        title: Tag Padding Up
         default: 0
         format: px
         type: variable-number
     -
         id: tag-left
-        title: Tag Padding
-        description: Adjust the border and the text (left-right)
+        title: Tag Padding Left
         default: 4
         format: px
         type: variable-number
     -
         id: tag-bottom
-        title: Tag Padding
-        description: Adjust the border and the text (bottom)
+        title: Tag Padding Bottom
         default: 4
         format: px
         type: variable-number
@@ -907,7 +904,7 @@ a.tag:hover,
     color: var(--tag) !important;
     background-color: var(--tag-background-color) !important;
     padding-top: 4px !important;
-    padding-bottom: 2px !important;
+    padding-bottom: 4px !important;
     padding-left: calc(var(--tag-left) + 2px) !important;
     padding-right: calc(var(--tag-left) + 2px) !important;
 }
@@ -981,8 +978,8 @@ span.cm-templater-command.cm-string {
 
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight {
-    background-color: var(--text-mark) !important;
-    color: var(--text-normal) !important;
+    background-color: var(--text-mark);
+    color: var(--text-normal);
 }
 
 
