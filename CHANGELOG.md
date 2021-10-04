@@ -1,6 +1,6 @@
 # Changelog
 
-## [latest](https://github.com/Mara-Li/Obsidian-Snippet-collection/tree/latest) (2021-09-23)
+## [latest](https://github.com/Mara-Li/Obsidian-Snippet-collection/tree/latest) (2021-10-04)
 
 [Full Changelog](https://github.com/Mara-Li/Obsidian-Snippet-collection/compare/Latest...latest)
 
