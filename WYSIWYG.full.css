@@ -384,7 +384,8 @@ settings:
 span.cm-formatting.cm-formatting-link-string.cm-string.cm-url,
 span.cm-formatting.cm-formatting-task.cm-property,
 span.cm-formatting.cm-formatting-task.cm-meta,
-span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link) {
+span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link,
+span.cm-formatting.cm-formatting-code-block) {
     font-size: var(--clutter);
     opacity: 1;
 }
@@ -394,7 +395,9 @@ span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link) {
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting:not(span.cm-formatting-list,
-span.cm-formatting-task),
+span.cm-formatting-task,
+body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian pre.HyperMD-codeblock .cm-comment,
+span.cm-formatting.cm-formatting-code-block),
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-image.cm-image-alt-text.cm-link,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url,
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-header,
@@ -405,6 +408,11 @@ div:not(.mobile-transparent)>.mobile .cm-hmd-internal-link,
 div:not(.mobile-transparent)>.mobile .cm-attribute {
     display: none !important;
     opacity: 1;
+}
+
+span.cm-comment.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock,
+.cm-s-obsidian pre.HyperMD-codeblock span.cm-formatting-code-block {
+    font-size: var(--clutter);
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-image.cm-image.cm-image-alt-text.cm-link,
@@ -422,27 +430,55 @@ span.cm-formatting.cm-formatting-em.cm-em {
 
 /* Codeblocks */
 
-.code-display .CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock,
-.code-display div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock,
-.code-display .cm-s-obsidian pre.HyperMD-codeblock span.cm-formatting-code-block,
-.code-display span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock {
-    font-size: var(--clutter) !important;
+pre.HyperMD-codeblock.CodeMirror-line>span.cm-string {
     display: inline !important;
 }
 
-span.cm-formatting.cm-formatting-code.cm-inline-code {
+body.unified-cm-highlighting[class*="theme-"] .CodeView .cm-s-obsidian .CodeMirror-lines .cm-string,
+body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian .cm-hmd-frontmatter.cm-string,
+body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian .cm-math.cm-string,
+body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian pre.HyperMD-codeblock .cm-string,
+body.fallback-highlighting[class*="theme-"] .markdown-preview-view pre.cm-s-obsidian .cm-string,
+bodybody.unified-cm-highlighting[class*="theme-"] .CodeView .cm-s-obsidian .CodeMirror-lines,
+body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian .cm-hmd-frontmatter,
+body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian pre.HyperMD-codeblock,
+body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian .cm-math,
+body.unified-cm-highlighting[class*="theme-"] .HyperMD-codeblock,
+body.unified-cm-highlighting[class*="theme-"] .cm-hmd-codeblock,
+body.unified-cm-highlighting[class*="theme-"] .CodeView .cm-s-obsidian .CodeMirror-lines .CodeMirror-activeline-background,
+body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian .cm-hmd-frontmatter.CodeMirror-activeline-background,
+body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian .cm-math.CodeMirror-activeline-background,
+body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian .HyperMD-codeblock-bg.CodeMirror-activeline-background,
+body.unified-cm-highlighting[class*="theme-"] .markdown-preview-view pre.cm-s-obsidian .CodeMirror-activeline-background {
+    font-size: var(--editor-font-size);
+    padding-left: 0 !important;
+}
+
+.code-display .CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock,
+.code-display div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock,
+.code-display .cm-s-obsidian pre.HyperMD-codeblock span.cm-formatting-code-block,
+.code-display span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock,
+.code-display body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian pre.HyperMD-codeblock .cm-comment {
+    font-size: var(--clutter) !important;
+    display: inline;
+}
+
+span.cm-formatting.cm-formatting-code.cm-inline-code,
+body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian pre.HyperMD-codeblock .cm-comment {
     background-color: transparent !important;
 }
 
 .no-display div:not(.CodeMirror-activeline)>pre.HyperMD-codeblock.HyperMD-codeblock-end.CodeMirror-line,
-.no-display div:not(.CodeMirror-activeline)>pre.HyperMD-codeblock.HyperMD-codeblock-begin.CodeMirror-line {
+.no-display div:not(.CodeMirror-activeline)>pre.HyperMD-codeblock.HyperMD-codeblock-begin.CodeMirror-line,
+.no-display div:not(.CodeMirror-activeline)>body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian pre.HyperMD-codeblock .cm-comment {
     background-color: transparent !important;
     display: inline !important;
     opacity: 0 !important;
 }
 
 .no-display pre.HyperMD-codeblock.HyperMD-codeblock-begin.CodeMirror-line,
-.no-display pre.HyperMD-codeblock.HyperMD-codeblock-end.CodeMirror-line {
+.no-display pre.HyperMD-codeblock.HyperMD-codeblock-end.CodeMirror-line,
+.no-display body.unified-cm-highlighting[class*="theme-"] .cm-s-obsidian pre.HyperMD-codeblock .cm-comment {
     font-size: var(--clutter) !important;
 }
 
@@ -673,10 +709,6 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line .cm-string.cm-url:not(.cm-forma
 .wys-enhanced div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string.cm-url:not(.cm-formatting) {
     font-size: 0 !important;
     letter-spacing: 0.03em !important;
-    display: inline !important;
-}
-
-.CodeMirror-line span.cm-formatting {
     display: inline !important;
 }
 
@@ -981,6 +1013,9 @@ span.cm-templater-command.cm-string {
     background-color: var(--text-mark);
     color: var(--text-normal);
 }
+
+
+/* Excalidraw & code blocks */
 
 
 /* ============= Style settings Mobile specific ================================= */
