@@ -62,18 +62,41 @@ settings:
         default: 4
         format: px
         type: variable-number
+    -
+        id : header-Blockquote
+        title: Blockquote
+        type: heading
+        description: Active and change the color for the blockquote.
+        level: 1
+        collapsed: true 
+    -
+        id: blockquote
+        title: Blockquote 
+        description: Add nice blockquote. 
+        type: class-toggle
+    - 
+        id: color-blockquote
+        title: Blockquote border color
+        description: change the blockquote color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: "#54b6c0"
+        default-dark: "#54b6c0"
 */
 
 .theme-dark {
     --tag: #1d588f;
     --tag-background-color: #80cbee67;
     --tag-border-color: #0493ec;
+    --bg-blockquote: #ffffff00;
 }
 
 .theme-light {
     --tag: #1d588f;
     --tag-background-color: #80cbee67;
     --tag-border-color: #0493ec;
+    --bg-blockquote: #ffffff00;
 }
 
 :root {
@@ -82,6 +105,7 @@ settings:
     --tag-left: 4px;
     --tag-bottom: 4px;
     --markdown-opacity: 0.1;
+    --color-blockquote: #54b6c0;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-link.cm-list-1.cm-hmd-internal-link.cm-internal-link-url {
@@ -244,7 +268,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag:not(span.cm-tag.cm-
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag.cm-bracket:not(span.cm-tag.cm-hmd-codeblock),
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-attribute:not(span.cm-attribute.cm-hmd-codeblock),
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string:not(span.cm-string.cm-hmd-codeblock, span.cm-string.cm-hmd-frontmatter),
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape {
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape:not(span.cm-formatting-escape.cm-hmd-escape-backslash) {
     font-family: monospace;
     font-size: 1px !important;
     letter-spacing: -1ch;
@@ -266,4 +290,32 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
     background: var(--background-modifier-border);
     left: 0;
     top: 50%;
+}
+
+
+/* Quote */
+
+.hide-tokens .cm-s-obsidian pre.hmd-inactive-line span.cm-formatting-quote {
+    color: transparent !important;
+    content: "";
+}
+
+.blockquote .HyperMD-quote {
+    color: var(--color-blockquote) !important;
+}
+
+span.cm-quote.cm-quote-1 {
+    color: var(--color-blockquote) !important;
+}
+
+pre.HyperMD-quote.HyperMD-quote-1 {
+    padding-left: 3em !important;
+}
+
+span.suggestion-prefix {
+    display: none;
+}
+
+.cm-s-obsidian .hmd-inactive-line span.cm-hmd-escape-backslash {
+    font-size: var(--editor-font-size) !important;
 }
