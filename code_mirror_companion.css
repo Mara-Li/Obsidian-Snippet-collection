@@ -14,6 +14,12 @@ settings:
         step: 0.1
         title: Opacity for markdown clutter.
     - 
+        id: markdown-clutter
+        type: variable-number
+        default: 10
+        format: px
+        title: Font Size for markdown
+    -
         id: header-tags
         title: Tags
         description: Change the color for the tags pills.
@@ -106,6 +112,7 @@ settings:
     --tag-bottom: 4px;
     --markdown-opacity: 0.1;
     --color-blockquote: #54b6c0;
+    --markdown-clutter: 10px;
 }
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-link.cm-list-1.cm-hmd-internal-link.cm-internal-link-url {
@@ -318,4 +325,15 @@ span.suggestion-prefix {
 
 .cm-s-obsidian .hmd-inactive-line span.cm-hmd-escape-backslash {
     font-size: var(--editor-font-size) !important;
+}
+
+
+/* Comments */
+
+span.cm-comment {
+    font-size: var(--markdown-clutter) !important;
+}
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment {
+    opacity: var(--markdown-opacity);
 }
