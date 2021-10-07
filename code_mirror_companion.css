@@ -267,7 +267,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag.cm-bracket.cm-hmd-h
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag:not(span.cm-tag.cm-hmd-codeblock),
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-tag.cm-bracket:not(span.cm-tag.cm-hmd-codeblock),
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-attribute:not(span.cm-attribute.cm-hmd-codeblock),
-div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string:not(span.cm-string.cm-hmd-codeblock, span.cm-string.cm-hmd-frontmatter),
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-string:not(span.cm-string.cm-hmd-codeblock, span.cm-string.cm-hmd-frontmatter, span.cm-templater-command.cm-string),
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-escape:not(span.cm-formatting-escape.cm-hmd-escape-backslash) {
     font-family: monospace;
     font-size: 1px !important;
