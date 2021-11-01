@@ -201,12 +201,12 @@
         font-size: calc(var(--size) + 2px) !important;
         vertical-align: -0.2em !important;
     }
-    .nav-folder-title[data-path="50. Média"] .nav-folder-title-content::before {
-        font-size: calc(var(--size) + 2px) !important;
-        vertical-align: -0.15em !important;
-    }
     .nav-folder-title[data-path^="50."] .nav-folder-title-content::before {
-        vertical-align: -1px !important;
+        vertical-align: -0.1em !important;
+        font-size: calc(var(--size) + 3px) !important;
+        position: relative !important;
+        left: -5px !important;
+        padding-right: 1px !important
     }
     .nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
         vertical-align: -1%;
