@@ -52,6 +52,9 @@ The main difference between the semi and the full is that :
 
 This Semi WYSIWYG mode is more like the mobile mode on the full snippet. It prevent the "cursor jump" with the text selection. 
 
+## Wysiwyg code mirror companion
+It's a little snippet that must be used with the plugin [Code Mirror Options](https://github.com/nothingislost/obsidian-codemirror-options). It works only for PC.
+
 
 ## Information about mobile support
 On mobile, the code mirror version used is **Code Mirror 6**, not **Code Mirror 5**. So, activeline doesn’t work. I use another “tricks” to create a WYSIWYG view. For example :
@@ -88,7 +91,7 @@ Note : With this setup, you **will not be able** to edit the file, because each 
 ![image](https://user-images.githubusercontent.com/30244939/129887585-21c178bd-f9d8-4bf1-a8be-c5336b483435.png)
 ![image](https://user-images.githubusercontent.com/30244939/129887665-02d8b446-243d-4b41-a5e3-64fdf113c713.png)
 
-
+##### Code Mirror Options Companions
 
 #### Source
 - [Clutter Free](https://forum.obsidian.md/t/clutter-free-edit-mode/6791)
