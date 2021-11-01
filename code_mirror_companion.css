@@ -164,9 +164,13 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-list-1.cm-formatting.cm
     font-family: inherit;
 }
 
-.cm-s-obsidian span.cm-hashtag-end {
+.cm-s-obsidian span.cm-hashtag-end:not(span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end) {
     line-height: 30px !important;
     padding: var(--tag-up) var(--tag-left) var(--tag-bottom) !important;
+}
+
+span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end {
+    padding: var(--tag-left) !important;
 }
 
 .cm-s-obsidian span.cm-hashtag,

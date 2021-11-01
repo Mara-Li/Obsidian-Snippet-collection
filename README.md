@@ -1,3 +1,7 @@
+---
+{}
+---
+
 # Summary
 - [WYSIWYG](https://github.com/Mara-Li/Obsidian-Snippet-collection#wysiwyg-and-pseudo-wysiwyg)
 - [Colored Folder](https://github.com/Mara-Li/Obsidian-Snippet-collection#colored-folder)

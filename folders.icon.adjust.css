@@ -100,17 +100,20 @@
         padding-right: 8px !important;
     }
     .nav-folder-title[data-path*="20."][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before,
+    .nav-folder-title[data-path*="20."][data-path*="Mnémosyne"][data-path*="Illustration"] .nav-folder-title-content::before {
+        padding-left: 0.9em;
+    }
     .nav-folder-title[data-path*="31."][data-path*="Ashling May"][data-path*="Illustration"] .nav-folder-title-content::before {
-        vertical-align: sub !important;
-        margin-left: 0.9em !important;
+        margin-left: 1.4em !important;
     }
     .nav-folder-title[data-path^='20.'][data-path*="20."][data-path*="Hayleen May"] .nav-folder-title-content::before,
     .nav-folder-title[data-path^='20.'][data-path*="20."][data-path*="Mnémosyne"] .nav-folder-title-content::before {
         vertical-align: middle !important;
-        margin-right: 0.5 !important;
+        margin-left: 0.3em !important;
         position: relative;
         left: 0 !important;
         top: 0 !important;
+        padding-right: 0.3em !important;
     }
     .nav-folder-title[data-path*="20"][data-path*="Hayleen May"] div.nav-folder-title-content,
     .nav-folder-title[data-path*="20"][data-path*="Mnémosyne"] div.nav-folder-title-content {
@@ -120,6 +123,7 @@
     .nav-folder-title[data-path*="31"][data-path*="Ashling May"] div.nav-folder-title-content::before {
         vertical-align: -3px !important;
         margin-right: O.5em !important;
+        margin-left: 0.5em !important;
         position: relative;
         left: 0 !important;
     }
@@ -129,7 +133,7 @@
     }
     .nav-folder-title[data-path*="20."][data-path*="Hayleen May"] .collapse-icon,
     .nav-folder-title[data-path*="31"][data-path*="Ashling May"] .collapse-icon,
-    .nav-folder-title[data-path*="20"][data-path*="Mnémosyne"] .collapse-icon {
+    .nav-folder-title[data-path*="20."][data-path*="Mnémosyne"] .collapse-icon {
         right: 1.5em !important;
         position: relative !important;
         font-size: calc(var(--size) - 1px) !important;
@@ -156,15 +160,17 @@
     .nav-folder-children .nav-file-title-content:first-child::before {
         padding-left: 10px !important;
     }
-    .nav-folder-title[data-path*="20."][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before {
+    .nav-folder-title[data-path*="20."][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before,
+    .nav-folder-title[data-path*="20."][data-path*="Mnémosyne"][data-path*="Illustration"] .nav-folder-title-content::before {
         vertical-align: -4px !important;
-        margin-left: 10px !important;
+        margin-left: 0.9em;
     }
     .nav-folder-title[data-path*="31."][data-path*="Ashling May"][data-path*="Illustration"] .nav-folder-title-content::before {
         vertical-align: -4px !important;
-        margin-left: 8px !important;
+        margin-left: 0.70em;
     }
-    .nav-folder-title[data-path*="20."][data-path*="Hayleen May"] .nav-folder-title-content::before {
+    .nav-folder-title[data-path*="20."][data-path*="Hayleen May"] .nav-folder-title-content::before,
+    .nav-folder-title[data-path*="20."][data-path*="Mnémosyne"] .nav-folder-title-content::before {
         left: -5px !important;
         margin-right: -5px !important;
     }
@@ -289,17 +295,15 @@
     font-size: var(--size) !important;
     margin-left: 0px;
     vertical-align: -2px;
-    
-  }
+}
 
 .nav-folder-title[data-path^='20.'][data-path*="23."] .nav-folder-title-content::before {
     font-size: calc(var(--size) - 4px) !important;
     left: -2px;
 }
 
-
-
 .nav-folder-title[data-path*="20."][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before,
+.nav-folder-title[data-path*="20."][data-path*="Mnémosyne"][data-path*="Illustration"] .nav-folder-title-content::before,
 .nav-folder-title[data-path*="31."][data-path*="Ashling May"][data-path*="Illustration"] .nav-folder-title-content::before {
     content: "\e416" !important;
     font-family: "Material Icons" !important;
