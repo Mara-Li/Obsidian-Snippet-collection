@@ -393,9 +393,17 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     color: var(--F20) !important;
 }
 
-.nav-folder-title[data-path^="20."][data-path^="21."] .nav-folder-title-content::before {
+.nav-folder-title[data-path^="20."] .nav-folder-title-content::before {
     content: var(--I40) !important;
     font-family: var(--font40) !important;
+    font-size: calc(var(--size) + 3%);
+    padding-right: calc(5px - 1%);
+    left: -3px;
+}
+
+.nav-folder-title[data-path^="20."][data-path^="21."] .nav-folder-title-content::before {
+    content: var(--I41) !important;
+    font-family: var(--font41) !important;
     font-size: calc(var(--size) + 3%);
     padding-right: calc(5px - 1%);
     left: -3px;
