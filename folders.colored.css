@@ -13,12 +13,31 @@ name: Nested Folder
 id: nested
 settings:
     -
-        id: adjust
+        id: adjust-line 
+        format: heading
+        collapsed: true
+        title: Adjust Line
+        level: 2
+    -
+        id: adjust-pc
         format: em
-        title: Line 
-        description: Adjust line with icon (in em)
+        title: Line PC
+        description: Adjust line with icon (in em) (ON PC)
         default: 1.2
         type: variable-number
+    -
+        id: adjust-mobile
+        format: em
+        title: Line MOBILE
+        description: Adjust line with icon (in em) (ON MOBILE)
+        default: 0.8
+        type: variable-number
+    -
+        id: color
+        collapsed: false
+        title: Color choose
+        type: heading
+        level: 2
     -
         id: bg00
         format: hex
@@ -131,7 +150,8 @@ settings:
     --FoldText: white;
     --FoldTextMaster: var(--FoldText);
     --inbox-font: 0, 18, 25;
-    --adjust: 1.2em;
+    --adjust-pc: 1.2em;
+    --adjust-mobile: 0.8em;
 }
 
 .theme-dark {
@@ -365,34 +385,58 @@ You can change these to match your use case.
 
 /* Relationship lines for 2nd, 3rd, and 4th level folders */
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
-    border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
-    margin-left: var(--adjust);
+@media only screen and (max-device-width: 1024px) {
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
+        border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
+        margin-left: var(--adjust-mobile);
+    }
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
+        border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
+        margin-left: var(--adjust-mobile);
+    }
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
+        border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
+        margin-left: var(--adjust-mobile);
+    }
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
+        border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
+        margin-left: var(--adjust-mobile);
+    }
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
+        border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
+        margin-left: var(--adjust-mobile);
+    }
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
+        border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
+        margin-left: var(--adjust-mobile);
+    }
 }
 
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
-    border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
-    margin-left: var(--adjust);
-}
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
-    border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
-    margin-left: var(--adjust);
-}
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
-    border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
-    margin-left: var(--adjust);
-}
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
-    border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
-    margin-left: var(--adjust);
-}
-
-.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
-    border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
-    margin-left: var(--adjust);
+@media only screen and (min-device-width: 1024px) {
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
+        border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
+        margin-left: var(--adjust-pc);
+    }
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
+        border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
+        margin-left: var(--adjust-pc);
+    }
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
+        border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
+        margin-left: var(--adjust-pc);
+    }
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
+        border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
+        margin-left: var(--adjust-pc);
+    }
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
+        border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
+        margin-left: calc(var(--adjust-pc));
+    }
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
+        border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
+        margin-left: calc(var(--adjust-pc));
+    }
 }
 
 
