@@ -152,22 +152,17 @@
         padding-right: 0 !important;
         vertical-align: -0.18em !important;
     }
-    /* PC FORME */
     .nav-folder-title[data-path^="20."] .nav-folder-title-content::before {
         left: -4px !important;
         vertical-align: -1px !important;
     }
-    .nav-folder-children .nav-file-title-content:first-child::before {
-        padding-left: 10px !important;
-    }
+
     .nav-folder-title[data-path*="20."][data-path*="Hayleen May"][data-path*="Illustration"] .nav-folder-title-content::before,
     .nav-folder-title[data-path*="20."][data-path*="Mnémosyne"][data-path*="Illustration"] .nav-folder-title-content::before {
         vertical-align: -4px !important;
-        margin-left: 0.9em;
     }
     .nav-folder-title[data-path*="31."][data-path*="Ashling May"][data-path*="Illustration"] .nav-folder-title-content::before {
         vertical-align: -4px !important;
-        margin-left: 0.70em;
     }
     .nav-folder-title[data-path*="20."][data-path*="Hayleen May"] .nav-folder-title-content::before,
     .nav-folder-title[data-path*="20."][data-path*="Mnémosyne"] .nav-folder-title-content::before {
@@ -178,10 +173,6 @@
     .nav-folder-title[data-path*="20."][data-path*="Mnémosyne"] .nav-folder-title-content::before,
     .nav-folder-title[data-path*="31"][data-path*="Ashling May"] div.nav-folder-title-content::before {
         vertical-align: -3px !important;
-        margin-left: -8px !important;
-        margin-right: 0 !important;
-        left: 0 !important;
-        position: relative !important;
     }
     .nav-folder-title[data-path*="20."][data-path*="Hayleen May"] .nav-folder-title-content,
     .nav-folder-title[data-path*="20."][data-path*="Mnémosyne"] .nav-folder-title-content,
@@ -211,11 +202,6 @@
     .nav-folder-title[data-path^="30."] .nav-folder-title-content::before {
         vertical-align: -1%;
     }
-    div.nav-folder-title[data-path*="Média/JV"] div.nav-folder-title-content::before,
-    div.nav-folder-title[data-path*="Média/Livre"] div.nav-folder-title-content::before,
-    div.nav-folder-title[data-path*="Média/Série"] div.nav-folder-title-content::before {
-        margin-left: -1.2em !important;
-    }
     div.nav-folder-title[data-path^='20.'][data-path*="23."] div.nav-folder-title-content::before {
         vertical-align: top !important;
     }
@@ -243,7 +229,7 @@
     }
     .nav-folder-title[data-path*="Média/"]>.nav-folder-title-content {
         position: relative;
-        padding-left: 1.5em !important;
+        padding-left: 0.6em !important;
         line-height: 15px !important;
     }
     .nav-file-title[data-path^="60"]>.nav-file-title-content {
@@ -293,8 +279,6 @@
     content: "\ea37" !important;
     font-family: boxicons !important;
     font-size: var(--size) !important;
-    margin-left: 0px;
-    vertical-align: -2px;
 }
 
 .nav-folder-title[data-path^='20.'][data-path*="23."] .nav-folder-title-content::before {
