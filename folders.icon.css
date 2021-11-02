@@ -322,13 +322,6 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     color: var(--F00) !important;
 }
 
-.nav-folder-title[data-path*="00."]:hover,
-.nav-file-title[data-path*="00."]:hover {
-    color: var(--F00) !important;
-    filter: saturate(200%);
-    background-color: var(--bg00) !important;
-}
-
 .nav-folder-title-content::before {
     vertical-align: -0.1em;
     position: relative;
@@ -686,4 +679,14 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
     left: 0;
     margin-left: -1px !important;
     padding-left: 8px !important;
+}
+
+.nav-file-title[data-path*="Card"] .nav-file-title-content:before,
+.nav-file-title[data-path*="card"] .nav-file-title-content:before {
+    content: '\ebb6' !important;
+    font-family: "remixicon" !important;
+    font-size: var(--size) !important;
+    vertical-align: top !important;
+    left: 3px !important;
+    position: relative !important;
 }
