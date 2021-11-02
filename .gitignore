@@ -12,7 +12,7 @@ folders.hide.css
 !folders.icon.font.css
 !folders.icon.font-settings.css
 !wysiwyg.*
-!folders.icon.adjust.css
+!folder.icons.adjust.css
 !CHANGELOG.md
 !code_mirror_companion.css
 !folder.colored.hover.css
