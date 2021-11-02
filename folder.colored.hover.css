@@ -1,12 +1,20 @@
-.nav-folder-title[data-path*="00."]:hover,
-.nav-file-title[data-path*="00."]:hover {
-    color: var(--F00) !important;
-    filter: saturate(200%);
+.nav-folder-title[data-path^="00."]:hover{
     background-color: var(--bg00) !important;
+    filter:invert(15%) sepia(9%) saturate(0%) hue-rotate(250deg) brightness(80%);
+    color: var(--F00) !important;
+}
+
+.nav-file-title[data-path^="00."]:hover,
+.nav-folder-title[data-path*="01."]:hover,
+.nav-folder-title[data-path*="02."]:hover,
+.nav-folder-title[data-path*="03."]:hover{
+    color: var(--F00) !important;
+    background-color: var(--bg00) !important;
+    filter:invert(15%) sepia(9%) saturate(0%) hue-rotate(250deg) brightness(80%);
 }
 
 .nav-folder-title[data-path^="10."]:hover,
-.nav-file-title[data-path*="10."]:hover {
+.nav-file-title[data-path^="10."]:hover {
     color: var(--F10) !important;
     background-color: var(--bg10) !important;
     filter: saturate(200%);
