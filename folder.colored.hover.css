@@ -1,6 +1,6 @@
 .nav-folder-title[data-path^="00."]:hover{
     background-color: var(--bg00) !important;
-    filter:invert(15%) sepia(9%) saturate(0%) hue-rotate(250deg) brightness(80%);
+    filter:invert(50%) sepia(100%) saturate(0%) hue-rotate(250deg) brightness(0%);
     color: var(--F00) !important;
 }
 
@@ -10,7 +10,7 @@
 .nav-folder-title[data-path*="03."]:hover{
     color: var(--F00) !important;
     background-color: var(--bg00) !important;
-    filter:invert(15%) sepia(9%) saturate(0%) hue-rotate(250deg) brightness(80%);
+    filter:invert(50%) sepia(100%) saturate(0%) hue-rotate(250deg) brightness(0%);
 }
 
 .nav-folder-title[data-path^="10."]:hover,

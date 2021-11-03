@@ -184,6 +184,7 @@ settings:
     --I23: "\f549";
     --I22: "\e666";
     --I21: "\ed9a";
+    --I24: "\f017";
     --IZZ: "\ea72";
     --IZZA: "\e95d";
     --IZZA-files: "\f24d";
@@ -209,6 +210,7 @@ settings:
     --font33: "Font Awesome 5 Free Solid";
     --font20: "boxicons2";
     --font23: "Font Awesome 5 Free Solid";
+    --font24: "Font Awesome 5 Free";
     --font22: "Material Icons";
     --font21: "boxicons";
     --font40: "Material Icons";
@@ -414,6 +416,13 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     font-family: var(--font23) !important;
     font-size: var(--size);
     vertical-align: -0.2em;
+    padding-right: 5px;
+}
+
+.nav-folder-title[data-path^="20."][data-path*="24."] .nav-folder-title-content::before {
+    content: var(--I24) !important;
+    font-family: var(--font24) !important;
+    font-size: var(--size);
     padding-right: 5px;
 }
 

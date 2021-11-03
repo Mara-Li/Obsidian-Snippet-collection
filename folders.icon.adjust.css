@@ -142,6 +142,10 @@
 }
 
 @media only screen and (min-device-width: 1024px) {
+    .nav-folder-title[data-path^="20."][data-path*="24."] .nav-folder-title-content::before {
+       vertical-align: 0 !important;
+        padding-right: 5px !important;
+    }
     div.nav-folder-title[data-path*="Aide"] div.nav-folder-title-content::before {
         vertical-align: sub !important;
         top: 0 !important;
