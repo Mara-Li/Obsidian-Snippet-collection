@@ -316,7 +316,7 @@ You can change these to match your use case.
 
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="00."],
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="00."]+.nav-folder-children {
-    background-color: var(--bg00) !important;
+    background-color: var(--bg00);
 }
 
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="10."],
