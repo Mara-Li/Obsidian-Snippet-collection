@@ -1,5 +1,5 @@
 ---
-name: "tagged-release"
+name: "release"
 
 on:
   push:
@@ -7,8 +7,8 @@ on:
       - "master"
 
 jobs:
-  tagged-release:
-    name: "Tagged Release"
+  pre-release:
+    name: "Release"
     runs-on: "ubuntu-latest"
 
     steps:
@@ -20,6 +20,8 @@ jobs:
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
           prerelease: false
+          title: "Update"
           files: |
             *.css
