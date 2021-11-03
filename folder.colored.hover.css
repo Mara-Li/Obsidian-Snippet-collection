@@ -17,7 +17,7 @@
 .nav-file-title[data-path^="10."]:hover {
     color: var(--F10) !important;
     background-color: var(--bg10) !important;
-    filter: saturate(200%);
+    filter: saturate(150%);
 }
 
 .nav-folder-title[data-path^="20."]:hover,
@@ -27,40 +27,40 @@
 .nav-file-title[data-path^="20."][data-path*="20."]:hover {
     color: var(--F20) !important;
     background-color: var(--bg20) !important;
-    filter: saturate(200%);
+    filter: saturate(150%);
 }
 
 .nav-folder-title[data-path^="30"]:hover,
 .nav-file-title[data-path*="30."]:hover {
     color: var(--F30) !important;
     background-color: var(--bg30) !important;
-    filter: saturate(200%);
+    filter: saturate(150%);
 }
 
 .nav-folder-title[data-path^="40"]:hover,
 .nav-file-title[data-path*="40."]:hover {
     color: var(--F40) !important;
     background-color: var(--bg40) !important;
-    filter: saturate(200%);
+    filter: saturate(150%);
 }
 
 .nav-folder-title[data-path^="50"]:hover,
 .nav-file-title[data-path*="50."]:hover {
     color: var(--F50) !important;
     background-color: var(--bg50) !important;
-    filter: saturate(200%);
+    filter: saturate(150%);
 }
 
 .nav-folder-title[data-path^="60."]:hover,
 .nav-file-title[data-path*="60."]:hover {
     color: var(--F60) !important;
-    filter: saturate(200%);
+    filter: saturate(150%);
     background-color: var(--bg60) !important;
 }
 
 .nav-folder-title[data-path^="ZZ."]:hover,
 .nav-file-title[data-path*="ZZ."]:hover {
     color: var(--FZZ) !important;
-    filter: saturate(200%);
+    filter: saturate(150%);
     background-color: var(--bgZZ) !important;
 }
