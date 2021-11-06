@@ -185,6 +185,8 @@ settings:
     --I22: "\e666";
     --I21: "\ed9a";
     --I24: "\f017";
+    --I100: "\f017";
+    --I70: "\f017";
     --IZZ: "\ea72";
     --IZZA: "\e95d";
     --IZZA-files: "\f24d";
@@ -219,6 +221,8 @@ settings:
     --font90: "Material icons";
     --fontZZ: "IcoMoon-Free";
     --fontZZA: "boxicons";
+    --font100: "boxicons";
+    --font70: "boxicons";
     --fontZZA-Files: "Font Awesome 5 Free";
     --fontZZB: "boxicons";
     --fontZZB-Files: "IcoMoon-Free";
@@ -458,6 +462,13 @@ div.nav-folder-title[data-path*="31."] div.nav-folder-title-content::before {
 }
 
 div.nav-folder-title[data-path*="33."] div.nav-folder-title-content::before {
+    content: var(--I33) !important;
+    font-family: var(--font33) !important;
+    font-size: var(--size);
+    vertical-align: -1px;
+}
+
+div.nav-folder-title[data-path*="34."] div.nav-folder-title-content::before {
     content: var(--I33) !important;
     font-family: var(--font33) !important;
     font-size: var(--size);
