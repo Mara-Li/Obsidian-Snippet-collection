@@ -343,3 +343,14 @@ span.cm-comment {
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment {
     opacity: var(--markdown-opacity);
 }
+
+/* Select */
+
+
+span.cm-variable.cm-templater-command.CodeMirror-selectedtext,
+span.cm-string-2.cm-templater-command.CodeMirror-selectedtext,
+span.cm-templater-command.CodeMirror-selectedtext,
+span.cm-templater-command.cm-null.cm-templater-opening-tag.cm-templater-command.cm-formatting.cm-formatting-templater.CodeMirror-selectedtext,
+span.cm-operator.cm-templater-command.cm-templater-closing-tag.cm-formatting.cm-formatting-templater.CodeMirror-selectedtext{
+    background-color: var(--text-selection) !important
+}
