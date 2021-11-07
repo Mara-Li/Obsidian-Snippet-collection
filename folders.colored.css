@@ -373,6 +373,10 @@ You can change these to match your use case.
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="ZZ."]+.nav-folder-children {
     background-color: var(--bgZZ);
 }
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Ressource"],
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Ressource"]+.nav-folder-children {
+    background-color: var(--bgZZ);
+}
 
 
 /* Scrollbars eliminated */
