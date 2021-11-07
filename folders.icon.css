@@ -701,12 +701,3 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
     padding-left: 8px !important;
 }
 
-.nav-file-title[data-path*="Card"] .nav-file-title-content:before,
-.nav-file-title[data-path*="card"] .nav-file-title-content:before {
-    content: '\ebb6' !important;
-    font-family: "remixicon" !important;
-    font-size: var(--size) !important;
-    vertical-align: top !important;
-    left: 3px !important;
-    position: relative !important;
-}
