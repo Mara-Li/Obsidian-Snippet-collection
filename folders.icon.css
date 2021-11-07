@@ -328,6 +328,13 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     color: var(--F00) !important;
 }
 
+.nav-folder-title[data-path*="00."]:hover,
+.nav-file-title[data-path*="00."]:hover {
+    color: var(--F00) !important;
+    filter: saturate(200%);
+    background-color: var(--bg00) !important;
+}
+
 .nav-folder-title-content::before {
     vertical-align: -0.1em;
     position: relative;

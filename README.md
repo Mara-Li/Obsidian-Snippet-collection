@@ -13,8 +13,12 @@ In the same way, I can’t render the table as WYSIWYG but the plugin "advanced 
 I use, here :
 - [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) ⚠️ This plugin is required to get the mobile mode.
 - [Outliner](https://github.com/vslinko/obsidian-outliner)
+- [Image In Editor](https://github.com/ozntel/oz-image-in-editor-obsidian) 
+
+<details>
+  <summary> Style Settings Options </summary>
   
-Style Settings option : (⭐️ option exist only on Semi WYSIWYG, 🌔 only for WYSIWYG)
+(⭐️ option exist only on Semi WYSIWYG, 🌔 only for WYSIWYG)
   - Display Image link ⭐️
   - Mobile support 🌔
     - Markdown clutter opacity 🌔
@@ -40,6 +44,17 @@ Style Settings option : (⭐️ option exist only on Semi WYSIWYG, 🌔 only for
     - Margin PC,
     - Margin Mobile 🌔
     - Top (only for PC) 
+
+</details>
+
+<details><summary> Screenshot Fullwysiwyg </summary>
+  
+![image](https://user-images.githubusercontent.com/30244939/129886682-b76bc8a2-cbe5-4a8e-83ec-e6ab4cea0e76.png)
+![image](https://user-images.githubusercontent.com/30244939/129886939-9ef652ee-b905-4bbb-b89b-a15eddfbb064.png)
+![image](https://user-images.githubusercontent.com/30244939/129886995-d8f8fcfa-49d7-41a5-b884-080c4a54fa9f.png)
+![image](https://user-images.githubusercontent.com/30244939/129887413-d083af11-3987-4ea9-a7ff-e462055e6df8.png)
+  
+  </details>
 
 ## Semi WYSIWY note
 The main difference between the semi and the full is that :
@@ -73,13 +88,6 @@ Now, each time there is a update, you can just do `git pull` in a terminal/cmd. 
 
 Note : With this setup, you **will not be able** to edit the file, because each update erase your personal edit. Create another snippet OR create a pull request/issue with your personal edit. 
 
-## Screenshot and preview.
-### PC
-#### Full WYSIWYG
-![image](https://user-images.githubusercontent.com/30244939/129886682-b76bc8a2-cbe5-4a8e-83ec-e6ab4cea0e76.png)
-![image](https://user-images.githubusercontent.com/30244939/129886939-9ef652ee-b905-4bbb-b89b-a15eddfbb064.png)
-![image](https://user-images.githubusercontent.com/30244939/129886995-d8f8fcfa-49d7-41a5-b884-080c4a54fa9f.png)
-![image](https://user-images.githubusercontent.com/30244939/129887413-d083af11-3987-4ea9-a7ff-e462055e6df8.png)
 
 #### Semi-Wysiwyg
 ![image](https://user-images.githubusercontent.com/30244939/129887499-94c7800c-3eb8-4ae8-8312-c564a81775f4.png)
@@ -101,6 +109,7 @@ You can change the color with style settings.
 ![image](https://user-images.githubusercontent.com/30244939/129755273-16d8c8cb-957a-42f1-8c11-dd0cc832e147.png)
 
 ---
+
 # Folder Icons
 ⚠️ **You need to download TOO the [icon-font.css](https://raw.githubusercontent.com/Mara-Li/Obsidian-Snippet-collection/main/folders.icon.font.css) to use this snippet**
 
