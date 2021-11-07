@@ -311,16 +311,18 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-hr:after {
     content: "";
 }
 
-.blockquote .HyperMD-quote {
-    color: var(--color-blockquote) !important;
+.blockquote .HyperMD-quote.HyperMD-quote-1 {
+    font-style: italic;
+    border-radius: 8px;
+    border: 2px dashed var(--background-modifier-border);
+    border-top: 2px dotted var(--background-modifier-border);
+    border-bottom: 2px dotted var(--background-modifier-border);
+    margin: -1px;
 }
 
+.blockquote .HyperMD-quote,
 span.cm-quote.cm-quote-1 {
     color: var(--color-blockquote) !important;
-}
-
-pre.HyperMD-quote.HyperMD-quote-1 {
-    padding-left: 3em !important;
 }
 
 span.suggestion-prefix {
@@ -340,4 +342,15 @@ span.cm-comment {
 
 div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-comment {
     opacity: var(--markdown-opacity);
+}
+
+/* Select */
+
+
+span.cm-variable.cm-templater-command.CodeMirror-selectedtext,
+span.cm-string-2.cm-templater-command.CodeMirror-selectedtext,
+span.cm-templater-command.CodeMirror-selectedtext,
+span.cm-templater-command.cm-null.cm-templater-opening-tag.cm-templater-command.cm-formatting.cm-formatting-templater.CodeMirror-selectedtext,
+span.cm-operator.cm-templater-command.cm-templater-closing-tag.cm-formatting.cm-formatting-templater.CodeMirror-selectedtext{
+    background-color: var(--text-selection) !important
 }

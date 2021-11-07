@@ -63,31 +63,8 @@ The main difference between the semi and the full is that :
 
 This Semi WYSIWYG mode is more like the mobile mode on the full snippet. It prevent the "cursor jump" with the text selection. 
 
-<details>
-  <summary> Screenshot </summary>
-  
-![image](https://user-images.githubusercontent.com/30244939/129887499-94c7800c-3eb8-4ae8-8312-c564a81775f4.png)
-![image](https://user-images.githubusercontent.com/30244939/129887536-ec5b0d51-a30e-4d89-b2a7-6e908c25f886.png)
-![image](https://user-images.githubusercontent.com/30244939/129887585-21c178bd-f9d8-4bf1-a8be-c5336b483435.png)
-![image](https://user-images.githubusercontent.com/30244939/129887665-02d8b446-243d-4b41-a5e3-64fdf113c713.png)
-  
-  </details>
-
 ## Wysiwyg code mirror companion
 It's a little snippet that must be used with the plugin [Code Mirror Options](https://github.com/nothingislost/obsidian-codemirror-options). It works only for PC.
-
-<details>
-  <summary> Screenshot </summary>
-  
-![image](https://user-images.githubusercontent.com/30244939/139728045-45751c95-e610-4ba5-bb6e-2d991cdeb8ae.png)
-![image](https://user-images.githubusercontent.com/30244939/139728057-052ad5bf-122b-4dc3-91f7-b5a46de4dfeb.png)
-![image](https://user-images.githubusercontent.com/30244939/139728064-a4b125e4-41de-46d3-8976-6b78692b7009.png)
-![image](https://user-images.githubusercontent.com/30244939/139728077-0b7c4248-482f-49d0-84bd-7414cff67d6b.png)
-![image](https://user-images.githubusercontent.com/30244939/139728083-dfbe93af-ea45-4469-a2c2-be80d75fe72b.png)
-![image](https://user-images.githubusercontent.com/30244939/139728088-9af9916b-f1c3-4920-9373-50b816bec3a6.png)
-![image](https://user-images.githubusercontent.com/30244939/139728090-bcbeccbe-7061-4002-b6ba-987152e5e9c6.png)
-
-  </details>
 
 
 ## Information about mobile support
@@ -111,6 +88,14 @@ Now, each time there is a update, you can just do `git pull` in a terminal/cmd. 
 
 Note : With this setup, you **will not be able** to edit the file, because each update erase your personal edit. Create another snippet OR create a pull request/issue with your personal edit. 
 
+
+#### Semi-Wysiwyg
+![image](https://user-images.githubusercontent.com/30244939/129887499-94c7800c-3eb8-4ae8-8312-c564a81775f4.png)
+![image](https://user-images.githubusercontent.com/30244939/129887536-ec5b0d51-a30e-4d89-b2a7-6e908c25f886.png)
+![image](https://user-images.githubusercontent.com/30244939/129887585-21c178bd-f9d8-4bf1-a8be-c5336b483435.png)
+![image](https://user-images.githubusercontent.com/30244939/129887665-02d8b446-243d-4b41-a5e3-64fdf113c713.png)
+
+##### Code Mirror Options Companions
 
 #### Source
 - [Clutter Free](https://forum.obsidian.md/t/clutter-free-edit-mode/6791)

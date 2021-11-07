@@ -1,6 +1,5 @@
 # Ignore everything
 *
-folders.icon.adjust.css
 folders.hide.css
 
 #But not these
@@ -12,8 +11,9 @@ folders.hide.css
 !folders.icon.font.css
 !folders.icon.font-settings.css
 !wysiwyg.*
-!folders.icon.adjust.css
+!folder.icons.adjust.css
 !CHANGELOG.md
+!folder.colored.hover.css
 !code_mirror_companion.css
 !folder_note.css
 !folder.color.css

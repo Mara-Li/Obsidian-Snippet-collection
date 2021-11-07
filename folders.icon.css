@@ -184,6 +184,9 @@ settings:
     --I23: "\f549";
     --I22: "\e666";
     --I21: "\ed9a";
+    --I24: "\f017";
+    --I100: "\f017";
+    --I70: "\f017";
     --IZZ: "\ea72";
     --IZZA: "\e95d";
     --IZZA-files: "\f24d";
@@ -209,6 +212,7 @@ settings:
     --font33: "Font Awesome 5 Free Solid";
     --font20: "boxicons2";
     --font23: "Font Awesome 5 Free Solid";
+    --font24: "Font Awesome 5 Free";
     --font22: "Material Icons";
     --font21: "boxicons";
     --font40: "Material Icons";
@@ -217,6 +221,8 @@ settings:
     --font90: "Material icons";
     --fontZZ: "IcoMoon-Free";
     --fontZZA: "boxicons";
+    --font100: "boxicons";
+    --font70: "boxicons";
     --fontZZA-Files: "Font Awesome 5 Free";
     --fontZZB: "boxicons";
     --fontZZB-Files: "IcoMoon-Free";
@@ -424,6 +430,13 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     padding-right: 5px;
 }
 
+.nav-folder-title[data-path^="20."][data-path*="24."] .nav-folder-title-content::before {
+    content: var(--I24) !important;
+    font-family: var(--font24) !important;
+    font-size: var(--size);
+    padding-right: 5px;
+}
+
 
 /* ============ FOLDER 30 ==================== */
 
@@ -456,6 +469,13 @@ div.nav-folder-title[data-path*="31."] div.nav-folder-title-content::before {
 }
 
 div.nav-folder-title[data-path*="33."] div.nav-folder-title-content::before {
+    content: var(--I33) !important;
+    font-family: var(--font33) !important;
+    font-size: var(--size);
+    vertical-align: -1px;
+}
+
+div.nav-folder-title[data-path*="34."] div.nav-folder-title-content::before {
     content: var(--I33) !important;
     font-family: var(--font33) !important;
     font-size: var(--size);
@@ -687,3 +707,4 @@ div.nav-folder-title[data-path^="100."] div.nav-folder-title-content::before {
     margin-left: -1px !important;
     padding-left: 8px !important;
 }
+
