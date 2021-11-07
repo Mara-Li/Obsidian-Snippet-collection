@@ -3,6 +3,10 @@
 - [Colored Folder](https://github.com/Mara-Li/Obsidian-Snippet-collection#colored-folder)
 - [Folder Icons](https://github.com/Mara-Li/Obsidian-Snippet-collection#folder-icons)
 
+⚠️ For IOS : If you don't have Textastic (can open `.obsidian` folder) you need to use shortcuts and toolbox pro to open hidden folder. 
+You can also use [ashell](https://holzschu.github.io/a-Shell_iOS/) (Free) to open `.obsidian` and file !
+
+
 # WYSIWYG and Pseudo WYSIWYG
 Note : Some screenshoot are outdated, the code is always updated, I don't have the time to take screen and update it each day.
 
@@ -111,6 +115,18 @@ You can change the color with style settings.
 ---
 
 # Folder Icons
+## Folder Note
+[Folder note](https://github.com/aidenlx/alx-folder-note) is a good plugin but it doesn't provide icon. This snippets is an example of styling.
+![](screenshot/folder_note.png)
+
+## Icon Folder plugin snippet
+The plugin [icon folder](https://github.com/FlorianWoelki/obsidian-icon-folder) provide a better way to add icon to your folder. 
+The snippet :
+- mini.folders.icons provide some CSS for file 
+- folders.colored add color to your folder name.
+
+## Pure CSS
+→ This are moved in the branch ('PureCSS_icons')
 ⚠️ **You need to download TOO the [icon-font.css](https://raw.githubusercontent.com/Mara-Li/Obsidian-Snippet-collection/main/folders.icon.font.css) to use this snippet**
 
 For font settings, you need to download 
@@ -127,16 +143,3 @@ Some folder are adjusted for **my** icons and **my** folder, so you maybe need :
 - Add your folder. You can just copy paste and add your icons, font and name. 
 
 There is some adaptation too for mobile where you can add your settings. 
-
-⚠️ For IOS : If you don't have Textastic (can open `.obsidian` folder) you need to use shortcuts and toolbox pro to open hidden folder. 
-You can also use [ashell](https://holzschu.github.io/a-Shell_iOS/) (Free) to open `.obsidian` and file !
-
-## Folder Note
-[Folder note](https://github.com/aidenlx/alx-folder-note) is a good plugin but it doesn't provide icon. This snippets is an example of styling.
-![](screenshot/folder_note.png)
-
-## Icon Folder plugin snippet
-The plugin [icon folder](https://github.com/FlorianWoelki/obsidian-icon-folder) provide a better way to add icon to your folder. 
-The snippet :
-- mini.folders.icons provide some CSS for file 
-- folders.colored add color to your folder name.
