@@ -164,70 +164,7 @@ settings:
 
 :root {
     --size: 18px;
-    --I00: "\e913";
-    --I01: "\e004";
-    --I02: "\e96b";
-    --I60: "\f1fc";
-    --I80: "\e80c";
-    --I10: "\e80c";
-    --I90: "\e80c";
-    --I50: "\eb1f";
-    --I03: "\e924";
-    --I11: "\eeb5";
-    --I30: "\f558";
-    --I40: "\ea3e";
-    --I41: "\f7ba";
-    --I32: "\eae2";
-    --I31: "\F10d";
-    --I33: "\f5fd";
-    --I20: "\ee61";
-    --I23: "\f549";
-    --I22: "\e666";
-    --I21: "\ed9a";
-    --I24: "\f017";
-    --I100: "\f017";
-    --I70: "\f017";
-    --IZZ: "\ea72";
-    --IZZA: "\e95d";
-    --IZZA-files: "\f24d";
-    --I13: "\ea5e";
-    --IZZB: "\eb9e";
-    --IZZB-files: "\ea42";
-    --IZZC: "\f1bf";
-    --IZZC-files: "\eff3";
     --augmente: 14px;
-    /* Font parameters */
-    --font00: "boxicons";
-    --font01: "Material icons";
-    --font02: "boxicons";
-    --font60: "Material icons";
-    --font80: "Font Awesome 5 Free";
-    --font03: "boxicons";
-    --font13: "Material icons";
-    --font11: "boxicons";
-    --font50: "boxicons";
-    --font30: "Font Awesome 5 Free Solid";
-    --font32: "remixicon";
-    --font31: "Material icons";
-    --font33: "Font Awesome 5 Free Solid";
-    --font20: "boxicons2";
-    --font23: "Font Awesome 5 Free Solid";
-    --font24: "Font Awesome 5 Free";
-    --font22: "Material Icons";
-    --font21: "boxicons";
-    --font40: "Material Icons";
-    --font41: "Font Awesome 5 Free Solid";
-    --font10: "Material icons";
-    --font90: "Material icons";
-    --fontZZ: "IcoMoon-Free";
-    --fontZZA: "boxicons";
-    --font100: "boxicons";
-    --font70: "boxicons";
-    --fontZZA-Files: "Font Awesome 5 Free";
-    --fontZZB: "boxicons";
-    --fontZZB-Files: "IcoMoon-Free";
-    --fontZZC: "Material icons";
-    --fontZZC-Files: "Material icons";
 }
 
 
@@ -406,6 +343,11 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 
 .nav-folder-title[data-path^="ZZ."],
 .nav-file-title[data-path*="ZZ."] {
+    color: var(--FZZ) !important;
+}
+
+.nav-folder-title[data-path^="Ressource"],
+.nav-file-title[data-path*="Ressource"] {
     color: var(--FZZ) !important;
 }
 
