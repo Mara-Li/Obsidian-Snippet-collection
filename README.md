@@ -1,7 +1,3 @@
----
-{}
----
-
 # Summary
 - [WYSIWYG](https://github.com/Mara-Li/Obsidian-Snippet-collection#wysiwyg-and-pseudo-wysiwyg)
 - [Colored Folder](https://github.com/Mara-Li/Obsidian-Snippet-collection#colored-folder)
@@ -125,3 +121,13 @@ There is some adaptation too for mobile where you can add your settings.
 
 ⚠️ For IOS : If you don't have Textastic (can open `.obsidian` folder) you need to use shortcuts and toolbox pro to open hidden folder. 
 You can also use [ashell](https://holzschu.github.io/a-Shell_iOS/) (Free) to open `.obsidian` and file !
+
+## Folder Note
+[Folder note](https://github.com/aidenlx/alx-folder-note) is a good plugin but it doesn't provide icon. This snippets is an example of styling.
+![](screenshot/folder_note.png)
+
+## Icon Folder plugin snippet
+The plugin [icon folder](https://github.com/FlorianWoelki/obsidian-icon-folder) provide a better way to add icon to your folder. 
+The snippet :
+- mini.folders.icons provide some CSS for file 
+- folders.colored add color to your folder name.
