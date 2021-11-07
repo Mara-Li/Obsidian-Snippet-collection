@@ -64,3 +64,9 @@
     filter: saturate(150%);
     background-color: var(--bgZZ) !important;
 }
+.nav-folder-title[data-path^="Ressource"]:hover,
+.nav-file-title[data-path*="Ressource"]:hover {
+    color: var(--FZZ) !important;
+    filter: saturate(150%);
+    background-color: var(--bgZZ) !important;
+}
