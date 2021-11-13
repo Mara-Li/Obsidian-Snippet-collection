@@ -1,0 +1,23 @@
+# Ignore everything
+*
+folders.hide.css
+
+#But not these
+!.gitignore
+!README.md
+!folders.colored.css
+!folders.icon.css
+!folders.icon.font.css
+!folders.icon.font-settings.css
+!wysiwyg.*
+!folder.icons.adjust.css
+!CHANGELOG.md
+!folder.colored.hover.css
+!code_mirror_companion.css
+!folder_note.css
+!folder.font_color.css
+!mini.folders.icons.css
+!screenshot
+!screenshot/*
+!mobile_wysiwyg.css
+!CM6_LivePreview.css
