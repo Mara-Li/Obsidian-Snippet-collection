@@ -516,13 +516,17 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 
 /* Links */
 
-span.cm-hmd-internal-link {
+span.cm-hmd-internal-link{
     color: var(--text-link) !important;
+  text-decoration-line: underline !important;
+  text-decoration-style: wavy !important;
+    border-bottom: none !important;
 }
 
 span.cm-link {
     color: var(--link-col) !important;
-    text-decoration: underline !important;
+    text-decoration-line: underline !important;
+    text-decoration-style: double !important;
 }
 
 span.cm-hmd-internal-link:hover {
