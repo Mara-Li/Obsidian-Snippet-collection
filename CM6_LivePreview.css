@@ -432,9 +432,8 @@ span.cm-formatting-code-block.cm-hmd-codeblock {
 
 
 /* escape */
-span.cm-formatting-escape:not(span.cm-formatting-escape.cm-hmd-escape-backslash) {
+.cm-active.cm-line > span.cm-formatting-escape:not(span.cm-formatting-escape.cm-hmd-escape-backslash) {
     opacity: var(--markdown-opacity) !important;
-    font-size: var(--clutter) !important;
     display: inline !important;
 }
 
@@ -540,4 +539,10 @@ span.cm-link:hover {
     background-color: var(--md-hover-bg) !important;
     text-decoration: none !important;
 
+}
+
+/* escape */
+
+span.cm-formatting-escape {
+    opacity: 0 !important;
 }
