@@ -44,6 +44,7 @@
     .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] .nav-folder-title-content::before {
         vertical-align: -4px !important;
         margin-left: 0.9em !important;
+        top: 0 !important;
     }
 
 
@@ -75,3 +76,4 @@
 .nav-folder.alx-folder-with-note > .nav-folder-title > .nav-folder-title-content {
     text-decoration: none !important;
 }
+
