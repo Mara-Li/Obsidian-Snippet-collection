@@ -77,3 +77,7 @@
     text-decoration: none !important;
 }
 
+.nav-folder.alx-folder-with-note>.nav-folder-title>.nav-folder-title-content:after {
+    display: none;
+}
+
