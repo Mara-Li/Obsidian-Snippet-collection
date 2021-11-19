@@ -513,7 +513,6 @@ span.cm-comment.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock,
 
 .cm-s-obsidian span.cm-comment {
     opacity: var(--markdown-opacity) !important;
-    font-family: var(--tab-font) !important;
 }
 
 /* HR */
