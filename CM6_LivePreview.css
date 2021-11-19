@@ -131,62 +131,6 @@ settings:
         default: 4
         format: px
         type: variable-number
-    -
-        id: BlockQuote-heading
-        type: heading
-        level: 1
-        title: Blockquote options
-        collapsed: true
-    -
-        id: blockquote
-        type: class-toggle
-        title: Blockquote
-        description: Add nice blockquote
-    -
-        id: border-all
-        title: Border left-right
-        type: variable-select
-        default: dashed
-        options:
-            - solid
-            - dashed
-            - dotted
-            - double
-            - groove
-            - ridge
-            - inset
-            - outset
-            - hidden
-    -
-        id: border-bottom
-        title: Border bottom
-        type: variable-select
-        default: dashed
-        options:
-            - solid
-            - dashed
-            - dotted
-            - double
-            - groove
-            - ridge
-            - inset
-            - outset
-            - hidden
-    -
-        id: border-top
-        title: Border top
-        type: variable-select
-        default: dashed
-        options:
-            - solid
-            - dashed
-            - dotted
-            - double
-            - groove
-            - ridge
-            - inset
-            - outset
-            - hidden
 */
 
 
@@ -224,9 +168,6 @@ settings:
     --tag-up: 0px;
     --tag-left: 4px;
     --tag-bottom: 4px;
-    --border-all: dashed;
-    --border-top: dotted;
-    --border-bottom: dotted;
 }
 
 .cm-s-obsidian * {
@@ -234,6 +175,11 @@ settings:
 }
 
 /* tags */
+
+div:not(.cm-active.cm-line) > span.cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-tags {
+    display: none;
+}
+
 .cm-s-obsidian span.cm-hashtag-end,
 .cm-s-obsidian span.cm-hashtag-end:not(span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end) {
     background-color: var(--tag-background-color) !important;
@@ -419,17 +365,6 @@ span.cm-formatting-code-block.cm-hmd-codeblock {
     color: var(--text-faint);
 }
 
-/* Blockquote */
-
-.blockquote .HyperMD-quote.HyperMD-quote-1 {
-    font-style: italic;
-    border-radius: 8px;
-    border: 2px var(--border-all) var(--background-modifier-border);
-    border-top: 2px var(--border-top) var(--background-modifier-border);
-    border-bottom: 2px var(--border-bottom) var(--background-modifier-border);
-    margin: -1px;
-}
-
 
 /* escape */
 .cm-active.cm-line > span.cm-formatting-escape:not(span.cm-formatting-escape.cm-hmd-escape-backslash) {
@@ -514,6 +449,10 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 
 
 /* Links */
+
+.markdown-source-view.mod-cm6 .cm-underline {
+    text-decoration: none;
+}
 
 span.cm-hmd-internal-link{
     color: var(--text-link) !important;
