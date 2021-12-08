@@ -1,55 +1,105 @@
 @media only screen and (max-device-width: 1024px) {
     /* Mobile */
-    .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] .nav-folder-title-content::before {
-        margin-left: 1.4em !important;
+    .nav-file-title svg:not(.right-triangle) {
+      margin-left: -4px !important;
+    }
+    
+    .nav-folder-title[data-path*="Hayleen"] svg:not(.right-triangle),
+    .nav-folder-title[data-path*="Ashling"] svg:not(.right-triangle),
+    .nav-folder-title[data-path*="Mnémosyne"] svg:not(.right-triangle),
+    .nav-file-title[data-path*="31. Archétype/"] svg:not(.right-triangle) {
+        vertical-align: 2px !important;
+        margin-right: 10px !important;
+    }
+    
+    
+    .nav-folder-title[data-path*="31. Archétype/"] svg:not(.right-triangle),
+    .nav-file-title[data-path*="31. Archétype/"] svg:not(.right-triangle){
+      margin-left: -5px;
     }
 
-    .alx-folder-with-note .nav-folder-title[data-path*="Ashling May"] .nav-folder-title-content::before,
-    .alx-folder-with-note .nav-folder-title[data-path*="Hayleen May"] .nav-folder-title-content::before,
-    .alx-folder-with-note .nav-folder-title[data-path*="Mnémosyne"] .nav-folder-title-content::before {
-        vertical-align: -3px !important;
-        position: relative;
-        left: 0 !important;
-        margin-right: 0.3em !important;
-        margin-left: 0.25em !important;
 
-    }
-
-    .alx-folder-with-note .nav-folder-title[data-path*="Ashling May"] div.nav-folder-title-content,
-    .alx-folder-with-note .nav-folder-title[data-path*="Hayleen May"] div.nav-folder-title-content,
-    .alx-folder-with-note .nav-folder-title[data-path*="Mnémosyne"] div.nav-folder-title-content {
-        right: 1.5em;
+    .nav-folder-title[data-path*="Hayleen"] .nav-folder-title-content,
+    .nav-folder-title[data-path*="Hayleen"] svg:not(.right-triangle),
+    .nav-folder-title[data-path*="Mnémosyne"] .nav-folder-title-content,
+    .nav-folder-title[data-path*="Mnémosyne"] svg:not(.right-triangle),
+    .nav-folder-title[data-path*="Ashling"] .nav-folder-title-content,
+    .nav-folder-title[data-path*="Ashling"] svg:not(.right-triangle) {
         position: relative !important;
+        margin-right: 3px !important;
+        right: 0.75em;
+      }
+
+    .nav-folder-title[data-path*="Pouvoir"] .nav-folder-title-content,
+    .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle) {
+      right: 1em;
+      position: relative;
+    }
+    
+    .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle) {
+      vertical-align: 2px;
+      margin-right: 2px;
+    }
+
+    .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] svg:not(.right-triangle) {
+        right: 0.8em;
+        margin-left: 0.9em;
+        margin-right: 0.2em;
     }
 
     .alx-folder-with-note .nav-folder-title[data-path*="Hayleen May"] .collapse-icon,
     .alx-folder-with-note .nav-folder-title[data-path*="Ashling May"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Mnémosyne"] .collapse-icon {
+    .alx-folder-with-note .nav-folder-title[data-path*="Pouvoir"] .collapse-icon,
+    .alx-folder-with-note .nav-folder-title[data-path*="31. Archétype/Mnémosyne"] .collapse-icon {
         right: 1.5em !important;
         position: relative !important;
         font-size: calc(var(--size) - 1px) !important;
         padding-left: 3px !important;
+        top: -4px;
     }
+    .alx-folder-with-note .nav-folder-title[data-path*="◈ Mnémosyne ◈"] .collapse-icon {
+        right: 1.5em !important;
+        position: relative !important;
+        font-size: calc(var(--size) - 1px) !important;
+        padding-left: 3px !important;
+      }
 }
 
 @media only screen and (min-device-width: 1024px) {
     /* PC */
-    .alx-folder-with-note .nav-folder-title[data-path*="Hayleen May"] .nav-folder-title-content,
-    .alx-folder-with-note .nav-folder-title[data-path*="Mnémosyne"] .nav-folder-title-content,
-    .alx-folder-with-note .nav-folder-title[data-path*="Ashling May"] div.nav-folder-title-content {
-        left: -1.2em !important;
+
+    .nav-file-title svg:not(.right-triangle) {
+      margin-left: 2px !important;
+    }
+    .nav-folder-title[data-path*="Pouvoir"] .nav-folder-title-content,
+    .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle),
+    .nav-folder-title[data-path*="Hayleen"] .nav-folder-title-content,
+    .nav-folder-title[data-path*="Hayleen"] svg:not(.right-triangle),
+    .nav-folder-title[data-path*="Mnémosyne"] .nav-folder-title-content,
+    .nav-folder-title[data-path*="Mnémosyne"] svg:not(.right-triangle),
+    .nav-folder-title[data-path*="Ashling"] .nav-folder-title-content,
+    .nav-folder-title[data-path*="Ashling"] svg:not(.right-triangle) {
         position: relative !important;
+        right: 1em;
     }
 
-    .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] .nav-folder-title-content::before {
-        vertical-align: -4px !important;
-        margin-left: 0.9em !important;
-        top: 0 !important;
+    .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle),
+    .nav-folder-title[data-path*="Hayleen"] svg:not(.right-triangle),
+    .nav-folder-title[data-path*="Ashling"] svg:not(.right-triangle),
+    .nav-folder-title[data-path*="Mnémosyne"] svg:not(.right-triangle),
+    .nav-file-title[data-path*="31. Archétype/"] svg:not(.right-triangle) {
+        vertical-align: middle !important;
+    }
+
+    .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] svg:not(.right-triangle) {
+        margin-left: 0.8em;
+        margin-right: 0;
     }
 
 
     .alx-folder-with-note .nav-folder-title[data-path*="Hayleen May"] .collapse-icon,
     .alx-folder-with-note .nav-folder-title[data-path*="Mnémosyne"] .collapse-icon,
+    .alx-folder-with-note .nav-folder-title[data-path*="Pouvoirs"] .collapse-icon,
     .alx-folder-with-note .nav-folder-title[data-path*="Ashling May"] .collapse-icon {
         right: 25px !important;
         position: relative !important;
@@ -59,25 +109,11 @@
 }
 
 
-.alx-folder-with-note .nav-folder-title[data-path*="Hayleen May"] .nav-folder-title-content::before,
-.alx-folder-with-note .nav-folder-title[data-path*="Mnémosyne"] .nav-folder-title-content::before,
-.alx-folder-with-note .nav-folder-title[data-path*="Ashling May"] div.nav-folder-title-content::before {
-    content: "\ea37";
-    font-family: boxicons;
-    font-size: var(--size);
-}
-
-.alx-folder-with-note .nav-folder-title[data-path*="Illustration"] .nav-folder-title-content::before {
-    content: "\e416" !important;
-    font-family: "Material Icons" !important;
-    font-size: calc(var(--size) + 1px) !important;
-}
-
 .nav-folder.alx-folder-with-note > .nav-folder-title > .nav-folder-title-content {
     text-decoration: none !important;
 }
 
-.nav-folder.alx-folder-with-note>.nav-folder-title>.nav-folder-title-content:after {
+.nav-folder.alx-folder-with-note > .nav-folder-title > .nav-folder-title-content:after {
     display: none;
 }
 
