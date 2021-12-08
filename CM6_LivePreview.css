@@ -176,21 +176,20 @@ settings:
 
 /* tags */
 
-div:not(.cm-active.cm-line) > span.cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-tags {
+div:not(.cm-active.cm-line) > span.cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin {
     display: none;
 }
 
 .cm-s-obsidian span.cm-hashtag-end,
 .cm-s-obsidian span.cm-hashtag-end:not(span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end) {
-    background-color: var(--tag-background-color) !important;
-    border: 1px solid var(--tag-border-color) !important;
-    color: var(--font-tag) !important;
-    font-size: 1rem;
+    background-color: var(--tag-background-color);
+    border: 1px solid var(--tag-border-color);
+    color: var(--font-tag);
     text-decoration: none;
     border-radius: 10px;
-    height: 30px !important;
-    padding: 0 !important;
-    z-index: 100 !important;
+    height: 30px;
+    padding: 0;
+    z-index: 100;
     font-family: inherit;
 }
 
@@ -205,13 +204,10 @@ div:not(.cm-active.cm-line) > span.cm-formatting.cm-formatting-hashtag.cm-hashta
     font-family: inherit;
 }
 
-.cm-s-obsidian span.cm-hashtag-end:not(span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end) {
-    font-size: 1em !important;
-}
 
 .cm-s-obsidian span.cm-hashtag-end,
 .cm-s-obsidian span.cm-hashtag-end:not(span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end) {
-    line-height: 30px !important;
+    line-height: 1.8em !important;
     padding: var(--tag-up) var(--tag-left) var(--tag-bottom) !important;
 }
 
@@ -365,6 +361,10 @@ span.cm-formatting-code-block.cm-hmd-codeblock {
     color: var(--text-faint);
 }
 
+.markdown-source-view.mod-cm6 .cm-hmd-list-indent {
+    display: inline !important;
+}
+
 
 /* escape */
 .cm-active.cm-line > span.cm-formatting-escape:not(span.cm-formatting-escape.cm-hmd-escape-backslash) {
@@ -454,28 +454,34 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
     text-decoration: none;
 }
 
-span.cm-hmd-internal-link{
+span.cm-hmd-internal-link {
     color: var(--text-link) !important;
-  text-decoration-line: underline !important;
-  text-decoration-style: wavy !important;
     border-bottom: none !important;
 }
 
 span.cm-link {
     color: var(--link-col) !important;
-    text-decoration-line: underline !important;
-    text-decoration-style: double !important;
+}
+
+.theme-light .token.operator,
+.theme-light .token.entity,
+.theme-light .token.url,
+.theme-light .language-css .token.string,
+.theme-light .style .token.string,
+.theme-light .cm-operator,
+.theme-light .cm-string,
+.theme-light .cm-string-2,
+.theme-light .cm-link {
+    background-color: transparent;
 }
 
 span.cm-hmd-internal-link:hover {
-    color: var(--wiki-hover-font) !important;
-    background-color: var(--wiki-hover-bg) !important;
+    filter: saturate(200%);
     text-decoration: none !important;
 }
 
 span.cm-link:hover {
-    color: var(--md-hover-font) !important;
-    background-color: var(--md-hover-bg) !important;
+    filter: saturate(200%);
     text-decoration: none !important;
 
 }
@@ -485,3 +491,20 @@ span.cm-link:hover {
 span.cm-formatting-escape {
     opacity: 0 !important;
 }
+
+/* Code blocks */
+/* Source : Murf */
+
+
+.HyperMD-codeblock.HyperMD-codeblock-begin.cm-line > span.cm-hmd-codeblock,
+.HyperMD-codeblock.HyperMD-codeblock-end.cm-line > span.cm-hmd-codeblock {
+    font-size: 0px;
+}
+
+.HyperMD-codeblock.HyperMD-codeblock-begin.cm-line.cm-active > span,
+.HyperMD-codeblock.HyperMD-codeblock-begin.cm-line.cm-selection > span,
+.HyperMD-codeblock.HyperMD-codeblock-end.cm-line.cm-active > span,
+.HyperMD-codeblock.HyperMD-codeblock-end.cm-line.cm-selection > span {
+    font-size: unset;
+}
+
