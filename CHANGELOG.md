@@ -1,3 +1,19 @@
+## Unreleased
+
+### Refactor
+
+- format css
+- Refactor all the file
+
+### Fix
+
+- Fix and adjust the icons
+
+### Feat
+
+- **font**: add new font
+- Add some adjust for tags ; background code token ; links
+
 ## v0.2.0 (2021-11-19)
 
 ### Fix
