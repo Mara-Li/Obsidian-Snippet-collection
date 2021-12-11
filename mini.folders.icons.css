@@ -45,9 +45,8 @@ settings:
     vertical-align: -2px;
 }
 
-
 .nav-file-title.is-unsupported .nav-file-title-content::before,
-.nav-file > .nav-file-title > .nav-file-tag + .nav-file-title-content::before {
+.nav-file>.nav-file-title>.nav-file-tag+.nav-file-title-content::before {
     content: "\ea38";
     font-family: boxicons;
     font-size: var(--size);
@@ -56,6 +55,7 @@ settings:
     margin-left: 0px;
     vertical-align: -2px;
 }
+
 
 /* =============== NO MD FILES ======================= */
 
@@ -82,7 +82,7 @@ settings:
 }
 
 .nav-file-title[data-path$="js"] .nav-file-title-content:before,
-.nav-file-title[data-path*="Javascript"] > .nav-file-title-content:before {
+.nav-file-title[data-path*="Javascript"]>.nav-file-title-content:before {
     content: "\f3d3" !important;
     font-family: "Font Awesome 5 Brands" !important;
     font-size: var(--size);
