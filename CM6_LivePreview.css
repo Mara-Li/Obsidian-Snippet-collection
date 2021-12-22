@@ -59,6 +59,12 @@ settings:
         collapsed: true
         title: Wikilinks
     -
+        id: resolved
+        type: heading
+        level: 4
+        collapsed: true
+        title: Resolved Links
+    -
         id: text-link
         title: Markdown Internal link Color
         type: variable-themed-color
@@ -82,6 +88,36 @@ settings:
         format: hex
         default-light: "#0084FF"
         default-dark: "#0084FF"
+    -
+        id: unresolved
+        type: heading
+        level: 4
+        title: Unresolved Links
+        collapsed: true
+    -
+        id: link-unresolved
+        title: Background Color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: "#D2D5E457"
+        default-dark: "#D2D5E457"
+    -
+        id: font-unresolved
+        title: Font Color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: "#C6C6C6"
+        default-dark: "#C6C6C6"
+    -
+        id: font-hover-unre
+        title: Color Font on hover
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: "#4B555B"
+        default-dark: "#4B555B"
     -
         id: header-tags
         title: Tags
@@ -145,6 +181,9 @@ settings:
     --wiki-hover-font: #0084FF;
     --md-hover-font: #0084FF;
     --md-hover-bg: #80CBEE00;
+    --link-unresolved:#D2D5E457 ;
+    --font-unresolved: #C6C6C6;
+    --font-hover-unre: #4B555B;
 
 }
 
@@ -159,6 +198,9 @@ settings:
     --wiki-hover-font: #0084FF;
     --md-hover-font: #0084FF;
     --md-hover-bg: #80CBEE00;
+    --link-unresolved:#D2D5E457 ;
+    --font-unresolved: #C6C6C6;
+    --font-hover-unre: #4B555B;
 
 }
 
