@@ -1,3 +1,14 @@
+## v0.4.0 (2021-12-22)
+
+### Feat
+
+- :art: Adding new folder (personalAdjust)
+- :sparkles: Add a style for unresolved wikilinks (last Obsidian Update)
+
+### Fix
+
+- :zap: Add style settings for unresolved links
+
 ## v0.3.0 (2021-12-11)
 
 ### Refactor
