@@ -450,18 +450,37 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 
 /* Links */
 
+.markdown-source-view.mod-cm6 .is-unresolved {
+	opacity: 1 !important;
+}
+
+span.is-unresolved .cm-underline{
+	background-color: var(--link-unresolved) !important;
+    color: var(--font-unresolved) !important;
+	text-decoration: none !important;
+	opacity: 1 !important;
+}
+
+span.is-unresolved .cm-underline:hover {
+	color: var(--font-hover-unre) !important;
+	text-decoration: underline !important;	
+}
+
+
 .markdown-source-view.mod-cm6 .cm-underline {
     text-decoration: none;
 }
 
-span.cm-hmd-internal-link {
-    color: var(--text-link) !important;
+span.cm-hmd-internal-link:not(.is-unresolved) {
+    color: var(--text-link);
     border-bottom: none !important;
 }
 
-span.cm-link {
-    color: var(--link-col) !important;
+span.cm-link:not(.is-unresolved) {
+    color: var(--link-col);
 }
+
+
 
 .theme-light .token.operator,
 .theme-light .token.entity,
