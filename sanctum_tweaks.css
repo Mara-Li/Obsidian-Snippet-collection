@@ -285,10 +285,7 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
     background-color: var(--cm-background-color);
 }
 
-..nav-folder-children .is-activ .nav-file-title-content:first-child::before {
-    color: currentColor;
 
-}
 
 
 @media only screen and (min-device-width: 1024px) {
