@@ -114,8 +114,6 @@ div.nav-folder-children
   padding: 0 !important;
 }
 
-
-
 .outline .tree-item-self .collapse-icon {
   position: relative;
   top: 0.5em;
@@ -163,14 +161,11 @@ div.nav-folder-children
   content: "\e9b2" !important;
 }
 
-
-
 .tree-item-self .collapse-icon {
   margin: revert !important;
   padding: revert !important;
   top: 0 !important;
 }
-
 
 .nav-file-title svg:not(.right-triangle) {
   margin-left: 8px !important;
@@ -182,7 +177,7 @@ div.nav-folder-children
 
 .nav-folder-children .nav-file-title-content:first-child::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg id='icon' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpath d='M26,30H11a2.0023,2.0023,0,0,1-2-2V22h2v6H26V6H17V4h9a2.0023,2.0023,0,0,1,2,2V28A2.0023,2.0023,0,0,1,26,30Z'/%3E%3Crect x='17' y='10' width='7' height='2'/%3E%3Crect x='16' y='15' width='8' height='2'/%3E%3Crect x='15' y='20' width='9' height='2'/%3E%3Cpath d='M9,19a5.0055,5.0055,0,0,1-5-5V3H6V14a3,3,0,0,0,6,0V5a1,1,0,0,0-2,0V15H8V5a3,3,0,0,1,6,0v9A5.0055,5.0055,0,0,1,9,19Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E") !important;
-  mask-image:url("data:image/svg+xml,%3Csvg id='icon' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpath d='M26,30H11a2.0023,2.0023,0,0,1-2-2V22h2v6H26V6H17V4h9a2.0023,2.0023,0,0,1,2,2V28A2.0023,2.0023,0,0,1,26,30Z'/%3E%3Crect x='17' y='10' width='7' height='2'/%3E%3Crect x='16' y='15' width='8' height='2'/%3E%3Crect x='15' y='20' width='9' height='2'/%3E%3Cpath d='M9,19a5.0055,5.0055,0,0,1-5-5V3H6V14a3,3,0,0,0,6,0V5a1,1,0,0,0-2,0V15H8V5a3,3,0,0,1,6,0v9A5.0055,5.0055,0,0,1,9,19Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E") !important;
+  mask-image: url("data:image/svg+xml,%3Csvg id='icon' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpath d='M26,30H11a2.0023,2.0023,0,0,1-2-2V22h2v6H26V6H17V4h9a2.0023,2.0023,0,0,1,2,2V28A2.0023,2.0023,0,0,1,26,30Z'/%3E%3Crect x='17' y='10' width='7' height='2'/%3E%3Crect x='16' y='15' width='8' height='2'/%3E%3Crect x='15' y='20' width='9' height='2'/%3E%3Cpath d='M9,19a5.0055,5.0055,0,0,1-5-5V3H6V14a3,3,0,0,0,6,0V5a1,1,0,0,0-2,0V15H8V5a3,3,0,0,1,6,0v9A5.0055,5.0055,0,0,1,9,19Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E") !important;
   color: currentColor !important;
   height: 1.2em;
 }
@@ -194,7 +189,6 @@ div.nav-folder-children
 
 @media only screen and (min-device-width: 1024px) {
   /* PC */
-
 
   .obsidian-icon-folder-icon + .nav-file-title-content {
     padding-left: 0 !important;
@@ -238,29 +232,32 @@ div.nav-folder-children
 }
 
 @media only screen and (max-device-width: 1024px) {
-    .is-mobile .nav-folder .collapse-icon {
-      display: inline-block;
-      position: relative;
-      top: 5px;
-    }
+  .is-mobile .nav-folder .collapse-icon {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+  }
 
-
-    .alx-folder-with-note .nav-folder-title[data-path*="Hayleen May"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Mnémosyne"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Quinn"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Alwyn"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Pouvoirs"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Écho"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Zombie"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Ashling May"] .collapse-icon {
-        display: inline-block;
-        right: 25px;
-        position: relative;
-        font-size: calc(var(--size) - 1px) !important;
-        padding-left: 1px !important;
-    }
-
-
+  .alx-folder-with-note
+    .nav-folder-title[data-path*="Hayleen May"]
+    .collapse-icon,
+  .alx-folder-with-note
+    .nav-folder-title[data-path*="Mnémosyne"]
+    .collapse-icon,
+  .alx-folder-with-note .nav-folder-title[data-path*="Quinn"] .collapse-icon,
+  .alx-folder-with-note .nav-folder-title[data-path*="Alwyn"] .collapse-icon,
+  .alx-folder-with-note .nav-folder-title[data-path*="Pouvoirs"] .collapse-icon,
+  .alx-folder-with-note .nav-folder-title[data-path*="Écho"] .collapse-icon,
+  .alx-folder-with-note .nav-folder-title[data-path*="Zombie"] .collapse-icon,
+  .alx-folder-with-note
+    .nav-folder-title[data-path*="Ashling May"]
+    .collapse-icon {
+    display: inline-block;
+    right: 25px;
+    position: relative;
+    font-size: calc(var(--size) - 1px) !important;
+    padding-left: 1px !important;
+  }
 
   .nav-file-title-content:before {
     position: relative;
@@ -279,12 +276,11 @@ div.nav-folder-children
     padding-left: 0 !important;
   }
 
-    .nav-folder-title[data-path*="22. Personnages/"] .nav-folder-title-content,
-    .nav-folder-title[data-path*="22. Personnages/"] svg:not(.right-triangle) {
-        position: relative !important;
-        right: 1.05em;
-    }
-
+  .nav-folder-title[data-path*="22. Personnages/"] .nav-folder-title-content,
+  .nav-folder-title[data-path*="22. Personnages/"] svg:not(.right-triangle) {
+    position: relative !important;
+    right: 1.05em;
+  }
 
   .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle),
   .nav-folder-title[data-path*="Zombie"] svg:not(.right-triangle),
@@ -293,7 +289,7 @@ div.nav-folder-children
   }
   .nav-folder-title[data-path*="Idées/"] .nav-folder-title-content,
   .nav-folder-title[data-path*="Idées/"] svg:not(.right-triangle) {
-        position: relative !important;
-        right: 2em !important;
+    position: relative !important;
+    right: 2em !important;
   }
 }

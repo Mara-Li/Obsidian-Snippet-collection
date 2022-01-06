@@ -1,6 +1,5 @@
 /* This plugins need to be used with the "Code Mirror Options" Plugins. Only for PC */
 
-
 /* @settings
 name: CodeMirror Companion
 id: CM-companion
@@ -129,84 +128,90 @@ settings:
 */
 
 .theme-dark {
-    --tag-font: #1d588f;
-    --tag-background-color: #80cbee67;
-    --tag-border-color: #0493ec;
+  --tag-font: #1d588f;
+  --tag-background-color: #80cbee67;
+  --tag-border-color: #0493ec;
 }
 
 .theme-light {
-    --tag-font: #1d588f;
-    --tag-background-color: #80cbee67;
-    --tag-border-color: #0493ec;
+  --tag-font: #1d588f;
+  --tag-background-color: #80cbee67;
+  --tag-border-color: #0493ec;
 }
 
 :root {
-    --task-size: 35px;
-    --tag-up: 0px;
-    --tag-left: 4px;
-    --tag-bottom: 4px;
-    --markdown-opacity: 0.1;
-    --markdown-clutter: 10px;
-    --border-all: dashed;
-    --border-top: dotted;
-    --border-bottom: dotted;
+  --task-size: 35px;
+  --tag-up: 0px;
+  --tag-left: 4px;
+  --tag-bottom: 4px;
+  --markdown-opacity: 0.1;
+  --markdown-clutter: 10px;
+  --border-all: dashed;
+  --border-top: dotted;
+  --border-bottom: dotted;
 }
 
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-link.cm-list-1.cm-hmd-internal-link.cm-internal-link-url {
-    display: none !important;
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-link.cm-list-1.cm-hmd-internal-link.cm-internal-link-url {
+  display: none !important;
 }
 
 .cm-s-obsidian span.hmd-hidden-token.cm-internal-link-url {
-    color: transparent !important;
+  color: transparent !important;
 }
 
 span.cm-string.cm-hmd-frontmatter {
-    font-size: revert !important;
+  font-size: revert !important;
 }
-
 
 /* Tags*/
 
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:before {
-    content: "";
+  content: "";
 }
 
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-comment.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag,
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-list-1.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
-    opacity: var(--markdown-opacity) !important;
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-comment.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag,
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-list-1.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag.cm-meta {
+  opacity: var(--markdown-opacity) !important;
 }
 
 .cm-s-obsidian span.cm-hashtag-end {
-    background-color: var(--tag-background-color) !important;
-    border: 1px solid var(--tag-border-color) !important;
-    color: var(--tag-font) !important;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 10px;
-    height: 30px !important;
-    padding: 0 !important;
-    z-index: 100 !important;
-    font-family: inherit;
+  background-color: var(--tag-background-color) !important;
+  border: 1px solid var(--tag-border-color) !important;
+  color: var(--tag-font) !important;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 10px;
+  height: 30px !important;
+  padding: 0 !important;
+  z-index: 100 !important;
+  font-family: inherit;
 }
 
 .tag:not(.kanban-plugin .tag) {
-    background-color: var(--tag-background-color) !important;
-    border: 1px solid var(--tag-border-color) !important;
-    color: var(--tag-font) !important;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 10px;
-    z-index: 100 !important;
-    font-family: inherit;
+  background-color: var(--tag-background-color) !important;
+  border: 1px solid var(--tag-border-color) !important;
+  color: var(--tag-font) !important;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 10px;
+  z-index: 100 !important;
+  font-family: inherit;
 }
 
-.cm-s-obsidian span.cm-hashtag-end:not(span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end) {
-    line-height: 30px !important;
-    padding: var(--tag-up) var(--tag-left) var(--tag-bottom) !important;
+.cm-s-obsidian
+  span.cm-hashtag-end:not(span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end) {
+  line-height: 30px !important;
+  padding: var(--tag-up) var(--tag-left) var(--tag-bottom) !important;
 }
 
 span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end {
-    padding: var(--tag-left) !important;
+  padding: var(--tag-left) !important;
 }
 
 .cm-s-obsidian span.cm-hashtag,
@@ -218,84 +223,86 @@ span.cm-header.cm-header-3.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.
 span.cm-header.cm-header-4.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag,
 span.cm-header.cm-header-5.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag,
 span.cm-header.cm-header-6.cm-formatting.cm-formatting-hashtag.cm-hashtag-begin.cm-hashtag {
-    color: var(--text-accent);
+  color: var(--text-accent);
 }
 
 span.cm-comment.cm-hashtag.cm-meta.cm-hashtag-end.cm-tag-Review.lt-underline.lt-major {
-    padding-top: calc(var(--tag-up) + 3px) !important;
-    padding-bottom: var(--tag-bottom) !important;
-    padding-left: calc(var(--tag-left) + 2px) !important;
-    padding-right: calc(var(--tag-left) + 2px) !important;
+  padding-top: calc(var(--tag-up) + 3px) !important;
+  padding-bottom: var(--tag-bottom) !important;
+  padding-left: calc(var(--tag-left) + 2px) !important;
+  padding-right: calc(var(--tag-left) + 2px) !important;
 }
 
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover,
 .cm-s-obsidian span.cm-hashtag-end:hover,
-.wys-enhanced div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end:hover,
+.wys-enhanced
+  div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-hashtag-end:hover,
 a.tag:hover,
 .markdown-preview-view a.tag:hover:not(.kanban-plugin .tag) {
-    background-color: var(--tag-font) !important;
-    color: #ffffff !important;
+  background-color: var(--tag-font) !important;
+  color: #ffffff !important;
 }
 
 .markdown-preview-view a.tag:not(.kanban-plugin .tag) {
-    color: var(--tag-font) !important;
-    background-color: var(--tag-background-color) !important;
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-    padding-left: calc(var(--tag-left) + 2px) !important;
-    padding-right: calc(var(--tag-left) + 2px) !important;
+  color: var(--tag-font) !important;
+  background-color: var(--tag-background-color) !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  padding-left: calc(var(--tag-left) + 2px) !important;
+  padding-right: calc(var(--tag-left) + 2px) !important;
 }
 
 .tag {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 /* Header tags */
 
 span.cm-header.cm-header-1.cm-hashtag.cm-meta.cm-hashtag-end {
-    padding: 0 5px !important;
-    font-size: var(--h1) !important;
-    position: relative;
-    top: -1px !important;
+  padding: 0 5px !important;
+  font-size: var(--h1) !important;
+  position: relative;
+  top: -1px !important;
 }
 
 span.cm-header.cm-header-2.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: var(--h2) !important;
-    padding: 0 5px !important;
-    position: relative;
-    top: -1px !important;
+  font-size: var(--h2) !important;
+  padding: 0 5px !important;
+  position: relative;
+  top: -1px !important;
 }
 
 span.cm-header.cm-header-3.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: var(--h3) !important;
-    padding: 3px 4px !important;
-    position: relative;
-    top: -1px !important;
+  font-size: var(--h3) !important;
+  padding: 3px 4px !important;
+  position: relative;
+  top: -1px !important;
 }
 
 span.cm-header.cm-header-4.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: var(--h4) !important;
-    padding: 0px 5px !important;
-    position: relative;
-    top: -1px !important;
+  font-size: var(--h4) !important;
+  padding: 0px 5px !important;
+  position: relative;
+  top: -1px !important;
 }
 
 span.cm-header.cm-header-5.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: var(--h5) !important;
-    padding: 3px !important;
-    position: relative;
-    top: -1px !important;
+  font-size: var(--h5) !important;
+  padding: 3px !important;
+  position: relative;
+  top: -1px !important;
 }
 
 span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
-    font-size: var(--h6) !important;
-    padding-top: 3px !important;
-    padding-right: 8px !important;
-    position: relative;
-    top: -1px !important;
-    margin-left: 3px !important;
+  font-size: var(--h6) !important;
+  padding-top: 3px !important;
+  padding-right: 8px !important;
+  position: relative;
+  top: -1px !important;
+  margin-left: 3px !important;
 }
-
 
 /* Links */
 
@@ -303,90 +310,97 @@ span.cm-header.cm-header-6.cm-hashtag.cm-meta.cm-hashtag-end {
 .markdown-preview-view .external-link,
 .cm-s-obsidian span.cm-link,
 .cm-s-obsidian span.cm-hmd-internal-link {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 /* HTML */
 
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag.cm-bracket.cm-hmd-html-begin:not(span.cm-tag.cm-hmd-codeblock),
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag:not(span.cm-tag.cm-hmd-codeblock),
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag.cm-bracket:not(span.cm-tag.cm-hmd-codeblock),
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-attribute:not(span.cm-attribute.cm-hmd-codeblock),
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-string:not(span.cm-string.cm-hmd-codeblock, span.cm-string.cm-hmd-frontmatter, span.cm-templater-command.cm-string),
-div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-escape:not(span.cm-formatting-escape.cm-hmd-escape-backslash) {
-    font-family: monospace;
-    font-size: 1px !important;
-    letter-spacing: -1ch;
-    color: transparent;
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-tag.cm-bracket.cm-hmd-html-begin:not(span.cm-tag.cm-hmd-codeblock),
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-tag:not(span.cm-tag.cm-hmd-codeblock),
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-tag.cm-bracket:not(span.cm-tag.cm-hmd-codeblock),
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-attribute:not(span.cm-attribute.cm-hmd-codeblock),
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-string:not(span.cm-string.cm-hmd-codeblock, span.cm-string.cm-hmd-frontmatter, span.cm-templater-command.cm-string),
+div:not(.CodeMirror-activeline)
+  > .CodeMirror-line
+  span.cm-formatting-escape:not(span.cm-formatting-escape.cm-hmd-escape-backslash) {
+  font-family: monospace;
+  font-size: 1px !important;
+  letter-spacing: -1ch;
+  color: transparent;
 }
-
 
 /* I prefer my line */
 
 .hide-tokens .cm-s-obsidian pre.HyperMD-hr {
-    background: revert !important;
+  background: revert !important;
 }
 
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hr:after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    background: var(--background-modifier-border);
-    left: 0;
-    top: 50%;
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: var(--background-modifier-border);
+  left: 0;
+  top: 50%;
 }
-
 
 /* Quote */
 
 .hide-tokens .cm-s-obsidian pre.hmd-inactive-line span.cm-formatting-quote {
-    color: transparent !important;
-    content: "";
+  color: transparent !important;
+  content: "";
 }
 
 .blockquote .HyperMD-quote.HyperMD-quote-1 {
-    font-style: italic;
-    border-radius: 8px;
-    border: 2px var(--border-all) var(--background-modifier-border);
-    border-top: 2px var(--border-top) var(--background-modifier-border);
-    border-bottom: 2px var(--border-bottom) var(--background-modifier-border);
-    margin: -1px;
+  font-style: italic;
+  border-radius: 8px;
+  border: 2px var(--border-all) var(--background-modifier-border);
+  border-top: 2px var(--border-top) var(--background-modifier-border);
+  border-bottom: 2px var(--border-bottom) var(--background-modifier-border);
+  margin: -1px;
 }
 
 span.suggestion-prefix {
-    display: none;
+  display: none;
 }
 
 .cm-s-obsidian .hmd-inactive-line span.cm-hmd-escape-backslash {
-    font-size: var(--editor-font-size) !important;
+  font-size: var(--editor-font-size) !important;
 }
-
 
 /* Comments */
 
 span.cm-comment {
-    font-size: var(--markdown-clutter) !important;
+  font-size: var(--markdown-clutter) !important;
 }
 
 div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-comment {
-    opacity: var(--markdown-opacity);
+  opacity: var(--markdown-opacity);
 }
 
 /* Select */
-
 
 span.cm-variable.cm-templater-command.CodeMirror-selectedtext,
 span.cm-string-2.cm-templater-command.CodeMirror-selectedtext,
 span.cm-templater-command.CodeMirror-selectedtext,
 span.cm-templater-command.cm-null.cm-templater-opening-tag.cm-templater-command.cm-formatting.cm-formatting-templater.CodeMirror-selectedtext,
 span.cm-operator.cm-templater-command.cm-templater-closing-tag.cm-formatting.cm-formatting-templater.CodeMirror-selectedtext {
-    background-color: var(--text-selection) !important
+  background-color: var(--text-selection) !important;
 }
 
 /* task */
 
 .hide-tokens.style-check-box .cm-s-obsidian span.cm-formatting-task {
-    vertical-align: inherit;
+  vertical-align: inherit;
 }
