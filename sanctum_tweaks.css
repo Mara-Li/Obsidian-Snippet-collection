@@ -1,3 +1,8 @@
+.theme-light.sanctum-light,
+.theme-light {
+  --text-selection: var(--color-primary-3);
+}
+
 body,
 body body input,
 body body button {
@@ -109,21 +114,7 @@ div.nav-folder-children
   padding: 0 !important;
 }
 
-.tree-item-self .collapse-icon,
-.search-result-collapse-indicator,
-.search-result-file-title:hover .search-result-collapse-indicator,
-.side-dock-collapsible-section-header-indicator:hover,
-.side-dock-collapsible-section-header:hover
-  .side-dock-collapsible-section-header-indicator,
-.markdown-preview-view .collapse-indicator,
-.tree-view-item-collapse,
-.is-collapsed .search-result-collapse-indicator,
-.nav-folder-collapse-indicator,
-.side-dock-collapsible-section-header-indicator,
-.is-collapsed .side-dock-collapsible-section-header-indicator {
-  color: var(--text-normal);
-  cursor: var(--cursor);
-}
+
 
 .outline .tree-item-self .collapse-icon {
   position: relative;
@@ -172,9 +163,7 @@ div.nav-folder-children
   content: "\e9b2" !important;
 }
 
-.markdown-preview-view .collapse-indicator {
-  display: inline-block !important;
-}
+
 
 .tree-item-self .collapse-icon {
   margin: revert !important;
@@ -182,49 +171,6 @@ div.nav-folder-children
   top: 0 !important;
 }
 
-.markdown-embed-title {
-  line-height: revert !important;
-  height: revert !important;
-  font-size: 30px !important;
-}
-
-.plugin-tabs
-  .mod-root.workspace-split.mod-vertical
-  .workspace-split.mod-vertical
-  > div.workspace-leaf.stayopen,
-.plugin-tabs
-  .mod-root.workspace-split.mod-vertical
-  > div.workspace-leaf.stayopen,
-.plugin-tabs
-  .mod-root.workspace-split.mod-vertical
-  .workspace-split.mod-vertical
-  > div.workspace-leaf.mod-active,
-.plugin-tabs
-  .mod-root.workspace-split.mod-vertical
-  > div.workspace-leaf.mod-active {
-  padding-right: 0 !important;
-}
-
-.plugin-tabs
-  .mod-root.workspace-split.mod-vertical
-  > div.workspace-leaf.stayopen
-  .view-header,
-.plugin-tabs
-  .mod-root.workspace-split.mod-vertical
-  > .workspace-split.mod-vertical
-  > div.workspace-leaf
-  .view-header,
-.plugin-tabs
-  .mod-root.workspace-split.mod-vertical
-  > div.workspace-leaf.mod-active
-  .view-header {
-  border-left: 0 !important;
-  border-bottom: 0 !important;
-}
-
-.workspace-split.mod-root {
-  background: transparent !important;
-}
 
 .nav-file-title svg:not(.right-triangle) {
   margin-left: 8px !important;
@@ -248,6 +194,7 @@ div.nav-folder-children
 
 @media only screen and (min-device-width: 1024px) {
   /* PC */
+
 
   .obsidian-icon-folder-icon + .nav-file-title-content {
     padding-left: 0 !important;
@@ -291,7 +238,30 @@ div.nav-folder-children
 }
 
 @media only screen and (max-device-width: 1024px) {
-  /* Mobile */
+    .is-mobile .nav-folder .collapse-icon {
+      display: inline-block;
+      position: relative;
+      top: 5px;
+    }
+
+
+    .alx-folder-with-note .nav-folder-title[data-path*="Hayleen May"] .collapse-icon,
+    .alx-folder-with-note .nav-folder-title[data-path*="Mnémosyne"] .collapse-icon,
+    .alx-folder-with-note .nav-folder-title[data-path*="Quinn"] .collapse-icon,
+    .alx-folder-with-note .nav-folder-title[data-path*="Alwyn"] .collapse-icon,
+    .alx-folder-with-note .nav-folder-title[data-path*="Pouvoirs"] .collapse-icon,
+    .alx-folder-with-note .nav-folder-title[data-path*="Écho"] .collapse-icon,
+    .alx-folder-with-note .nav-folder-title[data-path*="Zombie"] .collapse-icon,
+    .alx-folder-with-note .nav-folder-title[data-path*="Ashling May"] .collapse-icon {
+        display: inline-block;
+        right: 25px;
+        position: relative;
+        font-size: calc(var(--size) - 1px) !important;
+        padding-left: 1px !important;
+    }
+
+
+
   .nav-file-title-content:before {
     position: relative;
     top: 0.35em;
@@ -309,18 +279,21 @@ div.nav-folder-children
     padding-left: 0 !important;
   }
 
+    .nav-folder-title[data-path*="22. Personnages/"] .nav-folder-title-content,
+    .nav-folder-title[data-path*="22. Personnages/"] svg:not(.right-triangle) {
+        position: relative !important;
+        right: 1.05em;
+    }
+
+
   .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle),
   .nav-folder-title[data-path*="Zombie"] svg:not(.right-triangle),
   .nav-folder-title[data-path*="Écho"] svg:not(.right-triangle) {
     margin-left: 1em !important;
   }
-  .nav-folder-title[data-path*="Pouvoir"] .nav-folder-title-content,
-  .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle),
-  .nav-folder-title[data-path*="Écho"] .nav-folder-title-content,
-  .nav-folder-title[data-path*="Écho"] svg:not(.right-triangle),
-  .nav-folder-title[data-path*="Zombie"] .nav-folder-title-content,
-  .nav-folder-title[data-path*="Zombie"] svg:not(.right-triangle) {
-    right: 1em;
-    position: relative;
+  .nav-folder-title[data-path*="Idées/"] .nav-folder-title-content,
+  .nav-folder-title[data-path*="Idées/"] svg:not(.right-triangle) {
+        position: relative !important;
+        right: 2em !important;
   }
 }
