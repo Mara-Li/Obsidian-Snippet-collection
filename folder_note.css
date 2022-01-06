@@ -1,66 +1,6 @@
 @media only screen and (max-device-width: 1024px) {
-    /* Mobile */
-
-    .nav-folder-title[data-path*="Hayleen"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Alwyn"] svg:not(.right-triangle) .nav-folder-title[data-path*="Ashling"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Mnémosyne"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Quinn"] svg:not(.right-triangle) {
-        vertical-align: 2px !important;
-        margin-right: 6px !important;
-    }
-
-    .nav-folder-title[data-path*="Hayleen"] .nav-folder-title-content,
-    .nav-folder-title[data-path*="Hayleen"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Alwyn"] .nav-folder-title-content,
-    .nav-folder-title[data-path*="Alwyn"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Quinn"] .nav-folder-title-content,
-    .nav-folder-title[data-path*="Quinn"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Mnémosyne"] .nav-folder-title-content,
-    .nav-folder-title[data-path*="Mnémosyne"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Ashling"] .nav-folder-title-content,
-    .nav-folder-title[data-path*="Ashling"] svg:not(.right-triangle) {
-        position: relative !important;
-        margin-right: 3px !important;
-        right: 0.75em;
-    }
-
-    .nav-folder-title[data-path*="Pouvoir"] .nav-folder-title-content,
-    .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Écho"] .nav-folder-title-content,
-    .nav-folder-title[data-path*="Écho"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Zombie"] .nav-folder-title-content,
-    .nav-folder-title[data-path*="Zombie"] svg:not(.right-triangle) {
-        right: 1em;
-        position: relative;
-    }
-
-    .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Écho"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Zombie"] svg:not(.right-triangle) {
-        vertical-align: 2px;
-        margin-right: 2px;
-    }
-
-    .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] svg:not(.right-triangle) {
-        right: 0.8em;
-        margin-left: 0.9em;
-        margin-right: 0.2em;
-    }
-
-    .alx-folder-with-note .nav-folder-title[data-path*="Hayleen May"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Alwyn"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Ashling May"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Quinn"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Pouvoir"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Zombie"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Écho"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="Personnages/Mnémosyne"] .collapse-icon {
-        right: 1.5em !important;
-        position: relative !important;
-        font-size: calc(var(--size) - 1px) !important;
-        padding-left: 3px !important;
-        top: -4px;
-    }
+  
+  
 }
 
 @media only screen and (min-device-width: 1024px) {
@@ -68,6 +8,10 @@
     /* PC */
     .nav-file-title svg:not(.right-triangle) {
         margin-left: 2px !important;
+    }
+
+    .nav-file-title-content, .nav-folder-title-content {
+        padding-left: 0;
     }
 
     .nav-folder-title[data-path*="Pouvoir"] .nav-folder-title-content,
