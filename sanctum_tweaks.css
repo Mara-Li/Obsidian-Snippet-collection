@@ -1,101 +1,20 @@
-@media only screen and (min-device-width: 1024px) {
-    .view-header-title:before {
-        background: none !important;
-    }
-    .plugin-tabs .mod-root.workspace-split.mod-vertical>div.workspace-leaf.stayopen .view-header,
-    .plugin-tabs .mod-root.workspace-split.mod-vertical>.workspace-split.mod-vertical>div.workspace-leaf .view-header,
-    .plugin-tabs .mod-root.workspace-split.mod-vertical>div.workspace-leaf.mod-active .view-header {
-        border-bottom: 1px solid var(--background-modifier-border);
-    }
-    .plugin-tabs:not(.compact-title) .workspace .mod-root.workspace-split.mod-vertical .workspace-split.mod-vertical>div.workspace-leaf.stayopen .view-actions,
-    .workspace .mod-root.workspace-split.mod-vertical>div.workspace-leaf.stayopen .view-actions {
-        padding: revert !important;
-    }
+body, body body input, body body button {
+    font-feature-settings: normal !important;
+    font-family: var(--default-font) !important;
 }
 
-.files .nav-file-title:not(.nav-file-title.is-unsupported) .nav-file-title-content:before {
-    margin-left: 2px !important;
+.nav-files-container {
+    padding: 0
+}
+
+.nav-file-title, .nav-folder-title, .is-collapsed .search-result-file-title, .tag-pane-tag {
+    font-weight: normal !important;
 }
 
 .nav-folder-children .nav-file-title-content:first-child::before {
     padding-left: 5px !important;
 }
 
-.community-plugin-search-summary,
-.setting-item-description,
-.community-plugin-item .community-plugin-author,
-.community-plugin-downloads,
-.community-plugin-item .community-plugin-desc,
-.modal .vertical-tab-nav-item {
-    font-size: 1em !important;
-}
-
-.markdown-preview-view .table-view-table {
-    font-size: var(--editor-font-size) !important;
-}
-
-.markdown-embed .markdown-preview-section:last-child p,
-.markdown-embed .markdown-preview-section:last-child ul {
-    margin-block-end: revert !important;
-}
-
-.markdown-embed-content>.markdown-preview-view h1,
-.markdown-embed-content>.markdown-preview-view h2,
-.markdown-embed-content>.markdown-preview-view h3,
-.markdown-embed-content>.markdown-preview-view h4,
-.markdown-embed-content>.markdown-preview-view h5,
-.markdown-embed-content>.markdown-preview-view h6 {
-    margin-left: revert !important;
-}
-
-.markdown-preview-view ul>li:not(.task-list-item)::marker {
-    color: inherit !important;
-    font-size: 75% !important;
-    vertical-align: 12px !important;
-}
-
-.theme-light .cm-s-obsidian .HyperMD-codeblock {
-    color: #00b3ff !important;
-}
-
-.cm-s-obsidian span.cm-error {
-    color: #e08a58 !important;
-}
-
-
-/* Hides title area when "Hide action buttons setting in focus mode" setting is enabled in Minimal Theme Settings */
-
-.view-header-title-container {
-    transition: opacity 0.25s ease-in-out;
-}
-
-.view-header-title-container.is-active {
-    opacity: 1;
-}
-
-.workspace-ribbon:not(.is-collapsed)~.mod-root .view-header-title-container,
-.focus-mode .workspace-ribbon:not(.is-collapsed)~.mod-root .view-header:hover .view-header-title-container,
-.workspace-ribbon.mod-left.is-collapsed~.mod-root .view-header:hover .view-header-title-container,
-.mod-right.is-collapsed~.mod-root .view-header:hover .view-header-title-container {
-    opacity: 1;
-    transition: opacity 0.25s ease-in-out;
-}
-
-.focus-mode .view-header-title-container,
-.focus-mode .workspace-ribbon.mod-right.is-collapsed~.mod-root .view-header-title-container,
-.focus-mode .workspace-ribbon.mod-left.is-collapsed~.mod-root .view-header-title-container {
-    opacity: 0;
-    transition: opacity 0.25s ease-in-out;
-}
-
-input[type='checkbox'] {
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 10% !important;
-    /* ici, c'est cette ligne */
-    border: 1px solid var(--background-modifier-border-hover);
-    padding: 0;
-}
 
 .is-mobile .nav-file-title.is-active {
     box-shadow: none !important;
@@ -275,50 +194,66 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
 .nav-file-title svg:not(.right-triangle) {
     margin-left: 8px !important;
 }
-
+.obsidian-icon-folder-icon {
+    position: relative !important;
+    top: -1px !important;
+}
 
 .nav-folder-children .nav-file-title-content:first-child::before {
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg id='icon' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpath d='M26,30H11a2.0023,2.0023,0,0,1-2-2V22h2v6H26V6H17V4h9a2.0023,2.0023,0,0,1,2,2V28A2.0023,2.0023,0,0,1,26,30Z'/%3E%3Crect x='17' y='10' width='7' height='2'/%3E%3Crect x='16' y='15' width='8' height='2'/%3E%3Crect x='15' y='20' width='9' height='2'/%3E%3Cpath d='M9,19a5.0055,5.0055,0,0,1-5-5V3H6V14a3,3,0,0,0,6,0V5a1,1,0,0,0-2,0V15H8V5a3,3,0,0,1,6,0v9A5.0055,5.0055,0,0,1,9,19Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E") !important;
+    color: currentColor !important;
+    height: 1.2em;
 }
+
+
 
 .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
     background-color: var(--cm-background-color);
 }
 
 
-
-
 @media only screen and (min-device-width: 1024px) {
-    /* Mobile */
+    /* PC */
+
+    .obsidian-icon-folder-icon + .nav-file-title-content {
+        padding-left: 0 !important;
+    }
+
+    .nav-file-title-content:before {
+        margin-left: 10px !important;
+        margin-right: -5px !important;
+        position: relative !important;
+        top: 0;
+    }
     .nav-file-title svg:not(.right-triangle) {
-        margin-left: 2px !important;
+        margin-left: 10px !important;
     }
-    .nav-file-title-content,
-    .nav-folder-title-content {
-        padding-left: 5px !important;
+
+    .nav-file-title-content {
+        padding-left: 10px !important;
     }
+
+    .nav-folder-children .nav-file-title-content:first-child::before {
+        margin-left: 5px !important;
+    }
+
     .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] svg:not(.right-triangle) {
-        margin-left: 1.2em !important;
-        margin-right: 0;
+        margin-left: 1em !important;
+        margin-right: 0.2em !important;
     }
     .nav-file-title[data-path*="Personnages/"] svg:not(.right-triangle) {
         margin-left: 0.5em !important;
     }
-    .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Zombie"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Écho"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Hayleen"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Quinn"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Ashling"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Mnémosyne"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Alwyn"] svg:not(.right-triangle) {
-        margin-left: 0.4em !important;
+    .nav-folder-title[data-path*="20. Roleplay/"] svg:not(.right-triangle){
+        margin-left: 0 !important;
+    }
+    .nav-folder-title[data-path*="Personnages/"] > .obsidian-icon-folder-icon + .nav-folder-title-content {
+        padding-left: 0 !important;
     }
 }
 
-
 @media only screen and (max-device-width: 1024px) {
-    /* PC */
+    /* Mobile */
     
   .nav-file-title-content:before {
     position: relative;
@@ -328,7 +263,7 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
 }
     
     .nav-folder-title[data-path*="Illustration"] .nav-folder-title-content {
-      margin-left: -15px !important;
+      margin-left: 0 !important;
 
       }
 
