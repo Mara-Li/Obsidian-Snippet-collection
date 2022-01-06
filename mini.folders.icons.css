@@ -11,21 +11,21 @@ settings:
         title: Size
         description: (px)
         type: variable-number
-        default: 16;
+        default: 18
         format: px
     -
         id: vertical-align
         title: Alignement
         description: (em)
         type: variable-number
-        default: 0;
+        default: 0
         format: em
     -
         id: left-align
         title: Left align
         description: (em)
         type: variable-number
-        default: 0;
+        default: -0.1
         format: em
         
 */
