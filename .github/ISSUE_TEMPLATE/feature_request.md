@@ -4,7 +4,6 @@ about: Suggest an idea for this project
 title: "[FR]"
 labels: enhancement
 assignees: Mara-Li
-
 ---
 
 **Is your feature request related to a problem? Please describe.**
@@ -19,7 +18,7 @@ A clear and concise description of any alternative solutions or features you've 
 **Additional context**
 Add any other context or screenshots about the feature request here.
 
- - OS: [e.g. iOS]
- - Snippets : 
+- OS: [e.g. iOS]
+- Snippets :
 - Obsidian Ver :
 - Mode : [Source, Preview, Live Preview]

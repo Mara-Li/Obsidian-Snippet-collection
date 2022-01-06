@@ -31,31 +31,32 @@ settings:
 */
 
 .root {
-    --size: 18px;
-    --vertical-align: 0em;
-    --left-align: -0.1em;
+  --size: 18px;
+  --vertical-align: 0em;
+  --left-align: -0.1em;
 }
 
-.files .nav-file-title:not(.nav-file-title.is-unsupported) .nav-file-title-content:before {
-    content: "\ea37";
-    font-family: boxicons;
-    font-size: calc(var(--size) + 3%);
-    margin-right: 5px;
-    margin-left: 0px;
-    vertical-align: -2px;
+.files
+  .nav-file-title:not(.nav-file-title.is-unsupported)
+  .nav-file-title-content:before {
+  content: "\ea37";
+  font-family: boxicons;
+  font-size: calc(var(--size) + 3%);
+  margin-right: 5px;
+  margin-left: 0px;
+  vertical-align: -2px;
 }
 
 .nav-file-title.is-unsupported .nav-file-title-content::before,
-.nav-file>.nav-file-title>.nav-file-tag+.nav-file-title-content::before {
-    content: "\ea38";
-    font-family: boxicons;
-    font-size: var(--size);
-    position: relative;
-    margin-right: 5px;
-    margin-left: 0px;
-    vertical-align: -2px;
+.nav-file > .nav-file-title > .nav-file-tag + .nav-file-title-content::before {
+  content: "\ea38";
+  font-family: boxicons;
+  font-size: var(--size);
+  position: relative;
+  margin-right: 5px;
+  margin-left: 0px;
+  vertical-align: -2px;
 }
-
 
 /* =============== NO MD FILES ======================= */
 
@@ -63,30 +64,30 @@ settings:
 .nav-file-title[data-path$="jpg"] .nav-file-title-content:before,
 .nav-file-title[data-path$="gif"] .nav-file-title-content:before,
 .nav-file-title[data-path$="png"] .nav-file-title-content:before {
-    content: "\e416" !important;
-    font-family: "Material Icons" !important;
-    font-size: calc(var(--size) + 3px);
-    vertical-align: -4px !important;
-    left: 3px !important;
-    position: relative !important;
+  content: "\e416" !important;
+  font-family: "Material Icons" !important;
+  font-size: calc(var(--size) + 3px);
+  vertical-align: -4px !important;
+  left: 3px !important;
+  position: relative !important;
 }
 
 .nav-file-title[data-path$="pdf"] .nav-file-title-content:before {
-    content: "\f1c1" !important;
-    font-family: "Font Awesome 5 Free" !important;
-    margin-left: 2px !important;
-    margin-right: 8px !important;
-    padding-left: 5px !important;
-    font-size: calc(var(--size) - 2px) !important;
-    vertical-align: top !important;
+  content: "\f1c1" !important;
+  font-family: "Font Awesome 5 Free" !important;
+  margin-left: 2px !important;
+  margin-right: 8px !important;
+  padding-left: 5px !important;
+  font-size: calc(var(--size) - 2px) !important;
+  vertical-align: top !important;
 }
 
 .nav-file-title[data-path$="js"] .nav-file-title-content:before,
-.nav-file-title[data-path*="Javascript"]>.nav-file-title-content:before {
-    content: "\f3d3" !important;
-    font-family: "Font Awesome 5 Brands" !important;
-    font-size: var(--size);
-    left: 0;
-    margin-left: -1px !important;
-    padding-left: 8px !important;
+.nav-file-title[data-path*="Javascript"] > .nav-file-title-content:before {
+  content: "\f3d3" !important;
+  font-family: "Font Awesome 5 Brands" !important;
+  font-size: var(--size);
+  left: 0;
+  margin-left: -1px !important;
+  padding-left: 8px !important;
 }

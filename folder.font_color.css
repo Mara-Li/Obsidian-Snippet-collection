@@ -133,43 +133,41 @@ settings:
 */
 
 .theme-dark {
-    --F00: #8d8d8d;
-    --F10: #bb7762;
-    --F20: #b7822f;
-    --F30: #798c64;
-    --F40: #4765ab;
-    --F50: #8fa1cc;
-    --F60: #8fa1cc;
-    --F70: #ffffff00;
-    --F80: #ad8c33;
-    --F90: #ad8c33;
-    --F100: #ffffff00;
-    --FZZ: #617e8c;
+  --F00: #8d8d8d;
+  --F10: #bb7762;
+  --F20: #b7822f;
+  --F30: #798c64;
+  --F40: #4765ab;
+  --F50: #8fa1cc;
+  --F60: #8fa1cc;
+  --F70: #ffffff00;
+  --F80: #ad8c33;
+  --F90: #ad8c33;
+  --F100: #ffffff00;
+  --FZZ: #617e8c;
 }
 
 .theme-light {
-    --F00: #00121a;
-    --F10: #bb7762;
-    --F20: #3e9c9d;
-    --F30: #50a686;
-    --F50: #4765ab;
-    --F40: #8fa1cc;
-    --F60: #8fa1cc;
-    --F70: #ffffff00;
-    --F80: #ad8c33;
-    --F90: #ad8c33;
-    --F100: #ffffff00;
-    --FZZ: #b69d91;
+  --F00: #00121a;
+  --F10: #bb7762;
+  --F20: #3e9c9d;
+  --F30: #50a686;
+  --F50: #4765ab;
+  --F40: #8fa1cc;
+  --F60: #8fa1cc;
+  --F70: #ffffff00;
+  --F80: #ad8c33;
+  --F90: #ad8c33;
+  --F100: #ffffff00;
+  --FZZ: #b69d91;
 }
 
 :root {
-    --size: 18px;
-    --augmente: 14px;
+  --size: 18px;
+  --augmente: 14px;
 }
 
-
 /* ======== FILES =================== */
-
 
 /* You can add mobile adaptation here
 @media screen and (max-width: 1080px) {
@@ -178,81 +176,78 @@ settings:
 
 .nav-file-title,
 .nav-folder-title {
-    font-size: var(--augmente) !important;
+  font-size: var(--augmente) !important;
 }
 
 .nav-file-title.is-being-dragged,
 .nav-folder-title.is-being-dragged {
-    background-color: #8e939349 !important;
+  background-color: #8e939349 !important;
 }
 
 body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
 body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .nav-folder-title[data-path^="/"] {
-    display: none;
+  display: none;
 }
 
 .fx-icons .nav-folder:not(.nav-folder.mod-root) {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .nav-file-title-content:hover,
 .nav-folder-title-content:hover,
 .collapse-icon:hover {
-    background-color: transparent !important;
-    filter: saturate(150%);
-    color: currentColor !important;
+  background-color: transparent !important;
+  filter: saturate(150%);
+  color: currentColor !important;
 }
 
 .nav-folder-title.is-being-dragged-over {
-    background-color: transparent !important;
-    color: currentColor !important;
-    filter: saturate(500%) !important;
+  background-color: transparent !important;
+  color: currentColor !important;
+  filter: saturate(500%) !important;
 }
 
 .CodeMirror-foldgutter-folded,
 .is-collapsed .nav-folder-collapse-indicator,
 .nav-folder-collapse-indicator {
-    color: currentColor !important;
+  color: currentColor !important;
 }
 
 .nav-file-tag {
-    display: none;
+  display: none;
 }
 
 .nav-file-title.is-active:not(.nav-file-title.is-active:hover) {
-    background-color: rgba(255, 255, 255, 0.075) !important;
-    filter: saturate(150%);
+  background-color: rgba(255, 255, 255, 0.075) !important;
+  filter: saturate(150%);
 }
 
 .nav-folder-children .nav-file-title-content:first-child::before {
-    font-size: 18px !important;
+  font-size: 18px !important;
 }
-
 
 .nav-folder-children .nav-file-title-content:first-child::before {
-    font-size: var(--size) !important;
-    padding-left: 3px !important;
+  font-size: var(--size) !important;
+  padding-left: 3px !important;
 }
-
 
 /* ===================== I00 ===================== */
 
 .nav-folder-title[data-path^="00."],
 .nav-file-title[data-path*="00."] {
-    color: var(--F00) !important;
+  color: var(--F00) !important;
 }
 
 /* ============ FOLDER 10 ===================== */
 
 .nav-folder-title[data-path^="10."],
 .nav-file-title[data-path*="10."] {
-    color: var(--F10) !important;
+  color: var(--F10) !important;
 }
-
 
 /* ============ FOLDER 20 ==================== */
 
@@ -261,81 +256,73 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 .nav-file-title[data-path^="20."][data-path*="21."],
 .nav-file-title[data-path^="20."][data-path*="22."],
 .nav-file-title[data-path^="20."][data-path*="23."] {
-    color: var(--F20) !important;
+  color: var(--F20) !important;
 }
-
 
 /* ============ FOLDER 30 ==================== */
 
 .nav-folder-title[data-path^="30"],
 .nav-file-title[data-path*="30."] {
-    color: var(--F30) !important;
+  color: var(--F30) !important;
 }
 
 /* ============ Folder 40 ==================== */
 
 .nav-folder-title[data-path^="40"],
 .nav-file-title[data-path*="40."] {
-    color: var(--F40) !important;
+  color: var(--F40) !important;
 }
-
 
 /* =================== FOLDER 50 ===================*/
 
 .nav-folder-title[data-path^="50."],
 .nav-file-title[data-path*="50."] {
-    color: var(--F50) !important;
+  color: var(--F50) !important;
 }
 
 /* ============ Folder 60 ==================== */
 
 .nav-folder-title[data-path^="60."],
 .nav-file-title[data-path*="60."] {
-    color: var(--F60) !important;
+  color: var(--F60) !important;
 }
-
 
 /* ============ Folder 70 ==================== */
 
 .nav-folder-title[data-path^="70"],
 .nav-file-title[data-path*="70."] {
-    color: var(--F70) !important;
+  color: var(--F70) !important;
 }
-
 
 /* =============== FOLDER 80 ===================== */
 
 .nav-folder-title[data-path^="80."],
 .nav-file-title[data-path^="80."] {
-    color: var(--F80) !important;
+  color: var(--F80) !important;
 }
-
 
 /* ===============  FOLDER 90 ===================== */
 
 .nav-folder-title[data-path^="90."],
 .nav-file-title[data-path*="90."] {
-    color: var(--F90) !important;
+  color: var(--F90) !important;
 }
-
 
 /* ===============  FOLDER 100 ===================== */
 
 .nav-folder-title[data-path^="100."],
 .nav-file-title[data-path*="100."] {
-    color: var(--F100) !important;
+  color: var(--F100) !important;
 }
-
 
 /* ======= RESSOURCES =================== */
 
 .nav-folder-title[data-path^="ZZ."],
 .nav-file-title[data-path*="ZZ."] {
-    color: var(--FZZ) !important;
+  color: var(--FZZ) !important;
 }
 
 .nav-folder-title[data-path^="Ressource"],
 .nav-file-title[data-path*="Ressource"] {
-    color: var(--FZZ) !important;
+  color: var(--FZZ) !important;
 }
-
