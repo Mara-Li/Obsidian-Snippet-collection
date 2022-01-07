@@ -1,3 +1,25 @@
+## v0.5.0 (2022-01-07)
+
+### Fix
+
+- **sanctum**: :zap: Fix useless css + nav overflow
+- :ambulance: fix overflow mobile
+- **StyleSetting**: :ambulance: Fix default variable in SS
+- **coloredFolder**: :art: fix line
+- **sanctum**: :zap: Improve PC folder note
+- **sanctum**: Fix file icons
+
+### Feat
+
+- **sanctum**: :adhesive_bandage: Add color selection (color primary 3)
+- **sanctum**: Add sanctum tweaks
+
+### Refactor
+
+- **prettier**: :art: prettier
+- **prettier**: Prettier
+- **foldernote**: :wastebasket: Remove mobile folder note (moving to specific theme snippet)
+
 ## v0.4.0 (2021-12-22)
 
 ### Feat
