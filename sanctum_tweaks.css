@@ -10,10 +10,6 @@ body body button {
   font-family: var(--default-font) !important;
 }
 
-.nav-files-container {
-  padding: 0;
-}
-
 .nav-file-title,
 .nav-folder-title,
 .is-collapsed .search-result-file-title,
@@ -35,19 +31,6 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
   background-color: #ffffff42 !important;
 }
 
-.nav-file-tag {
-  top: 0.68em;
-}
-
-.nav-folder-title-content,
-.nav-file-title-content {
-  display: inline-block;
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  vertical-align: middle;
-}
-
 .nav-folder-title-content {
   white-space: nowrap !important;
   align-items: center;
@@ -56,23 +39,6 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
   flex-grow: 1;
 }
 
-.nav-file-title,
-.nav-folder-title,
-.is-collapsed .search-result-file-title,
-.tag-pane-tag {
-  color: var(--text-normal);
-  font-weight: 500;
-  line-height: 1;
-}
-
-.nav-folder.mod-root > .nav-folder-title .nav-folder-title-content {
-  border-radius: 0;
-  font-size: 14px;
-  color: transparent;
-  overflow: hidden;
-  height: 0px;
-  padding: 0 3px;
-}
 
 div.nav-folder.mod-root
   > div.nav-folder-children
@@ -102,74 +68,13 @@ div.nav-folder-children
   margin-right: 3px;
 }
 
-.nav-folder-title-content {
-  padding-left: 3px;
-}
+
 
 .nav-folder:not(.mod-root) > .nav-folder-children {
   padding-left: 0.7em !important;
 }
 
-.nav-folder-children > .nav-folder {
-  padding: 0 !important;
-}
 
-.outline .tree-item-self .collapse-icon {
-  position: relative;
-  top: 0.5em;
-}
-
-.tree-item-self .collapse-icon {
-  margin: 0;
-  padding: 0;
-  width: auto;
-}
-
-.backlink-pane > .tree-item-self > .collapse-icon {
-  display: none;
-  color: var(--text-muted);
-}
-
-.tag-container .tree-item-self .collapse-icon {
-  padding-right: 4px;
-}
-
-.graph-controls .collapse-icon {
-  font-size: 14px;
-  margin-left: -3px;
-}
-
-.collapse-icon:not(.markdown-preview-view .collapse-indicator) > svg {
-  display: none;
-}
-
-.collapse-icon:not(.markdown-preview-view .collapse-indicator):after {
-  display: inline-block;
-  font-family: "boxicons";
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-}
-
-.collapse-icon:not(.markdown-preview-view .collapse-indicator):after {
-  content: "\e9ac" !important;
-}
-
-.is-collapsed
-  .collapse-icon:not(.markdown-preview-view .collapse-indicator):after {
-  content: "\e9b2" !important;
-}
-
-.tree-item-self .collapse-icon {
-  margin: revert !important;
-  padding: revert !important;
-  top: 0 !important;
-}
-
-.nav-file-title svg:not(.right-triangle) {
-  margin-left: 8px !important;
-}
 .obsidian-icon-folder-icon {
   position: relative !important;
   top: -1px !important;
@@ -189,7 +94,6 @@ div.nav-folder-children
 
 @media only screen and (min-device-width: 1024px) {
   /* PC */
-
   .obsidian-icon-folder-icon + .nav-file-title-content {
     padding-left: 0 !important;
   }
@@ -231,11 +135,28 @@ div.nav-folder-children
   }
 }
 
+
 @media only screen and (max-device-width: 1024px) {
+
+    .workspace-drawer {
+    height: 100% !important;
+  }
+  .is-mobile div.nav-files-container.node-insert-event.show-unsupported {
+      padding: 16px 4px 8px;
+
+  }
+
+  
   .is-mobile .nav-folder .collapse-icon {
     display: inline-block;
     position: relative;
     top: 5px;
+  }
+    .alx-folder-with-note
+    .nav-folder-title[data-path*="Illustration"]
+    svg:not(.right-triangle) {
+      position: relative;
+      left: 0;
   }
 
   .alx-folder-with-note
@@ -266,7 +187,7 @@ div.nav-folder-children
   }
 
   .nav-folder-title[data-path*="Illustration"] .nav-folder-title-content {
-    margin-left: 0 !important;
+    margin-left: 0.9em !important;
   }
 
   .alx-folder-with-note
