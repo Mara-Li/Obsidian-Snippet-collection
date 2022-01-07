@@ -270,7 +270,7 @@ div:not(.is-mobile)
   padding-left: 0;
 }
 
-/* Set up explorer container margins */ 
+/* Set up explorer container margins */
 
 .nav-files-container {
   margin: 0px 5px;
@@ -341,7 +341,6 @@ div:not(.is-mobile)
 /* 16 Top level Folders By Starting Digit (0-F)
 These are set for me by leading number/letter which also ensures they are in the correct order when sorted alphabetically
 You can change these to match your use case. */
-
 
 .nav-folder.mod-root
   > .nav-folder-children
@@ -507,8 +506,6 @@ You can change these to match your use case. */
 }
 
 /* Relationship lines for 2nd, 3rd, and 4th level folders */
-
-
 
 @media only screen and (max-device-width: 1024px) {
   .is-mobile .nav-folder.mod-root {
@@ -693,11 +690,9 @@ You can change these to match your use case. */
   transition: all 0.5s ease;
 }
 
-
 .nav-file.is-active > .nav-file-title {
   padding-left: 5px;
-} 
-
+}
 
 .nav-file-title.is-active,
 body:not(.is-grabbing) .nav-file-title:hover,

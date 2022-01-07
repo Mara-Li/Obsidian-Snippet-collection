@@ -39,7 +39,6 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
   flex-grow: 1;
 }
 
-
 div.nav-folder.mod-root
   > div.nav-folder-children
   > div.nav-folder
@@ -68,12 +67,9 @@ div.nav-folder-children
   margin-right: 3px;
 }
 
-
-
 .nav-folder:not(.mod-root) > .nav-folder-children {
   padding-left: 0.7em !important;
 }
-
 
 .obsidian-icon-folder-icon {
   position: relative !important;
@@ -135,28 +131,24 @@ div.nav-folder-children
   }
 }
 
-
 @media only screen and (max-device-width: 1024px) {
-
-    .workspace-drawer {
+  .workspace-drawer {
     height: 100% !important;
   }
   .is-mobile div.nav-files-container.node-insert-event.show-unsupported {
-      padding: 16px 4px 8px;
-
+    padding: 16px 4px 8px;
   }
 
-  
   .is-mobile .nav-folder .collapse-icon {
     display: inline-block;
     position: relative;
     top: 5px;
   }
-    .alx-folder-with-note
+  .alx-folder-with-note
     .nav-folder-title[data-path*="Illustration"]
     svg:not(.right-triangle) {
-      position: relative;
-      left: 0;
+    position: relative;
+    left: 0;
   }
 
   .alx-folder-with-note
