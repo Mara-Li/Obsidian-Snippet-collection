@@ -1,3 +1,13 @@
+## v0.5.1 (2022-01-08)
+
+### Fix
+
+- **sanctum**: :bug: fix overflow
+
+### Refactor
+
+- **foldernote**: :zap: Clean folder
+
 ## v0.5.0 (2022-01-07)
 
 ### Fix
