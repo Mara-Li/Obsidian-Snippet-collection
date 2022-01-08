@@ -31,12 +31,34 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
   background-color: #ffffff42 !important;
 }
 
+.nav-folder-title-content,
+.nav-file-title-content {
+  display: inline-block;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  vertical-align: middle;
+}
+
 .nav-folder-title-content {
   white-space: nowrap !important;
   align-items: center;
   text-overflow: ellipsis !important;
   overflow: hidden !important;
   flex-grow: 1;
+  width: 50%;
+}
+.nav-file-title-content {
+  width: 50%;
+}
+
+.nav-folder.mod-root > .nav-folder-title .nav-folder-title-content {
+  border-radius: 0;
+  font-size: 14px;
+  color: transparent;
+  overflow: hidden;
+  height: 0px;
+  padding: 0 3px;
 }
 
 div.nav-folder.mod-root
@@ -151,20 +173,10 @@ div.nav-folder-children
     left: 0;
   }
 
-  .alx-folder-with-note
-    .nav-folder-title[data-path*="Hayleen May"]
-    .collapse-icon,
-  .alx-folder-with-note
-    .nav-folder-title[data-path*="Mnémosyne"]
-    .collapse-icon,
-  .alx-folder-with-note .nav-folder-title[data-path*="Quinn"] .collapse-icon,
-  .alx-folder-with-note .nav-folder-title[data-path*="Alwyn"] .collapse-icon,
-  .alx-folder-with-note .nav-folder-title[data-path*="Pouvoirs"] .collapse-icon,
-  .alx-folder-with-note .nav-folder-title[data-path*="Écho"] .collapse-icon,
-  .alx-folder-with-note .nav-folder-title[data-path*="Zombie"] .collapse-icon,
-  .alx-folder-with-note
-    .nav-folder-title[data-path*="Ashling May"]
-    .collapse-icon {
+
+  .alx-folder-with-note .nav-folder-title[data-path*="22. Personnages/"] .collapse-icon,
+  .alx-folder-with-note .nav-folder-title[data-path*="21. Idées/"] .collapse-icon 
+  {
     display: inline-block;
     right: 25px;
     position: relative;
