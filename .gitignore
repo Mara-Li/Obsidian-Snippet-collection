@@ -5,10 +5,12 @@ folders.hide.css
 #But not these
 !.gitignore
 !README.md
-!custom*
+!Custom*
 !folder_note*
 !folder-color_*
 !icons_*
 !img-grid*
 !sanctum*
-!screenshot/*
+!screenshot
+!screenshot**
+!screenshot*
