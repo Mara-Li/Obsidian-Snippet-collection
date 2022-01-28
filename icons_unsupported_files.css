@@ -14,10 +14,10 @@ name: "Folder Mini Icons"
 id: mini-icons
 settings:
     -
-		id: files
-		title: Files icon
-		type: class-toggle
-    description: Add icons before file
+        id: files
+        title: Files icon
+        description: Add icons before normal files (and some unsupported file)
+        type: class-toggle
     -
         id: size
         title: Size
@@ -48,16 +48,14 @@ settings:
   --left-align: -0.1em;
 }
 
-.files
-  .nav-file-title:not(.nav-file-title.is-unsupported)
-  .nav-file-title-content:before {
+.files .nav-file-title:not(.nav-file-title.is-unsupported) .nav-file-title-content:before {
   content: "\ea37";
   font-family: boxicons;
   font-size: calc(var(--size) + 3%);
 }
 
 .files .nav-file-title.is-unsupported .nav-file-title-content::before,
-.files .nav-file > .nav-file-title > .nav-file-tag + .nav-file-title-content::before {
+.files .nav-file>.nav-file-title>.nav-file-tag+.nav-file-title-content::before {
   content: "\ea38";
   font-family: boxicons;
   font-size: var(--size);
@@ -90,7 +88,7 @@ settings:
 }
 
 .nav-file-title[data-path$="js"] .nav-file-title-content:before,
-.nav-file-title[data-path*="Javascript"] > .nav-file-title-content:before {
+.nav-file-title[data-path*="Javascript"]>.nav-file-title-content:before {
   content: "\f3d3" !important;
   font-family: "Font Awesome 5 Brands" !important;
   font-size: var(--size);
