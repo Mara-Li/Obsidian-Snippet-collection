@@ -1,0 +1,165 @@
+/* 
+==============================================================================  
+                                CUSTOM SYNTAX
+  If anyone find the original author of this snippet, I will add it to the credit.
+  Plugin allow to custom syntax using only markdown, see Readme for reference. 
+  Credit: Mara-Li
+  
+============================================================================== */
+
+
+/* Center caption */
+
+mark > em > code {
+  font-family: initial !important;
+  display: block;
+  text-align: center;
+  background-color: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+  font-style: initial;
+  font-weight: unset;
+  font-size: small;
+  text-decoration: none;
+  color: inherit !important;
+}
+
+span.cm-highlight.cm-em.cm-inline-code {
+  background-color: unset;
+  font-style: initial;
+  font-weight: unset;
+  font-size: small;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Right align */
+
+mark > strong > code {
+  font-family: initial !important;
+  display: block;
+  text-align: right;
+  background-color: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+  font-style: italic;
+  font-weight: normal !important;
+  text-decoration: none;
+  color: inherit !important;
+  font-size: inherit !important;
+}
+
+span.cm-highlight.cm-strong.cm-inline-code {
+  background-color: unset;
+  font-style: initial;
+  font-weight: unset;
+  font-size: small;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Red text */
+
+strong > mark {
+  text-decoration: unset;
+  color: red !important;
+  background-color: transparent !important;
+  text-decoration: unset !important;
+}
+
+span.cm-strong.cm-highlight {
+  color: red !important;
+  text-decoration: unset;
+  background-color: transparent !important;
+  font-weight: normal;
+}
+
+/* Blue text */
+
+em > del {
+  font-style: initial;
+  text-decoration: unset;
+  color: rgb(106, 106, 209) !important;
+  font-weight: normal;
+}
+
+span.cm-em.cm-strikethrough {
+  color: rgb(106, 106, 209) !important;
+  text-decoration: unset;
+  font-weight: normal;
+}
+
+/* yellow */
+
+strong > del {
+  font-style: initial;
+  text-decoration: unset !important;
+  color: rgb(255, 208, 1) !important;
+  background-color: transparent !important;
+}
+
+span.cm-strong.cm-strikethrough {
+  color: rgb(255, 208, 1) !important;
+  text-decoration: unset;
+}
+
+/* green */
+
+em > mark {
+  font-style: initial;
+  text-decoration: unset !important;
+  color: green !important;
+  background-color: transparent !important;
+  font-weight: bold !important;
+}
+
+span.cm-em.cm-highlight {
+  color: green !important;
+  text-decoration: unset;
+  background-color: transparent !important;
+  font-style: initial;
+  font-weight: bold !important;
+}
+
+/* Cyan highlight */
+
+strong > mark > del {
+  font-weight: normal;
+  text-decoration: unset;
+  background-color: cyan;
+  color: rgb(82, 82, 82);
+}
+
+span.cm-strong.cm-highlight.cm-strikethrough {
+  font-weight: normal;
+  color: rgb(82, 82, 82) !important;
+  text-decoration: unset;
+  background-color: cyan !important;
+}
+
+/* Lime highlight */
+
+em > mark > del {
+  text-decoration: unset;
+  background-color: lime !important;
+  font-style: initial;
+  color: rgb(82, 82, 82) !important;
+}
+
+span.cm-em.cm-highlight.cm-strikethrough {
+  color: rgb(82, 82, 82);
+  text-decoration: unset;
+  background-color: lime !important;
+}
+
+/* Underline */
+
+strong em,
+span.cm-strong.cm-em,
+.cm-em.cm-strong:not(.cm-formatting), 
+ins {
+  text-decoration: underline;
+  background-color: transparent;
+  padding: revert;
+  text-transform: none;
+}

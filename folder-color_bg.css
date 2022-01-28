@@ -1,14 +1,14 @@
-/* Coloured Folders
-a CSS snippet by Lithou
-modified by Jeremy Valentine & Mara-Li
-
-This will allow the colouring of the top level folders into sections that "drop down" when opened. 
-This is currently set to be the same colour regardless of theme, but you can change that by copy/pasting the colors from the root section into light/dark theme then changing them according to preference.
-The colours are rainbow coloured and 16 in number by default. They are shades such that white/lightgrey text shows up the best. Some have a bit let contrast (the lighter blue and the yellow) but should still be visible. Again, change them however you would like. 
-*/
+/* 
+=========================================================================================================   
+                                          COLOURED NESTED FOLDER 
+        credit : Lithou ; Jeremy Valentine ; Mara-Li
+        You need to change the data-path to corresponding to your folder.
+        This will allow the colouring of the top level folders into sections that "drop down" when opened. 
+        The Color can be changed using Style Settings.
+========================================================================================================= */
 
 /* @settings
-name: Nested Folder
+name: Nested Folder — Background Color
 id: nested
 settings:
     -

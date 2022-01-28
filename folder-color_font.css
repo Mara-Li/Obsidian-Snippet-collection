@@ -1,5 +1,12 @@
+/* 
+==============================================================================  
+                    FOLDER FONT COLOR 
+    credit : Mara-Li
+    You need to change the data-path to corresponding to your folder.
+============================================================================== */
+
 /* @settings
-name: "Folder Icons - Color settings"
+name: "Nested Folder — Font Color"
 id: icons color
 settings:
     -
@@ -167,12 +174,14 @@ settings:
   --augmente: 14px;
 }
 
-/* ======== FILES =================== */
-
-/* You can add mobile adaptation here
-@media screen and (max-width: 1080px) {
-}
+/* 
+======================================================================================  
+                                      COLOR
+====================================================================================== 
 */
+
+/* ======================== FILES =================== */
+
 
 .nav-file-title,
 .nav-folder-title {
@@ -235,21 +244,23 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
   padding-left: 3px !important;
 }
 
-/* ===================== I00 ===================== */
+/* ======================== FOLDER 00 =================== */
 
 .nav-folder-title[data-path^="00."],
 .nav-file-title[data-path*="00."] {
   color: var(--F00) !important;
 }
 
-/* ============ FOLDER 10 ===================== */
+/* ======================== FOLDER 10 =================== */
+
 
 .nav-folder-title[data-path^="10."],
 .nav-file-title[data-path*="10."] {
   color: var(--F10) !important;
 }
 
-/* ============ FOLDER 20 ==================== */
+/* ======================== FOLDER 20 - 23 =================== */
+
 
 .nav-folder-title[data-path^="20."],
 .nav-file-title[data-path^="20."],
@@ -259,63 +270,63 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
   color: var(--F20) !important;
 }
 
-/* ============ FOLDER 30 ==================== */
+/* ======================== FOLDER 30 =================== */
 
 .nav-folder-title[data-path^="30"],
 .nav-file-title[data-path*="30."] {
   color: var(--F30) !important;
 }
 
-/* ============ Folder 40 ==================== */
+/* ======================== FOLDER 40 =================== */
 
 .nav-folder-title[data-path^="40"],
 .nav-file-title[data-path*="40."] {
   color: var(--F40) !important;
 }
 
-/* =================== FOLDER 50 ===================*/
+/* ======================== FOLDER 50 =================== */
 
 .nav-folder-title[data-path^="50."],
 .nav-file-title[data-path*="50."] {
   color: var(--F50) !important;
 }
 
-/* ============ Folder 60 ==================== */
+/* ======================== FOLDER 60 =================== */
 
 .nav-folder-title[data-path^="60."],
 .nav-file-title[data-path*="60."] {
   color: var(--F60) !important;
 }
 
-/* ============ Folder 70 ==================== */
+/* ======================== FOLDER 70 =================== */
 
 .nav-folder-title[data-path^="70"],
 .nav-file-title[data-path*="70."] {
   color: var(--F70) !important;
 }
 
-/* =============== FOLDER 80 ===================== */
+/* ======================== FOLDER 80 =================== */
 
 .nav-folder-title[data-path^="80."],
 .nav-file-title[data-path^="80."] {
   color: var(--F80) !important;
 }
 
-/* ===============  FOLDER 90 ===================== */
+/* ======================== FOLDER 90 =================== */
 
 .nav-folder-title[data-path^="90."],
 .nav-file-title[data-path*="90."] {
   color: var(--F90) !important;
 }
 
-/* ===============  FOLDER 100 ===================== */
+/* ======================== FOLDER 100 =================== */
 
 .nav-folder-title[data-path^="100."],
 .nav-file-title[data-path*="100."] {
   color: var(--F100) !important;
 }
 
-/* ======= RESSOURCES =================== */
+/* ======================== RESSOURCE - ZZ =================== */
 
 .nav-folder-title[data-path^="ZZ."],
 .nav-file-title[data-path*="ZZ."] {
@@ -325,4 +336,85 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 .nav-folder-title[data-path^="Ressource"],
 .nav-file-title[data-path*="Ressource"] {
   color: var(--FZZ) !important;
+}
+
+
+/* 
+======================================================================================  
+                                      HOVER
+====================================================================================== 
+*/
+
+.nav-folder-title[data-path^="00."]:hover {
+  background-color: var(--bg00) !important;
+  filter: invert(50%) sepia(100%) saturate(0%) hue-rotate(250deg) brightness(0%);
+  color: var(--F00) !important;
+}
+
+.nav-file-title[data-path^="00."]:hover,
+.nav-folder-title[data-path*="01."]:hover,
+.nav-folder-title[data-path*="02."]:hover,
+.nav-folder-title[data-path*="03."]:hover {
+  color: var(--F00) !important;
+  background-color: var(--bg00) !important;
+  filter: invert(50%) sepia(100%) saturate(0%) hue-rotate(250deg) brightness(0%);
+}
+
+.nav-folder-title[data-path^="10."]:hover,
+.nav-file-title[data-path^="10."]:hover {
+  color: var(--F10) !important;
+  background-color: var(--bg10) !important;
+  filter: saturate(150%);
+}
+
+.nav-folder-title[data-path^="20."]:hover,
+.nav-file-title[data-path^="20."]:hover,
+.nav-file-title[data-path^="20."][data-path*="30."]:hover,
+.nav-file-title[data-path^="20."][data-path*="10."]:hover,
+.nav-file-title[data-path^="20."][data-path*="20."]:hover {
+  color: var(--F20) !important;
+  background-color: var(--bg20) !important;
+  filter: saturate(150%);
+}
+
+.nav-folder-title[data-path^="30"]:hover,
+.nav-file-title[data-path*="30."]:hover {
+  color: var(--F30) !important;
+  background-color: var(--bg30) !important;
+  filter: saturate(150%);
+}
+
+.nav-folder-title[data-path^="40"]:hover,
+.nav-file-title[data-path*="40."]:hover {
+  color: var(--F40) !important;
+  background-color: var(--bg40) !important;
+  filter: saturate(150%);
+}
+
+.nav-folder-title[data-path^="50"]:hover,
+.nav-file-title[data-path*="50."]:hover {
+  color: var(--F50) !important;
+  background-color: var(--bg50) !important;
+  filter: saturate(150%);
+}
+
+.nav-folder-title[data-path^="60."]:hover,
+.nav-file-title[data-path*="60."]:hover {
+  color: var(--F60) !important;
+  filter: saturate(150%);
+  background-color: var(--bg60) !important;
+}
+
+.nav-folder-title[data-path^="ZZ."]:hover,
+.nav-file-title[data-path*="ZZ."]:hover {
+  color: var(--FZZ) !important;
+  filter: saturate(150%);
+  background-color: var(--bgZZ) !important;
+}
+
+.nav-folder-title[data-path^="Ressource"]:hover,
+.nav-file-title[data-path*="Ressource"]:hover {
+  color: var(--FZZ) !important;
+  filter: saturate(150%);
+  background-color: var(--bgZZ) !important;
 }

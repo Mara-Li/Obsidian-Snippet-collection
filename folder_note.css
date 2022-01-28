@@ -1,5 +1,15 @@
-@media only screen and (max-device-width: 1024px) {
-}
+/* 
+==============================================================================  
+                            FOLDER NOTE EXAMPLE [PC]
+    credit : Mara-Li
+    Plugins :
+    - FolderNote & FolderNote core : https://github.com/aidenlx/alx-folder-note
+    - Icon Folder : https://github.com/FlorianWoelki/obsidian-icon-folder
+
+  You need to change the data-path to corresponding to your folder.
+
+============================================================================== */
+
 
 @media only screen and (min-device-width: 1024px) {
   /* PC */

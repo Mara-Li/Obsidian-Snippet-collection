@@ -1,30 +1,16 @@
+/* 
+=========================================================================================================   
+                                          SANCTUM TWEAKS
+        credit : Mara-Li ;  jdanielmourao 
+        This snippet adjust somes appareance for the theme Sanctum 
+        Theme : https://github.com/jdanielmourao/obsidian-sanctum
+        It mainly add support for folder_note.css. 
+========================================================================================================= */
+
+
 .theme-light.sanctum-light,
 .theme-light {
   --text-selection: var(--color-primary-3);
-}
-
-button.mod-cta {
-  box-shadow: none;
-  text-shadow: none;
-  background: rgba(var(--color-accent-l));
-  border: none;
-}
-
-.checkbox-container:after {
-  transition: transform 0.15s ease-in-out, width 0.1s ease-in-out, left 0.1s ease-in-out, -webkit-transform 0.15s ease-in-out;
-  box-shadow: inset 0 1px 1px rgb(0 0 0 / 15%);
-}
-
-.checkbox-container.is-enabled:after {
-  border: 1px;
-  border-style: solid;
-  border-color: var(--color-accent);
-}
-
-.checkbox-container:after {
-  border: 1px;
-  border-style: none solid solid solid;
-  border-color: var(--color-primary-3);
 }
 
 .markdown-source-view.mod-cm6 .list-bullet:after {
@@ -38,6 +24,16 @@ body body button {
   font-feature-settings: normal !important;
   font-family: var(--default-font) !important;
 }
+
+span.cm-comment {
+  font-family: var(--font-frontmatter) !important;
+}
+
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
+  background-color: var(--cm-background-color);
+}
+
+/* ===================================== FOLDER NOTE & FILES ICONS ===================================== */
 
 .nav-file-title,
 .nav-folder-title,
@@ -60,10 +56,6 @@ body:not(.is-grabbing) .nav-file-title.is-active:hover {
   background-color: #ffffff42 !important;
 }
 
-span.cm-comment {
-  font-family: var(--font-frontmatter) !important;
-}
-
 div.nav-folder.mod-root>div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-collapse-indicator.collapse-icon {
   margin-left: -2px;
 }
@@ -83,6 +75,13 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
   margin-right: 3px;
 }
 
+.nav-file-title {
+  position: relative;
+  margin-right: 5px;
+  margin-left: 0px;
+  vertical-align: -2px;
+}
+
 .nav-folder:not(.mod-root)>.nav-folder-children {
   padding-left: 0.7em !important;
 }
@@ -93,17 +92,13 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
 }
 
 .nav-folder-children .nav-file-title-content:first-child::before {
+  /* Icon support */
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg id='icon' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpath d='M26,30H11a2.0023,2.0023,0,0,1-2-2V22h2v6H26V6H17V4h9a2.0023,2.0023,0,0,1,2,2V28A2.0023,2.0023,0,0,1,26,30Z'/%3E%3Crect x='17' y='10' width='7' height='2'/%3E%3Crect x='16' y='15' width='8' height='2'/%3E%3Crect x='15' y='20' width='9' height='2'/%3E%3Cpath d='M9,19a5.0055,5.0055,0,0,1-5-5V3H6V14a3,3,0,0,0,6,0V5a1,1,0,0,0-2,0V15H8V5a3,3,0,0,1,6,0v9A5.0055,5.0055,0,0,1,9,19Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E") !important;
   mask-image: url("data:image/svg+xml,%3Csvg id='icon' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpath d='M26,30H11a2.0023,2.0023,0,0,1-2-2V22h2v6H26V6H17V4h9a2.0023,2.0023,0,0,1,2,2V28A2.0023,2.0023,0,0,1,26,30Z'/%3E%3Crect x='17' y='10' width='7' height='2'/%3E%3Crect x='16' y='15' width='8' height='2'/%3E%3Crect x='15' y='20' width='9' height='2'/%3E%3Cpath d='M9,19a5.0055,5.0055,0,0,1-5-5V3H6V14a3,3,0,0,0,6,0V5a1,1,0,0,0-2,0V15H8V5a3,3,0,0,1,6,0v9A5.0055,5.0055,0,0,1,9,19Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E") !important;
   color: currentColor !important;
   height: 1.2em;
   width: 1.2em;
 }
-
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
-  background-color: var(--cm-background-color);
-}
-
 
 
 @media only screen and (min-device-width: 1024px) {
@@ -130,9 +125,12 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
   }
 
   .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] svg:not(.right-triangle) {
-    margin-left: 1em !important;
-    margin-right: 0.2em !important;
+    margin-left: 0 !important;
+    margin-right: 1.3em !important;
+    position: relative;
+    left: 0 !important;
   }
+
 
   .nav-file-title[data-path*="Personnages/"] svg:not(.right-triangle) {
     margin-left: 0.5em !important;
@@ -147,20 +145,31 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
     padding-left: 0 !important;
   }
 
-  .alx-folder-with-note .nav-folder-title[data-path*="40. Média/"] {
+  .alx-folder-with-note .nav-folder-title[data-path*="40. Média/"],
+  .nav-file-title[data-path*="40. Média/"] {
     position: relative;
     left: 0.5em;
   }
 
-  .nav-folder-title[data-path*="Contacts"] > * {
+  .nav-file-title[data-path*="Bookmark/Contacts"] {
     position: relative;
-    left: -0.5em;
+    left: 0.3em;
+  }
+
+  .nav-file-title[data-path*="Bookmark/Contacts"] .nav-file-title-content {
+    padding-left: 0 !important;
+  }
+
+  .nav-folder-title[data-path*="Professeur"]>* {
+    position: relative;
+    left: -0.7em;
     margin-right: 0.3em;
   }
 }
 
 @media only screen and (max-device-width: 1024px) {
 
+  /* Mobile */
   .nav-file-title-content,
   .nav-folder-title-content {
     width: 22ch !important;
@@ -195,7 +204,9 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
   .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] svg:not(.right-triangle) {
     position: relative;
     left: 0;
+    margin-right: 0.25em !important;
   }
+
 
   .alx-folder-with-note .nav-folder-title[data-path*="40. Média/"] {
     position: relative;
@@ -222,6 +233,7 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
     margin-left: 0.9em !important;
   }
 
+
   .alx-folder-with-note .nav-folder-title[data-path*="Personnages/"] svg:not(.right-triangle) {
     margin-left: 0 !important;
     padding-left: 0 !important;
@@ -233,8 +245,8 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
     right: 1.05em;
   }
 
-  .nav-folder-title[data-path*="22. Contacts"] .nav-folder-title-content {
-    margin-right: 12px !important;
+  .nav-file-title[data-path*="Templater"] svg:not(.right-triangle) {
+    margin-right: 0.25em !important;
   }
 
   .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle),
@@ -248,4 +260,100 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
     position: relative !important;
     right: 2em !important;
   }
+
+  .nav-folder-title[data-path*="Professeur"]>* {
+    position: relative;
+    right: 0.7em;
+    margin-right: 0.3em;
+  }
+
+  .nav-file-title[data-path*="Bookmark/Contact"] svg:not(.right-triangle) {
+    position: relative;
+    right: -0.3em;
+    margin-right: 0.3em;
+  }
+}
+
+.markdown-preview-view:not(.allow-fold-headings) .heading-collapse-indicator {
+  display: none !important;
+}
+
+/* ===================================== LINKS ===================================== */
+.cm-s-obsidian span.cm-hmd-internal-link,
+.markdown-preview-view .internal-link,
+.cm-s-obsidian span.cm-hmd-internal-link:hover,
+.markdown-preview-view .internal-link:hover {
+  font-weight: revert;
+  text-transform: none;
+  font-size: inherit;
+  letter-spacing: normal;
+  background-color: revert;
+}
+
+.cm-commenturl:hover,
+.cm-s-obsidian span.cm-link:hover,
+.markdown-source-view.mod-cm6 .cm-underline:hover,
+.external-link:hover {
+  background: transparent;
+}
+
+.cm-s-obsidian span.cm-hashtag::before {
+  content: '';
+}
+
+.cm-s-obsidian span.cm-hashtag,
+.tag:not(.token) {
+  display: revert !important;
+}
+
+.is-live-preview.cm-s-obsidian .cm-line:not(.cm-active) span.cm-comment,
+.is-live-preview.cm-s-obsidian .cm-line:not(.cm-active) span.cm-comment:before {
+  vertical-align: revert !important;
+}
+
+.external-link {
+  text-decoration: none !important;
+}
+
+.external-link:after,
+.cm-commenturl:after {
+  background-color: var(--text-accent) !important;
+  vertical-align: top;
+  margin-left: 1px;
+  text-decoration: none !important;
+}
+
+.is-mobile .external-link:after,
+.is-mobile .cm-commenturl:after {
+  display: none;
+}
+
+.cm-s-obsidian span.cm-comment {
+  opacity: 0.5;
+  font-size: calc(var(--clutter) + 5px);
+}
+
+.cm-line:not(.cm-active)>span.cm-comment+span.data-link-icon,
+.cm-line:not(.cm-active)>span.cm-comment+*+span.data-link-icon {
+  opacity: 0.5 !important;
+}
+
+.cm-active.cm-line>span.cm-comment,
+.cm-active.cm-line span.cm-comment.cm-hmd-internal-link.cm-link-alias {
+  opacity: 1 !important;
+}
+
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
+  background-color: var(--background-primary-alt);
+}
+
+.cm-s-obsidian span.cm-link:hover {
+  background-color: transparent;
+  color: revert;
+}
+
+span.cm-hmd-internal-link :not([data-link-type]) .cm-underline:hover,
+.cm-s-obsidian span.cm-link .cm-underline:hover {
+  background-color: var(--bg-hover-link);
+  color: var(--link-hover);
 }

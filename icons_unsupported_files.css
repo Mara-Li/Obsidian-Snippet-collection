@@ -1,3 +1,14 @@
+/* 
+=========================================================================================================   
+                                          [CSS] FILE ICONS [UNSUPPORTED]
+        credit : Mara-Li
+        This snippet use icons_font.css
+        Add default icon for unsupported files as : 
+          - PDF
+          - IMG
+          - JS
+========================================================================================================= */
+
 /* @settings
 name: "Folder Mini Icons"
 id: mini-icons
@@ -6,6 +17,7 @@ settings:
 		id: files
 		title: Files icon
 		type: class-toggle
+    description: Add icons before file
     -
         id: size
         title: Size
@@ -42,20 +54,13 @@ settings:
   content: "\ea37";
   font-family: boxicons;
   font-size: calc(var(--size) + 3%);
-  margin-right: 5px;
-  margin-left: 0px;
-  vertical-align: -2px;
 }
 
-.nav-file-title.is-unsupported .nav-file-title-content::before,
-.nav-file > .nav-file-title > .nav-file-tag + .nav-file-title-content::before {
+.files .nav-file-title.is-unsupported .nav-file-title-content::before,
+.files .nav-file > .nav-file-title > .nav-file-tag + .nav-file-title-content::before {
   content: "\ea38";
   font-family: boxicons;
   font-size: var(--size);
-  position: relative;
-  margin-right: 5px;
-  margin-left: 0px;
-  vertical-align: -2px;
 }
 
 /* =============== NO MD FILES ======================= */

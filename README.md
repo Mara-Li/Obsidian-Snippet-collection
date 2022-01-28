@@ -1,69 +1,75 @@
-# Summary
+This repo is a collection of CSS snippets for [Obsidian.md](https://obsidian.md/).
 
-- [WYSIWYG](https://github.com/Mara-Li/Obsidian-Snippet-collection#wysiwyg-and-pseudo-wysiwyg)
-- [Colored Folder](https://github.com/Mara-Li/Obsidian-Snippet-collection#colored-folder)
-- [Folder Icons](https://github.com/Mara-Li/Obsidian-Snippet-collection#folder-icons)
+To install them on PC:
+- Put the snippets in the `snippet` folder of `.obsidian` in the root of your vault;
+- In Obsidian: Appearance → Refresh snippets ⇒ Activate the ones you want.
 
-⚠️ For IOS : If you don't have Textastic (can open `.obsidian` folder) you need to use shortcuts and toolbox pro to open hidden folder.
-You can also use [ashell](https://holzschu.github.io/a-Shell_iOS/) (Free) to open `.obsidian` and file !
+:warning: In IOS, it is impossible to access hidden folders. You can:
+- Use Textastic
+- Working Copy with a link to a folder
+- a-shell
+[For more information](https://forum.obsidian.md/t/mobile-ios-app-to-work-with-hidden-folder/25741)
 
-# WYSIWYG and Pseudo WYSIWYG
+Each snippets can be adjusted with [Style Settings](https://github.com/mgmeyers/obsidian-style-settings/).
 
-## Wysiwyg code mirror companion
+# Custom Syntax
+This is a simple snippet that allows a specific formatting using markdown syntax, without using HTML.
+![](screenshot/Custom_syntax.png)
 
-It's a little snippet that must be used with the plugin [Code Mirror Options](https://github.com/nothingislost/obsidian-codemirror-options). It works only for PC.
+References :
+- `**~~text~~**` : Yellow text
+- `*~~text~~*` : Blue text
+- `**==text==**` : Red text
+- `*==text==*` : Bold green text
+- `__*text*__` : Underline
+- `**==~~text~~==**` : Cyan Highlight
+- `*==~~text~~==*`: Green highlight
 
-## PureCSS
+# Folder Note :
+![](screenshot/Folder_note.png)
 
-Check the pureCSS branch to get the old version.
+:warning: This snippet is mostly present in terms of EXAMPLE. 
 
-## Information about mobile support
+This snippet allows you to turn a folder into a note, by moving the various icons in a folder.
+To use it you need :
+- [Folder Note](https://github.com/aidenlx/alx-folder-note)
+- [Icon Folder](https://github.com/FlorianWoelki/obsidian-icon-folder)
 
-On mobile, the code mirror version used is **Code Mirror 6**, not **Code Mirror 5**. So, activeline doesn’t work. I use another “tricks” to create a WYSIWYG view. For example :
+The file [sanctum tweaks](sanctum_tweaks.css) allows the necessary adjustments to this theme.
 
-- You will see the formatting with a little size and opacity.
-- Link will be replaced by a icon, but you can always go to them, and you can saw them with backspace.
-- Task will be replaced by symbol. To add the x, just go in and add it, you will see the update. Yeah, it's a little strange and tricky. I advice you to use the preview to check your task.
+:warning: You need to change the paths of your files!
 
-Also, I test only on IOS / IpadOS. If you saw any problem on android, please, provide an issue and a solution. I can't check for android for that.
+# Colored files & folder
+![](screenshot/nested_colored.png)
 
-## Installation
+> Associated files start with `folder-color`.
 
-It's more an advice than an obligation, but I update a lot this, so unless you want to download / check the page each minute...
+This snippet allows:
+- Add colors for each folder numbered from 00 to 100 
+- Add lines for the children files of a folder
 
-1. Clone this repository in your `.obsidian/snippet`
-2. Move `.git`, and `wysiwyg.css` snippet in your folder.
-3. Delete the `Obsidian-WYSIWYG` folder.
+In case the lines don't match with the icons, you can adjust them with Style Settings, just like the colors.
 
-Now, each time there is a update, you can just do `git pull` in a terminal/cmd. You can create a task for that, because sometimes I will not warn user each time !
+# Icons
+These snippets add somes icons for unsupported files.
+The `icons_font.css` embed somes font, so you can use in multiple snippets if you want !
+Font included :
+    - boxicons (old and new version)
+    - remixicon (old and new version)
+    - Material Icons
+    - IcoMoon Free
+    - Font Awesome 5 Free
+    - Font Awesome 5 Free Solid
+    - Font Awesome 5 Brands
 
-Note : With this setup, you **will not be able** to edit the file, because each update erase your personal edit. Create another snippet OR create a pull request/issue with your personal edit.
+# Image Float
 
----
+All of the credit for this snippet to go [Lithou](http://github.com/lithou/sandbox). I just adapted this snippet to work with Live Preview. I pretty didn't know if Lithou updated it.
 
-# Colored Folder
+# Sanctum Tweaks
 
-You can change the color with style settings.
+This snippet add support for my folder_note, folder-color snippet and edit some things in Sanctum :
+    - Aspect of Links, since the 6.0.1, where I don't like the new link's aspect.
+    - A specific font for comments 
+    - Some tweaks around bullet or codes
 
-![image](https://user-images.githubusercontent.com/30244939/129755273-16d8c8cb-957a-42f1-8c11-dd0cc832e147.png)
-
----
-
-# Folder Icons
-
-## Folder Note
-
-[Folder note](https://github.com/aidenlx/alx-folder-note) is a good plugin but it doesn't provide icon. This snippets is an example of styling.
-![](screenshot/folder_note.png)
-
-## Icon Folder plugin snippet
-
-The plugin [icon folder](https://github.com/FlorianWoelki/obsidian-icon-folder) provide a better way to add icon to your folder.
-The snippet :
-
-- mini.folders.icons provide some CSS for file
-- folders.colored add color to your folder name.
-
-## Pure CSS
-
-→ This are moved in the branch ('PureCSS_icons')
