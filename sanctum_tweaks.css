@@ -35,6 +35,10 @@ span.cm-comment {
 
 /* ===================================== FOLDER NOTE & FILES ICONS ===================================== */
 
+.obsidian-icon-folder-icon {
+  padding-right: 2px !important;
+}
+
 .nav-file-title,
 .nav-folder-title,
 .is-collapsed .search-result-file-title,
@@ -70,10 +74,17 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
 }
 
 .nav-folder-title {
+  position: relative;
   padding-left: 3px;
   padding-right: 3px;
   margin-right: 3px;
 }
+
+.nav-folder-title-content{
+  position: relative;
+  top: -0.1em;
+}
+
 
 .nav-file-title {
   position: relative;

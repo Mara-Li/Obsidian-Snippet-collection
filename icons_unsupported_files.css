@@ -63,6 +63,8 @@ settings:
   font-size: var(--size);
 }
 
+
+
 /* =============== NO MD FILES ======================= */
 
 .nav-file-title[data-path$="jpeg"] .nav-file-title-content:before,
