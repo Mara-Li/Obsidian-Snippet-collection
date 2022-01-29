@@ -42,6 +42,9 @@ The file [sanctum tweaks](sanctum_tweaks.css) allows the necessary adjustments t
 # Colored files & folder
 ![](screenshot/nested_colored.png)
 
+*All credits goes to Javalent for his [original snippet](https://github.com/valentine195/Obsidian-Vault/blob/master/.obsidian/snippets/colors.folders.css).*
+
+
 > Associated files start with `folder-color`.
 
 This snippet allows:
@@ -49,6 +52,8 @@ This snippet allows:
 - Add lines for the children files of a folder
 
 In case the lines don't match with the icons, you can adjust them with Style Settings, just like the colors.
+
+
 
 # Icons
 These snippets add somes icons for unsupported files.
