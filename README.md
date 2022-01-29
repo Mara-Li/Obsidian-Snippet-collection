@@ -59,13 +59,13 @@ In case the lines don't match with the icons, you can adjust them with Style Set
 These snippets add somes icons for unsupported files.
 The `icons_font.css` embed somes font, so you can use in multiple snippets if you want !
 Font included :
-    - boxicons (old and new version)
-    - remixicon (old and new version)
-    - Material Icons
-    - IcoMoon Free
-    - Font Awesome 5 Free
-    - Font Awesome 5 Free Solid
-    - Font Awesome 5 Brands
+- boxicons (old and new version)
+- remixicon (old and new version)
+- Material Icons
+- IcoMoon Free
+- Font Awesome 5 Free
+- Font Awesome 5 Free Solid
+- Font Awesome 5 Brands
 
 # Image Float
 
@@ -73,8 +73,8 @@ All of the credit for this snippet to go [Lithou](http://github.com/lithou/sandb
 
 # Sanctum Tweaks
 
-This snippet add support for my folder_note, folder-color snippet and edit some things in Sanctum :
-    - Aspect of Links, since the 6.0.1, where I don't like the new link's aspect.
-    - A specific font for comments 
-    - Some tweaks around bullet or codes
+This snippet add support for my `folder_note`, `folder-color` snippet and edit some things in Sanctum :
+- Aspect of Links, since the 6.0.1, where I don't like the new link's aspect.
+- A specific font for comments 
+- Some tweaks around bullet or codes
 
