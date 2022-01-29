@@ -26,7 +26,7 @@ References :
 - `*==~~text~~==*`: Green highlight
 
 # Folder Note :
-![](screenshot/Folder_note.png)
+![](screenshot/folder_note.png)
 
 :warning: This snippet is mostly present in terms of EXAMPLE. 
 
