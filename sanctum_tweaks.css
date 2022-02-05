@@ -13,11 +13,6 @@
   --text-selection: var(--color-primary-3);
 }
 
-.markdown-source-view.mod-cm6 .list-bullet:after {
-  top: -2px;
-  left: -3px;
-}
-
 body,
 body body input,
 body body button {
@@ -35,8 +30,14 @@ span.cm-comment {
 
 /* ===================================== FOLDER NOTE & FILES ICONS ===================================== */
 
+.is-mobile .nav-file-title.is-active .nav-file-title-content {
+  line-height: 1.8;
+}
+
 .obsidian-icon-folder-icon {
   padding-right: 2px !important;
+  position: relative;
+  top: -1px;
 }
 
 .nav-file-title,
@@ -80,12 +81,6 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
   margin-right: 3px;
 }
 
-.nav-folder-title-content{
-  position: relative;
-  top: -0.1em;
-}
-
-
 .nav-file-title {
   position: relative;
   margin-right: 5px;
@@ -97,13 +92,9 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
   padding-left: 0.7em !important;
 }
 
-.obsidian-icon-folder-icon {
-  position: relative !important;
-  top: -1px !important;
-}
-
 .nav-folder-children .nav-file-title-content:first-child::before {
   /* Icon support */
+  vertical-align: 0;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg id='icon' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpath d='M26,30H11a2.0023,2.0023,0,0,1-2-2V22h2v6H26V6H17V4h9a2.0023,2.0023,0,0,1,2,2V28A2.0023,2.0023,0,0,1,26,30Z'/%3E%3Crect x='17' y='10' width='7' height='2'/%3E%3Crect x='16' y='15' width='8' height='2'/%3E%3Crect x='15' y='20' width='9' height='2'/%3E%3Cpath d='M9,19a5.0055,5.0055,0,0,1-5-5V3H6V14a3,3,0,0,0,6,0V5a1,1,0,0,0-2,0V15H8V5a3,3,0,0,1,6,0v9A5.0055,5.0055,0,0,1,9,19Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E") !important;
   mask-image: url("data:image/svg+xml,%3Csvg id='icon' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cpath d='M26,30H11a2.0023,2.0023,0,0,1-2-2V22h2v6H26V6H17V4h9a2.0023,2.0023,0,0,1,2,2V28A2.0023,2.0023,0,0,1,26,30Z'/%3E%3Crect x='17' y='10' width='7' height='2'/%3E%3Crect x='16' y='15' width='8' height='2'/%3E%3Crect x='15' y='20' width='9' height='2'/%3E%3Cpath d='M9,19a5.0055,5.0055,0,0,1-5-5V3H6V14a3,3,0,0,0,6,0V5a1,1,0,0,0-2,0V15H8V5a3,3,0,0,1,6,0v9A5.0055,5.0055,0,0,1,9,19Z'/%3E%3Crect id='_Transparent_Rectangle_' data-name='&lt;Transparent Rectangle&gt;' class='cls-1' width='32' height='32'/%3E%3C/svg%3E") !important;
   color: currentColor !important;
@@ -111,12 +102,19 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
   width: 1.2em;
 }
 
+.markdown-source-view.mod-cm6 .list-bullet:after {
+  top: revert;
+}
 
 @media only screen and (min-device-width: 1024px) {
 
   /* PC */
   .nav-files-container {
     padding: 0;
+  }
+
+  .show-full-titles .nav-file-title-content {
+    margin-left: 0px;
   }
 
   .obsidian-icon-folder-icon+.nav-file-title-content {
@@ -184,6 +182,12 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
   .nav-file-title-content,
   .nav-folder-title-content {
     width: 22ch !important;
+  }
+
+  .obsidian-icon-folder-icon {
+    padding-right: 2px !important;
+    position: relative;
+    top: -0.15em;
   }
 
   .obsidian-icon-folder-icon+.nav-file-title-content {
@@ -281,7 +285,6 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
   .nav-file-title[data-path*="Bookmark/Contact"] svg:not(.right-triangle) {
     position: relative;
     right: -0.3em;
-    margin-right: 0.3em;
   }
 }
 
