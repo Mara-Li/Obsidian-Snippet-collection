@@ -66,10 +66,9 @@ Font included :
 
 All of the credit for this snippet to go [Lithou](http://github.com/lithou/sandbox). I just adapted this snippet to work with Live Preview. I pretty didn't know if Lithou updated it.
 
-# Sanctum Tweaks
+# Sanctum Tweaks & Minimal Tweaks
 
-This snippet add support for my folder_note, folder-color snippet and edit some things in Sanctum :
-    - Aspect of Links, since the 6.0.1, where I don't like the new link's aspect.
+This snippet add support for my folder_note, folder-color snippet and edit some things in their followed theme :
     - A specific font for comments 
     - Some tweaks around bullet or codes
-
+    - Support for folder note
