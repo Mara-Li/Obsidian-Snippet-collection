@@ -26,7 +26,7 @@ References :
 - `*==~~text~~==*`: Green highlight
 
 # Folder Note :
-![](screenshot/Folder_note.png)
+![](screenshot/folder_note.png)
 
 :warning: This snippet is mostly present in terms of EXAMPLE. 
 
@@ -42,6 +42,10 @@ The file [sanctum tweaks](sanctum_tweaks.css) allows the necessary adjustments t
 # Colored files & folder
 ![](screenshot/nested_colored.png)
 
+<u>Credit</u>: 
+- [Lithou](https://forum.obsidian.md/t/adding-color-to-obsidian-a-rainbow-of-possibility/12805/11)
+- [Javalent](https://github.com/valentine195/Obsidian-Vault/blob/master/.obsidian/snippets/colors.folders.css)
+
 > Associated files start with `folder-color`.
 
 This snippet allows:
@@ -54,13 +58,13 @@ In case the lines don't match with the icons, you can adjust them with Style Set
 These snippets add somes icons for unsupported files.
 The `icons_font.css` embed somes font, so you can use in multiple snippets if you want !
 Font included :
-    - boxicons (old and new version)
-    - remixicon (old and new version)
-    - Material Icons
-    - IcoMoon Free
-    - Font Awesome 5 Free
-    - Font Awesome 5 Free Solid
-    - Font Awesome 5 Brands
+- boxicons (old and new version)
+- remixicon (old and new version)
+- Material Icons
+- IcoMoon Free
+- Font Awesome 5 Free
+- Font Awesome 5 Free Solid
+- Font Awesome 5 Brands
 
 # Image Float
 
@@ -68,7 +72,7 @@ All of the credit for this snippet to go [Lithou](http://github.com/lithou/sandb
 
 # Sanctum Tweaks & Minimal Tweaks
 
-This snippet add support for my folder_note, folder-color snippet and edit some things in their followed theme :
-    - A specific font for comments 
-    - Some tweaks around bullet or codes
-    - Support for folder note
+This snippet add support for my `folder_note`, `folder-color` snippet and edit some things in Sanctum :
+- Aspect of Links, since the 6.0.1, where I don't like the new link's aspect.
+- A specific font for comments 
+- Some tweaks around bullet or codes
