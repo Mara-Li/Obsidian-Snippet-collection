@@ -73,7 +73,7 @@ settings:
         collapsed: true
         title: Border Style
     -
-        id: nestedlinesize1
+        id: nestlinesize1
         title: Level 1
         type: variable-select
         default: solid
@@ -89,7 +89,7 @@ settings:
             - groove
             - ridge
     -
-        id: nestedlinesize2
+        id: nestlinesize2
         title: Level 2
         type: variable-select
         default: groove
@@ -105,7 +105,7 @@ settings:
             - groove
             - ridge
     -
-        id: nestedlinesize3
+        id: nestlinesize3
         title: Level 3
         type: variable-select
         default: dashed
