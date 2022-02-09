@@ -1,3 +1,13 @@
+## v1.1.1 (2022-02-09)
+
+### Fix
+
+- **lines**: Fix stylesettings id border style
+
+### Refactor
+
+- **changelog**: fix changelog
+
 ## v1.1.0 (2022-02-09)
 
 ### Feat
