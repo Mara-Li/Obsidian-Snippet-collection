@@ -340,13 +340,14 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 
 
 /* 
-=============================================================================== =                                  HOVERED                                    =
-===============================================================================
+======================================================================================  
+                                      HOVER
+====================================================================================== 
 */
 
 .nav-folder-title[data-path^="00."]:hover {
   background-color: var(--bg00) !important;
-  filter: invert(50%) sepia(100%) saturate(0%) hue-rotate(250deg) brightness(0%);
+  filter: saturate(150%);
   color: var(--F00) !important;
 }
 
@@ -356,7 +357,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 .nav-folder-title[data-path*="03."]:hover {
   color: var(--F00) !important;
   background-color: var(--bg00) !important;
-  filter: invert(50%) sepia(100%) saturate(0%) hue-rotate(250deg) brightness(0%);
+  filter: saturate(150%);
 }
 
 .nav-folder-title[data-path^="10."]:hover,
