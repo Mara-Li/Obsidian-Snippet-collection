@@ -151,6 +151,12 @@ name: Nested Folder — Background Color
 id: nested
 settings:
     -
+        id: FolderRadius
+        type: variable-number
+        format: px
+        default: 5
+        title: Folder Radius
+    -
         type: heading
         level: 2
         collapsed: true
