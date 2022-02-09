@@ -8,15 +8,20 @@
 ========================================================================================================= */
 
 /* @settings
-name: Nested Folder — Background Color
-id: nested
+name: Nested Folder — Relations Line
+id: relation-line
 settings:
+    -
+        id: relation-active
+        type: class-toggle
+        title: Relation Line
+        description: Active the relation line
     -
         id: adjust-line 
         format: heading
         collapsed: true
         title: Adjust Line
-        level: 2
+        level: 3
     -
         id: adjust-pc
         format: em
@@ -32,11 +37,154 @@ settings:
         default: 0.8
         type: variable-number
     -
-        id: color
-        collapsed: false
-        title: Color choose
+        id: line-color
         type: heading
         level: 2
+        collapsed: true
+        title: Border Color
+    -
+        id: nestlinecolor1
+        title: Level 1
+        type: variable-themed-color
+        format: hex
+        opacity: true
+        default-light: "#ffffff44"
+        default-dark: "#00000025"
+    -
+        id: nestlinecolor2
+        title: Level 2
+        type: variable-themed-color
+        format: hex
+        opacity: true
+        default-light: "#ffffff44"
+        default-dark: "#00000025"
+    -
+        id: nestlinecolor3
+        title: Level 3
+        type: variable-themed-color
+        format: hex
+        opacity: true
+        default-light: "#ffffff44"
+        default-dark: "#00000025"
+    -
+        id: nested-type
+        type: heading
+        level: 2
+        collapsed: true
+        title: Border Style
+    -
+        id: nestedlinesize1
+        title: Level 1
+        type: variable-select
+        default: solid
+        options:
+            - none
+            - hidden
+            - inset
+            - outset
+            - dotted
+            - dashed
+            - solid
+            - double
+            - groove
+            - ridge
+    -
+        id: nestedlinesize2
+        title: Level 2
+        type: variable-select
+        default: groove
+        options:
+            - none
+            - hidden
+            - inset
+            - outset
+            - dotted
+            - dashed
+            - solid
+            - double
+            - groove
+            - ridge
+    -
+        id: nestedlinesize3
+        title: Level 3
+        type: variable-select
+        default: dashed
+        options:
+            - none
+            - hidden
+            - inset
+            - outset
+            - dotted
+            - dashed
+            - solid
+            - double
+            - groove
+            - ridge
+    -
+        id: border-size
+        type: heading
+        level: 2
+        collapsed: true
+        title: Border Size
+    -
+        id: nestlinestyle1
+        type: variable-number
+        title: Level 1
+        default: 2
+        format: px
+    -
+        id: nestlinestyle2
+        type: variable-number
+        title: Level 2
+        default: 2
+        format: px
+    -    
+        id: nestlinestyle3
+        type: variable-number
+        title: Level 3
+        default: 2
+        format: px
+*/
+
+/* @settings
+name: Nested Folder — Background Color
+id: nested
+settings:
+    -
+        type: heading
+        level: 2
+        collapsed: true
+        title: Unset folder parameters
+    -
+        id: root-file-color
+        format: hex
+        opacity: true
+        type: variable-themed-color
+        title: Root color
+        default-light: "#26272b"
+        default-dark: "#ffffff"
+    -
+        id: FoldText
+        format: hex
+        opacity: true
+        title: Top level folder title color
+        type: variable-themed-color
+        default-light: "#0000002c"
+        default-dark: "#ffffff44"
+    -
+        id: normal-folder
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        title: Normal Folder color
+        description: Color for unset folder.
+        default-light: "#000000"
+        default-dark: "#ffffff"
+    -
+        type: heading
+        level: 2
+        collapsed: false
+        title: Settled Folder
     -
         id: bg00
         format: hex
@@ -142,11 +290,9 @@ settings:
   --nestlinestyle1: 2px;
   --nestlinesize2: groove;
   --nestlinestyle2: 2px;
-  --nestlinecolor2: rgb(255, 255, 255);
   --nestlinesize3: dashed;
   --nestlinestyle3: 2px;
   --FolderRadius: 5px;
-  --FoldText: white;
   --FoldTextMaster: var(--FoldText);
   --inbox-font: 0, 18, 25;
   --adjust-pc: 1.2em;
@@ -154,11 +300,11 @@ settings:
 }
 
 .theme-dark {
-  --root-file-color: white;
-  --FoldText: rgba(255, 255, 255, 0.267);
-  --nestlinecolor1: rgba(255, 255, 255, 0.267);
-  --nestlinecolor3: rgba(255, 255, 255, 0.267);
-  --nestlinecolor3: rgba(255, 255, 255, 0.267);
+  --root-file-color: #ffffff;
+  --FoldText: #ffffff44;
+  --nestlinecolor1: #ffffff44;
+  --nestlinecolor2: #ffffff44;
+  --nestlinecolor3: #ffffff44;
   --bg00: #6e6e6e2c;
   --bg10: #bb77622c;
   --bg20: #77664e2c;
@@ -171,14 +317,16 @@ settings:
   --bg90: #ffffff00;
   --bg100: #ffffff00;
   --bgZZ: #617e8c2c;
-  --normal-folder: white;
+  --normal-folder: #ffffff;
+
 }
 
 .theme-light {
-  --root-file-color: var(--text-normal);
-  --FoldText: rgba(0, 0, 0, 0.171);
-  --nestlinecolor1: rgba(0, 0, 0, 0.144);
-  --nestlinecolor3: rgba(0, 0, 0, 0.144);
+  --root-file-color: #26272b;
+  --FoldText: #0000002c;
+  --nestlinecolor1: #00000025;
+  --nestlinecolor2: #00000025;
+  --nestlinecolor3: #00000025;
   --bg00: #3131312c;
   --bg10: #bb77622c;
   --bg20: #85adad2c;
@@ -191,7 +339,7 @@ settings:
   --bg90: #ffffff00;
   --bg100: #b69d912c;
   --bgZZ: #b69d912c;
-  --normal-folder: black;
+  --normal-folder: #000000;
 }
 
 .nav-file-title,
@@ -288,7 +436,7 @@ div:not(.is-mobile)
 
 /* Uncomment this for adjusting line with icon */
 
-.nav-folder:not(.mod-root) > .nav-folder-children .nav-file-title {
+.relation-active .nav-folder:not(.mod-root) > .nav-folder-children .nav-file-title {
   margin-left: -5px;
 }
 
@@ -508,10 +656,10 @@ You can change these to match your use case. */
 /* Relationship lines for 2nd, 3rd, and 4th level folders */
 
 @media only screen and (max-device-width: 1024px) {
-  .is-mobile .nav-folder.mod-root {
+  .relation-active .is-mobile .nav-folder.mod-root {
     overflow: hidden !important;
   }
-  .nav-folder.mod-root
+  .relation-active .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
     > .nav-folder-children
@@ -522,7 +670,7 @@ You can change these to match your use case. */
       var(--nestlinecolor1);
     margin-left: var(--adjust-mobile);
   }
-  .nav-folder.mod-root
+  .relation-active .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
     > .nav-folder-children
@@ -533,7 +681,7 @@ You can change these to match your use case. */
       var(--nestlinecolor1);
     margin-left: var(--adjust-mobile);
   }
-  .nav-folder.mod-root
+  .relation-active .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
     > .nav-folder-children
@@ -546,7 +694,7 @@ You can change these to match your use case. */
       var(--nestlinecolor2);
     margin-left: var(--adjust-mobile);
   }
-  .nav-folder.mod-root
+  .relation-active .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
     > .nav-folder-children
@@ -559,7 +707,7 @@ You can change these to match your use case. */
       var(--nestlinecolor2);
     margin-left: var(--adjust-mobile);
   }
-  .nav-folder.mod-root
+  .relation-active .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
     > .nav-folder-children
@@ -574,7 +722,7 @@ You can change these to match your use case. */
       var(--nestlinecolor3);
     margin-left: var(--adjust-mobile);
   }
-  .nav-folder.mod-root
+  .relation-active .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
     > .nav-folder-children
@@ -592,7 +740,7 @@ You can change these to match your use case. */
 }
 
 @media only screen and (min-device-width: 1024px) {
-  .nav-folder.mod-root
+  .relation-active .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
     > .nav-folder-children
@@ -603,7 +751,7 @@ You can change these to match your use case. */
       var(--nestlinecolor1);
     margin-left: var(--adjust-pc);
   }
-  .nav-folder.mod-root
+  .relation-active .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
     > .nav-folder-children
@@ -614,7 +762,7 @@ You can change these to match your use case. */
       var(--nestlinecolor1);
     margin-left: var(--adjust-pc);
   }
-  .nav-folder.mod-root
+  .relation-active .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
     > .nav-folder-children
@@ -627,7 +775,7 @@ You can change these to match your use case. */
       var(--nestlinecolor2);
     margin-left: var(--adjust-pc);
   }
-  .nav-folder.mod-root
+  .relation-active .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
     > .nav-folder-children
@@ -640,7 +788,7 @@ You can change these to match your use case. */
       var(--nestlinecolor2);
     margin-left: var(--adjust-pc);
   }
-  .nav-folder.mod-root
+  .relation-active .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
     > .nav-folder-children
@@ -655,7 +803,7 @@ You can change these to match your use case. */
       var(--nestlinecolor3);
     margin-left: calc(var(--adjust-pc));
   }
-  .nav-folder.mod-root
+  .relation-active .nav-folder.mod-root
     > .nav-folder-children
     > .nav-folder
     > .nav-folder-children
@@ -670,6 +818,13 @@ You can change these to match your use case. */
       var(--nestlinecolor3);
     margin-left: calc(var(--adjust-pc));
   }
+}
+
+/* ============ MINIMAL COMPATIBILITY =============== */
+
+.nav-folder-children .nav-folder-children  {
+    border-left: none;
+    margin-left: 0;
 }
 
 /* == File Explorer - animation for active file as per Obuntu === */
