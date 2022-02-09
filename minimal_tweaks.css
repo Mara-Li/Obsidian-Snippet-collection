@@ -24,6 +24,19 @@
 }
 
 
+.contextual-typography .markdown-preview-view.markdown-preview-view .markdown-preview-sizer {
+    display: revert;
+    flex-direction: revert;
+    width: revert;
+    max-width: revert;
+    padding-left: revert;
+    padding-top: revert;
+}
+
+div[data-tag-name="p"] + div[data-tag-name="ul"] {
+    margin-top: revert;
+}
+
 
 .markdown-source-view.mod-cm6 .list-bullet:after {
     top: -2px;
@@ -37,8 +50,22 @@ body body button {
     font-family: var(--default-font) !important;
 }
 
-span.cm-comment {
-    font-family: var(--font-frontmatter) !important;
+.full-file-names .tree-item-inner,
+.full-file-names .nav-file-title-content,
+.full-file-names .nav-folder-title-content,
+.full-file-names .search-result-file-title {
+    text-overflow:unset;
+    white-space:normal;
+    line-height:1.4;
+}
+
+.full-file-names .nav-file-title,
+.full-file-names .nav-folder-title {
+    margin-bottom:3px;
+}
+
+span.cm-comment, span.cm-hmd-frontmatter {
+    font-family: 'Fantasque Sans Mono' !important;
 }
 
 .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
@@ -221,113 +248,106 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
 
 @media only screen and (max-device-width: 1024px) {
 
-    /* Mobile */
-    .nav-file-title-content,
-    .nav-folder-title-content {
-        width: 22ch !important;
-    }
-
-    .obsidian-icon-folder-icon {
-        padding-right: 2px !important;
-        position: relative;
-        top: -0.15em;
-    }
-
+/* Mobile*/
     .obsidian-icon-folder-icon+.nav-file-title-content {
-        padding-left: 0 !important;
-    }
-
-    .obsidian-icon-folder-icon+.nav-folder-title-content {
-        padding-left: 1px !important;
-    }
-
-    .nav-file-title svg:not(.right-triangle) {
+        padding-left: 0.1em !important;
+      }
+    
+      .obsidian-icon-folder-icon+.nav-folder-title-content {
+        padding-left: 0.1em !important;
+      }
+    
+      .nav-file-title svg:not(.right-triangle) {
         margin-left: 0.5em !important;
-    }
-
-    .workspace-drawer {
+      }
+    
+      .workspace-drawer {
         height: 100% !important;
-    }
-
-    .is-mobile div.nav-files-container.node-insert-event.show-unsupported {
+      }
+    
+      .is-mobile div.nav-files-container.node-insert-event.show-unsupported {
         padding: 16px 4px 8px;
-    }
-
-    .is-mobile .nav-folder .collapse-icon {
-        display: inline-block;
-        position: relative;
-        top: 5px;
-    }
-
-    .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] svg:not(.right-triangle) {
+      }
+    
+      .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] svg:not(.right-triangle) {
         position: relative;
         left: 0;
         margin-right: 0.25em !important;
-    }
-
-
-    .alx-folder-with-note .nav-folder-title[data-path*="40. Média/"] {
+      }
+    
+    
+      .alx-folder-with-note .nav-folder-title[data-path*="40. Média/"] {
         position: relative;
-        left: -15px;
-    }
-
-
-    .alx-folder-with-note .nav-folder-title[data-path*="22. Personnages/"] .collapse-icon,
-    .alx-folder-with-note .nav-folder-title[data-path*="21. Idées/"] .collapse-icon {
+        left: 0;
+      }
+    
+    
+      .alx-folder-with-note .nav-folder-title[data-path*="22. Personnages/"] .collapse-icon,
+      .alx-folder-with-note .nav-folder-title[data-path*="21. Idées/"] .collapse-icon {
         display: inline-block;
         right: 25px;
         position: relative;
         font-size: calc(var(--size) - 1px) !important;
         padding-left: 1px !important;
-    }
-
-    .nav-file-title-content:before {
+      }
+    
+      .nav-file-title-content:before {
+        margin-right: 0.3em;
+        margin-left: 0;
         position: relative;
-        top: 0.35em;
-        left: 0.1em;
-    }
-
-    .nav-folder-title[data-path*="Illustration"] .nav-folder-title-content {
+        top: 2px;
+        left: 1px;
+      }
+    
+      .nav-folder-title[data-path*="Illustration"] .nav-folder-title-content {
         margin-left: 0.9em !important;
-    }
-
-
-    .alx-folder-with-note .nav-folder-title[data-path*="Personnages/"] svg:not(.right-triangle) {
+      }
+    
+    
+      .alx-folder-with-note .nav-folder-title[data-path*="Personnages/"] svg:not(.right-triangle) {
         margin-left: 0 !important;
         padding-left: 0 !important;
-    }
-
-    .nav-folder-title[data-path*="22. Personnages/"] .nav-folder-title-content,
-    .nav-folder-title[data-path*="22. Personnages/"] svg:not(.right-triangle) {
+      }
+    
+      .nav-folder-title[data-path*="22. Personnages/"] .nav-folder-title-content,
+      .nav-folder-title[data-path*="22. Personnages/"] svg:not(.right-triangle) {
         position: relative !important;
         right: 1.05em;
-    }
-
-    .nav-file-title[data-path*="Templater"] svg:not(.right-triangle) {
+      }
+    
+      .nav-file-title[data-path*="Templater"] svg:not(.right-triangle) {
         margin-right: 0.25em !important;
-    }
-
-    .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Zombie"] svg:not(.right-triangle),
-    .nav-folder-title[data-path*="Écho"] svg:not(.right-triangle) {
+      }
+    
+      .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle),
+      .nav-folder-title[data-path*="Zombie"] svg:not(.right-triangle),
+      .nav-folder-title[data-path*="Écho"] svg:not(.right-triangle) {
         margin-left: 1em !important;
-    }
-
-    .nav-folder-title[data-path*="Idées/"] .nav-folder-title-content,
-    .nav-folder-title[data-path*="Idées/"] svg:not(.right-triangle) {
+      }
+    
+      .nav-folder-title[data-path*="Idées/"] .nav-folder-title-content,
+      .nav-folder-title[data-path*="Idées/"] svg:not(.right-triangle) {
         position: relative !important;
         right: 2em !important;
-    }
-
-    .nav-folder-title[data-path*="Professeur"]>* {
+      }
+    
+      .nav-folder-title[data-path*="Professeur"]>* {
         position: relative;
-        right: 0.7em;
-        margin-right: 0.3em;
-    }
-
-    .nav-file-title[data-path*="Bookmark/Contact"] svg:not(.right-triangle) {
+        right: 0.8em;
+        margin-right: 2px;
+      }
+    
+      .nav-file-title[data-path*="Bookmark/Contact"] svg:not(.right-triangle) {
         position: relative;
-        right: -0.3em;
+        right: -0.3em
+      }
+
+      .nav-file-title[data-path*="Bookmark/Contacts"] .nav-file-title-content {
+        padding-left: 0.2em !important;
+      }
+      
+    .nav-file-title[data-path*="Bookmark"] .nav-file-title-content {
+        left: 0;
     }
 }
 
@@ -413,4 +433,4 @@ span.cm-hmd-internal-link :not([data-link-type]) .cm-underline:hover,
 .cm-s-obsidian span.cm-link .cm-underline:hover {
     background-color: var(--bg-hover-link);
     color: var(--link-hover);
-}
+    }
