@@ -1,4 +1,10 @@
-## v.1.0.0
+## v1.1.0 (2022-02-09)
+
+### Feat
+
+- **relationline**: Add folderradius setting
+
+## v1.0.0 (2022-02-09)
 
 ### Fix
 
@@ -26,7 +32,7 @@
 
 - **foldernote**: :zap: Clean folder
 
-## v0.5.0 (2022-01-07)
+## v.0.5.0 (2022-01-07)
 
 ### Fix
 
@@ -36,28 +42,20 @@
 - **coloredFolder**: :art: fix line
 - **sanctum**: :zap: Improve PC folder note
 - **sanctum**: Fix file icons
+- :zap: Add style settings for unresolved links
 
 ### Feat
 
 - **sanctum**: :adhesive_bandage: Add color selection (color primary 3)
 - **sanctum**: Add sanctum tweaks
+- :art: Adding new folder (personalAdjust)
+- :sparkles: Add a style for unresolved wikilinks (last Obsidian Update)
 
 ### Refactor
 
 - **prettier**: :art: prettier
 - **prettier**: Prettier
 - **foldernote**: :wastebasket: Remove mobile folder note (moving to specific theme snippet)
-
-## v0.4.0 (2021-12-22)
-
-### Feat
-
-- :art: Adding new folder (personalAdjust)
-- :sparkles: Add a style for unresolved wikilinks (last Obsidian Update)
-
-### Fix
-
-- :zap: Add style settings for unresolved links
 
 ## v0.3.0 (2021-12-11)
 
@@ -69,20 +67,12 @@
 ### Fix
 
 - Fix and adjust the icons
+- Remove strange font
 
 ### Feat
 
 - **font**: add new font
 - Add some adjust for tags ; background code token ; links
-
-## v0.2.0 (2021-11-19)
-
-### Fix
-
-- Remove strange font
-
-### Feat
-
 - Update folder note
 - Update for new Live Preview update
 
