@@ -76,3 +76,10 @@ This snippet add support for my `folder_note`, `folder-color` snippet and edit s
 - Aspect of Links, since the 6.0.1, where I don't like the new link's aspect.
 - A specific font for comments 
 - Some tweaks around bullet or codes
+
+# Keep the snippets updated
+You can use [Obsidian-Snipper-Manager](https://github.com/Mara-Li/Obsidian-Snippet-Manager), a python script.
+and use the command line : `obsnipe clone https://github.com/Mara-Li/Obsidian-Snippet-collection`
+
+You can turn on auto-update using [obsidian-shell](https://github.com/Taitava/obsidian-shellcommands)
+
