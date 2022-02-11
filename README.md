@@ -7,7 +7,7 @@ To install them on PC:
 :warning: In IOS, it is impossible to access hidden folders. You can:
 - Use Textastic
 - Working Copy with a link to a folder
-- a-shell
+- a-shell  
 [For more information](https://forum.obsidian.md/t/mobile-ios-app-to-work-with-hidden-folder/25741)
 
 Each snippets can be adjusted with [Style Settings](https://github.com/mgmeyers/obsidian-style-settings/).
