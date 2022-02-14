@@ -1,7 +1,7 @@
 This repo is a collection of CSS snippets for [Obsidian.md](https://obsidian.md/).
 
 To install them on PC:
-- Put the snippets in the `snippet` folder of `.obsidian` in the root of your vault;
+- Put the snippets in the `snippets` folder of `.obsidian` in the root of your vault;
 - In Obsidian: Appearance → Refresh snippets ⇒ Activate the ones you want.
 
 :warning: In IOS, it is impossible to access hidden folders. You can:
