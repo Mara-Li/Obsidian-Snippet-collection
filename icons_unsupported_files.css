@@ -80,9 +80,19 @@ settings:
 .nav-file-title[data-path$="pdf"] .nav-file-title-content:before {
   content: "\f1c1" !important;
   font-family: "Font Awesome 5 Free" !important;
-  margin-left: 2px !important;
-  margin-right: 8px !important;
-  padding-left: 5px !important;
+  margin-left: 0;
+  margin-right: 3px;
+  padding-left: 10px;
+  font-size: calc(var(--size) - 2px) !important;
+  vertical-align: top !important;
+}
+
+.nav-file-title[data-path*="doc"] .nav-file-title-content:before {
+  content: "\f1c2" !important;
+  font-family: "Font Awesome 5 Free" !important;
+  margin-left: 0;
+  margin-right: 3px;
+  padding-left: 10px;
   font-size: calc(var(--size) - 2px) !important;
   vertical-align: top !important;
 }
