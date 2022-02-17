@@ -1,76 +1,97 @@
 {
-    "categories": [
+   "categories":[
       {
-        "title": "## 🚀 Features",
-        "labels": ["feature"]
+         "title":"## 🚀 Features",
+         "labels":[
+            "feature"
+         ]
       },
       {
-        "title": "## 🐛 Fixes",
-        "labels": ["fix"]
+         "title":"## 🐛 Fixes",
+         "labels":[
+            "fix"
+         ]
       },
       {
-          "title": "# BREAKING CHANGE ⚠️",
-          "labels": ["BREAKING CHANGE"]
+         "title":"# BREAKING CHANGE ⚠️",
+         "labels":[
+            "BREAKING CHANGE"
+         ]
       },
       {
-        "title": "## 🧪 Tests",
-        "labels": ["test"],
+         "title":"## 🧪 Tests",
+         "labels":[
+            "test"
+         ]
       },
       {
-        "title": "### 🧪 Tests and some 🪄 Magic",
-        "labels": ["test", "magic"],
-        "exclude_labels": ["no-magic"],
-        "exhaustive": true,
+         "title":"### 🧪 Tests and some 🪄 Magic",
+         "labels":[
+            "test",
+            "magic"
+         ],
+         "exclude_labels":[
+            "no-magic"
+         ],
+         "exhaustive":true
       },
       {
-          "title":"# Other",
-          "labels": ["build", "chore", "ci", "style", "refactor", "perf", "docs"]
+         "title":"# Other",
+         "labels":[
+            "build",
+            "chore",
+            "ci",
+            "style",
+            "refactor",
+            "perf",
+            "docs"
+         ]
       }
-    ],
-    "ignore_labels": [
+   ],
+   "ignore_labels":[
       "ignore"
-    ],
-    "sort": "ASC",
-    "template": "${{CHANGELOG}}\n\n<details>\n<summary>Uncategorized</summary>\n\n${{UNCATEGORIZED}}\n</details>",
-    "pr_template": "- ${{TITLE}}\n   - PR: #${{NUMBER}}",
-    "empty_template": "- no changes",
-    "label_extractor": [
+   ],
+   "sort":"ASC",
+   "template":"${{CHANGELOG}}\n\n<details>\n<summary>Uncategorized</summary>\n\n${{UNCATEGORIZED}}\n</details>",
+   "pr_template":"- ${{TITLE}}\n   - PR: #${{NUMBER}}",
+   "empty_template":"- no changes",
+   "label_extractor":[
       {
-        "pattern": "(.) (.+)",
-        "target": "$1",
-        "flags": "gu"
+         "pattern":"(.) (.+)",
+         "target":"$1",
+         "flags":"gu"
       },
       {
-        "pattern": "\\[Issue\\]",
-        "on_property": "title",
-        "method": "match"
+         "pattern":"\\[Issue\\]",
+         "on_property":"title",
+         "method":"match"
       }
-    ],
-    "duplicate_filter": {
-      "pattern": "\\[ABC-....\\]",
-      "on_property": "title",
-      "method": "match"
-    },
-    "transformers": [
+   ],
+   "duplicate_filter":{
+      "pattern":"\\[ABC-....\\]",
+      "on_property":"title",
+      "method":"match"
+   },
+   "transformers":[
       {
-        "pattern": "[\\-\\*] (\\[(...|TEST|CI|SKIP)\\])( )?(.+?)\n(.+?[\\-\\*] )(.+)",
-        "target": "- $4\n  - $6"
+         "pattern":"[\\-\\*] (\\[(...|TEST|CI|SKIP)\\])( )?(.+?)\n(.+?[\\-\\*] )(.+)",
+         "target":"- $4\n  - $6"
       }
-    ],
-    "max_tags_to_fetch": 200,
-    "max_pull_requests": 200,
-    "max_back_track_time_days": 365,
-    "exclude_merge_branches": [
+   ],
+   "max_tags_to_fetch":200,
+   "max_pull_requests":200,
+   "max_back_track_time_days":365,
+   "exclude_merge_branches":[
       "Owner/qa"
-    ],
-    "tag_resolver": {
-      "method": "semver",
-      "filter": {
-        "pattern": "api-(.+)",
-        "flags": "gu"
+   ],
+   "tag_resolver":{
+      "method":"semver",
+      "filter":{
+         "pattern":"api-(.+)",
+         "flags":"gu"
       }
-    },
-    "base_branches": [
+   },
+   "base_branches":[
       "dev"
-    ]
+   ]
 }
