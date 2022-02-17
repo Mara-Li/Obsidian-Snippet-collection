@@ -47,7 +47,9 @@ img[alt*="+rside"] {
   float: left;
 }
 
-
+img[alt="+center"] {
+    padding-left: 20%;
+}
 
 /*tape */
 
