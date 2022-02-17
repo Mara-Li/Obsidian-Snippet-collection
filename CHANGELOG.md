@@ -1,3 +1,14 @@
+## v1.2.0 (2022-02-17)
+
+### Fix
+
+- **minimal**: Fix weight ; size and mobile explorater
+
+### Feat
+
+- **img**: Add "+center" placement
+- **icons**: Add support for docx
+
 ## v1.1.1 (2022-02-09)
 
 ### Fix
