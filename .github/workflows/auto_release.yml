@@ -1,16 +1,15 @@
----
-name: "tagged-release"
+name: Release
 
 on:
   push:
     tags:
-      - "v*"
-  workflow_dispatch
+      - v*
+  workflow_dispatch:
 
 jobs:
   release:
-    name: "Release"
-    runs-on: "ubuntu-latest"
+    name: Release
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
@@ -18,12 +17,13 @@ jobs:
       - name: Build Changelog
         id: github_release
         uses: mikepenz/release-changelog-builder-action@v1
+        with:
+          configuration: "configuration.json"
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: *.css
+          files: "*.css"
           tag_name: ${{ github.ref }}
-          body: {{$steps.github_release.outputs.changelog}}
+          body: ${{ steps.github_release.outputs.changelog }}
