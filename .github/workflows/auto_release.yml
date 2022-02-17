@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Build Changelog
         id: github_release
-        uses: mikepenz/release-changelog-builder-action@v1
+        uses: mikepenz/release-changelog-builder-action@v2
         with:
           configuration: "configuration.json"
         env: 
