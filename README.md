@@ -1,13 +1,13 @@
 This repo is a collection of CSS snippets for [Obsidian.md](https://obsidian.md/).
 
 To install them on PC:
-- Put the snippets in the `snippet` folder of `.obsidian` in the root of your vault;
+- Put the snippets in the `snippets` folder of `.obsidian` in the root of your vault;
 - In Obsidian: Appearance → Refresh snippets ⇒ Activate the ones you want.
 
 :warning: In IOS, it is impossible to access hidden folders. You can:
 - Use Textastic
 - Working Copy with a link to a folder
-- a-shell
+- a-shell  
 [For more information](https://forum.obsidian.md/t/mobile-ios-app-to-work-with-hidden-folder/25741)
 
 Each snippets can be adjusted with [Style Settings](https://github.com/mgmeyers/obsidian-style-settings/).
@@ -76,3 +76,10 @@ This snippet add support for my `folder_note`, `folder-color` snippet and edit s
 - Aspect of Links, since the 6.0.1, where I don't like the new link's aspect.
 - A specific font for comments 
 - Some tweaks around bullet or codes
+
+# Keep the snippets updated
+You can use [Obsidian-Snipper-Manager](https://github.com/Mara-Li/Obsidian-Snippet-Manager), a python script.
+and use the command line : `obsnipe clone https://github.com/Mara-Li/Obsidian-Snippet-collection`
+
+You can turn on auto-update using [obsidian-shell](https://github.com/Taitava/obsidian-shellcommands)
+
