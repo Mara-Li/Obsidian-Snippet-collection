@@ -68,6 +68,8 @@ body body button {
     text-overflow:unset;
     white-space:normal;
     line-height:1.4;
+    display: flex;
+    align-items:center;
 }
 
 .full-file-names .nav-file-title,
