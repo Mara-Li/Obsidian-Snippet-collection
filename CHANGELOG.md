@@ -1,3 +1,9 @@
+## v1.2.1 (2022-02-17)
+
+### Fix
+
+- **minimal**: Fix inconstancy between file & folder flex positioning with icons
+
 ## v1.2.0 (2022-02-17)
 
 ### Fix
