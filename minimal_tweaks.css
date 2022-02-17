@@ -7,6 +7,17 @@
 =        It mainly add support for folder_note.css.                                                     =
 ========================================================================================================= */
 
+
+:root {
+    --normal-weight: 500;
+    --font-code: 20px;
+    --bold-weight: 800;
+}
+
+.cm-s-obsidian span.cm-inline-code, .markdown-preview-view code {
+    font-size: var(--font-adaptive-normal);
+}
+
 .cm-s-obsidian,
 .cm-s-obsidian .cm-formatting-hashtag,
 .cm-s-obsidian span.cm-formatting-task,
@@ -249,6 +260,10 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
 @media only screen and (max-device-width: 1024px) {
 
 /* Mobile*/
+    .nav-file-title-content {
+        padding-left: 10px;
+    }
+
     .obsidian-icon-folder-icon+.nav-file-title-content {
         padding-left: 0.1em !important;
       }
@@ -292,11 +307,8 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
       }
     
       .nav-file-title-content:before {
-        margin-right: 0.3em;
-        margin-left: 0;
-        position: relative;
-        top: 2px;
-        left: 1px;
+        margin-right: -2px;
+        margin-left: 4px;
       }
     
       .nav-folder-title[data-path*="Illustration"] .nav-folder-title-content {
