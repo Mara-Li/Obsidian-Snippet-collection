@@ -14,6 +14,10 @@
     --bold-weight: 800;
 }
 
+.is-mobile {
+    --font-adaptive-normal: var(--font-adaptive-normal);
+  }
+
 .cm-s-obsidian span.cm-inline-code, .markdown-preview-view code {
     font-size: var(--font-adaptive-normal);
 }
@@ -260,7 +264,7 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
 }
 
 @media only screen and (max-device-width: 1024px) {
-
+  
 /* Mobile*/
     .nav-file-title-content {
         padding-left: 10px;
