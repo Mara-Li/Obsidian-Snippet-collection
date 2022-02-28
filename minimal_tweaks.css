@@ -111,27 +111,6 @@ span.cm-comment, span.cm-hmd-frontmatter {
 
 
 
-.collapse-icon:not(.markdown-preview-view .collapse-indicator)>svg {
-    display: none;
-}
-
-.collapse-icon:not(.markdown-preview-view .collapse-indicator):after {
-    display: inline-block;
-    font-family: "boxicons";
-    font-weight: normal;
-    font-style: normal;
-    font-variant: normal;
-    line-height: 1;
-}
-
-.collapse-icon:not(.markdown-preview-view .collapse-indicator):after {
-    content: "\e9ac" !important;
-}
-
-.is-collapsed .collapse-icon:not(.markdown-preview-view .collapse-indicator):after {
-    content: "\e9b2" !important;
-}
-
 /* ===================================== FOLDER NOTE & FILES ICONS ===================================== */
 
 .is-mobile .nav-file-title.is-active .nav-file-title-content {
@@ -192,6 +171,10 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
     padding-left: 0.7em !important;
 }
 
+.cm-fold-widget.collapse-indicator {
+    display: none;
+}
+
 
 @media only screen and (min-device-width: 1024px) {
 
@@ -250,6 +233,11 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
     .nav-file-title[data-path*="Bookmark/Contacts"] {
         position: relative;
         left: 0.3em;
+    }
+
+    .nav-file-title[data-path*="00. Inbox/testing"] {
+        position: relative;
+        left: 1em;
     }
 
     .nav-file-title[data-path*="Bookmark/Contacts"] .nav-file-title-content {
