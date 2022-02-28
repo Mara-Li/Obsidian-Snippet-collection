@@ -8,8 +8,8 @@
 ============================================================================== */
 
 
-img.image-embed,
-img {
+img.image-embed
+{
   --coremarg: 1%;
   --extramarg: 1%;
   /* This margin is used for any added margin between items */
@@ -43,8 +43,11 @@ img[alt*="+side"] {
 }
 
 img[alt*="+rside"] {
-  width: 14.99em;
+  width: 15em;
+  min-width: var(--minwidth);
   float: left;
+  margin: 0;
+  margin-right: 5px;
 }
 
 img[alt="+center"] {
