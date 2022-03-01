@@ -1,9 +1,9 @@
-/* 
-=========================================================================================================   
+/*
+=========================================================================================================
                                           [CSS] FILE ICONS [UNSUPPORTED]
         credit : Mara-Li
         This snippet use icons_font.css
-        Add default icon for unsupported files as : 
+        Add default icon for unsupported files as :
           - PDF
           - IMG
           - JS
@@ -39,7 +39,7 @@ settings:
         type: variable-number
         default: -0.1
         format: em
-        
+
 */
 
 .root {
@@ -60,6 +60,7 @@ settings:
   font-family: boxicons;
   font-size: var(--size);
 }
+
 
 
 

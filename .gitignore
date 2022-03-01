@@ -1,18 +1,12 @@
 # Ignore everything
 *
-folders.hide.css
 
 #But not these
 !.gitignore
 !README.md
-!Custom*
-!folder_note*
-!folder-color_*
-!icons_*
-!img-grid*
-!sanctum*
-!screenshot
-!screenshot**
-!screenshot*
-!*tweaks*
-!configuration.json
+!F - Color*
+!F - note*
+!I - *
+!T - *
+!IMG - *
+!MD - Custom*
