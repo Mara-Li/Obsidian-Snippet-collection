@@ -35,7 +35,7 @@ To use it you need :
 - [Folder Note](https://github.com/aidenlx/alx-folder-note)
 - [Icon Folder](https://github.com/FlorianWoelki/obsidian-icon-folder)
 
-The file [sanctum tweaks](sanctum_tweaks.css) allows the necessary adjustments to this theme.
+The files [T - Sanctum.css](T - Sanctum.css) and [T - Minimal](T - Minimal.css) allows the necessary adjustments to theses themes.
 
 :warning: You need to change the paths of your files!
 
@@ -46,7 +46,7 @@ The file [sanctum tweaks](sanctum_tweaks.css) allows the necessary adjustments t
 - [Lithou](https://forum.obsidian.md/t/adding-color-to-obsidian-a-rainbow-of-possibility/12805/11)
 - [Javalent](https://github.com/valentine195/Obsidian-Vault/blob/master/.obsidian/snippets/colors.folders.css)
 
-> Associated files start with `folder-color`.
+> Associated files start with `F`.
 
 This snippet allows:
 - Add colors for each folder numbered from 00 to 100 
@@ -54,9 +54,9 @@ This snippet allows:
 
 In case the lines don't match with the icons, you can adjust them with Style Settings, just like the colors.
 
-# Icons
+# Icons (File starting with "I")
 These snippets add somes icons for unsupported files.
-The `icons_font.css` embed somes font, so you can use in multiple snippets if you want !
+The `I - Fonts` embed somes font, so you can use in multiple snippets if you want !
 Font included :
 - boxicons (old and new version)
 - remixicon (old and new version)
@@ -66,7 +66,7 @@ Font included :
 - Font Awesome 5 Free Solid
 - Font Awesome 5 Brands
 
-# Image Float
+# Image Float 
 
 All of the credit for this snippet to go [Lithou](http://github.com/lithou/sandbox). I just adapted this snippet to work with Live Preview. I pretty didn't know if Lithou updated it.
 
