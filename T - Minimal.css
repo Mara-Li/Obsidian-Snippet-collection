@@ -7,7 +7,6 @@
 =        It mainly add support for folder_note.css.                                                     =
 ========================================================================================================= */
 
-
 :root {
     --normal-weight: 500;
     --font-code: 20px;
@@ -16,9 +15,10 @@
 
 .is-mobile {
     --font-adaptive-normal: var(--font-adaptive-normal);
-  }
+}
 
-.cm-s-obsidian span.cm-inline-code, .markdown-preview-view code {
+.cm-s-obsidian span.cm-inline-code,
+.markdown-preview-view code {
     font-size: var(--font-adaptive-normal);
 }
 
@@ -38,7 +38,6 @@
     padding: 0;
 }
 
-
 .contextual-typography .markdown-preview-view.markdown-preview-view .markdown-preview-sizer {
     display: revert;
     flex-direction: revert;
@@ -48,10 +47,9 @@
     padding-top: revert;
 }
 
-div[data-tag-name="p"] + div[data-tag-name="ul"] {
+div[data-tag-name="p"]+div[data-tag-name="ul"] {
     margin-top: revert;
 }
-
 
 .markdown-source-view.mod-cm6 .list-bullet:after {
     top: -2px;
@@ -69,19 +67,20 @@ body body button {
 .full-file-names .nav-file-title-content,
 .full-file-names .nav-folder-title-content,
 .full-file-names .search-result-file-title {
-    text-overflow:unset;
-    white-space:normal;
-    line-height:1.4;
+    text-overflow: unset;
+    white-space: normal;
+    line-height: 1.4;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
 .full-file-names .nav-file-title,
 .full-file-names .nav-folder-title {
-    margin-bottom:3px;
+    margin-bottom: 3px;
 }
 
-span.cm-comment, span.cm-hmd-frontmatter {
+span.cm-comment,
+span.cm-hmd-frontmatter {
     font-family: 'Fantasque Sans Mono' !important;
 }
 
@@ -97,7 +96,6 @@ span.cm-comment, span.cm-hmd-frontmatter {
 
 .backlink-pane>.tree-item-self>.collapse-icon {
     display: none;
-    color: var(--text-muted);
 }
 
 .tag-container .tree-item-self .collapse-icon {
@@ -108,7 +106,6 @@ span.cm-comment, span.cm-hmd-frontmatter {
     font-size: 14px;
     margin-left: -3px;
 }
-
 
 
 /* ===================================== FOLDER NOTE & FILES ICONS ===================================== */
@@ -176,192 +173,13 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
 }
 
 
-@media only screen and (min-device-width: 1024px) {
-
-    /* PC */
-    .nav-files-container {
-        padding: 0;
-    }
-
-    .show-full-titles .nav-file-title-content {
-        margin-left: 0px;
-    }
-
-    .obsidian-icon-folder-icon+.nav-file-title-content {
-        padding-left: 0.2em !important;
-    }
-
-    .nav-file-title svg:not(.right-triangle) {
-        margin-left: 10px !important;
-    }
-
-    .nav-file-title-content {
-        padding-left: 10px !important;
-    }
-
-    .nav-folder-children .nav-file-title-content:first-child::before {
-        margin-left: 0.25em !important;
-    }
-
-    .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] svg:not(.right-triangle) {
-        margin-left: 0 !important;
-        margin-right: 1.3em !important;
-        position: relative;
-        left: 0 !important;
-    }
-
-
-    .nav-file-title[data-path*="Personnages/"] svg:not(.right-triangle) {
-        margin-left: 0.5em !important;
-    }
-
-    .nav-folder-title[data-path*="20. Roleplay/"] svg:not(.right-triangle) {
-        margin-left: 0 !important;
-        margin-right: 0.2em !important;
-    }
-
-    .nav-folder-title[data-path*="Personnages/"]>.obsidian-icon-folder-icon+.nav-folder-title-content {
-        padding-left: 0 !important;
-    }
-
-    .alx-folder-with-note .nav-folder-title[data-path*="40. Média/"],
-    .nav-file-title[data-path*="40. Média/"] {
-        position: relative;
-        left: 0.5em;
-    }
-
-    .nav-file-title[data-path*="Bookmark/Contacts"] {
-        position: relative;
-        left: 0.3em;
-    }
-
-    .nav-file-title[data-path*="00. Inbox/testing"] {
-        position: relative;
-        left: 1em;
-    }
-
-    .nav-file-title[data-path*="Bookmark/Contacts"] .nav-file-title-content {
-        padding-left: 0 !important;
-    }
-
-    .nav-folder-title[data-path*="Professeur"]>* {
-        position: relative;
-        left: -0.7em;
-        margin-right: 0.3em;
-    }
-}
-
-@media only screen and (max-device-width: 1024px) {
-  
-/* Mobile*/
-    .nav-file-title-content {
-        padding-left: 10px;
-    }
-
-    .obsidian-icon-folder-icon+.nav-file-title-content {
-        padding-left: 0.1em !important;
-      }
-    
-      .obsidian-icon-folder-icon+.nav-folder-title-content {
-        padding-left: 0.1em !important;
-      }
-    
-      .nav-file-title svg:not(.right-triangle) {
-        margin-left: 0.5em !important;
-      }
-    
-      .workspace-drawer {
-        height: 100% !important;
-      }
-    
-      .is-mobile div.nav-files-container.node-insert-event.show-unsupported {
-        padding: 16px 4px 8px;
-      }
-    
-      .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] svg:not(.right-triangle) {
-        position: relative;
-        left: 0;
-        margin-right: 0.25em !important;
-      }
-    
-    
-      .alx-folder-with-note .nav-folder-title[data-path*="40. Média/"] {
-        position: relative;
-        left: 0;
-      }
-    
-    
-      .alx-folder-with-note .nav-folder-title[data-path*="22. Personnages/"] .collapse-icon,
-      .alx-folder-with-note .nav-folder-title[data-path*="21. Idées/"] .collapse-icon {
-        display: inline-block;
-        right: 25px;
-        position: relative;
-        font-size: calc(var(--size) - 1px) !important;
-        padding-left: 1px !important;
-      }
-    
-      .nav-file-title-content:before {
-        margin-right: -2px;
-        margin-left: 4px;
-      }
-    
-      .nav-folder-title[data-path*="Illustration"] .nav-folder-title-content {
-        margin-left: 0.9em !important;
-      }
-    
-    
-      .alx-folder-with-note .nav-folder-title[data-path*="Personnages/"] svg:not(.right-triangle) {
-        margin-left: 0 !important;
-        padding-left: 0 !important;
-      }
-    
-      .nav-folder-title[data-path*="22. Personnages/"] .nav-folder-title-content,
-      .nav-folder-title[data-path*="22. Personnages/"] svg:not(.right-triangle) {
-        position: relative !important;
-        right: 1.05em;
-      }
-    
-      .nav-file-title[data-path*="Templater"] svg:not(.right-triangle) {
-        margin-right: 0.25em !important;
-      }
-    
-      .nav-folder-title[data-path*="Pouvoir"] svg:not(.right-triangle),
-      .nav-folder-title[data-path*="Zombie"] svg:not(.right-triangle),
-      .nav-folder-title[data-path*="Écho"] svg:not(.right-triangle) {
-        margin-left: 1em !important;
-      }
-    
-      .nav-folder-title[data-path*="Idées/"] .nav-folder-title-content,
-      .nav-folder-title[data-path*="Idées/"] svg:not(.right-triangle) {
-        position: relative !important;
-        right: 2em !important;
-      }
-    
-      .nav-folder-title[data-path*="Professeur"]>* {
-        position: relative;
-        right: 0.8em;
-        margin-right: 2px;
-      }
-    
-      .nav-file-title[data-path*="Bookmark/Contact"] svg:not(.right-triangle) {
-        position: relative;
-        right: -0.3em
-      }
-
-      .nav-file-title[data-path*="Bookmark/Contacts"] .nav-file-title-content {
-        padding-left: 0.2em !important;
-      }
-      
-    .nav-file-title[data-path*="Bookmark"] .nav-file-title-content {
-        left: 0;
-    }
-}
-
 .markdown-preview-view:not(.allow-fold-headings) .heading-collapse-indicator {
     display: none !important;
 }
 
+
 /* ===================================== LINKS ===================================== */
+
 .cm-s-obsidian span.cm-hmd-internal-link,
 .markdown-preview-view .internal-link,
 .cm-s-obsidian span.cm-hmd-internal-link:hover,
@@ -439,4 +257,4 @@ span.cm-hmd-internal-link :not([data-link-type]) .cm-underline:hover,
 .cm-s-obsidian span.cm-link .cm-underline:hover {
     background-color: var(--bg-hover-link);
     color: var(--link-hover);
-    }
+}
