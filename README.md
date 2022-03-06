@@ -46,9 +46,7 @@ The files [T - Sanctum.css](T - Sanctum.css) and [T - Minimal](T - Minimal.css) 
 - [Lithou](https://forum.obsidian.md/t/adding-color-to-obsidian-a-rainbow-of-possibility/12805/11)
 - [Javalent](https://github.com/valentine195/Obsidian-Vault/blob/master/.obsidian/snippets/colors.folders.css)
 
-> Associated files start with `F`.
-
-This snippet allows:
+[This snippet](F - Color.css) allows:
 - Add colors for each folder numbered from 00 to 100 
 - Add lines for the children files of a folder
 
@@ -70,12 +68,14 @@ Font included :
 
 All of the credit for this snippet to go [Lithou](http://github.com/lithou/sandbox). I just adapted this snippet to work with Live Preview. I pretty didn't know if Lithou updated it.
 
-# Sanctum Tweaks & Minimal Tweaks
+# TFI - Minimal
 
-This snippet add support for my `folder_note`, `folder-color` snippet and edit some things in Sanctum :
-- Aspect of Links, since the 6.0.1, where I don't like the new link's aspect.
-- A specific font for comments 
-- Some tweaks around bullet or codes
+This snippet add support for my `folder_note`, `folder-color` snippet and edit some things  :
+- Change margin, padding, border on file and folder title
+- Adjust `.full-file-names` for folder
+- Adjust collapse-icon
+
+The file [TFI - Minimal](TFI%20-%20Minimal.css) is a example to how adjust on mobile and PC. 
 
 # Keep the snippets updated
 You can use [Obsidian-Snipper-Manager](https://github.com/Mara-Li/Obsidian-Snippet-Manager), a python script.
