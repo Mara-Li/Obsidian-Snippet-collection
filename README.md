@@ -83,3 +83,16 @@ and use the command line : `obsnipe clone https://github.com/Mara-Li/Obsidian-Sn
 
 You can turn on auto-update using [obsidian-shell](https://github.com/Taitava/obsidian-shellcommands)
 
+
+---
+
+File legends :
+- `I` : icons
+- `F` : Folders
+- `MD` : Markdown
+- `T` : Tweaks
+- `IMG` : Image
+
+So : 
+- `TFI` : Tweaks Folder Icons
+- `TF` : Tweaks Folder 
