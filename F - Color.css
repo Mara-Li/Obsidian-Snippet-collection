@@ -496,8 +496,6 @@ settings:
     border-radius: 0px;
 }
 
-
-
 .nav-folder-title[data-path^="/"] {
     display: none;
 }
@@ -506,21 +504,13 @@ body:not(.is-grabbing) .nav-folder-title:hover {
     border-radius: 0px;
 }
 
-.nav-file-title.is-being-dragged,
-.nav-folder-title.is-being-dragged {
-    background-color: #8e939349 !important;
-}
-
 body:not(.is-grabbing) .nav-file-title:hover .nav-folder-collapse-indicator,
 body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     background-color: transparent !important;
 }
 
-.nav-file-title.is-active,
-body:not(.is-grabbing) .nav-file-title:hover,
-body:not(.is-grabbing) .nav-folder-title:hover {
-    transition: all 0.2s ease;
-}
+
+
 
 .nav-folder-title[data-path^="/"] {
     display: none;
@@ -535,12 +525,9 @@ body:not(.is-grabbing) .nav-folder-title:hover {
     color: currentColor !important;
 }
 
-.nav-file-title-content:hover,
-.nav-folder-title-content:hover,
-.collapse-icon:hover {
-    background-color: transparent !important;
-    filter: saturate(150%);
-    color: currentColor !important;
+.nav-file-title.is-being-dragged,
+.nav-folder-title.is-being-dragged {
+    background-color: #8e939349 !important;
 }
 
 .nav-folder-title.is-being-dragged-over {
@@ -595,14 +582,13 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 .nav-file-title.is-active,
 body:not(.is-grabbing) .nav-file-title:hover,
 body:not(.is-grabbing) .nav-folder-title:hover {
-    /* border-radius: 2px; */
     transition: all 0.2s ease;
 }
 
-.nav-file-title.is-active:not(.nav-file-title.is-active:hover),
-.nav-folder-title.is-active {
-    background-color: rgba(255, 255, 255, 0.075) !important;
-    filter: saturate(150%);
+
+div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-file-title-content:hover,
+div:not(.is-mobile)>.workspace-leaf-content>.view-content>.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title:hover {
+    color: var(--text-accent) !important;
 }
 
 .nav-folder-children .nav-file-title-content:first-child::before {
@@ -628,10 +614,7 @@ div:not(.is-mobile)>.workspace-leaf-content>.view-content .nav-file-title-conten
     color: var(--text-normal) !important;
 }
 
-div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-file-title-content:hover,
-div:not(.is-mobile)>.workspace-leaf-content>.view-content>.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title:hover {
-    color: var(--text-accent) !important;
-}
+
 
 div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .nav-file-title-content:first-child::before {
     top: -1px !important;
@@ -693,6 +676,15 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
     background-color: var(--bg00);
 }
 
+
+.nav-folder-title[data-path^="00."]:hover,
+.nav-file-title[data-path^="00."]:hover
+{
+  color: var(--F00) !important;
+  background-color: var(--bg00) !important; 
+  filter: saturate(150%);
+}
+
 /* ======================== FOLDER 10 =================== */
 
 .nav-folder-title[data-path^="10."],
@@ -703,6 +695,14 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="10."],
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="10."]+.nav-folder-children {
     background-color: var(--bg10);
+}
+
+.nav-folder-title[data-path^="10."]:hover,
+.nav-file-title[data-path^="10."]:hover
+{
+  color: var(--F10) !important;
+  background-color: var(--bg10) !important; 
+  filter: saturate(150%);
 }
 
 /* ======================== FOLDER 20 - 23 =================== */
@@ -721,6 +721,15 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
     background-color: var(--bg20);
 }
 
+.nav-folder-title[data-path^="20."]:hover,
+.nav-file-title[data-path^="20."]:hover
+{
+  color: var(--F20) !important;
+  background-color: var(--bg20) !important; 
+  filter: saturate(150%);
+}
+
+
 /* ======================== FOLDER 30 =================== */
 
 .nav-folder-title[data-path^="30"],
@@ -731,6 +740,14 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="30."],
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="30."]+.nav-folder-children {
     background-color: var(--bg30);
+}
+
+.nav-folder-title[data-path^="30."]:hover,
+.nav-file-title[data-path^="30."]:hover
+{
+  color: var(--F30) !important;
+  background-color: var(--bg30) !important; 
+  filter: saturate(150%);
 }
 
 /* ======================== FOLDER 40 =================== */
@@ -745,6 +762,14 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
     background-color: var(--bg40);
 }
 
+.nav-folder-title[data-path^="40."]:hover,
+.nav-file-title[data-path^="40."]:hover
+{
+  color: var(--F40) !important;
+  background-color: var(--bg40) !important; 
+  filter: saturate(150%);
+}
+
 /* ======================== FOLDER 50 =================== */
 
 .nav-folder-title[data-path^="50."],
@@ -755,6 +780,14 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="50."],
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="50."]+.nav-folder-children {
     background-color: var(--bg50);
+}
+
+.nav-folder-title[data-path^="50."]:hover,
+.nav-file-title[data-path^="50."]:hover
+{
+  color: var(--F50) !important;
+  background-color: var(--bg50) !important; 
+  filter: saturate(150%);
 }
 
 /* ======================== FOLDER 60 =================== */
@@ -769,6 +802,14 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
     background-color: var(--bg60);
 }
 
+.nav-folder-title[data-path^="60."]:hover,
+.nav-file-title[data-path^="60."]:hover
+{
+  color: var(--F60) !important;
+  background-color: var(--bg60) !important; 
+  filter: saturate(150%);
+}
+
 /* ======================== FOLDER 70 =================== */
 
 .nav-folder-title[data-path^="70"],
@@ -779,6 +820,14 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="70."],
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="70."]+.nav-folder-children {
     background-color: var(--bg70);
+}
+
+.nav-folder-title[data-path^="70."]:hover,
+.nav-file-title[data-path^="70."]:hover
+{
+  color: var(--F70) !important;
+  background-color: var(--bg70) !important; 
+  filter: saturate(150%);
 }
 
 /* ======================== FOLDER 80 =================== */
@@ -793,6 +842,14 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
     background-color: var(--bg80);
 }
 
+.nav-folder-title[data-path^="80."]:hover,
+.nav-file-title[data-path^="80."]:hover
+{
+  color: var(--F80) !important;
+  background-color: var(--bg80) !important; 
+  filter: saturate(150%);
+}
+
 /* ======================== FOLDER 90 =================== */
 
 .nav-folder-title[data-path^="90."],
@@ -805,6 +862,15 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
     background-color: var(--bg90);
 }
 
+.nav-folder-title[data-path^="90."]:hover,
+.nav-file-title[data-path^="90."]:hover
+{
+  color: var(--F90) !important;
+  background-color: var(--bg90) !important; 
+  filter: saturate(150%);
+}
+
+
 /* ======================== FOLDER 100 =================== */
 
 .nav-folder-title[data-path^="100."],
@@ -815,6 +881,14 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="100."],
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="100."]+.nav-folder-children {
     background-color: var(--bg100);
+}
+
+.nav-folder-title[data-path^="100."]:hover,
+.nav-file-title[data-path^="100."]:hover
+{
+  color: var(--F100) !important;
+  background-color: var(--bg100) !important; 
+  filter: saturate(150%);
 }
 
 /* ======================== RESSOURCE - ZZ =================== */
@@ -837,6 +911,16 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Ressource"],
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title[data-path^="Ressource"]+.nav-folder-children {
     background-color: var(--bgZZ);
+}
+
+.nav-folder-title[data-path^="ZZ."]:hover,
+.nav-folder-title[data-path^="Ressource"]:hover,
+.nav-file-title[data-path^="ZZ."]:hover,
+.nav-file-title[data-path^="Ressource"]:hover
+{
+  color: var(--FZZ) !important;
+  background-color: var(--bgZZ) !important; 
+  filter: saturate(150%);
 }
 
 /* Scrollbars eliminated */
