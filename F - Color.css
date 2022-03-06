@@ -496,6 +496,8 @@ settings:
     border-radius: 0px;
 }
 
+
+
 .nav-folder-title[data-path^="/"] {
     display: none;
 }
@@ -635,22 +637,6 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
     top: -1px !important;
 }
 
-/* Minimal theme overrides */
-
-.nav-file {
-    margin-left: 0;
-    padding: 0;
-}
-
-.nav-file-title {
-    margin: 0;
-    padding-left: 0;
-}
-
-.nav-folder-children .nav-folder-children {
-    border-left: none;
-    margin-left: 0;
-}
 
 /* Set up explorer container margins */
 
