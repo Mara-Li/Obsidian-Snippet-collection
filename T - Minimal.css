@@ -114,11 +114,6 @@ span.cm-hmd-frontmatter {
     line-height: 1.8;
 }
 
-.obsidian-icon-folder-icon {
-    padding-right: 2px !important;
-    position: relative;
-    top: -1px;
-}
 
 .nav-file-title,
 .nav-folder-title,
@@ -134,7 +129,7 @@ span.cm-hmd-frontmatter {
 .nav-file-title.is-being-dragged,
 .nav-file-title.is-active,
 body:not(.is-grabbing) .nav-file-title.is-active:hover {
-    background-color: #ffffff42 !important;
+    filter: saturate(150%);
 }
 
 div.nav-folder.mod-root>div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-collapse-indicator.collapse-icon {
