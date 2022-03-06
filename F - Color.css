@@ -678,6 +678,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 
 
 .nav-folder-title[data-path^="00."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="00."],
 .nav-file-title[data-path^="00."]:hover
 {
   color: var(--F00) !important;
@@ -698,7 +699,8 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 }
 
 .nav-folder-title[data-path^="10."]:hover,
-.nav-file-title[data-path^="10."]:hover
+.nav-file-title[data-path^="10."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="10."]
 {
   color: var(--F10) !important;
   background-color: var(--bg10) !important; 
@@ -722,6 +724,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 }
 
 .nav-folder-title[data-path^="20."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="20."],
 .nav-file-title[data-path^="20."]:hover
 {
   color: var(--F20) !important;
@@ -743,6 +746,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 }
 
 .nav-folder-title[data-path^="30."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="30."],
 .nav-file-title[data-path^="30."]:hover
 {
   color: var(--F30) !important;
@@ -763,6 +767,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 }
 
 .nav-folder-title[data-path^="40."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="40."],
 .nav-file-title[data-path^="40."]:hover
 {
   color: var(--F40) !important;
@@ -783,6 +788,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 }
 
 .nav-folder-title[data-path^="50."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="50."],
 .nav-file-title[data-path^="50."]:hover
 {
   color: var(--F50) !important;
@@ -803,6 +809,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 }
 
 .nav-folder-title[data-path^="60."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="60."],
 .nav-file-title[data-path^="60."]:hover
 {
   color: var(--F60) !important;
@@ -823,6 +830,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 }
 
 .nav-folder-title[data-path^="70."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="70."],
 .nav-file-title[data-path^="70."]:hover
 {
   color: var(--F70) !important;
@@ -843,6 +851,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 }
 
 .nav-folder-title[data-path^="80."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="80."],
 .nav-file-title[data-path^="80."]:hover
 {
   color: var(--F80) !important;
@@ -863,6 +872,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 }
 
 .nav-folder-title[data-path^="90."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="90."],
 .nav-file-title[data-path^="90."]:hover
 {
   color: var(--F90) !important;
@@ -884,6 +894,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 }
 
 .nav-folder-title[data-path^="100."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="100."],
 .nav-file-title[data-path^="100."]:hover
 {
   color: var(--F100) !important;
@@ -915,6 +926,8 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 
 .nav-folder-title[data-path^="ZZ."]:hover,
 .nav-folder-title[data-path^="Ressource"]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="zz."],
+.colorful-active .nav-file-title.is-active[data-path^="Ressource"],
 .nav-file-title[data-path^="ZZ."]:hover,
 .nav-file-title[data-path^="Ressource"]:hover
 {
