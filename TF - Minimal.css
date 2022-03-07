@@ -114,3 +114,7 @@ div.nav-folder-children>div.nav-folder>div.nav-folder-title>div.nav-folder-colla
 .nav-folder:not(.mod-root)>.nav-folder-children {
     padding-left: 0.7em !important;
 }
+
+body.is-mobile:not(.alx-no-click-on-mobile) .nav-folder>.nav-folder-title>.nav-folder-collapse-indicator {
+    width: revert !important;
+}
