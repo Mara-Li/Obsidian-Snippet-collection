@@ -1,8 +1,7 @@
 .obsidian-icon-folder-icon {
     position: relative;
     top: -1px;
-    padding-right: 2px;
-    margin-right: 2px;
+    padding: 0 4px 0 0 !important;
 }
 
 @media only screen and (min-device-width: 1024px) {
@@ -25,11 +24,7 @@
         left: 2px !important;
     }
 
-    .nav-folder-title[data-path*="Scriptorium"] > .obsidian-icon-folder-icon  svg {
-        margin-right: 4px !important;
-        position: relative !important;
-        top: 1px;
-    }
+
 
     .nav-file-title-content {
         padding-left: 10px !important;
@@ -46,7 +41,7 @@
     .nav-file-title[data-path*="Personnages/"] .obsidian-icon-folder-icon  svg {
         margin-left: 0.5em !important;
     }
-    .nav-folder-title[data-path*="20. Roleplay/"] .obsidian-icon-folder-icon  svg {
+    .nav-folder-title[data-path*="20. Compendium/"] .obsidian-icon-folder-icon  svg {
         margin-left: 0 !important;
         margin-right: 0.2em !important;
     }
