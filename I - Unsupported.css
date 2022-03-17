@@ -76,6 +76,7 @@ settings:
   vertical-align: -4px !important;
   left: 3px !important;
   position: relative !important;
+  margin-right: 3px;
 }
 
 .nav-file-title[data-path$="pdf"] .nav-file-title-content:before {
