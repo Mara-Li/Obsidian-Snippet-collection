@@ -1,7 +1,8 @@
 .obsidian-icon-folder-icon {
     position: relative;
     top: -1px;
-    padding: 0 4px 0 0 !important;
+    padding-right: 0.4em !important;
+    padding-left: 2px !important;
 }
 
 @media only screen and (min-device-width: 1024px) {
@@ -60,7 +61,6 @@
     .nav-folder-title[data-path*="Blog"]>* {
         position: relative;
         left: -0.7em;
-        margin-right: 0.3em;
     }
 }
 
@@ -137,7 +137,12 @@
     }
     .nav-folder-title[data-path*="Professeur"]{
         margin-left: -1px !important;
+        left: 2px;
     }
+    .nav-file-title[data-path*="Contact"]{
+        margin-left: -4px !important;
+        left: 1px;
+      }
     .nav-file-title[data-path*="testing"] .nav-file-title-content {
         padding-left: 4px !important;
     }
