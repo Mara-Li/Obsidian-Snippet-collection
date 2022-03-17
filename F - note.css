@@ -10,6 +10,14 @@
 
 ============================================================================== */
 
+.nav-folder.alx-folder-with-note.alx-empty-folder>.nav-folder-title>.nav-folder-collapse-indicator {
+  display: none !important;
+}
+
+.nav-folder.alx-folder-with-note.alx-empty-folder .nav-folder-title[data-path*="Personnages/"]{
+    position: relative !important;
+    left:1em !important;
+}
 
 @media only screen and (min-device-width: 1024px) {
   /* PC */
@@ -43,6 +51,11 @@
     margin-left: 0.8em;
     margin-right: 0;
   }
+
+.nav-folder.alx-folder-with-note.alx-empty-folder>.nav-folder-title[data-path*="22. Personnages/"]>.nav-folder-collapse-indicator {
+    right: 30px;
+    position: relative;
+}
 
   .alx-folder-with-note .nav-folder-title[data-path*="22. Personnages/"] .collapse-icon,
   .alx-folder-with-note .nav-folder-title[data-path*="21. Idées/"] .collapse-icon {
