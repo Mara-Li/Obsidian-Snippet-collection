@@ -7,6 +7,7 @@
         The Color can be changed using Style Settings.
 =============================================================================== */
 
+
 /* @settings
 name: Nested Folder — Relations Line
 id: relation-line
@@ -146,6 +147,7 @@ settings:
         format: px
 */
 
+
 /* @settings
 name: Nested Folder — Colors
 id: nested
@@ -217,11 +219,13 @@ settings:
         opacity: true
         type: variable-themed-color
         title: 00. Folder
+        description: Background 
         default-light: "#3131312c"
         default-dark: "#6e6e6e2c"
     -
         id: F00
         title: 00. Folder
+        description: font
         type: variable-themed-color
         default-light: "#001219"
         default-dark: "#8d8d8d"
@@ -231,6 +235,7 @@ settings:
         id: bg10
         format: hex
         opacity: true
+        description: Background
         type: variable-themed-color
         title: 10. Folder
         default-light: "#6867ad2c"
@@ -238,6 +243,7 @@ settings:
     - 
         id: F10
         title: 10. Folder
+        description: Font
         type: variable-themed-color
 		opacity: false
         default-light: "#4765AB"
@@ -249,34 +255,39 @@ settings:
         opacity: true
         type: variable-themed-color
         title: 20. Folder
+        description: Background
         default-light: "#85adad2c"
         default-dark: "#77664e2c"
     -
         id: F20
         title: 20. Folder
+        description: Font
         type: variable-themed-color
 		opacity: false
         default-light: "#3E9C9D"
         default-dark: "#b7822f"
         format: hex
     -
-        id: F30
-        title: 30. Folder
-        type: variable-themed-color
-        default-light: "#50A686"
-        default-dark: "#798c64"
-        format: hex
-		opacity: false
-    -
         id: bg30
+        description: Background
         format: hex
         opacity: true
         type: variable-themed-color
         title: 30. Folder
         default-light: "#50A6862c"
         default-dark: "#798c642c"
+    -
+        id: F30
+        description: Font
+        title: 30. Folder
+        type: variable-themed-color
+        default-light: "#50A686"
+        default-dark: "#798c64"
+        format: hex
+		opacity: false
     - 
         id: bg40
+        description: Background
         format: hex
         opacity: true
         type: variable-themed-color
@@ -286,6 +297,7 @@ settings:
     -
         id: F40
         title: 40. Folder
+        description: Font
         type: variable-themed-color
         format: hex
         default-light: "#4765AB"
@@ -293,6 +305,7 @@ settings:
 		opacity: false
     -
         id: bg50
+        description: Background
         format: hex
         opacity: true
         type: variable-themed-color
@@ -301,6 +314,7 @@ settings:
         default-dark: "#8FA1CC2c"    
 	-
         id: F50
+        description: Font
         title: 50. Folder
         type: variable-themed-color
         format: hex
@@ -309,6 +323,7 @@ settings:
         opacity: false
     -
         id: bg60
+        description: Background
         format: hex
         opacity: true
         type: variable-themed-color
@@ -318,6 +333,7 @@ settings:
     -
         id: F60
         title: 60. Folder
+        description: Font
         type: variable-themed-color
         format: hex
         default-dark: "#8FA1CC"
@@ -325,6 +341,7 @@ settings:
         opacity: false
 	-
         id: bg70
+        description: Background
         format: hex
         opacity: true
         type: variable-themed-color
@@ -333,6 +350,7 @@ settings:
         default-dark: "#ffffff00"
     -
         id: F70
+        description: Font
         title: 70. Folder
         type: variable-themed-color
         format: hex
@@ -341,6 +359,7 @@ settings:
         opacity: false
     -
         id: bg80
+        description: Background
         format: hex
         opacity: true
         type: variable-themed-color
@@ -349,6 +368,7 @@ settings:
         default-dark: "#ad8c332c"
 	-
         id: F80
+        description: Font
         title: 80. Folder
         type: variable-themed-color
         format: hex
@@ -357,6 +377,7 @@ settings:
         opacity: false
     -
         id: bg90
+        description: Background
         format: hex
         opacity: true
         type: variable-themed-color
@@ -365,6 +386,7 @@ settings:
         default-dark: "#ffffff00"
     -
         id: F90
+        description: Font
         title: 90. Folder
         type: variable-themed-color
         format: hex
@@ -373,6 +395,7 @@ settings:
         opacity: false    
     -
         id: bg100
+        description: Background
         format: hex
         opacity: true
         type: variable-themed-color
@@ -381,6 +404,7 @@ settings:
         default-dark: "#ffffff00"
     -
         id: F100
+        description: Font
         title: 100. Folder
         type: variable-themed-color
         format: hex
@@ -389,6 +413,7 @@ settings:
         opacity: false    
     -
         id: bgZZ
+        description: Background
         format: hex
         opacity: true
         type: variable-themed-color
@@ -397,6 +422,7 @@ settings:
         default-dark: "#617e8c2c"
     -
         id: FZZ
+        description: Font
         title: ZZ. Folder
         type: variable-themed-color
         format: hex
@@ -509,9 +535,6 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     background-color: transparent !important;
 }
 
-
-
-
 .nav-folder-title[data-path^="/"] {
     display: none;
 }
@@ -557,6 +580,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
     height: 20px;
 }
 
+
 /* == File Explorer - animation for active file as per Obuntu === */
 
 .nav-folder.mod-root>.nav-folder-title {
@@ -585,7 +609,6 @@ body:not(.is-grabbing) .nav-folder-title:hover {
     transition: all 0.2s ease;
 }
 
-
 div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-file-title-content:hover,
 div:not(.is-mobile)>.workspace-leaf-content>.view-content>.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title:hover {
     color: var(--text-accent) !important;
@@ -604,6 +627,7 @@ div:not(.is-mobile)>.workspace-leaf-content>.view-content .nav-folder-title {
     color: var(--text-accent) !important;
 }
 
+
 /* SR Plugins adjust */
 
 div:not(.is-mobile)>.workspace-leaf-content>.view-content>.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-title {
@@ -613,8 +637,6 @@ div:not(.is-mobile)>.workspace-leaf-content>.view-content>.nav-folder.mod-root>.
 div:not(.is-mobile)>.workspace-leaf-content>.view-content .nav-file-title-content {
     color: var(--text-normal) !important;
 }
-
-
 
 div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .nav-file-title-content:first-child::before {
     top: -1px !important;
@@ -650,7 +672,6 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
     border-radius: var(--FolderRadius);
 }
 
-
 .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children {
     padding-left: 0px;
     border-top: var(--FoldText) 1px solid;
@@ -676,16 +697,15 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
     background-color: var(--bg00);
 }
 
-
 .nav-folder-title[data-path^="00."]:hover,
 .colorful-active .nav-file-title.is-active[data-path^="00."],
 .nav-file-title[data-path^="00."]:hover,
-.nav-folder-title.is-active[data-path^="00."]
-{
-  color: var(--F00) !important;
-  background-color: var(--bg00) !important; 
-  filter: saturate(150%);
+.nav-folder-title.is-active[data-path^="00."] {
+    color: var(--F00) !important;
+    background-color: var(--bg00) !important;
+    filter: saturate(150%);
 }
+
 
 /* ======================== FOLDER 10 =================== */
 
@@ -702,15 +722,14 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder-title[data-path^="10."]:hover,
 .nav-file-title[data-path^="10."]:hover,
 .colorful-active .nav-file-title.is-active[data-path^="10."],
-.nav-folder-title.is-active[data-path^="10."]
-{
-  color: var(--F10) !important;
-  background-color: var(--bg10) !important; 
-  filter: saturate(150%);
+.nav-folder-title.is-active[data-path^="10."] {
+    color: var(--F10) !important;
+    background-color: var(--bg10) !important;
+    filter: saturate(150%);
 }
 
-/* ======================== FOLDER 20 - 23 =================== */
 
+/* ======================== FOLDER 20 - 23 =================== */
 
 .nav-folder-title[data-path^="20."],
 .nav-file-title[data-path^="20."],
@@ -728,11 +747,10 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder-title[data-path^="20."]:hover,
 .colorful-active .nav-file-title.is-active[data-path^="20."],
 .nav-folder-title.is-active[data-path^="20."],
-.nav-file-title[data-path^="20."]:hover
-{
-  color: var(--F20) !important;
-  background-color: var(--bg20) !important; 
-  filter: saturate(150%);
+.nav-file-title[data-path^="20."]:hover {
+    color: var(--F20) !important;
+    background-color: var(--bg20) !important;
+    filter: saturate(150%);
 }
 
 
@@ -751,12 +769,12 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder-title[data-path^="30."]:hover,
 .colorful-active .nav-file-title.is-active[data-path^="30."],
 .nav-file-title[data-path^="30."]:hover,
-.nav-folder-title.is-active[data-path^="30."]
-{
-  color: var(--F30) !important;
-  background-color: var(--bg30) !important; 
-  filter: saturate(150%);
+.nav-folder-title.is-active[data-path^="30."] {
+    color: var(--F30) !important;
+    background-color: var(--bg30) !important;
+    filter: saturate(150%);
 }
+
 
 /* ======================== FOLDER 40 =================== */
 
@@ -773,12 +791,12 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder-title[data-path^="40."]:hover,
 .colorful-active .nav-file-title.is-active[data-path^="40."],
 .nav-file-title[data-path^="40."]:hover,
-.nav-folder-title.is-active[data-path^="40."]
-{
-  color: var(--F40) !important;
-  background-color: var(--bg40) !important; 
-  filter: saturate(150%);
+.nav-folder-title.is-active[data-path^="40."] {
+    color: var(--F40) !important;
+    background-color: var(--bg40) !important;
+    filter: saturate(150%);
 }
+
 
 /* ======================== FOLDER 50 =================== */
 
@@ -795,12 +813,12 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder-title[data-path^="50."]:hover,
 .colorful-active .nav-file-title.is-active[data-path^="50."],
 .nav-file-title[data-path^="50."]:hover,
-.nav-folder-title.is-active[data-path^="50."]
-{
-  color: var(--F50) !important;
-  background-color: var(--bg50) !important; 
-  filter: saturate(150%);
+.nav-folder-title.is-active[data-path^="50."] {
+    color: var(--F50) !important;
+    background-color: var(--bg50) !important;
+    filter: saturate(150%);
 }
+
 
 /* ======================== FOLDER 60 =================== */
 
@@ -817,12 +835,12 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder-title[data-path^="60."]:hover,
 .colorful-active .nav-file-title.is-active[data-path^="60."],
 .nav-file-title[data-path^="60."]:hover,
-.nav-folder-title.is-active[data-path^="60."]
-{
-  color: var(--F60) !important;
-  background-color: var(--bg60) !important; 
-  filter: saturate(150%);
+.nav-folder-title.is-active[data-path^="60."] {
+    color: var(--F60) !important;
+    background-color: var(--bg60) !important;
+    filter: saturate(150%);
 }
+
 
 /* ======================== FOLDER 70 =================== */
 
@@ -839,12 +857,12 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder-title[data-path^="70."]:hover,
 .colorful-active .nav-file-title.is-active[data-path^="70."],
 .nav-file-title[data-path^="70."]:hover,
-.nav-folder-title.is-active[data-path^="70."]
-{
-  color: var(--F70) !important;
-  background-color: var(--bg70) !important; 
-  filter: saturate(150%);
+.nav-folder-title.is-active[data-path^="70."] {
+    color: var(--F70) !important;
+    background-color: var(--bg70) !important;
+    filter: saturate(150%);
 }
+
 
 /* ======================== FOLDER 80 =================== */
 
@@ -859,14 +877,15 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 }
 
 .nav-folder-title[data-path^="80."]:hover,
-.colorful-active .nav-file-title.is-active[data-path^="80."],,
+.colorful-active .nav-file-title.is-active[data-path^="80."],
+,
 .nav-folder-title.is-active[data-path^="80."],
-.nav-file-title[data-path^="80."]:hover
-{
-  color: var(--F80) !important;
-  background-color: var(--bg80) !important; 
-  filter: saturate(150%);
+.nav-file-title[data-path^="80."]:hover {
+    color: var(--F80) !important;
+    background-color: var(--bg80) !important;
+    filter: saturate(150%);
 }
+
 
 /* ======================== FOLDER 90 =================== */
 
@@ -883,11 +902,10 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder-title[data-path^="90."]:hover,
 .colorful-active .nav-file-title.is-active[data-path^="90."],
 .nav-file-title[data-path^="90."]:hover,
-.nav-folder-title.is-active[data-path^="90."]
-{
-  color: var(--F90) !important;
-  background-color: var(--bg90) !important; 
-  filter: saturate(150%);
+.nav-folder-title.is-active[data-path^="90."] {
+    color: var(--F90) !important;
+    background-color: var(--bg90) !important;
+    filter: saturate(150%);
 }
 
 
@@ -906,12 +924,12 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-folder-title[data-path^="100."]:hover,
 .colorful-active .nav-file-title.is-active[data-path^="100."],
 .nav-folder-title.is-active[data-path^="100."],
-.nav-file-title[data-path^="100."]:hover
-{
-  color: var(--F100) !important;
-  background-color: var(--bg100) !important; 
-  filter: saturate(150%);
+.nav-file-title[data-path^="100."]:hover {
+    color: var(--F100) !important;
+    background-color: var(--bg100) !important;
+    filter: saturate(150%);
 }
+
 
 /* ======================== RESSOURCE - ZZ =================== */
 
@@ -942,12 +960,12 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .nav-file-title[data-path^="ZZ."]:hover,
 .nav-file-title[data-path^="Ressource"]:hover,
 .nav-folder-title.is-active[data-path^="ZZ."],
-.nav-folder-title.is-active[data-path^="Ressource"]
-{
-  color: var(--FZZ) !important;
-  background-color: var(--bgZZ) !important; 
-  filter: saturate(150%);
+.nav-folder-title.is-active[data-path^="Ressource"] {
+    color: var(--FZZ) !important;
+    background-color: var(--bgZZ) !important;
+    filter: saturate(150%);
 }
+
 
 /* Scrollbars eliminated */
 
@@ -956,38 +974,33 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
     height: 0px;
 }
 
+
 /* Relationship lines for 2nd, 3rd, and 4th level folders */
 
 @media only screen and (max-device-width: 1024px) {
     .relation-active .is-mobile .nav-folder.mod-root {
         overflow: hidden !important;
     }
-
     .relation-active .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
         border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
         margin-left: var(--adjust-mobile);
     }
-
     .relation-active .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
         border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
         margin-left: var(--adjust-mobile);
     }
-
     .relation-active .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
         border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
         margin-left: var(--adjust-mobile);
     }
-
     .relation-active .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
         border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
         margin-left: var(--adjust-mobile);
     }
-
     .relation-active .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
         border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
         margin-left: var(--adjust-mobile);
     }
-
     .relation-active .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
         border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
         margin-left: var(--adjust-mobile);
@@ -999,27 +1012,22 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
         border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
         margin-left: var(--adjust-pc);
     }
-
     .relation-active .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
         border-left: var(--nestlinestyle1) var(--nestlinesize1) var(--nestlinecolor1);
         margin-left: var(--adjust-pc);
     }
-
     .relation-active .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
         border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
         margin-left: var(--adjust-pc);
     }
-
     .relation-active .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
         border-left: var(--nestlinestyle2) var(--nestlinesize2) var(--nestlinecolor2);
         margin-left: var(--adjust-pc);
     }
-
     .relation-active .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-file {
         border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
         margin-left: calc(var(--adjust-pc));
     }
-
     .relation-active .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder {
         border-left: var(--nestlinestyle3) var(--nestlinesize3) var(--nestlinecolor3);
         margin-left: calc(var(--adjust-pc));
