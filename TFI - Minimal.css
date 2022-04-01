@@ -65,6 +65,11 @@
 }
 
 @media only screen and (max-device-width: 1024px) {
+    .nav-folder.alx-folder-with-note.alx-empty-folder .nav-folder-title[data-path*="Personnages/"] .nav-folder-title-content,
+    .nav-folder.alx-folder-with-note.alx-empty-folder .nav-folder-title[data-path*="Personnages/"] .obsidian-icon-folder-icon {
+        margin-right: -1em !important;
+    }
+
     .nav-file-title-content {
         padding-left: 10px;
     }
