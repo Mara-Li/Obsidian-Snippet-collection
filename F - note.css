@@ -10,7 +10,7 @@
 
 ============================================================================== */
 
-.nav-folder.alx-folder-with-note.alx-empty-folder>.nav-folder-title>.nav-folder-collapse-indicator {
+.alx-empty-folder>.nav-folder-title>.nav-folder-collapse-indicator {
   display: none !important;
 }
 
@@ -19,8 +19,8 @@
     height: 18px;
 }
 
-.nav-folder.alx-folder-with-note.alx-empty-folder .nav-folder-title[data-path*="Personnages/"] .nav-folder-title-content,
-.nav-folder.alx-folder-with-note.alx-empty-folder .nav-folder-title[data-path*="Personnages/"] .obsidian-icon-folder-icon {
+.alx-empty-folder .nav-folder-title[data-path*="Personnages/"] .nav-folder-title-content,
+.alx-empty-folder .nav-folder-title[data-path*="Personnages/"] .obsidian-icon-folder-icon {
     position: relative !important;
     left:0.9em !important;
 }
@@ -58,7 +58,7 @@
     margin-right: 0;
   }
 
-.nav-folder.alx-folder-with-note.alx-empty-folder>.nav-folder-title[data-path*="22. Personnages/"]>.nav-folder-collapse-indicator {
+.alx-empty-folder>.nav-folder-title[data-path*="22. Personnages/"]>.nav-folder-collapse-indicator {
     right: 30px;
     position: relative;
 }
