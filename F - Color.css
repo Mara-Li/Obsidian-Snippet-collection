@@ -702,6 +702,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .theme-dark .colorful-active .nav-file-title.is-active[data-path^="00."],
 .theme-light .colorful-active .nav-file-title.is-active[data-path^="00."],
 .theme-dark .nav-file-title[data-path^="00."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="00."],
 .theme-light .nav-file-title[data-path^="00."]:hover,
 .theme-light .nav-folder-title.is-active[data-path^="00."],
 .theme-dark .nav-folder-title.is-active[data-path^="00."] {
@@ -724,9 +725,11 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 }
 
 .theme-dark .nav-folder-title[data-path^="10."]:hover,
+.nav-folder-title[data-path^="10."]:hover,
 .theme-light .nav-folder-title[data-path^="10."]:hover,
 .theme-dark .colorful-active .nav-file-title.is-active[data-path^="10."],
 .theme-light .colorful-active .nav-file-title.is-active[data-path^="10."],
+.colorful-active .nav-file-title.is-active[data-path^="10."],
 .theme-dark .nav-file-title[data-path^="10."]:hover,
 .theme-light .nav-file-title[data-path^="10."]:hover,
 .theme-light .nav-folder-title.is-active[data-path^="10."],
@@ -755,9 +758,11 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .theme-dark .nav-folder-title[data-path^="20."]:hover,
 .theme-light .nav-folder-title[data-path^="20."]:hover,
 .theme-dark .colorful-active .nav-file-title.is-active[data-path^="20."],
+.colorful-active .nav-file-title.is-active[data-path^="20."],
 .theme-light .colorful-active .nav-file-title.is-active[data-path^="20."],
 .theme-dark .nav-file-title[data-path^="20."]:hover,
 .theme-light .nav-file-title[data-path^="20."]:hover,
+.nav-file-title[data-path^="20."]:hover,
 .theme-light .nav-folder-title.is-active[data-path^="20."],
 .theme-dark .nav-folder-title.is-active[data-path^="20."] {
     color: var(--F20) !important;
@@ -779,6 +784,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 }
 
 .theme-dark .nav-folder-title[data-path^="30."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="30."],
 .theme-light .nav-folder-title[data-path^="30."]:hover,
 .theme-dark .colorful-active .nav-file-title.is-active[data-path^="30."],
 .theme-light .colorful-active .nav-file-title.is-active[data-path^="30."],
@@ -807,6 +813,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .theme-dark .nav-folder-title[data-path^="40."]:hover,
 .theme-light .nav-folder-title[data-path^="40."]:hover,
 .theme-dark .colorful-active .nav-file-title.is-active[data-path^="40."],
+.colorful-active .nav-file-title.is-active[data-path^="40."],
 .theme-light .colorful-active .nav-file-title.is-active[data-path^="40."],
 .theme-dark .nav-file-title[data-path^="40."]:hover,
 .theme-light .nav-file-title[data-path^="40."]:hover,
@@ -832,6 +839,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 
 .theme-dark .nav-folder-title[data-path^="50."]:hover,
 .theme-light .nav-folder-title[data-path^="50."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="50."],
 .theme-dark .colorful-active .nav-file-title.is-active[data-path^="50."],
 .theme-light .colorful-active .nav-file-title.is-active[data-path^="50."],
 .theme-dark .nav-file-title[data-path^="50."]:hover,
@@ -859,6 +867,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .theme-dark .nav-folder-title[data-path^="60."]:hover,
 .theme-light .nav-folder-title[data-path^="60."]:hover,
 .theme-dark .colorful-active .nav-file-title.is-active[data-path^="60."],
+.colorful-active .nav-file-title.is-active[data-path^="60."],
 .theme-light .colorful-active .nav-file-title.is-active[data-path^="60."],
 .theme-dark .nav-file-title[data-path^="60."]:hover,
 .theme-light .nav-file-title[data-path^="60."]:hover,
@@ -886,6 +895,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .theme-light .nav-folder-title[data-path^="70."]:hover,
 .theme-dark .colorful-active .nav-file-title.is-active[data-path^="70."],
 .theme-light .colorful-active .nav-file-title.is-active[data-path^="70."],
+.colorful-active .nav-file-title.is-active[data-path^="70."],
 .theme-dark .nav-file-title[data-path^="70."]:hover,
 .theme-light .nav-file-title[data-path^="70."]:hover,
 .theme-light .nav-folder-title.is-active[data-path^="70."],
@@ -911,6 +921,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .theme-dark .nav-folder-title[data-path^="80."]:hover,
 .theme-light .nav-folder-title[data-path^="80."]:hover,
 .theme-dark .colorful-active .nav-file-title.is-active[data-path^="80."],
+.colorful-active .nav-file-title.is-active[data-path^="80."],
 .theme-light .colorful-active .nav-file-title.is-active[data-path^="80."],
 .theme-dark .nav-file-title[data-path^="80."]:hover,
 .theme-light .nav-file-title[data-path^="80."]:hover,
@@ -938,6 +949,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .theme-light .nav-folder-title[data-path^="90."]:hover,
 .theme-dark .colorful-active .nav-file-title.is-active[data-path^="90."],
 .theme-light .colorful-active .nav-file-title.is-active[data-path^="90."],
+.colorful-active .nav-file-title.is-active[data-path^="90."],
 .theme-dark .nav-file-title[data-path^="90."]:hover,
 .theme-light .nav-file-title[data-path^="90."]:hover,
 .theme-light .nav-folder-title.is-active[data-path^="90."],
@@ -962,6 +974,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 
 .theme-dark .nav-folder-title[data-path^="100."]:hover,
 .theme-light .nav-folder-title[data-path^="100."]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="100."],
 .theme-dark .colorful-active .nav-file-title.is-active[data-path^="100."],
 .theme-light .colorful-active .nav-file-title.is-active[data-path^="100."],
 .theme-dark .nav-file-title[data-path^="100."]:hover,
@@ -1005,6 +1018,7 @@ div:not(.is-mobile)>.workspace-leaf-content .view-content .nav-folder-children .
 .theme-light .nav-folder-title.is-active[data-path^="ZZ."],
 .theme-dark .nav-folder-title.is-active[data-path^="ZZ."],
 .theme-dark .nav-folder-title[data-path^="Ressource"]:hover,
+.colorful-active .nav-file-title.is-active[data-path^="Ressource"],
 .theme-light .nav-folder-title[data-path^="Ressource"]:hover,
 .theme-dark .colorful-active .nav-file-title.is-active[data-path^="Ressource"],
 .theme-light .colorful-active .nav-file-title.is-active[data-path^="Ressource"],
