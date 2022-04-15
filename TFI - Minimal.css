@@ -5,7 +5,7 @@
     padding-left: 4px !important;
 }
 
-.theme-light .nav-folder-children .nav-folder-children {
+ .nav-folder-children .nav-folder-children {
     margin-left: 0;
     border-left: none;
 }
@@ -13,8 +13,8 @@
 div[data-path*="Illustration"]+div.nav-folder-children,
 .nav-folder-title[data-path*="Illustration"]>.collapse-icon,
 .nav-folder-title[data-path*="Illustration"]>.collapse-icon {
-    display: inline !important;
-    opacity: 0 !important;
+    display: block !important;
+    opacity: 1 !important;
 }
 
 .workspace-split.mod-left-split .nav-files-container,
@@ -183,14 +183,11 @@ div[data-path*="Illustration"]+div.nav-folder-children,
     }
 
     .nav-file-title[data-path*="Personnages/"] .obsidian-icon-folder-icon svg {
-        margin-left: -0.4em !important;
+        padding-left: 0 !important;
+        margin-right: -0.4em;
     }
 
-    .alx-empty-folder .nav-folder-title[data-path*="Personnages/"] .obsidian-icon-folder-icon,
-    .alx-empty-folder .nav-folder-title[data-path*="Idées/"] .obsidian-icon-folder-icon {
-        margin-left: -5em !important;
-    }
-
+    
     .nav-folder-title[data-path*="Personnages/"]>.obsidian-icon-folder-icon+.nav-folder-title-content {
         padding-left: 0 !important;
     }

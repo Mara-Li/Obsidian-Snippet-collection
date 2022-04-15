@@ -19,16 +19,17 @@
     height: 18px;
 }
 
-.alx-empty-folder .nav-folder-title[data-path*="Personnages/"] .nav-folder-title-content,
-.alx-empty-folder .nav-folder-title[data-path*="Personnages/"] .obsidian-icon-folder-icon {
-    position: relative !important;
-    left:0.9em !important;
-}
+
 
 @media only screen and (min-device-width: 1024px) {
   /* PC */
   .nav-file-title svg:not(.right-triangle) {
     margin-left: 2px !important;
+  }
+  .alx-empty-folder .nav-folder-title[data-path*="Personnages/"] .nav-folder-title-content,
+  .alx-empty-folder .nav-folder-title[data-path*="Personnages/"] .obsidian-icon-folder-icon {
+    position: relative !important;
+    left:0.9em !important;
   }
 
   .nav-file-title-content,
