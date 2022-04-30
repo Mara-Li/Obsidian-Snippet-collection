@@ -5,7 +5,7 @@
     padding-left: 4px !important;
 }
 
- .nav-folder-children .nav-folder-children {
+.nav-folder-children .nav-folder-children {
     margin-left: 0;
     border-left: none;
 }
@@ -23,7 +23,6 @@ div[data-path*="Illustration"]+div.nav-folder-children,
 }
 
 @media only screen and (min-device-width: 1024px) {
-
     /* PC */
     .nav-folder-title[data-path*="21. Idées/"] .nav-folder-title-content,
     .nav-folder-title[data-path*="21. Idées/"] svg:not(.right-triangle),
@@ -31,93 +30,73 @@ div[data-path*="Illustration"]+div.nav-folder-children,
     .nav-folder-title[data-path*="22. Personnages/"] svg:not(.right-triangle) {
         right: 0;
     }
-
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title>* {
         padding: 0 0;
     }
-
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder:not(.alx-empty-folder) .nav-folder-title {
         position: relative;
         left: -1em;
     }
-
-    
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.alx-empty-folder .nav-folder-title {
         position: relative;
         left: 0em;
     }
-
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children .alx-empty-folder .nav-folder-title {
         position: relative;
         left: 1em;
     }
-
-
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder:not(.alx-empty-folder) .nav-folder-title .nav-folder-collapse-indicator.collapse-icon {
         left: -0.5em;
         position: relative;
     }
-
     .nav-file-title[data-path*="20. Compendium/"] {
         right: -0.7em !important;
         position: relative !important;
     }
-
-
     .alx-empty-folder .nav-folder-title[data-path*="30"] {
         right: -0.9em !important;
         position: relative !important;
     }
-
     .nav-folder-collapse-indicator.collapse-icon {
         opacity: 0;
     }
-
     .nav-folder-title {
         padding-left: 0;
     }
-
     .nav-folder-children .nav-file-title-content:first-child::before {
         margin-left: 0.25em !important;
     }
-
     .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] .obsidian-icon-folder-icon svg {
         margin-left: 0 !important;
         position: relative;
         left: 0 !important;
     }
-
     .nav-file-title[data-path*="Personnages/"] .obsidian-icon-folder-icon svg {
         margin-left: -1em !important;
     }
-
     .alx-empty-folder .nav-folder-title[data-path*="Personnages/"] .obsidian-icon-folder-icon,
     .alx-empty-folder .nav-folder-title[data-path*="Idées/"] .obsidian-icon-folder-icon {
-        margin-left: -1em !important;
+        margin-left: 0em !important;
     }
-
     .nav-folder-title[data-path*="Personnages/"]>.obsidian-icon-folder-icon+.nav-folder-title-content {
         padding-left: 0 !important;
     }
-
     .nav-file-title[data-path*="Bookmark/"],
-    .nav-file-title[data-path*="testing"] {
+    .nav-file-title[data-path*="Temporaire"] {
         position: relative;
         left: 0.8em;
     }
-
     .nav-file-title[data-path*="Bookmark/"] .nav-file-title-content,
-    .nav-file-title[data-path*="testing"] .nav-file-title-content {
+    .nav-file-title[data-path*="Temporaire"] .nav-file-title-content {
         padding-left: 0 !important;
     }
-
     .nav-folder-title[data-path*="Professeur"]>*,
-    .nav-folder-title[data-path*="Notes"]>*,
-    .nav-folder-title[data-path*="Blog"]>* {
+    .nav-folder-title[data-path*="01."]>*,
+    .nav-folder-title[data-path*="03."]>*,
+    .nav-folder-title[data-path*="02."]>* {
         position: relative;
         left: 0.25em;
     }
-
     .nav-file-title[data-path*="Bookmark/Professeur"] {
         position: relative !important;
         left: 0 !important;
@@ -125,87 +104,73 @@ div[data-path*="Illustration"]+div.nav-folder-children,
 }
 
 @media only screen and (max-device-width: 1024px) {
-
     .nav-folder-title[data-path*="21. Idées/"] .nav-folder-title-content,
     .nav-folder-title[data-path*="21. Idées/"] svg:not(.right-triangle),
     .nav-folder-title[data-path*="22. Personnages/"] .nav-folder-title-content,
     .nav-folder-title[data-path*="22. Personnages/"] svg:not(.right-triangle) {
         right: 0;
     }
-
     .nav-file-title {
         position: relative;
         left: 5px;
     }
-
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title>* {
         padding: 0 0;
     }
-
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder:not(.alx-empty-folder) .nav-folder-title {
         position: relative;
         left: -1em;
     }
-
-    
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.alx-empty-folder .nav-folder-title {
         position: relative;
         left: 0em;
     }
-
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children .alx-empty-folder .nav-folder-title {
         position: relative;
         left: 1em;
     }
-
-
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder:not(.alx-empty-folder) .nav-folder-title .nav-folder-collapse-indicator.collapse-icon {
         left: -0.5em;
         position: relative;
-      }
-
+    }
     .nav-folder-collapse-indicator.collapse-icon {
         opacity: 0;
     }
-
     .nav-folder-title {
         padding-left: 0;
     }
-
     .nav-folder-children .nav-file-title-content:first-child::before {
         margin-left: 0.25em !important;
     }
-
     .alx-folder-with-note .nav-folder-title[data-path*="Illustration"] .obsidian-icon-folder-icon svg {
         margin-left: 0 !important;
         position: relative;
         left: 0 !important;
     }
-
     .nav-file-title[data-path*="Personnages/"] .obsidian-icon-folder-icon svg {
         padding-left: 0 !important;
-        margin-right: -0.4em;
+        margin-right: -0.3em;
     }
-
-    
+    .nav-folder-title[data-path*="Personnages/"] .obsidian-icon-folder-icon {
+        margin-left: -1px !important;
+        margin-right: 0em;
+    }
     .nav-folder-title[data-path*="Personnages/"]>.obsidian-icon-folder-icon+.nav-folder-title-content {
         padding-left: 0 !important;
     }
-
     .nav-file-title[data-path*="Bookmark/"],
-    .nav-file-title[data-path*="testing"] {
+    .nav-file-title[data-path*="Temporaire"] {
         position: relative;
         left: 0.8em;
     }
-
     .nav-file-title[data-path*="Bookmark/"] .nav-file-title-content,
-    .nav-file-title[data-path*="testing"] .nav-file-title-content {
+    .nav-file-title[data-path*="Temporaire"] .nav-file-title-content {
         padding-left: 0 !important;
     }
-
     .nav-folder-title[data-path*="Professeur"]>*,
-    .nav-folder-title[data-path*="Notes"]>*,
-    .nav-folder-title[data-path*="Blog"]>* {
+    .nav-folder-title[data-path*="01."]>*,
+    .nav-folder-title[data-path*="03."]>*,
+    .nav-folder-title[data-path*="02."]>* {
         position: relative;
         left: -0.5em;
     }
