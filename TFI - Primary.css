@@ -100,8 +100,9 @@ div[data-path*="Illustration"]+div.nav-folder-children {
         padding-left: 0 !important;
     }
     .nav-folder-title[data-path*="Professeur"]>*,
-    .nav-folder-title[data-path*="Notes"]>*,
-    .nav-folder-title[data-path*="Blog"]>* {
+    .nav-folder-title[data-path*="01."]>*,
+    .nav-folder-title[data-path*="02."]>*,
+    .nav-folder-title[data-path*="03."]>* {
         position: relative;
         left: 0.25em;
     }
@@ -111,6 +112,13 @@ div[data-path*="Illustration"]+div.nav-folder-children {
     }
     .nav-folder-title[data-path*="Functions"]>* {
         left: 8px;
+        position: relative;
+    }
+    .nav-file-title[data-path*="21. Idées/"] .obsidian-icon-folder-icon svg {
+        margin-left: -1em !important;
+    }
+    .relation-active .nav-folder:not(.mod-root)>.nav-folder-children>.nav-folder > .nav-folder-children .nav-file-title {
+        left: -0.4em !important;
         position: relative;
     }
 }
