@@ -175,6 +175,6 @@ div[data-path*="Illustration"]+div.nav-folder-children,
         left: -0.5em;
     }
     .relation-active .nav-folder:not(.mod-root)>.nav-folder-children>.nav-folder>.nav-folder-children .nav-file-title {
-        margin-left: -0.6em !important;
+        margin-left: -0.3em !important;
     }
 }
