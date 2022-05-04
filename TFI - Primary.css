@@ -80,9 +80,6 @@ div[data-path*="Illustration"]+div.nav-folder-children {
         position: relative;
         left: 0 !important;
     }
-    .nav-file-title[data-path*="Personnages/"] .obsidian-icon-folder-icon svg {
-        margin-left: -1em !important;
-    }
     .alx-empty-folder .nav-folder-title[data-path*="Personnages/"] .obsidian-icon-folder-icon,
     .alx-empty-folder .nav-folder-title[data-path*="Idées/"] .obsidian-icon-folder-icon {
         margin-left: -1em !important;
