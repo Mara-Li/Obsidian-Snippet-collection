@@ -601,6 +601,7 @@ body:not(.is-grabbing) .nav-folder-title:hover .nav-folder-collapse-indicator {
 
 .nav-file.is-active>.nav-file-title {
     padding-left: 5px;
+
 }
 
 .nav-file-title.is-active,

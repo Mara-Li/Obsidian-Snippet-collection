@@ -26,8 +26,9 @@ img.image-embed
 /* Core Flags */
 
 .image-embed[alt*="+"],
-.image-embed[alt*="-"]
- {
+.image-embed[alt*="-"],
+.markdown-source-view.mod-cm6 .cm-content>[contenteditable=false]~.image-embed[alt*="+"]
+{
   contain: revert !important;
 }
 
@@ -39,7 +40,7 @@ img[alt*="+side"] {
   min-width: var(--minwidth);
   float: right;
   margin: 0px;
-  margin-left: var(--coremarg);
+  margin-left: var(--coremarg) !important;
 }
 
 img[alt*="+rside"] {

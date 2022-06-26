@@ -2,7 +2,8 @@
     position: relative;
     top: -1px;
     padding-right: 0.4em !important;
-    padding-left: 4px !important;
+    padding-left: 4px;
+    border: 0 !important;
 }
 
 .nav-folder-children .nav-folder-children {
@@ -58,6 +59,23 @@ div[data-path*="Illustration"]+div.nav-folder-children {
         left: -0.5em;
         position: relative;
     }
+
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder .nav-folder-title[data-path] .obsidian-icon-folder-icon {
+        padding-left: 5px !important;
+    }
+
+    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder .nav-file-title[data-path] .obsidian-icon-folder-icon {
+        padding-left: 5px !important;
+    }
+
+    .relation-active .nav-folder:not(.mod-root)>.nav-folder-children .nav-file-title {
+        margin-left: 0.5em;
+    }
+
+    .relation-active .nav-folder:not(.mod-root)>.nav-folder-children .nav-file-title[data-path*='Symbole relation'] {
+        margin-left: -5px;
+    }
+
     .nav-file-title[data-path*="20. Compendium/"] {
         right: -0.7em !important;
         position: relative !important;
@@ -90,19 +108,13 @@ div[data-path*="Illustration"]+div.nav-folder-children {
     .nav-file-title[data-path*="Bookmark/"],
     .nav-file-title[data-path*="Temporaire"] {
         position: relative;
-        left: 0.8em;
+        left: 0;
     }
     .nav-file-title[data-path*="Bookmark/"] .nav-file-title-content,
     .nav-file-title[data-path*="Temporaire"] .nav-file-title-content {
         padding-left: 0 !important;
     }
-    .nav-folder-title[data-path*="Professeur"]>*,
-    .nav-folder-title[data-path*="01."]>*,
-    .nav-folder-title[data-path*="02."]>*,
-    .nav-folder-title[data-path*="03."]>* {
-        position: relative;
-        left: 0.25em;
-    }
+
     .nav-file-title[data-path*="Bookmark/Professeur"] {
         position: relative !important;
         left: 0 !important;
@@ -111,11 +123,8 @@ div[data-path*="Illustration"]+div.nav-folder-children {
         left: 8px;
         position: relative;
     }
-    .nav-file-title[data-path*="21. Idées/"] .obsidian-icon-folder-icon svg {
-        margin-left: -1em !important;
-    }
     .relation-active .nav-folder:not(.mod-root)>.nav-folder-children>.nav-folder > .nav-folder-children .nav-file-title {
-        left: -0.4em !important;
+        left: -1.2em !important;
         position: relative;
     }
 }

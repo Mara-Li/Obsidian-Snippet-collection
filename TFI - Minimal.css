@@ -2,19 +2,31 @@
     position: relative;
     top: -1px;
     padding-right: 0.4em !important;
-    padding-left: 4px !important;
+    padding-left: 4px;
+    border: 0 !important;
 }
+
+
 
 .nav-folder-children .nav-folder-children {
-    margin-left: 0;
+    margin-left: 0 !important;
     border-left: none;
+    overflow: hidden;
 }
 
-div[data-path*="Illustration"]+div.nav-folder-children,
+.nav-files-container {
+    overflow-x: hidden;
+}
+
+div[data-path*="Illustration"]+div.nav-folder-children {
+    opacity: 1;
+    display: block !important;
+}
+
 .nav-folder-title[data-path*="Illustration"]>.collapse-icon,
 .nav-folder-title[data-path*="Illustration"]>.collapse-icon {
-    display: block !important;
-    opacity: 1 !important;
+    display: inline !important;
+    opacity: 0 !important;
 }
 
 .workspace-split.mod-left-split .nav-files-container,
@@ -22,7 +34,7 @@ div[data-path*="Illustration"]+div.nav-folder-children,
     padding: 0;
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-device-width: 1080px) {
     /* PC */
     .nav-folder-title[data-path*="21. Idées/"] .nav-folder-title-content,
     .nav-folder-title[data-path*="21. Idées/"] svg:not(.right-triangle),
@@ -33,7 +45,7 @@ div[data-path*="Illustration"]+div.nav-folder-children,
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title>* {
         padding: 0 0;
     }
-    .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder:not(.alx-empty-folder) .nav-folder-title {
+    .nav-folder.mod-root>.nav-folder-f21children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder:not(.alx-empty-folder) .nav-folder-title {
         position: relative;
         left: -1em;
     }
@@ -103,7 +115,12 @@ div[data-path*="Illustration"]+div.nav-folder-children,
     }
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 1080px) {
+  
+    .nav-file-title .obsidian-icon-folder-icon {
+      left: 5px;
+    }
+  
     .nav-folder-title[data-path*="21. Idées/"] .nav-folder-title-content,
     .nav-folder-title[data-path*="21. Idées/"] svg:not(.right-triangle),
     .nav-folder-title[data-path*="22. Personnages/"] .nav-folder-title-content,
@@ -114,6 +131,11 @@ div[data-path*="Illustration"]+div.nav-folder-children,
         position: relative;
         left: 5px;
     }
+    
+    .alx-empty-folder .nav-folder-title[data-path*="30"] {
+        right: -1em;
+      }
+      
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-title>* {
         padding: 0 0;
     }
@@ -128,6 +150,7 @@ div[data-path*="Illustration"]+div.nav-folder-children,
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children .alx-empty-folder .nav-folder-title {
         position: relative;
         left: 1em;
+
     }
     .nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder>.nav-folder-children>.nav-folder:not(.alx-empty-folder) .nav-folder-title .nav-folder-collapse-indicator.collapse-icon {
         left: -0.5em;
@@ -152,8 +175,9 @@ div[data-path*="Illustration"]+div.nav-folder-children,
         margin-right: -0.3em;
     }
     .nav-folder-title[data-path*="Personnages/"] .obsidian-icon-folder-icon {
-        margin-left: -1px !important;
-        margin-right: 0em;
+        margin-left: 0px !important;
+        margin-right: 0.2em;
+        left: 5px;
     }
     .nav-folder-title[data-path*="Personnages/"]>.obsidian-icon-folder-icon+.nav-folder-title-content {
         padding-left: 0 !important;
@@ -163,10 +187,12 @@ div[data-path*="Illustration"]+div.nav-folder-children,
         position: relative;
         left: 0.8em;
     }
+    
     .nav-file-title[data-path*="Bookmark/"] .nav-file-title-content,
     .nav-file-title[data-path*="Temporaire"] .nav-file-title-content {
         padding-left: 0 !important;
     }
+
     .nav-folder-title[data-path*="Professeur"]>*,
     .nav-folder-title[data-path*="01."]>*,
     .nav-folder-title[data-path*="03."]>*,
