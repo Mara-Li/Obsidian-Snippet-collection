@@ -74,7 +74,7 @@ Font included :
 - Font Awesome 5 Free Solid
 - Font Awesome 5 Brands
 
-# Image Float 
+# [Image Float](IMG%20-%20Grid%20float.css)
 
 All of the credit for this snippet to go [Lithou](http://github.com/lithou/sandbox). I just adapted this snippet to work with Live Preview. I pretty didn't know if Lithou updated it.
 
