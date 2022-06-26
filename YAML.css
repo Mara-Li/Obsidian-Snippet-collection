@@ -1,0 +1,286 @@
+/* @settings
+name: YAML
+id: yaml-snippets
+settings:
+    - 
+        id: heading-title
+        type: heading
+        level: 3
+        title: Title
+        description: Adjust the block's title
+        collapsed: true
+    -
+        id: yaml-title
+        title: Content
+        description: Add some content to the block
+        type: variable-text
+        default: '📖 Metadata'
+    -
+        id: yaml-title-style
+        title: Font style
+        type: variable-select
+        default: normal
+        options: 
+            - normal
+            - italic
+            - oblique
+    -
+        id: yaml-title-weight
+        title: Font weight
+        type: variable-number-slider
+        default: 900
+        min: 100
+        max: 900
+    - 
+        id: yaml-title-size
+        title: Title size
+        type: variable-text
+        default: 'larger'
+    -
+        id: yaml-title-family
+        title: Font family
+        type: variable-text
+        default: 'Inter'
+    -
+        id: yaml-title-color
+        title: Color
+        type: variable-themed-color
+        format: hsl
+        default-light: hsl(0, 0%, 30%)
+        default-dark: hsl(0, 0%, 70%)
+        opacity: false
+    -
+        id: yaml-title-align
+        title: text align
+        type: variable-select
+        default: left
+        options: 
+            - left
+            - center
+            - right
+            - justify
+    -
+        id: heading-border
+        type: heading
+        title: Border
+        level: 4
+        collapsed: true
+    -
+        id: yaml-border-size
+        title: Border size
+        description: Adjust the size of the border (up to 10px)
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 10
+        step: 1
+        format: px
+    - 
+        id: yaml-border-style
+        title: Border style
+        description: Add some style to border
+        type: variable-select
+        default: solid
+        options: 
+            - solid
+            - dashed
+            - dotted
+            - double
+            - groove
+            - ridge
+            - inset
+            - outset
+    - 
+        id: yaml-border-color
+        title: Border color
+        type: variable-themed-color
+        format: hsl
+        default-light: hsl(0, 0%, 85%)
+        default-dark: hsl(0, 0%, 85%)
+    - 
+        id: value-yaml
+        type: heading
+        title: Value
+        level: 3
+        collapsed: true
+    -
+        id: yaml-font
+        title: Font for value
+        type: variable-text
+        default: 'Inter'
+    -
+        id: yaml-transform
+        title: Text transform
+        description: Add some style to value
+        type: variable-select
+        default: uppercase
+        options: 
+            - none
+            - capitalize
+            - uppercase
+            - lowercase
+    -
+        id: yaml-font-style
+        title: Font style
+        description: Add some style to font
+        type: variable-select
+        default: italic
+        options: 
+            - normal
+            - italic
+            - oblique
+    - 
+        id: yaml-color
+        title: Color
+        type: variable-themed-color
+        default-light: hsl(0, 0%, 30%)
+        default-dark: hsl(0, 0%, 70%)
+        format: hsl
+        opacity: false
+    -
+        id: heading-value
+        type: heading
+        title: Value
+        level: 4
+        collapsed: true
+    -
+        id: yaml-underline-size
+        title: Underline size
+        description: Adjust the size of the underline (up to 10px)
+        type: variable-number-slider
+        default: 2
+        min: 0
+        max: 10
+        step: 1
+        format: px
+    -
+        id: yaml-underline-style
+        title: Underline style
+        description: Add some style to underline
+        type: variable-select
+        default: solid
+        options: 
+            - solid
+            - dashed
+            - dotted
+            - double
+            - groove
+            - ridge
+            - inset
+            - outset
+    -
+        id: yaml-border-color
+        title: Border color
+        type: variable-themed-color
+        format: hsl
+        default-light: hsl(0, 0%, 85%)
+        default-dark: hsl(0, 0%, 85%)
+*/
+
+
+:root {
+    --yaml-font: 'Inter';
+    --yaml-transform: capitalize;
+    --yaml-font-style: italic;
+    --yaml-title: '📖 Metadata';
+    --yaml-border-style: dotted;
+    --yaml-border-size: 1px;
+    --yaml-underline-style: solid;
+    --yaml-underline-size: 2px;
+    --yaml-title-style: normal;
+    --yaml-title-weight: 900;
+    --yaml-title-size: larger;
+    --yaml-title-family: 'Inter';
+    --yaml-title-align: 'left';
+
+}
+
+.theme-light {
+    --yaml-color: hsl(0, 0%, 30%);
+    --yaml-border-color: hsl(0, 0%, 85%);
+    --yaml-title-color: hsl(0, 0%, 30%);
+}
+
+.theme-dark {
+    --yaml-color: hsl(0, 0%, 70%);
+    --yaml-border-color: hsl(0, 0%, 85%);
+    --yaml-title-color: hsl(0, 0%, 70%);
+}
+
+.is-live-preview .cm-line .cm-hmd-frontmatter {
+    font-family: var(--yaml-font);
+    text-transform: var(--yaml-transform);
+    font-style: var(--yaml-font-style);
+
+}
+
+/* Applies to front-matter variable when inactive (cursor not on the line) */
+.is-live-preview .cm-line:not(.cm-active)>.cm-hmd-frontmatter.cm-atom {
+    color: var(--yaml-color);
+}
+
+/* Applies to front-matter variable when active (cursor on the line) */
+.is-live-preview .cm-line .cm-hmd-frontmatter.cm-atom {
+    font-weight: 700;
+    color: var(--yaml-color);
+}
+
+/* Colon after variable when inactive (because we hide all meta symbols including colon and commas when inactive) */
+.is-live-preview .cm-line:not(.cm-active) .cm-hmd-frontmatter.cm-atom::after {
+    content: "";
+}
+
+/* Applies to Values */
+.is-live-preview .cm-line:not(.cm-active)>.cm-hmd-frontmatter:not(.cm-meta):not(.cm-atom) {
+    color: var(--yaml-color);
+    border-bottom: var(--yaml-underline-size) var(--yaml-underline-style) var(--yaml-border-color);
+    position: relative;
+    text-align: justify;
+}
+
+/* Period after values, to separate values (specially when the value is more than one word) */
+.is-live-preview .cm-line:not(.cm-active)>.cm-hmd-frontmatter:not(.cm-meta):not(.cm-atom)::after {
+    content: "";
+}
+
+/* Hides triple dashes and meta symbols like brackets, colons, commas when inactive */
+.is-live-preview .cm-line:not(.cm-active) .cm-hmd-frontmatter.cm-def,
+.is-live-preview .cm-line:not(.cm-active) .cm-hmd-frontmatter.cm-meta {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Shows triple dashes and metadata when active */
+.cm-line:not(.cm-active)>span.cm-def.cm-hmd-frontmatter {
+    visibility: hidden;
+}
+
+.cm-line+.cm-line:not(.cm-active)>.cm-def.cm-hmd-frontmatter:before {
+    content: ' ' !important;
+    border: none !important;
+    display: none !important;
+}
+
+.cm-line + .cm-line:not(.cm-active) > .cm-def.cm-hmd-frontmatter:after {
+    content: " " !important;
+    display: block;
+    visibility: visible;
+    height: 0 !important;
+    margin-top: -20px;
+    margin-bottom: 5px;
+    border-top: var(--yaml-border-size) var(--yaml-border-style) var(--yaml-border-color);
+}
+
+.cm-contentContainer > .cm-content > .cm-line:not(.cm-active) > .cm-def.cm-hmd-frontmatter:before {
+    content: var(--yaml-title);
+    visibility: visible !important;
+    display: block;
+    height: 0px;
+    font-style: var(--yaml-title-style);
+    font-weight: var(--yaml-title-weight);
+    font-size: var(--yaml-title-size);
+    font-family: var(--yaml-title-family);
+    color: var(--yaml-title-color);
+    text-align: var(--yaml-title-align);
+    border-top: var(--yaml-border-size) var(--yaml-border-style) var(--yaml-border-color);
+}
