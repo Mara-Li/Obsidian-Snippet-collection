@@ -10,11 +10,21 @@ settings:
         description: Adjust the block's title
         collapsed: true
     -
+        id: display-top
+        type: class-toggle
+        title: Display border top
+        description: Display a border top for the block
+    -
+        id: display-bottom
+        type: class-toggle
+        title: Display border bottom
+        description: Display a border bottom for the block
+    -
         id: yaml-title
         title: Content
         description: Add some content to the block
         type: variable-text
-        default: '📖 Metadata'
+        default: "📖 Metadata"
     -
         id: yaml-title-style
         title: Font style
@@ -255,13 +265,13 @@ settings:
     visibility: hidden;
 }
 
-.cm-line+.cm-line:not(.cm-active)>.cm-def.cm-hmd-frontmatter:before {
+.display-top .cm-line+.cm-line:not(.cm-active)>.cm-def.cm-hmd-frontmatter:before {
     content: ' ' !important;
     border: none !important;
     display: none !important;
 }
 
-.cm-line + .cm-line:not(.cm-active) > .cm-def.cm-hmd-frontmatter:after {
+.display-bottom .cm-line + .cm-line:not(.cm-active) > .cm-def.cm-hmd-frontmatter:after {
     content: " " !important;
     display: block;
     visibility: visible;
@@ -271,10 +281,10 @@ settings:
     border-top: var(--yaml-border-size) var(--yaml-border-style) var(--yaml-border-color);
 }
 
-.cm-contentContainer > .cm-content > .cm-line:not(.cm-active) > .cm-def.cm-hmd-frontmatter:before {
+.display-top .cm-contentContainer > .cm-content >  .cm-line:not(.cm-active) > .cm-def.cm-hmd-frontmatter:before {
     content: var(--yaml-title);
     visibility: visible !important;
-    display: block;
+    display: block !important;
     height: 0px;
     font-style: var(--yaml-title-style);
     font-weight: var(--yaml-title-weight);
@@ -283,4 +293,8 @@ settings:
     color: var(--yaml-title-color);
     text-align: var(--yaml-title-align);
     border-top: var(--yaml-border-size) var(--yaml-border-style) var(--yaml-border-color);
+}
+
+.display-top .cm-def.cm-hmd-frontmatter + .cm-widgetBuffer + .cm-foldPlaceholder {
+    display: none;
 }
