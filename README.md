@@ -41,7 +41,9 @@ To use it you need :
 - [Folder Note](https://github.com/aidenlx/alx-folder-note)
 - [Icon Folder](https://github.com/FlorianWoelki/obsidian-icon-folder)
 
-The files [T - Sanctum.css](T - Sanctum.css), [T - Minimal](T - Minimal.css) and [T - Primary](T - Primary.css) allows the necessary adjustments to theses themes.
+Some themes have snippet exemple to adjust the folder note icons : 
+- <u>Minimal</u> : [TF - Minimal](TF%20-%20Minimal.css) & [TFI - Minimal](TFI%20-%20Minimal.css)
+- <u>Primary</u> : [TF - Primary](TF%20-%20Primary.css) & [TFI - Primary](TFI%20-%20Primary.css)
 
 :warning: You need to change the paths of your files!
 
@@ -76,16 +78,8 @@ Font included :
 
 All of the credit for this snippet to go [Lithou](http://github.com/lithou/sandbox). I just adapted this snippet to work with Live Preview. I pretty didn't know if Lithou updated it.
 
-# Sanctum Tweaks & Minimal Tweaks
+# [YAML](YAML.css)
 
-This snippet add support for my `folder_note`, `folder-color` snippet and edit some things in Sanctum :
-- Aspect of Links, since the 6.0.1, where I don't like the new link's aspect.
-- A specific font for comments 
-- Some tweaks around bullet or codes
-
-# Keep the snippets updated
-You can use [Obsidian-Snipper-Manager](https://github.com/Mara-Li/Obsidian-Snippet-Manager), a python script.
-and use the command line : `obsnipe clone https://github.com/Mara-Li/Obsidian-Snippet-collection`
-
-You can turn on auto-update using [obsidian-shell](https://github.com/Taitava/obsidian-shellcommands)
+Some tweaks around yaml to make it beautiful in Live Preview. 
+![image](https://user-images.githubusercontent.com/30244939/175826104-6d4251c7-3ceb-48fb-9817-724ddd49955b.png)
 
