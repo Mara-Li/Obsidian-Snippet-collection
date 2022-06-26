@@ -1,19 +1,25 @@
 This repo is a collection of CSS snippets for [Obsidian.md](https://obsidian.md/).
 
+> ⚠️ Some snippet won't be updated, adjust them as you want. 
+
 To install them on PC:
 - Put the snippets in the `snippets` folder of `.obsidian` in the root of your vault;
 - In Obsidian: Appearance → Refresh snippets ⇒ Activate the ones you want.
 
-:warning: In IOS, it is impossible to access hidden folders. You can:
-- Use Textastic
-- Working Copy with a link to a folder
-- a-shell  
+> :warning: In IOS, it is impossible to access hidden folders. You can:
+> - Use Textastic
+> - Working Copy with a link to a folder
+> - a-shell  
+
 [For more information](https://forum.obsidian.md/t/mobile-ios-app-to-work-with-hidden-folder/25741)
+
+Alternatively, you can use [Obsidian Snippet Downloader](https://github.com/Mara-Li/obsidian-snippet-downloader)
 
 Each snippets can be adjusted with [Style Settings](https://github.com/mgmeyers/obsidian-style-settings/).
 
 # Custom Syntax
 This is a simple snippet that allows a specific formatting using markdown syntax, without using HTML.
+
 ![](screenshot/Custom_syntax.png)
 
 References :
@@ -26,7 +32,7 @@ References :
 - `*==~~text~~==*`: Green highlight
 
 # Folder Note :
-![](screenshot/folder_note.png)
+![](screenshot/Folder_note.png)
 
 :warning: This snippet is mostly present in terms of EXAMPLE. 
 
@@ -35,7 +41,7 @@ To use it you need :
 - [Folder Note](https://github.com/aidenlx/alx-folder-note)
 - [Icon Folder](https://github.com/FlorianWoelki/obsidian-icon-folder)
 
-The files [T - Sanctum.css](T - Sanctum.css) and [T - Minimal](T - Minimal.css) allows the necessary adjustments to theses themes.
+The files [T - Sanctum.css](T - Sanctum.css), [T - Minimal](T - Minimal.css) and [T - Primary](T - Primary.css) allows the necessary adjustments to theses themes.
 
 :warning: You need to change the paths of your files!
 
