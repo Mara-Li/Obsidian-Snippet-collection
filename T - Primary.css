@@ -1,0 +1,217 @@
+/* @settings
+
+name: Primary Custom
+id: tweaks-primary
+settings:
+    - 
+        id: md-color-formatting
+        type: variable-themed-color
+        title: Markdown Color formatting
+        default-light : "#cfb696"
+        default-dark : "#cfb696"
+        format: hex
+
+*/
+
+:root {
+    --marge: 5%;
+}
+
+.theme-light {
+        --md-color-formatting: #cfb696;
+}
+
+.theme-dark {
+    --md-color-formatting: #cfb696;
+}
+
+.cm-s-obsidian span.cm-comment,
+.cm-s-obsidian span.cm-comment.cm-quote {
+    opacity: 0.5;
+    font-family: 'Fantasque Sans Mono';
+}
+
+.button-default {
+    font-size: revert !important;
+}
+
+.cm-fold-widget.collapse-indicator.collapse-icon.heading-collapse-indicator,
+.cm-fold-widget.collapse-indicator.collapse-icon.list-collapse-indicator {
+    display: none;
+}
+
+.markdown-preview-view {
+    padding-left: var(--marge);
+    padding-right: var(--marge);
+}
+
+input.task-list-item-checkbox:not(.kanban-plugin__item-prefix-button-wrapper input[type=checkbox]) {
+    left: 0;
+    vertical-align: text-bottom;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.callout-content p {
+    margin-top: revert !important;
+    margin-bottom: 0;
+}
+
+.callout-content p {
+    margin-top: revert !important;
+    margin-bottom: revert;
+}
+
+.callout-content code {
+    font-size: calc(var(--font-text-size) - 3px) !important;
+}
+
+.callout-content {
+    font-size: calc(var(--font-text-size) - 3px) !important;
+    font-family: inherit !important;
+    font-weight: normal !important;
+}
+
+.workspace-leaf-content img[src],
+.view-content .markdown-preview-view img[src],
+.popover img[src] {
+    border: 0;
+    vertical-align: middle;
+}
+
+.markdown-source-view.mod-cm6 .dataview.table-view-table,
+.markdown-preview-view table thead,
+.markdown-source-view .cm-embed-block table thead {
+    background: transparent;
+}
+
+.markdown-preview-view .dataview.table-view-table {
+    border: none;
+}
+
+.theme-light .markdown-preview-view table tr>td,
+.theme-light .markdown-source-view .cm-embed-block table tr>td {
+    background: transparent !important;
+}
+
+code,
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting-code),
+.markdown-preview-view pre code {
+    padding: 0;
+    border-radius: none;
+}
+
+.theme-light .nav-file-title.is-active {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.nav-folder-title,
+.nav-file-title {
+    transition: none;
+}
+
+
+/* ======================= OUTLINER ======================== */
+
+.n-button .n-button__border,
+.n-button:not(.n-button--disabled):hover .n-button__state-border,
+.n-button .n-button__state-border,
+.n-input .n-input__input-el,
+.n-input .n-input__textarea-el {
+    border: transparent;
+}
+
+button.n-button.n-button--success-type.n-button--small-type {
+    --n-border-focus: transparent !important;
+}
+
+.n-input .n-input-wrapper {
+    padding: 0;
+}
+
+.n-input .n-input__input-el,
+.n-input .n-input__textarea-el {
+    caret-color: var(--n-text-color) !important;
+}
+
+.n-input .n-input__input-el,
+.n-input .n-input__textarea-el {
+    background: var(--color-l-whiter) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.n-input {
+    border-radius: 5px;
+    background: var(--color-l-whiter) !important;
+    caret-color: var(--n-text-color) !important;
+    padding-left: 10px;
+}
+
+.n-input.n-input--resizable.n-input--stateful {
+    --n-border-hover: transparent !important;
+    --n-border-focus: transparent !important;
+    --n-box-shadow-focus: transparent !important;
+}
+
+.n-slider.n-slider--with-mark {
+    --n-fill-color: var(--color-l-gray-50) !important;
+    --n-fill-color-hover: var(--color-l-gray-70) !important;
+    --n-dot-border-active: var(--color-l-gray-50) !important;
+    --n-dot-border: var(--color-l-gray-70) !important;
+}
+
+.n-tree.n-tree--block-node.n-tree--block-line {
+    --n-node-color-active: var(--background-modifier-border) !important;
+}
+
+.quiet-outline .n-tree.n-tree--block-line .n-tree-node:not(.n-tree-node--disabled):hover {
+    background-color: var(--color-l-gray-10) !important;
+}
+
+.hide__sidedockribbon-functional:not(.is-mobile) .mod-left.side-dock-ribbon .side-dock-actions {
+    display: inline;
+}
+
+.theme-light .popover.hover-popover:not(.is-pinned) {
+    border: none !important;
+}
+
+.popover.hover-popover .kanban-plugin .markdown-preview-view {
+    background: revert !important;
+    padding: revert !important;
+}
+
+.popover.hover-popover .markdown-preview-view {
+    font-size: calc(var(--font-text-size) - 5px) !important;
+}
+
+.internal-link.data-link-icon {
+    color: var(--md-color-reslink);
+}
+
+:not(a, .cm-hmd-internal-link)>.pandoc-citation.is-resolved {
+    color: var(--md-color-reslink) !important;
+}
+.pwc-tooltips .pandoc-citation.is-resolved {
+    text-decoration-color: var(--md-color-reslink) !important;
+}
+
+.markdown-source-view.mod-cm6 span:where(.cm-link, .cm-link .cm-underline, .cm-url),
+span.cm-pandoc-citation-formatting {
+    color: var(--md-color-reslink);
+}
+
+.markdown-source-view.mod-cm6 span:where(.cm-link, .cm-link .cm-underline, .cm-url):hover,
+span.cm-pandoc-citation-formatting:hover {
+    color: var(--md-color-reslink-hover);
+}
+
+.cm-active.cm-line > .cm-comment {
+    opacity: 1;
+}
