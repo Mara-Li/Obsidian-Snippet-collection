@@ -12,6 +12,7 @@
 !TF*
 !.github
 !screenshot*
+!*.png
 !CHANGELOG*
 !configuration*
 !YAML*
