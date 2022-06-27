@@ -244,8 +244,6 @@ settings:
 .is-live-preview .cm-line:not(.cm-active)>.cm-hmd-frontmatter:not(.cm-meta):not(.cm-atom) {
     color: var(--yaml-color);
     border-bottom: var(--yaml-underline-size) var(--yaml-underline-style) var(--yaml-border-color);
-    position: relative;
-    text-align: justify;
 }
 
 /* Period after values, to separate values (specially when the value is more than one word) */
@@ -261,22 +259,22 @@ settings:
 }
 
 /* Shows triple dashes and metadata when active */
-.cm-line:not(.cm-active)>span.cm-def.cm-hmd-frontmatter {
+.is-live-preview .cm-line:not(.cm-active)>span.cm-def.cm-hmd-frontmatter {
     visibility: hidden;
 }
 
-.display-top .cm-fold-indicator.is-collapsed + .cm-widgetBuffer + .cm-def.cm-hmd-frontmatter::before {
+.display-top .is-live-preview .cm-fold-indicator.is-collapsed + .cm-widgetBuffer + .cm-def.cm-hmd-frontmatter::before {
     display: none !important;
     opacity: 0;
 }
 
-.display-top .cm-line+.cm-line:not(.cm-active)>.cm-def.cm-hmd-frontmatter:before {
+.display-top .is-live-preview .cm-line+.cm-line:not(.cm-active)>.cm-def.cm-hmd-frontmatter:before {
     content: ' ' !important;
     border: none !important;
     display: none !important;
 }
 
-.display-bottom .cm-line + .cm-line:not(.cm-active) > .cm-def.cm-hmd-frontmatter:after {
+.display-bottom .is-live-preview .cm-line + .cm-line:not(.cm-active) > .cm-def.cm-hmd-frontmatter:after {
     content: " " !important;
     display: block;
     visibility: visible;
@@ -286,7 +284,7 @@ settings:
     border-top: var(--yaml-border-size) var(--yaml-border-style) var(--yaml-border-color);
 }
 
-.display-top .cm-contentContainer > .cm-content >  .cm-line:not(.cm-active) > .cm-def.cm-hmd-frontmatter:before {
+.display-top .is-live-preview .cm-contentContainer > .cm-content >  .cm-line:not(.cm-active) > .cm-def.cm-hmd-frontmatter:before {
     content: var(--yaml-title);
     visibility: visible !important;
     display: block;
@@ -300,7 +298,7 @@ settings:
     border-top: var(--yaml-border-size) var(--yaml-border-style) var(--yaml-border-color);
 }
 
-.cm-line:not(.cm-active) .cm-fold-indicator.is-collapsed + .cm-widgetBuffer + .cm-def.cm-hmd-frontmatter {
+.is-live-preview .cm-line:not(.cm-active) .cm-fold-indicator.is-collapsed + .cm-widgetBuffer + .cm-def.cm-hmd-frontmatter {
     visibility: visible !important;
     opacity: 0.8 !important;
     border-bottom: none;
